@@ -347,3 +347,18 @@ FROM
     HAVING COUNT(DISTINCT CountryCode) > 1) sub;
 
 --Summary: No store is in more than one country
+
+--=========================================================================
+--8. Checking country naming consistency between sales and customers tables
+--=========================================================================
+
+SELECT Country, CountryFull FROM Data.Customer
+EXCEPT
+SELECT CountryCode, CountryName FROM Data.Store;
+
+
+SELECT CountryCode, CountryName FROM Data.Store
+EXCEPT
+SELECT Country, CountryFull FROM Data.Customer;
+
+--Summary: Only online store is in the query results as it is not a customer
