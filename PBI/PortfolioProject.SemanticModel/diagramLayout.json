@@ -19,7 +19,7 @@
             "height": 248,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 1
         },
         {
           "location": {
@@ -32,7 +32,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 2
         },
         {
           "location": {
@@ -45,7 +45,7 @@
             "height": 248,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 3
         },
         {
           "location": {
@@ -58,7 +58,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 4
         },
         {
           "location": {
@@ -71,7 +71,7 @@
             "height": 300,
             "width": 234
           },
-          "zIndex": 0
+          "zIndex": 5
         },
         {
           "location": {
@@ -82,6 +82,19 @@
           "nodeLineageTag": "db649de3-e987-4e45-a058-f8e353648a4b",
           "size": {
             "height": 200,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 1291.7838842050808,
+            "y": 144.90613460108682
+          },
+          "nodeIndex": "Period View",
+          "nodeLineageTag": "091cc5bf-8900-4040-9d2c-4b99f07b4fa3",
+          "size": {
+            "height": 128,
             "width": 234
           },
           "zIndex": 0

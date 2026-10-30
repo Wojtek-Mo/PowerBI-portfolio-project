@@ -1,0 +1,39 @@
+table 'Period View'
+	lineageTag: 091cc5bf-8900-4040-9d2c-4b99f07b4fa3
+
+	calculationGroup
+
+		calculationItem Month = SELECTEDMEASURE()
+
+		calculationItem YTD =
+				
+				CALCULATE(
+				    SELECTEDMEASURE(),
+				    DATESYTD(DimDate[Date])
+				    )
+
+		calculationItem 'Full Year' =
+				
+				CALCULATE(
+				    SELECTEDMEASURE(),
+				    ALLEXCEPT(DimDate, DimDate[Year])
+				)
+
+	column 'Calculation group column'
+		dataType: string
+		lineageTag: 268b88c1-ddb3-42a7-8ea3-86e73409ca6d
+		summarizeBy: none
+		sourceColumn: Name
+		sortByColumn: Ordinal
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ordinal
+		dataType: int64
+		formatString: 0
+		lineageTag: c0606fef-d261-4976-b4f3-8c93b075b05b
+		summarizeBy: sum
+		sourceColumn: Ordinal
+
+		annotation SummarizationSetBy = Automatic
+

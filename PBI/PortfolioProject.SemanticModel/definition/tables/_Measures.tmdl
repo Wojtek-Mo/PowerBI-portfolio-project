@@ -80,6 +80,16 @@ table _Measures
 		displayFolder: 1. Base Measures
 		lineageTag: d89cd2e0-c337-4782-b9df-1b3e6faa46b3
 
+	measure 'Header Date' =
+			
+			"Data as of " &
+			FORMAT(
+			    CALCULATE(
+			        MAX(DimDate[Date]),
+			        ALL(DimDate)),
+			        "dd mmm YYYY")
+		lineageTag: 417bfc66-85da-42ec-89c4-a19da758bf39
+
 	column Value
 		isHidden
 		formatString: 0
