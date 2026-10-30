@@ -1,0 +1,155 @@
+table DimDate
+	lineageTag: feb33a4f-81f5-43e1-a5c6-0ae14b059447
+	dataCategory: Time
+
+	column Date
+		dataType: dateTime
+		isKey
+		formatString: Long Date
+		lineageTag: 8342b4dd-0004-4c9f-b71a-0cbc9dcb751c
+		summarizeBy: none
+		sourceColumn: Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Quarter
+		dataType: string
+		lineageTag: 4b82ec42-1b04-4127-a63f-5ed5330bd8c1
+		summarizeBy: none
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearQuarter
+		dataType: string
+		lineageTag: 7f849ff2-4fca-468c-8ca8-fad9bdd18027
+		summarizeBy: none
+		sourceColumn: YearQuarter
+		sortByColumn: YearQuarterNumber
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearQuarterNumber
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: 136b555c-3682-407e-a821-28324c10f160
+		summarizeBy: none
+		sourceColumn: YearQuarterNumber
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearMonthShort
+		dataType: string
+		lineageTag: 341aa45b-cb63-4b6f-a11b-df8ac3e9fa19
+		summarizeBy: none
+		sourceColumn: YearMonthShort
+		sortByColumn: YearMonthNumber
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column YearMonthNumber
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: d35a9002-0d32-43e9-bd87-2112dfeebf72
+		summarizeBy: none
+		sourceColumn: YearMonthNumber
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: b5b5261e-faf1-4786-ad67-b3c1a55a5e35
+		summarizeBy: none
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: string
+		lineageTag: ac1c82b9-0158-492b-8842-a992cddd5702
+		summarizeBy: none
+		sourceColumn: Month
+		sortByColumn: MonthNumber
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthShort
+		dataType: string
+		lineageTag: d24ef71b-6a11-4e77-a2ce-35f5ef36c6fb
+		summarizeBy: none
+		sourceColumn: MonthShort
+		sortByColumn: MonthNumber
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column MonthNumber
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: be6c5cc5-9351-4c65-a2f4-275fe3f0d141
+		summarizeBy: none
+		sourceColumn: MonthNumber
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayOfWeekShort
+		dataType: string
+		lineageTag: d9469cc2-8023-40eb-bd32-f36283ef41c5
+		summarizeBy: none
+		sourceColumn: DayOfWeekShort
+		sortByColumn: DayOfWeekNumber
+
+		changedProperty = SortByColumn
+
+		annotation SummarizationSetBy = Automatic
+
+	column DayOfWeekNumber
+		dataType: int64
+		isHidden
+		formatString: 0
+		lineageTag: da6443d6-0604-429c-a065-1f26c2ac7803
+		summarizeBy: none
+		sourceColumn: DayOfWeekNumber
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column FullYearFlag
+		dataType: string
+		lineageTag: 8357c5ed-542c-46b4-8b72-8a18c3556960
+		summarizeBy: none
+		sourceColumn: FullYearFlag
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimDate = m
+		mode: import
+		source =
+				let
+				  Source = Sql.Database("LEGIONWM\SQLEXPRESS", "Contoso V2 1M"),
+				  #"Navigation 1" = Source{[Schema = "pbi", Item = "DimDate"]}[Data]
+				in
+				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
+
