@@ -1,0 +1,98 @@
+table _Measures
+	lineageTag: db649de3-e987-4e45-a058-f8e353648a4b
+
+	/// Sales after discounts (NetPrice * Quantity). Main revenue measure
+	measure 'Net Sales' =
+			
+			SUMX(
+			    FactSales,
+			    FactSales[NetPrice] * FactSales[Quantity]
+			)
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		displayFolder: 1. Base Measures
+		lineageTag: 2b349450-b5a8-4d79-8bf4-71eff7ebdcab
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	/// Sales at list price, before discounts (UnitPrice * Quantity)
+	measure 'Gross Sales' =
+			
+			SUMX(
+			    FactSales,
+			    FactSales[UnitPrice] * FactSales[Quantity]
+			)
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		displayFolder: 1. Base Measures
+		lineageTag: 657c84bf-4a75-4003-8616-c27d72ce04a7
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	/// Cost of goods sold (UnitCost * Quantity)
+	measure Cost =
+			
+			SUMX(
+			    FactSales,
+			    FactSales[UnitCost] * FactSales[Quantity]
+			)
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		displayFolder: 1. Base Measures
+		lineageTag: 90422a93-b9f3-49c4-85a4-64dbea0f01d8
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	/// Net Sales minus Cost: profit on goods sold, before other operating costs
+	measure 'Gross Margin' = [Net Sales] - [Cost]
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		displayFolder: 1. Base Measures
+		lineageTag: 11fe219f-39b6-4e3c-bc74-2660b2701940
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	/// Value of discounts granted: Gross Sales minus Net Sales
+	measure Discount = [Gross Sales] - [Net Sales]
+		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		displayFolder: 1. Base Measures
+		lineageTag: 48b7b74e-8217-4981-86b3-392c9306475e
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	/// Gross Margin as a share of Net Sales
+	measure 'Gross Margin%' =
+			
+			DIVIDE(
+			    [Gross Margin],
+			    [Net Sales]
+			)
+		displayFolder: 1. Base Measures
+		lineageTag: 3878a387-1b5a-47c4-91cc-605ff98c0ff1
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	/// Number of units sold (sum of Quantity)
+	measure 'Units Sold' = SUM(FactSales[Quantity])
+		formatString: 0
+		displayFolder: 1. Base Measures
+		lineageTag: 2617b1ca-d7b5-4702-9fd8-8a67ddce2a89
+
+	/// Number of distinct orders (distinct OrderKey)
+	measure Orders = DISTINCTCOUNT(FactSales[OrderKey])
+		formatString: 0
+		displayFolder: 1. Base Measures
+		lineageTag: d89cd2e0-c337-4782-b9df-1b3e6faa46b3
+
+	column Value
+		isHidden
+		formatString: 0
+		lineageTag: 84fd5c6e-ee4c-4940-9738-a437afffd47a
+		summarizeBy: sum
+		isNameInferred
+		sourceColumn: [Value]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Measures = calculated
+		mode: import
+		source = {Blank()}
+
+	annotation PBI_Id = 8c33d62830564381949eefc2578e4f57
+

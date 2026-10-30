@@ -1,0 +1,33 @@
+DEFINE
+    MEASURE '_Measures'[Net Sales] = SUMX(
+    FactSales,
+    FactSales[NetPrice] * FactSales[Quantity]
+)
+    MEASURE '_Measures'[Gross Sales] = SUMX(
+    FactSales,
+    FactSales[UnitPrice] * FactSales[Quantity]
+)
+    MEASURE '_Measures'[Cost] = SUMX(
+    FactSales,
+    FactSales[UnitCost] * FactSales[Quantity]
+)
+    MEASURE '_Measures'[Gross Margin] = [Net Sales] - [Cost]
+    MEASURE '_Measures'[Discount] = [Gross Sales] - [Net Sales]
+    MEASURE '_Measures'[Gross Margin%] = DIVIDE(
+    [Gross Margin],
+    [Net Sales]
+)
+    MEASURE '_Measures'[Quantity] = SUM(FactSales[Quantity])
+    MEASURE '_Measures'[Orders] = DISTINCTCOUNT(FactSales[OrderKey])
+
+EVALUATE
+    SUMMARIZECOLUMNS(
+        "Net Sales", [Net Sales],
+        "Gross Sales", [Gross Sales],
+        "Cost", [Cost],
+        "Gross Margin", [Gross Margin],
+        "Discount", [Discount],
+        "Gross Margin%", [Gross Margin%],
+        "Quantity", [Quantity],
+        "Orders", [Orders]
+    )
