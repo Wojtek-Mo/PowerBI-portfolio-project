@@ -8,7 +8,7 @@ table _Measures
 			    FactSales,
 			    FactSales[NetPrice] * FactSales[Quantity]
 			)
-		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		formatString: \$#,0.0;(\$#,0.0);\$#,0.0
 		displayFolder: 1. Base Measures
 		lineageTag: 2b349450-b5a8-4d79-8bf4-71eff7ebdcab
 
@@ -21,7 +21,7 @@ table _Measures
 			    FactSales,
 			    FactSales[UnitPrice] * FactSales[Quantity]
 			)
-		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		formatString: \$#,0.0;(\$#,0.0);\$#,0.0
 		displayFolder: 1. Base Measures
 		lineageTag: 657c84bf-4a75-4003-8616-c27d72ce04a7
 
@@ -34,7 +34,7 @@ table _Measures
 			    FactSales,
 			    FactSales[UnitCost] * FactSales[Quantity]
 			)
-		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		formatString: \$#,0.0;(\$#,0.0);\$#,0.0
 		displayFolder: 1. Base Measures
 		lineageTag: 90422a93-b9f3-49c4-85a4-64dbea0f01d8
 
@@ -42,7 +42,7 @@ table _Measures
 
 	/// Net Sales minus Cost: profit on goods sold, before other operating costs
 	measure 'Gross Margin' = [Net Sales] - [Cost]
-		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		formatString: \$#,0.0;(\$#,0.0);\$#,0.0
 		displayFolder: 1. Base Measures
 		lineageTag: 11fe219f-39b6-4e3c-bc74-2660b2701940
 
@@ -50,23 +50,22 @@ table _Measures
 
 	/// Value of discounts granted: Gross Sales minus Net Sales
 	measure Discount = [Gross Sales] - [Net Sales]
-		formatString: \$#,0.00;(\$#,0.00);\$#,0.00
+		formatString: \$#,0.0;(\$#,0.0);\$#,0.0
 		displayFolder: 1. Base Measures
 		lineageTag: 48b7b74e-8217-4981-86b3-392c9306475e
 
 		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
 
 	/// Gross Margin as a share of Net Sales
-	measure 'Gross Margin%' =
+	measure 'Gross Margin %' =
 			
 			DIVIDE(
 			    [Gross Margin],
 			    [Net Sales]
 			)
+		formatString: 0.0%;-0.0%;0.0%
 		displayFolder: 1. Base Measures
 		lineageTag: 3878a387-1b5a-47c4-91cc-605ff98c0ff1
-
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	/// Number of units sold (sum of Quantity)
 	measure 'Units Sold' = SUM(FactSales[Quantity])
@@ -76,7 +75,7 @@ table _Measures
 
 	/// Number of distinct orders (distinct OrderKey)
 	measure Orders = DISTINCTCOUNT(FactSales[OrderKey])
-		formatString: 0
+		formatString: 0.0
 		displayFolder: 1. Base Measures
 		lineageTag: d89cd2e0-c337-4782-b9df-1b3e6faa46b3
 
@@ -88,7 +87,106 @@ table _Measures
 			        MAX(DimDate[Date]),
 			        ALL(DimDate)),
 			        "dd mmm YYYY")
+		displayFolder: 9. Report Labels
 		lineageTag: 417bfc66-85da-42ec-89c4-a19da758bf39
+
+	measure 'Net Sales Δ PY %' = ```
+			CALCULATE([Net Sales], Comparison[Comparison] = "Δ PY %")
+			
+			
+			```
+		displayFolder: 2. KPI Helpers
+		lineageTag: 1c0107c1-949d-4068-b3ea-a5257c3a457e
+
+		formatStringDefinition = "+0.0%;-0.0%;0.0%"
+
+	measure 'Gross Margin Δ PY %' = CALCULATE([Gross Margin], Comparison[Comparison] = "Δ PY %")
+		displayFolder: 2. KPI Helpers
+		lineageTag: a7701898-9581-42a8-93f0-b3f90eee301e
+
+		formatStringDefinition = "+0.0%;-0.0%;0.0%"
+
+	measure 'Gross Margin Δ PY p.p.' = ```
+			
+			CALCULATE([Gross Margin %], Comparison[Comparison] = "Δ PY") * 100
+			
+			
+			```
+		displayFolder: 2. KPI Helpers
+		lineageTag: 820caf65-2a46-4344-b392-93ccecc37fc3
+
+		formatStringDefinition = "+0.0 \p\p;-0.0 \p\p;0.0 \p\p"
+
+	measure 'Orders Δ PY %' = CALCULATE([Orders], Comparison[Comparison] = "Δ PY %")
+		displayFolder: 2. KPI Helpers
+		lineageTag: e2a8b3d4-4036-44c4-9f05-8da99eed2ccf
+
+		formatStringDefinition = "+0.0%;-0.0%;0.0%"
+
+	measure 'Net Sales PY' =
+			
+			CALCULATE(
+			    [Net Sales],
+			    SAMEPERIODLASTYEAR(DimDate[Date]))
+		formatString: \$#,0.0;(\$#,0.0);\$#,0.0
+		lineageTag: 289820ca-bd94-41bd-a9c7-b6370226e436
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	measure 'Net Sales Delta PY' = ```
+			
+			VAR PY = CALCULATE(
+			    [Net Sales],
+			    SAMEPERIODLASTYEAR(DimDate[Date])
+			)
+			RETURN 
+			[Net Sales] - PY
+			```
+		formatString: \$#,0.0;(\$#,0.0);\$#,0.0
+		lineageTag: ef188147-1a37-486b-9abd-597c4765bafe
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	measure 'Net Sales Delta PY%' = ```
+			
+			VAR PY = CALCULATE(
+			    [Net Sales],
+			    SAMEPERIODLASTYEAR(DimDate[Date])
+			)
+			VAR DeltaPY = [Net Sales] - PY
+			RETURN
+			DIVIDE( DeltaPY, PY ) 
+			```
+		lineageTag: 111c4a6e-e196-4f23-8348-4d34e6613af1
+
+		formatStringDefinition = "+0.0%;-0.0%;0.0%"
+
+	measure 'Net Sales PY Dummy' = ```
+			
+			IF(
+			    ISINSCOPE(DimCustomer[CountryName]),
+			    [Net Sales Delta PY]
+			)
+			    
+			```
+		lineageTag: bda046fc-a6fa-460d-b2df-270d660e43b5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Share in Sales' = ```
+			
+			VAR TotalSalesContext =
+			CALCULATE( 
+			    [Net Sales],
+			    REMOVEFILTERS(DimCustomer[CountryName]),
+			    REMOVEFILTERS(DimStore[SalesChannel])
+			)
+			RETURN 
+			DIVIDE([Net Sales], TotalSalesContext)
+			```
+		lineageTag: 13a10c3b-40ce-43f2-a674-4d1ad8743471
+
+		formatStringDefinition = "+0.0%;-0.0%;0.0%"
 
 	column Value
 		isHidden

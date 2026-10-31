@@ -23,7 +23,7 @@
                       "Entity": "Period View"
                     }
                   },
-                  "Property": "Calculation group column"
+                  "Property": "Period View"
                 }
               },
               "queryRef": "Period View.Calculation group column",
@@ -64,7 +64,7 @@
                                   "Source": "p"
                                 }
                               },
-                              "Property": "Calculation group column"
+                              "Property": "Period View"
                             }
                           }
                         ],

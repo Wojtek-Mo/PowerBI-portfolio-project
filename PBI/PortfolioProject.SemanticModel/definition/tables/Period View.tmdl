@@ -20,7 +20,7 @@ table 'Period View'
 				    ALLEXCEPT(DimDate, DimDate[Year])
 				)
 
-	column 'Calculation group column'
+	column 'Period View'
 		dataType: string
 		lineageTag: 268b88c1-ddb3-42a7-8ea3-86e73409ca6d
 		summarizeBy: none
