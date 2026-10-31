@@ -1,0 +1,63 @@
+createOrReplace
+
+	table Comparison
+		lineageTag: fe4a69d4-9c2c-4968-ac01-b777eb07e4e1
+
+		calculationGroup
+			precedence: 1
+
+			calculationItem AC = SELECTEDMEASURE()
+
+			calculationItem PY = ```
+					
+					CALCULATE(
+					    SELECTEDMEASURE(),
+					    SAMEPERIODLASTYEAR(DimDate[Date])
+					)
+					
+					
+					
+					```
+
+			calculationItem 'Δ PY' = ```
+					
+					VAR PY = CALCULATE(
+					    SELECTEDMEASURE(),
+					    SAMEPERIODLASTYEAR(DimDate[Date])
+					)
+					RETURN
+					SELECTEDMEASURE() - PY
+					
+					```
+
+			calculationItem 'Δ PY %' = ```
+					
+					VAR PY = CALCULATE(
+					    SELECTEDMEASURE(),
+					    SAMEPERIODLASTYEAR(DimDate[Date])
+					)
+					VAR DeltaPY = SELECTEDMEASURE() - PY
+					RETURN
+					DIVIDE( DeltaPY, PY ) 
+					```
+
+				formatStringDefinition = "0.0%"
+
+		column Comparison
+			dataType: string
+			lineageTag: 3947e7b0-21fb-4af8-aaaf-a9ea7f44a0fd
+			summarizeBy: none
+			sourceColumn: Name
+			sortByColumn: Ordinal
+
+			annotation SummarizationSetBy = Automatic
+
+		column Ordinal
+			dataType: int64
+			formatString: 0
+			lineageTag: e782054b-6793-4be1-b5c1-8de03fe27cfc
+			summarizeBy: sum
+			sourceColumn: Ordinal
+
+			annotation SummarizationSetBy = Automatic
+

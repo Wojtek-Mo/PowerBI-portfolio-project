@@ -2,6 +2,7 @@ table 'Period View'
 	lineageTag: 091cc5bf-8900-4040-9d2c-4b99f07b4fa3
 
 	calculationGroup
+		precedence: 20
 
 		calculationItem Month = SELECTEDMEASURE()
 

@@ -6,8 +6,7 @@
     "y": 69.7859434237387,
     "z": 6000,
     "height": 39.30708661417323,
-    "width": 77.606299212598429,
-    "tabOrder": 5000
+    "width": 77.606299212598429
   },
   "visual": {
     "visualType": "slicer",
@@ -185,6 +184,13 @@
                       "Percent": 0
                     }
                   }
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
                 }
               }
             }

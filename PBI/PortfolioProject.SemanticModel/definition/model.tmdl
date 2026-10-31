@@ -21,6 +21,7 @@ ref table DimStore
 ref table FactSales
 ref table _Measures
 ref table 'Period View'
+ref table Comparison
 
 ref cultureInfo en-US
 

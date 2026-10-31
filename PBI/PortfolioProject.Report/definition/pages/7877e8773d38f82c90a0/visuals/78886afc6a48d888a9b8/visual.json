@@ -6,8 +6,7 @@
     "y": 69.7859434237387,
     "z": 4000,
     "height": 36.283464566929133,
-    "width": 84.661417322834652,
-    "tabOrder": 3000
+    "width": 84.661417322834652
   },
   "visual": {
     "visualType": "slicer",
@@ -192,6 +191,13 @@
               "expr": {
                 "Literal": {
                   "Value": "8D"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Semibold'', wf_segoe-ui_semibold, helvetica, arial, sans-serif'"
                 }
               }
             }
