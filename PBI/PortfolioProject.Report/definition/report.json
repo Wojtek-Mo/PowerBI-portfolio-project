@@ -65,9 +65,19 @@
       "type": "RegisteredResources",
       "items": [
         {
+          "name": "26182455048152744106824.png",
+          "path": "26182455048152744106824.png",
+          "type": "Image"
+        },
+        {
           "name": "Contoso_Finance8283696965348212.json",
           "path": "Contoso_Finance8283696965348212.json",
           "type": "CustomTheme"
+        },
+        {
+          "name": "x-small5870917455513881.svg",
+          "path": "x-small5870917455513881.svg",
+          "type": "Image"
         }
       ]
     }

@@ -1,0 +1,239 @@
+createOrReplace
+
+	table _Measures
+		lineageTag: db649de3-e987-4e45-a058-f8e353648a4b
+
+		/// Sales after discounts (NetPrice * Quantity). Main revenue measure
+		measure 'Net Sales' =
+				
+				SUMX(
+				    FactSales,
+				    FactSales[NetPrice] * FactSales[Quantity]
+				)
+			formatString: \$#,0.0;(\$#,0.0);\$#,0.0
+			displayFolder: 1. Base Measures
+			lineageTag: 2b349450-b5a8-4d79-8bf4-71eff7ebdcab
+
+			annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+		/// Sales at list price, before discounts (UnitPrice * Quantity)
+		measure 'Gross Sales' =
+				
+				SUMX(
+				    FactSales,
+				    FactSales[UnitPrice] * FactSales[Quantity]
+				)
+			formatString: \$#,0.0;(\$#,0.0);\$#,0.0
+			displayFolder: 1. Base Measures
+			lineageTag: 657c84bf-4a75-4003-8616-c27d72ce04a7
+
+			annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+		/// Cost of goods sold (UnitCost * Quantity)
+		measure Cost =
+				
+				SUMX(
+				    FactSales,
+				    FactSales[UnitCost] * FactSales[Quantity]
+				)
+			formatString: \$#,0.0;(\$#,0.0);\$#,0.0
+			displayFolder: 1. Base Measures
+			lineageTag: 90422a93-b9f3-49c4-85a4-64dbea0f01d8
+
+			annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+		/// Net Sales minus Cost: profit on goods sold, before other operating costs
+		measure 'Gross Margin' = [Net Sales] - [Cost]
+			formatString: \$#,0.0;(\$#,0.0);\$#,0.0
+			displayFolder: 1. Base Measures
+			lineageTag: 11fe219f-39b6-4e3c-bc74-2660b2701940
+
+			annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+		/// Value of discounts granted: Gross Sales minus Net Sales
+		measure Discount = [Gross Sales] - [Net Sales]
+			formatString: \$#,0.0;(\$#,0.0);\$#,0.0
+			displayFolder: 1. Base Measures
+			lineageTag: 48b7b74e-8217-4981-86b3-392c9306475e
+
+			annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+		/// Gross Margin as a share of Net Sales
+		measure 'Gross Margin %' =
+				
+				DIVIDE(
+				    [Gross Margin],
+				    [Net Sales]
+				)
+			formatString: 0.0%;-0.0%;0.0%
+			displayFolder: 1. Base Measures
+			lineageTag: 3878a387-1b5a-47c4-91cc-605ff98c0ff1
+
+		/// Number of units sold (sum of Quantity)
+		measure 'Units Sold' = SUM(FactSales[Quantity])
+			formatString: 0
+			displayFolder: 1. Base Measures
+			lineageTag: 2617b1ca-d7b5-4702-9fd8-8a67ddce2a89
+
+		/// Number of distinct orders (distinct OrderKey)
+		measure Orders = DISTINCTCOUNT(FactSales[OrderKey])
+			formatString: 0.0
+			displayFolder: 1. Base Measures
+			lineageTag: d89cd2e0-c337-4782-b9df-1b3e6faa46b3
+
+		measure 'Header Date' =
+				
+				"Data as of " &
+				FORMAT(
+				    CALCULATE(
+				        MAX(DimDate[Date]),
+				        ALL(DimDate)),
+				        "dd mmm YYYY")
+			displayFolder: 9. Report Labels
+			lineageTag: 417bfc66-85da-42ec-89c4-a19da758bf39
+
+		measure 'Net Sales Δ PY %' = ```
+				CALCULATE([Net Sales], Comparison[Comparison] = "Δ PY %")
+				
+				
+				```
+			displayFolder: 2. KPI Helpers
+			lineageTag: 1c0107c1-949d-4068-b3ea-a5257c3a457e
+
+			formatStringDefinition = "+0.0%;-0.0%;0.0%"
+
+		measure 'Gross Margin Δ PY %' = CALCULATE([Gross Margin], Comparison[Comparison] = "Δ PY %")
+			displayFolder: 2. KPI Helpers
+			lineageTag: a7701898-9581-42a8-93f0-b3f90eee301e
+
+			formatStringDefinition = "+0.0%;-0.0%;0.0%"
+
+		measure 'Gross Margin Δ PY p.p.' = ```
+				
+				CALCULATE([Gross Margin %], Comparison[Comparison] = "Δ PY") * 100
+				
+				
+				```
+			displayFolder: 2. KPI Helpers
+			lineageTag: 820caf65-2a46-4344-b392-93ccecc37fc3
+
+			formatStringDefinition = "+0.0 \p\p;-0.0 \p\p;0.0 \p\p"
+
+		measure 'Orders Δ PY %' = CALCULATE([Orders], Comparison[Comparison] = "Δ PY %")
+			displayFolder: 2. KPI Helpers
+			lineageTag: e2a8b3d4-4036-44c4-9f05-8da99eed2ccf
+
+			formatStringDefinition = "+0.0%;-0.0%;0.0%"
+
+		measure 'Net Sales PY' =
+				
+				CALCULATE(
+				    [Net Sales],
+				    Comparison[Comparison] = "PY")
+			formatString: \$#,0.0;(\$#,0.0);\$#,0.0
+			displayFolder: 8. Visual Helpers
+			lineageTag: 289820ca-bd94-41bd-a9c7-b6370226e436
+
+			annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+		measure 'Net Sales Delta PY' = ```
+				
+				CALCULATE(
+				    [Net Sales],
+				    Comparison[Comparison] = "Δ PY"
+				)
+				
+				```
+			displayFolder: 8. Visual Helpers
+			lineageTag: ef188147-1a37-486b-9abd-597c4765bafe
+
+			annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+		measure 'Net Sales Delta PY%' =
+				
+				CALCULATE(
+				    [Net Sales],
+				    Comparison[Comparison] ="Δ PY %"
+				    )
+			displayFolder: 8. Visual Helpers
+			lineageTag: 111c4a6e-e196-4f23-8348-4d34e6613af1
+
+			formatStringDefinition = "+0.0%;-0.0%;0.0%"
+
+		measure 'Net Sales PY Dummy' = ```
+				
+				IF(
+				    ISINSCOPE(DimCustomer[CountryName]),
+				    [Net Sales Delta PY]
+				)
+				    
+				```
+			displayFolder: 8. Visual Helpers
+			lineageTag: bda046fc-a6fa-460d-b2df-270d660e43b5
+
+			annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+		measure 'Share in Sales' = ```
+				
+				VAR TotalSalesContext =
+				CALCULATE( 
+				    [Net Sales],
+				    REMOVEFILTERS(DimCustomer[CountryName]),
+				    REMOVEFILTERS(DimStore[SalesChannel])
+				)
+				RETURN 
+				DIVIDE([Net Sales], TotalSalesContext)
+				```
+			lineageTag: 13a10c3b-40ce-43f2-a674-4d1ad8743471
+
+			formatStringDefinition = "+0.0%;-0.0%;0.0%"
+
+		measure 'Units Sold PY' =
+				
+				CALCULATE(
+				    [Units Sold],
+				    Comparison[Comparison] = "PY"
+				)
+			displayFolder: 4. PVM
+			lineageTag: 8b32ec35-252a-4361-b392-8c08c7c5ec2d
+
+			annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+		measure 'Avg Price' = ```
+				
+				    AVERAGE(FactSales[NetPrice])
+				```
+			displayFolder: 4. PVM
+			lineageTag: 0917ed10-e1c0-402f-90b2-567bb145acc7
+
+			annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+		measure 'Avg Price PY' = ```
+				
+				CALCULATE(
+				    [Avg Price],
+				    Comparison[Comparison] = "PY"
+				)
+				
+				```
+			displayFolder: 4. PVM
+			lineageTag: ac91a3c5-594c-4c88-9841-a90b6b34f274
+
+			annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+		column Value
+			isHidden
+			formatString: 0
+			lineageTag: 84fd5c6e-ee4c-4940-9738-a437afffd47a
+			summarizeBy: sum
+			isNameInferred
+			sourceColumn: [Value]
+
+			annotation SummarizationSetBy = Automatic
+
+		partition _Measures = calculated
+			mode: import
+			source = {Blank()}
+
+		annotation PBI_Id = 8c33d62830564381949eefc2578e4f57
+
