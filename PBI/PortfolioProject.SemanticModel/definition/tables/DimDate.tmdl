@@ -38,7 +38,7 @@ table DimDate
 		isHidden
 		formatString: 0
 		lineageTag: 136b555c-3682-407e-a821-28324c10f160
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: YearQuarterNumber
 
 		changedProperty = IsHidden
@@ -61,7 +61,7 @@ table DimDate
 		isHidden
 		formatString: 0
 		lineageTag: d35a9002-0d32-43e9-bd87-2112dfeebf72
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: YearMonthNumber
 
 		changedProperty = IsHidden
@@ -72,7 +72,7 @@ table DimDate
 		dataType: int64
 		formatString: 0
 		lineageTag: b5b5261e-faf1-4786-ad67-b3c1a55a5e35
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: Year
 
 		annotation SummarizationSetBy = Automatic
@@ -104,7 +104,7 @@ table DimDate
 		isHidden
 		formatString: 0
 		lineageTag: be6c5cc5-9351-4c65-a2f4-275fe3f0d141
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: MonthNumber
 
 		changedProperty = IsHidden
@@ -127,7 +127,7 @@ table DimDate
 		isHidden
 		formatString: 0
 		lineageTag: da6443d6-0604-429c-a065-1f26c2ac7803
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: DayOfWeekNumber
 
 		changedProperty = IsHidden
@@ -144,6 +144,7 @@ table DimDate
 
 	partition DimDate = m
 		mode: import
+		queryGroup: '4. Dimensions'
 		source =
 				let
 				  Source = Sql.Database("LEGIONWM\SQLEXPRESS", "Contoso V2 1M"),

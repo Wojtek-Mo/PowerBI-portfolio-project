@@ -14,3 +14,7 @@ relationship e48827ed-afa1-cbbc-1330-3bc901c8ba0b
 	fromColumn: FactSales.StoreKey
 	toColumn: DimStore.StoreKey
 
+relationship a35b6c90-8206-6b2c-3175-cf86a2402a23
+	fromColumn: FactExchangeRate.Date
+	toColumn: DimDate.Date
+

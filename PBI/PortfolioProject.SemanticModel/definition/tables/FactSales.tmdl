@@ -125,8 +125,6 @@ table FactSales
 
 		changedProperty = IsHidden
 
-		changedProperty = DataType
-
 		annotation SummarizationSetBy = Automatic
 
 		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
@@ -168,6 +166,7 @@ table FactSales
 
 	partition FactSales = m
 		mode: import
+		queryGroup: '5. Facts'
 		source =
 				let
 				  Source = Sql.Database("LEGIONWM\SQLEXPRESS", "Contoso V2 1M"),

@@ -63,6 +63,7 @@ table DimCustomer
 
 	partition DimCustomer = m
 		mode: import
+		queryGroup: '4. Dimensions'
 		source =
 				let
 				  Source = Sql.Database("LEGIONWM\SQLEXPRESS", "Contoso V2 1M"),

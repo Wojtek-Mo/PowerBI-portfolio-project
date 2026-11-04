@@ -1,0 +1,42 @@
+table FactExchangeRate
+	lineageTag: 51565b7e-7346-4a0b-91d3-19fd2685b0c8
+
+	column Date
+		dataType: dateTime
+		isHidden
+		formatString: Long Date
+		lineageTag: bba7bd67-592d-41e4-a7da-3520d46852e7
+		summarizeBy: none
+		sourceColumn: Date
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	/// From the last business date before given date
+	column UsdPlnRate
+		dataType: double
+		isHidden
+		lineageTag: 53a4b43e-2e75-4992-9995-2fc17079c82f
+		summarizeBy: sum
+		sourceColumn: UsdPlnRate
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition FactExchangeRate = m
+		mode: import
+		queryGroup: '5. Facts'
+		source =
+				let
+				  Source = NbpCalendar
+				in
+				  Source
+
+	annotation PBI_ResultType = Table
+

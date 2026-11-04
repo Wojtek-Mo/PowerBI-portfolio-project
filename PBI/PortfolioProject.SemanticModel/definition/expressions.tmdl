@@ -1,0 +1,81 @@
+expression fnGetNBPrates =
+		(DateFrom as date, DateTo as date, CurrencyCode as text) =>
+		let
+		    DateFromText = Date.ToText(DateFrom, [Format = "yyyy-MM-dd"]),
+		    DateToText   = Date.ToText(DateTo,   [Format = "yyyy-MM-dd"]),
+		    Source = Json.Document(
+		        Web.Contents(
+		            "https://api.nbp.pl/api/exchangerates/rates",
+		            [
+		                RelativePath = "a/" & Text.Lower(CurrencyCode) & "/" & DateFromText & "/" & DateToText,
+		                Query = [format = "json"]
+		            ]
+		        )
+		    ),
+		    Rates = Source[rates],
+		    RatesTable = Table.FromList(Rates, Splitter.SplitByNothing(), {"Rate"}),
+		    Expanded = Table.ExpandRecordColumn(RatesTable, "Rate", {"effectiveDate", "mid"}),
+		    Typed = Table.TransformColumnTypes(Expanded, {{"effectiveDate", type date}, {"mid", type number}})
+		in
+		    Typed
+	lineageTag: 2905dfd3-0256-4f9d-9b76-abe5b8517bf1
+	queryGroup: '2. Functions'
+
+	annotation PBI_ResultType = Function
+
+expression NbpPeriodsHelper =
+		let
+		    StartDate = #date(2016, 5, 10),
+		    EndDate   = #date(2025, 12, 31),
+		    FirstQuarterStart = Date.StartOfQuarter(StartDate),
+		    QuarterCount =
+		        (Date.Year(EndDate) - Date.Year(StartDate)) * 4
+		        + Date.QuarterOfYear(EndDate) - Date.QuarterOfYear(StartDate) + 1,
+		    QuarterNumbers = List.Numbers(0, QuarterCount),
+		    QuarterStarts = List.Transform(QuarterNumbers, each Date.AddQuarters(FirstQuarterStart, _)),
+		    PeriodsTable = Table.FromList(QuarterStarts, Splitter.SplitByNothing(), {"DateFrom"}),
+		    Typed = Table.TransformColumnTypes(PeriodsTable, {{"DateFrom", type date}}),
+		    AddDateTo = Table.AddColumn(Typed, "DateTo", each Date.EndOfQuarter([DateFrom]), type date)
+		in
+		    AddDateTo
+	lineageTag: 120526ae-16a8-46a4-a0f5-681c81020843
+	queryGroup: '3. Staging'
+
+	annotation PBI_ResultType = Table
+
+expression NbpRates =
+		let
+		  Source = NbpPeriodsHelper,
+		  #"Get Rates per quarter" = Table.AddColumn(Source, "Invoked custom function", each fnGetNBPrates([DateFrom], [DateTo], "usd")),
+		  #"Expand rates" = Table.ExpandTableColumn(#"Get Rates per quarter", "Invoked custom function", {"effectiveDate", "mid"}, {"effectiveDate", "mid"}),
+		  #"Set Types" = Table.TransformColumnTypes(#"Expand rates", {{"effectiveDate", type date}, {"mid", type number}}),
+		  #"Leave only date and rate" = Table.SelectColumns(#"Set Types", {"effectiveDate", "mid"}),
+		  #"Renamed columns" = Table.RenameColumns(#"Leave only date and rate", {{"mid", "Rate"}, {"effectiveDate", "Date"}}),
+		  #"Added date shift" = Table.AddColumn(#"Renamed columns", "DateShift", each Date.AddDays([Date], 1))
+		in
+		  #"Added date shift"
+	lineageTag: 3c050518-9df5-42af-bf0f-be8c227b151c
+	queryGroup: '3. Staging'
+
+	annotation PBI_ResultType = Table
+
+expression NbpCalendar =
+		let
+		    StartDate = #date(2016, 5, 10),
+		    EndDate   = #date(2025, 12, 31),
+		    DayCount  = Duration.Days(EndDate - StartDate) + 1,
+		    DateList  = List.Dates(StartDate, DayCount, #duration(1, 0, 0, 0)),
+		    CalendarTable = Table.FromList(DateList, Splitter.SplitByNothing(), {"Date"}),
+		    Typed = Table.TransformColumnTypes(CalendarTable, {{"Date", type date}}),
+		  #"Merged queries" = Table.NestedJoin(Typed, {"Date"}, NbpRates, {"DateShift"}, "NbpRates", JoinKind.LeftOuter),
+		  #"Expanded NbpRates" = Table.ExpandTableColumn(#"Merged queries", "NbpRates", {"Rate"}, {"Rate"}),
+		  #"Sorted date ascending" = Table.Sort(#"Expanded NbpRates", {{"Date", Order.Ascending}}),
+		  #"Filled down missing days" = Table.FillDown(#"Sorted date ascending", {"Rate"}),
+		  #"Renamed columns" = Table.RenameColumns(#"Filled down missing days", {{"Rate", "UsdPlnRate"}})
+		in
+		    #"Renamed columns"
+	lineageTag: b3d0b7bd-2663-4ba7-b697-c9b5f56f93a4
+	queryGroup: '3. Staging'
+
+	annotation PBI_ResultType = Table
+
