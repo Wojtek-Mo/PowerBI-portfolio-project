@@ -362,6 +362,12 @@ table _Measures
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure 'USD/PLN Rate' = SELECTEDVALUE(FactExchangeRate[UsdPlnRate])
+		displayFolder: 8. Visual Helpers
+		lineageTag: 5128dd15-4ab7-497a-8600-05a4b91cde03
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Value
 		isHidden
 		formatString: 0
