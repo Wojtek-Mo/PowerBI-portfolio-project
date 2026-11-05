@@ -18,3 +18,7 @@ relationship a35b6c90-8206-6b2c-3175-cf86a2402a23
 	fromColumn: FactExchangeRate.Date
 	toColumn: DimDate.Date
 
+relationship 2e1c6952-cda1-535b-fac1-07aa404a7892
+	fromColumn: FactBudget.BudgetDate
+	toColumn: DimDate.Date
+

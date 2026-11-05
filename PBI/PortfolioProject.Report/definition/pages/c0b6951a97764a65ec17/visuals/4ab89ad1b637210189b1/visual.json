@@ -7,7 +7,7 @@
     "z": 2000,
     "height": 35.261707988980717,
     "width": 64.646464646464636,
-    "tabOrder": 7004
+    "tabOrder": 1000
   },
   "visual": {
     "visualType": "actionButton",
@@ -256,5 +256,6 @@
     },
     "drillFilterOtherVisuals": true
   },
+  "isHidden": true,
   "howCreated": "InsertVisualButton"
 }

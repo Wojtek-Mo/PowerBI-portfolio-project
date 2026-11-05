@@ -79,3 +79,61 @@ expression NbpCalendar =
 
 	annotation PBI_ResultType = Table
 
+/// Budget source path
+expression pBudgetFilePath = "C:\Users\wojte\Desktop\Power BI\Portfolio\PowerBI-portfolio-project\Data\Budget\contoso_budget_2024_2025.xlsx" meta [IsParameterQuery = true, IsParameterQueryRequired = false, Type = type any]
+	lineageTag: 56edb18c-fff4-426e-92fe-7bdd8d40dca9
+	queryGroup: '1. Parameters'
+
+	annotation PBI_ResultType = Text
+
+expression fnCleanBudgetSheet =
+		(pSheetName as text) => let
+		  Source = BudgetSheets,
+		  Navigation = Source{[Item = pSheetName, Kind = "Sheet"]}[Data],
+		  #"Removed top rows" = Table.Skip(Navigation, each [Column1] <> "Country"),
+		  #"Promoted headers" = Table.PromoteHeaders(#"Removed top rows", [PromoteAllScalars = true]),
+		  #"Filled down" = Table.FillDown(#"Promoted headers", {"Country", "Channel"}),
+		  #"Filtered rows" = Table.SelectRows(#"Filled down", each not Text.Contains([Country], "Total")),
+		  #"Choose columns" = Table.SelectColumns(#"Filtered rows", {"Country", "Channel", "Category", "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"}),
+		  #"Unpivoted other columns" = Table.UnpivotOtherColumns(#"Choose columns", {"Country", "Channel", "Category"}, "Attribute", "Value"),
+		  #"Renamed columns" = Table.RenameColumns(#"Unpivoted other columns", {{"Attribute", "Month"}})
+		in
+		  #"Renamed columns"
+	lineageTag: c708213a-6be3-4441-a1ed-631fbb668f1a
+	queryGroup: '2. Functions'
+
+	annotation PBI_ResultType = Function
+
+expression BudgetMapping =
+		let
+		    Source = #table(
+		        type table [SourceCategory = text, CategoryName = text],
+		        {
+		            {"Audio", "Audio"},
+		            {"Computers", "Computers"},
+		            {"TV & Video", "TV and Video"},
+		            {"Mobile Phones", "Cell phones"},
+		            {"Cameras & Camcorders", "Cameras and camcorders"},
+		            {"Music, Movies & Audiobooks", "Music, Movies and Audio Books"},
+		            {"Games & Toys", "Games and Toys"},
+		            {"Home appliances", "Home Appliances"}
+		        }
+		    )
+		in
+		    Source
+	lineageTag: 4914cda0-046e-4ff8-88e9-8bfeeda48eab
+	queryGroup: '3. Staging'
+
+	annotation PBI_ResultType = Table
+
+expression BudgetSheets =
+		let
+		    Source = Excel.Workbook(File.Contents(pBudgetFilePath), null, true),
+		    SheetsOnly = Table.SelectRows(Source, each [Kind] = "Sheet" and [Name] <> "Cover")
+		in
+		    SheetsOnly
+	lineageTag: 91ed7d3f-81ea-4a93-84e4-407f4a27257c
+	queryGroup: '3. Staging'
+
+	annotation PBI_ResultType = Table
+

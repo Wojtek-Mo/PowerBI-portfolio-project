@@ -1,0 +1,88 @@
+table FactBudget
+	lineageTag: 254b7fa2-6785-4c61-802b-6ccc10ac95cf
+
+	column BudgetDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: c74fbeb0-ffe8-481a-922a-e95b56b50132
+		summarizeBy: none
+		sourceColumn: BudgetDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column CountryName
+		dataType: string
+		lineageTag: 273e71ce-292c-4ed6-bf0b-43cfdf51435a
+		summarizeBy: none
+		sourceColumn: CountryName
+
+		annotation SummarizationSetBy = Automatic
+
+	column SalesChannel
+		dataType: string
+		lineageTag: 16ae9dac-c8f3-47ba-89cc-3de6f166690c
+		summarizeBy: none
+		sourceColumn: SalesChannel
+
+		annotation SummarizationSetBy = Automatic
+
+	column CategoryName
+		dataType: string
+		lineageTag: 3d9d56a0-68fd-4504-914c-e38028bce06a
+		summarizeBy: none
+		sourceColumn: CategoryName
+
+		annotation SummarizationSetBy = Automatic
+
+	column NetSalesBU
+		dataType: double
+		lineageTag: 0b93eaec-2234-4663-9df5-ca2d8db594f5
+		summarizeBy: sum
+		sourceColumn: NetSalesBU
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column UnitsBU
+		dataType: double
+		lineageTag: 8fdc189d-77c5-4c97-bb35-de6acac88227
+		summarizeBy: sum
+		sourceColumn: UnitsBU
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition FactBudget = m
+		mode: import
+		queryGroup: '5. Facts'
+		source =
+				let
+				  Source = BudgetSheets,
+				  #"Choose name columns for fn parameter" = Table.SelectColumns(Source, {"Name"}),
+				  #"Invoked custom function" = Table.AddColumn(#"Choose name columns for fn parameter", "Invoked custom function", each fnCleanBudgetSheet([Name])),
+				  #"Expanded Invoked custom function" = Table.ExpandTableColumn(#"Invoked custom function", "Invoked custom function", {"Country", "Channel", "Category", "Month", "Value"}, {"Country", "Channel", "Category", "Month", "Value"}),
+				  #"Split table name column" = Table.SplitColumn(#"Expanded Invoked custom function", "Name", Splitter.SplitTextByDelimiter(" "), {"Name.1", "Name.2"}),
+				  #"Renamed measure and year" = Table.RenameColumns(#"Split table name column", {{"Name.1", "Measure"}, {"Name.2", "Year"}}),
+				  #"Merged short month and year" = Table.CombineColumns(Table.TransformColumnTypes(#"Renamed measure and year", {{"Month", type text}}), {"Month", "Year"}, Combiner.CombineTextByDelimiter(" ", QuoteStyle.None), "Merged"),
+				  #"Getting data" = Table.TransformColumnTypes(#"Merged short month and year", {{"Merged", type date}}, "en-US"),
+				  #"Renamed columns 1" = Table.RenameColumns(#"Getting data", {{"Merged", "BudgetDate"}}),
+				  #"Changed column type" = Table.TransformColumnTypes(#"Renamed columns 1", {{"Value", type text}}),
+				  #"Replaced value" = Table.ReplaceValue(#"Changed column type", " ", "", Replacer.ReplaceText, {"Value"}),
+				  #"Changed column type 1" = Table.TransformColumnTypes(#"Replaced value", {{"Value", type number}}),
+				  #"Trimmed text" = Table.TransformColumns(#"Changed column type 1", {{"Category", each Text.Trim(Text.From(_)), type nullable text}}),
+				  #"Merged queries" = Table.NestedJoin(#"Trimmed text", {"Category"}, BudgetMapping, {"SourceCategory"}, "BudgetMapping", JoinKind.LeftOuter),
+				  #"Expanded BudgetMapping" = Table.ExpandTableColumn(#"Merged queries", "BudgetMapping", {"CategoryName"}, {"CategoryName"}),
+				  #"Removed columns" = Table.RemoveColumns(#"Expanded BudgetMapping", {"Category"}),
+				  #"Reordered columns" = Table.ReorderColumns(#"Removed columns", {"Measure", "BudgetDate", "Country", "Channel", "CategoryName", "Value"}),
+				  #"Pivoted column" = Table.Pivot(Table.TransformColumnTypes(#"Reordered columns", {{"Measure", type text}}), List.Distinct(Table.TransformColumnTypes(#"Reordered columns", {{"Measure", type text}})[Measure]), "Measure", "Value", List.Sum),
+				  #"Renamed columns 2" = Table.RenameColumns(#"Pivoted column", {{"Sales", "NetSalesBU"}, {"Units", "UnitsBU"}, {"Country", "CountryName"}, {"Channel", "SalesChannel"}}),
+				  #"Changed column type 2" = Table.TransformColumnTypes(#"Renamed columns 2", {{"SalesChannel", type text}, {"CountryName", type text}})
+				in
+				  #"Changed column type 2"
+
+	annotation PBI_ResultType = Table
+

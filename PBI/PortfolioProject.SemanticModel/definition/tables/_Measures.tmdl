@@ -69,7 +69,7 @@ table _Measures
 
 	/// Number of units sold (sum of Quantity)
 	measure 'Units Sold' = SUM(FactSales[Quantity])
-		formatString: 0
+		formatString: 0.0
 		displayFolder: 1. Base Measures
 		lineageTag: 2617b1ca-d7b5-4702-9fd8-8a67ddce2a89
 

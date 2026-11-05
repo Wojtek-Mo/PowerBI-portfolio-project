@@ -7,7 +7,7 @@
     "z": 1000,
     "height": 286.79522497704312,
     "width": 290.3213957759412,
-    "tabOrder": 5000
+    "tabOrder": 0
   },
   "visualGroup": {
     "displayName": "Filter Pane",
@@ -27,5 +27,6 @@
         }
       ]
     }
-  }
+  },
+  "isHidden": true
 }
