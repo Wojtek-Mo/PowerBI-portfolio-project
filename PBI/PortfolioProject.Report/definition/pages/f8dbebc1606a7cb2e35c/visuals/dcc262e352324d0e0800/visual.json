@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "DimProduct"
+                      "Entity": "DimCategory"
                     }
                   },
                   "Property": "CategoryName"
                 }
               },
-              "queryRef": "DimProduct.CategoryName",
+              "queryRef": "DimCategory.CategoryName",
               "nativeQueryRef": "CategoryName",
               "active": true
             }

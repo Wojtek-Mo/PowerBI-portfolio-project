@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "DimStore"
+                      "Entity": "DimChannel"
                     }
                   },
                   "Property": "SalesChannel"
                 }
               },
-              "queryRef": "DimStore.SalesChannel",
+              "queryRef": "DimChannel.SalesChannel",
               "nativeQueryRef": "SalesChannel",
               "active": true
             }

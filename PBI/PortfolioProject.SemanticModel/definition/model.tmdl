@@ -33,7 +33,7 @@ annotation __PBI_TimeIntelligenceEnabled = 0
 
 annotation PBI_ProTooling = ["DevMode","TMDLView_Desktop","DaxQueryView_Desktop","CalcGroup"]
 
-annotation PBI_QueryOrder = ["DimCustomer","DimDate","DimProduct","DimStore","FactSales","FactExchangeRate","FactBudget","fnGetNBPrates","fnCleanBudgetSheet","BudgetMapping","BudgetSheets","NbpPeriodsHelper","NbpRates","NbpCalendar","pBudgetFilePath"]
+annotation PBI_QueryOrder = ["DimCustomer","DimDate","DimProduct","DimStore","DimCategory","DimChannel","DimCountry","FactSales","FactExchangeRate","FactBudget","fnGetNBPrates","fnCleanBudgetSheet","BudgetMapping","BudgetSheets","NbpPeriodsHelper","NbpRates","NbpCalendar","pBudgetFilePath"]
 
 ref table DimCustomer
 ref table DimDate
@@ -46,6 +46,9 @@ ref table Comparison
 ref table 'PVM Steps'
 ref table FactExchangeRate
 ref table FactBudget
+ref table DimCategory
+ref table DimChannel
+ref table DimCountry
 
 ref cultureInfo en-US
 

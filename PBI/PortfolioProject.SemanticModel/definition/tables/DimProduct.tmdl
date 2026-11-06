@@ -34,7 +34,7 @@ table DimProduct
 		isHidden
 		formatString: 0
 		lineageTag: c4167431-d1a9-48e6-b0a6-087ff8ace408
-		summarizeBy: none
+		summarizeBy: count
 		sourceColumn: CategoryKey
 
 		changedProperty = IsHidden
@@ -54,7 +54,7 @@ table DimProduct
 		isHidden
 		formatString: 0
 		lineageTag: e3079e5a-52ec-473d-976f-c52e029de810
-		summarizeBy: none
+		summarizeBy: count
 		sourceColumn: SubCategoryKey
 
 		changedProperty = IsHidden

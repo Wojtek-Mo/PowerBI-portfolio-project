@@ -1,0 +1,23 @@
+table DimCategory
+	lineageTag: 1707789b-80a9-486a-b101-e6ac4e3e81ee
+
+	column CategoryName
+		dataType: string
+		lineageTag: 4e662fed-fff1-49b8-aec7-c4786e5e073a
+		summarizeBy: none
+		sourceColumn: CategoryName
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimCategory = m
+		mode: import
+		queryGroup: '4. Dimensions'
+		source =
+				let
+				  Source = Sql.Database("LEGIONWM\SQLEXPRESS", "Contoso V2 1M"),
+				  #"Navigation 1" = Source{[Schema = "pbi", Item = "DimCategory"]}[Data]
+				in
+				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
+

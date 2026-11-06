@@ -1,0 +1,23 @@
+table DimChannel
+	lineageTag: a5da5ff9-b81b-4fbe-9ee4-5b99c77eb442
+
+	column SalesChannel
+		dataType: string
+		lineageTag: ba6359f2-2c8c-410e-9032-89147f6ea184
+		summarizeBy: none
+		sourceColumn: SalesChannel
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimChannel = m
+		mode: import
+		queryGroup: '4. Dimensions'
+		source =
+				let
+				  Source = Sql.Database("LEGIONWM\SQLEXPRESS", "Contoso V2 1M"),
+				  #"Navigation 1" = Source{[Schema = "pbi", Item = "DimChannel"]}[Data]
+				in
+				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
+

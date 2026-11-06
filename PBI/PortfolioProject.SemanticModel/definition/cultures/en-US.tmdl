@@ -5590,16 +5590,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "budget": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.452
-			          }
-			        },
-			        {
 			          "outlay": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -9681,115 +9671,616 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "fact_budget": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactBudget"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fact budget": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "FactBudget": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "budget": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "fact account": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "fact cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "fact finance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "account": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "finance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "fact_budget.budget_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactBudget",
+			          "ConceptualProperty": "BudgetDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "budget date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "BudgetDate": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "budget moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "budget period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "account date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "cost date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        },
+			        {
+			          "finance date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "fact_budget.country_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactBudget",
+			          "ConceptualProperty": "CountryName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "country name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CountryName": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "country": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "nation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "location": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "country nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "country title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "country label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "country tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "nation name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "location name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "fact_budget.sales_channel": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactBudget",
+			          "ConceptualProperty": "SalesChannel"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "sales channel": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sale channel": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "SalesChannel": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "channel": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "sale frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "sale station": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "sale network": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "station": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "network": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "sale conduit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "sale waterway": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "conduit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "fact_budget.category_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactBudget",
+			          "ConceptualProperty": "CategoryName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "category name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CategoryName": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "category": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "category nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "category title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "category label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "category tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "type": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "grouping": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "kind": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "classification name": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        }
+			      ]
+			    },
+			    "fact_budget.net_sales_BU": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactBudget",
+			          "ConceptualProperty": "NetSalesBU"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "net sales BU": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "net sale BU": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "NetSalesBU": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "BU": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "sales BU": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "sale BU": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.7566
+			          }
+			        }
+			      ]
+			    },
+			    "fact_budget.units_BU": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactBudget",
+			          "ConceptualProperty": "UnitsBU"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "units BU": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "unit BU": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "UnitsBU": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "BU": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "fact_sale_has_entity__measure_new_discontinued_effect": {
-			      "Binding": {
-			        "ConceptualEntity": "FactSales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fact_sale": {
-			          "Target": {
-			            "Entity": "fact_sale"
-			          }
-			        },
-			        "entity__measure.new_discontinued_effect": {
-			          "Target": {
-			            "Entity": "entity__measure.new_discontinued_effect"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fact_sale"
-			            },
-			            "Object": {
-			              "Role": "entity__measure.new_discontinued_effect"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fact_sales_have_new_discontinued_effect"
-			        },
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "fact_sale"
-			            },
-			            "Adjectives": [
-			              {
-			                "new": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "entity__measure.new_discontinued_effect"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "new_discontinued_effect_indicates_how_new_fact_sales_are"
-			        }
-			      ]
-			    },
-			    "dim_product_has_entity__measure_new_discontinued_effect": {
-			      "Binding": {
-			        "ConceptualEntity": "DimProduct"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "dim_product": {
-			          "Target": {
-			            "Entity": "dim_product"
-			          }
-			        },
-			        "entity__measure.new_discontinued_effect": {
-			          "Target": {
-			            "Entity": "entity__measure.new_discontinued_effect"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "dim_product"
-			            },
-			            "Object": {
-			              "Role": "entity__measure.new_discontinued_effect"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "dim_products_have_new_discontinued_effect"
-			        },
-			        {
-			          "Adjective": {
-			            "Subject": {
-			              "Role": "dim_product"
-			            },
-			            "Adjectives": [
-			              {
-			                "new": {
-			                  "State": "Generated"
-			                }
-			              }
-			            ],
-			            "Measurement": {
-			              "Role": "entity__measure.new_discontinued_effect"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "new_discontinued_effect_indicates_how_new_dim_products_are"
-			        }
-			      ]
-			    },
 			    "entity__measure_has_mix_effect": {
 			      "Binding": {
 			        "ConceptualEntity": "_Measures"
@@ -11842,6 +12333,51 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "fact_budget_in_country_name": {
+			      "Binding": {
+			        "ConceptualEntity": "FactBudget"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_budget": {
+			          "Target": {
+			            "Entity": "fact_budget"
+			          }
+			        },
+			        "fact_budget.country_name": {
+			          "Target": {
+			            "Entity": "fact_budget.country_name"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "Where": {
+			          "Role": "fact_budget.country_name"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Preposition": {
+			            "Subject": {
+			              "Role": "fact_budget"
+			            },
+			            "Prepositions": [
+			              {
+			                "in": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fact_budget.country_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_budgets_are_in_country_names"
+			        }
+			      ]
+			    },
 			    "dim_store_in_state": {
 			      "Binding": {
 			        "ConceptualEntity": "DimStore"
@@ -12202,6 +12738,48 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "fact_budget_is_budgeted_on_budget_date": {
+			      "Binding": {
+			        "ConceptualEntity": "FactBudget"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_budget": {
+			          "Target": {
+			            "Entity": "fact_budget"
+			          }
+			        },
+			        "fact_budget.budget_date": {
+			          "Target": {
+			            "Entity": "fact_budget.budget_date"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "When": {
+			          "Role": "fact_budget.budget_date"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Verbs": [
+			              {
+			                "budget": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fact_budget"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.9,
+			          "ID": "fact_budgets_are_budgeted_on_budget_dates"
+			        }
+			      ]
+			    },
 			    "dim_store_is_closed_on_close_date": {
 			      "Binding": {
 			        "ConceptualEntity": "DimStore"
@@ -12283,6 +12861,112 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.9,
 			          "ID": "dim_stores_are_opened_on_open_dates"
+			        }
+			      ]
+			    },
+			    "fact_sale_is_new": {
+			      "Binding": {
+			        "ConceptualEntity": "FactSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_sale": {
+			          "Target": {
+			            "Entity": "fact_sale"
+			          }
+			        },
+			        "entity__measure.new_discontinued_effect": {
+			          "Target": {
+			            "Entity": "entity__measure.new_discontinued_effect"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "fact_sale"
+			            },
+			            "Adjectives": [
+			              {
+			                "new": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "entity__measure.new_discontinued_effect"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "new_discontinued_effect_indicates_how_new_fact_sales_are"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_sale"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.new_discontinued_effect"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_sales_have_new_discontinued_effect"
+			        }
+			      ]
+			    },
+			    "dim_product_is_new": {
+			      "Binding": {
+			        "ConceptualEntity": "DimProduct"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_product": {
+			          "Target": {
+			            "Entity": "dim_product"
+			          }
+			        },
+			        "entity__measure.new_discontinued_effect": {
+			          "Target": {
+			            "Entity": "entity__measure.new_discontinued_effect"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "dim_product"
+			            },
+			            "Adjectives": [
+			              {
+			                "new": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "entity__measure.new_discontinued_effect"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "new_discontinued_effect_indicates_how_new_dim_products_are"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_product"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.new_discontinued_effect"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_products_have_new_discontinued_effect"
 			        }
 			      ]
 			    },
@@ -12402,6 +13086,204 @@ cultureInfo en-US
 			          }
 			        }
 			      }
+			    },
+			    "fact_budget_has_budget_date": {
+			      "Binding": {
+			        "ConceptualEntity": "FactBudget"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_budget": {
+			          "Target": {
+			            "Entity": "fact_budget"
+			          }
+			        },
+			        "fact_budget.budget_date": {
+			          "Target": {
+			            "Entity": "fact_budget.budget_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_budget"
+			            },
+			            "Object": {
+			              "Role": "fact_budget.budget_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_budgets_have_budget_dates"
+			        }
+			      ]
+			    },
+			    "fact_budget_has_country_name": {
+			      "Binding": {
+			        "ConceptualEntity": "FactBudget"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_budget": {
+			          "Target": {
+			            "Entity": "fact_budget"
+			          }
+			        },
+			        "fact_budget.country_name": {
+			          "Target": {
+			            "Entity": "fact_budget.country_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_budget"
+			            },
+			            "Object": {
+			              "Role": "fact_budget.country_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_budgets_have_country_names"
+			        }
+			      ]
+			    },
+			    "fact_budget_has_sales_channel": {
+			      "Binding": {
+			        "ConceptualEntity": "FactBudget"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_budget": {
+			          "Target": {
+			            "Entity": "fact_budget"
+			          }
+			        },
+			        "fact_budget.sales_channel": {
+			          "Target": {
+			            "Entity": "fact_budget.sales_channel"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_budget"
+			            },
+			            "Object": {
+			              "Role": "fact_budget.sales_channel"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_budgets_have_sales_channels"
+			        }
+			      ]
+			    },
+			    "fact_budget_has_category_name": {
+			      "Binding": {
+			        "ConceptualEntity": "FactBudget"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_budget": {
+			          "Target": {
+			            "Entity": "fact_budget"
+			          }
+			        },
+			        "fact_budget.category_name": {
+			          "Target": {
+			            "Entity": "fact_budget.category_name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_budget"
+			            },
+			            "Object": {
+			              "Role": "fact_budget.category_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_budgets_have_category_names"
+			        }
+			      ]
+			    },
+			    "fact_budget_has_net_sales_BU": {
+			      "Binding": {
+			        "ConceptualEntity": "FactBudget"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_budget": {
+			          "Target": {
+			            "Entity": "fact_budget"
+			          }
+			        },
+			        "fact_budget.net_sales_BU": {
+			          "Target": {
+			            "Entity": "fact_budget.net_sales_BU"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_budget"
+			            },
+			            "Object": {
+			              "Role": "fact_budget.net_sales_BU"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_budgets_have_net_sales_BU"
+			        }
+			      ]
+			    },
+			    "fact_budget_has_units_BU": {
+			      "Binding": {
+			        "ConceptualEntity": "FactBudget"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_budget": {
+			          "Target": {
+			            "Entity": "fact_budget"
+			          }
+			        },
+			        "fact_budget.units_BU": {
+			          "Target": {
+			            "Entity": "fact_budget.units_BU"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_budget"
+			            },
+			            "Object": {
+			              "Role": "fact_budget.units_BU"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_budgets_have_units_BU"
+			        }
+			      ]
 			    },
 			    "fact_sale_has_dim_customer": {
 			      "Binding": {
@@ -12604,6 +13486,52 @@ cultureInfo en-US
 			          }
 			        }
 			      }
+			    },
+			    "fact_budget_has_dim_date": {
+			      "Binding": {
+			        "ConceptualEntity": "FactBudget"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_budget": {
+			          "Target": {
+			            "Entity": "fact_budget"
+			          }
+			        },
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_budget"
+			            },
+			            "Object": {
+			              "Role": "dim_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_budgets_have_dim_dates"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "fact_budget"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_fact_budgets"
+			        }
+			      ]
 			    }
 			  },
 			  "Agents": {

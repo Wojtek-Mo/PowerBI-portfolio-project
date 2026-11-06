@@ -5,9 +5,9 @@
   "options": {
     "applyOnlyToTargetVisuals": true,
     "targetVisualNames": [
-      "2ac2cf265053b03b60a3",
+      "3c732edba15c6480876d",
       "831905c042d08d09a223",
-      "3c732edba15c6480876d"
+      "2ac2cf265053b03b60a3"
     ],
     "suppressDisplay": true,
     "preserveNewVisualVisibility": true
@@ -22,7 +22,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "fc19ce7f726890861e1b",
+                  "name": "a33bae0749dd4cb65b10",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -37,7 +37,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "00f70cf61b7b29335943",
+                  "name": "d646dfbc6d7780bd3ba5",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -52,7 +52,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "d32e78ab615005353872",
+                  "name": "e28bbe1fd46306de798d",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -67,7 +67,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "b738bbd716792ba751be",
+                  "name": "7fd0c7bd30d704ee90e7",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -82,7 +82,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "68366591288271b70eb4",
+                  "name": "74ce6fefd21106179508",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -97,7 +97,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "be5652308e40802c740e",
+                  "name": "0187fd263d5301048e26",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -112,7 +112,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "e619818bcb94c366a3ac",
+                  "name": "df39ab13704938369deb",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -127,7 +127,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "8a90070031a88c400737",
+                  "name": "298d8ccf2a00e8078693",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -215,6 +215,140 @@
               ]
             }
           },
+          "20cd383f98084bed68e7": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "29119a6f4cc725430a69": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "2ac2cf265053b03b60a3": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "80332f5f55795b8a29ea",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimCategory"
+                        }
+                      },
+                      "Property": "CategoryName"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimCategory"
+                        }
+                      },
+                      "Property": "CategoryName"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "31cedbf3ebb7193735a6": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "3c732edba15c6480876d": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "0335a3a4ea7531922092",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimCountry"
+                        }
+                      },
+                      "Property": "CountryName"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimCountry"
+                        }
+                      },
+                      "Property": "CountryName"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "4e09bf3f1e4dd3568225": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
           "601233297e00c198a545": {
             "singleVisual": {
               "visualType": "shape",
@@ -225,7 +359,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "6bdf95c6e8a1de09857e",
+                  "name": "ee02a9c8b0e407b1002b",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -346,7 +480,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "9113af76a71b7b0690ad",
+                  "name": "4f7fa5b0400e18b46ec5",
                   "type": "Advanced",
                   "expression": {
                     "Column": {
@@ -457,11 +591,81 @@
               }
             }
           },
+          "831905c042d08d09a223": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "b9506f28916000960a00",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimChannel"
+                        }
+                      },
+                      "Property": "SalesChannel"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimChannel"
+                        }
+                      },
+                      "Property": "SalesChannel"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "b24ecfdc5507b8d5d78a": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
+          "ba7f2662734b3e82a470": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
           "bf8a90b917665d801015": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "72af127fb7380ba663d8",
+                  "name": "b6fc7c010a0427c7517a",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -501,7 +705,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "f8d3a8ed26123572a60c",
+                  "name": "a6cfde9692d293832b62",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -585,23 +789,11 @@
               }
             }
           },
-          "d75b20d2c1b00801074b": {
-            "singleVisual": {
-              "visualType": "pageNavigator",
-              "objects": {}
-            }
-          },
-          "f75e75b7c8d44bd7092b": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
           "c3f1a92809b4cc058e1c": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "0de719142d564c06d5b7",
+                  "name": "a3c4920e8272d0db04c8",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -616,7 +808,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "06ac1ea1a090d404986c",
+                  "name": "8cf853c8aa68dc933322",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -631,7 +823,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "39e000c055915da8603a",
+                  "name": "a93b65d7ab891a7a6911",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -646,7 +838,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "84ed415f340175d7ac07",
+                  "name": "a28a8cafc0a71356c31d",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -661,7 +853,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "5c182e6bb116e5d634b0",
+                  "name": "dde1a33ceae008a32a6a",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -697,202 +889,16 @@
               ]
             }
           },
-          "20cd383f98084bed68e7": {
+          "d75b20d2c1b00801074b": {
             "singleVisual": {
-              "visualType": "actionButton",
+              "visualType": "pageNavigator",
               "objects": {}
             }
           },
-          "2ac2cf265053b03b60a3": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "881a6b944009acea0ae0",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DimProduct"
-                        }
-                      },
-                      "Property": "CategoryName"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "data": [
-                    {
-                      "properties": {
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Dropdown'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
-              "activeProjections": {
-                "Values": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DimProduct"
-                        }
-                      },
-                      "Property": "CategoryName"
-                    }
-                  }
-                ]
-              }
-            }
-          },
-          "831905c042d08d09a223": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "8a6668a327bc3a223258",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DimStore"
-                        }
-                      },
-                      "Property": "SalesChannel"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "data": [
-                    {
-                      "properties": {
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Dropdown'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
-              "activeProjections": {
-                "Values": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DimStore"
-                        }
-                      },
-                      "Property": "SalesChannel"
-                    }
-                  }
-                ]
-              }
-            }
-          },
-          "3c732edba15c6480876d": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "7b4fe626077951509990",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DimCustomer"
-                        }
-                      },
-                      "Property": "CountryName"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "data": [
-                    {
-                      "properties": {
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Dropdown'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
-              "activeProjections": {
-                "Values": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DimCustomer"
-                        }
-                      },
-                      "Property": "CountryName"
-                    }
-                  }
-                ]
-              }
-            }
-          },
-          "4e09bf3f1e4dd3568225": {
+          "f75e75b7c8d44bd7092b": {
             "singleVisual": {
               "visualType": "textbox",
               "objects": {}
-            }
-          },
-          "31cedbf3ebb7193735a6": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
-            }
-          },
-          "b24ecfdc5507b8d5d78a": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "ba7f2662734b3e82a470": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
             }
           }
         },

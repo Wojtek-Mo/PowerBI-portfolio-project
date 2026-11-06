@@ -142,3 +142,43 @@ GO
 
 SELECT *
 FROM pbi.DimDate;
+
+
+--===============================================
+--Creating additional views for helper dimensions
+--===============================================
+
+GO
+
+CREATE OR ALTER VIEW pbi.DimCountry AS
+
+	SELECT 
+		DISTINCT CountryName
+	FROM pbi.DimCustomer
+
+GO
+
+CREATE OR ALTER VIEW pbi.DimChannel AS
+
+	SELECT
+		DISTINCT SalesChannel
+	FROM pbi.DimStore
+
+GO
+
+CREATE OR ALTER VIEW pbi.DimCategory AS
+
+	SELECT
+		DISTINCT CategoryName
+	FROM pbi.DimProduct
+
+GO
+
+SELECT *
+FROM pbi.DimCategory
+
+SELECT *
+FROM pbi.DimChannel
+
+SELECT *
+FROM pbi.DimCountry;

@@ -22,3 +22,27 @@ relationship 2e1c6952-cda1-535b-fac1-07aa404a7892
 	fromColumn: FactBudget.BudgetDate
 	toColumn: DimDate.Date
 
+relationship 85b0077d-c9f4-b68d-751e-5d1d3a45c412
+	fromColumn: DimCustomer.CountryName
+	toColumn: DimCountry.CountryName
+
+relationship a19bd2bc-c3de-aa91-d364-3f2e4eb79d1a
+	fromColumn: DimProduct.CategoryName
+	toColumn: DimCategory.CategoryName
+
+relationship 9e63adad-cca1-256f-8d7e-6af398403b73
+	fromColumn: DimStore.SalesChannel
+	toColumn: DimChannel.SalesChannel
+
+relationship e88218b0-0677-0063-e8ce-b74a3f8fb75e
+	fromColumn: FactBudget.CountryName
+	toColumn: DimCountry.CountryName
+
+relationship 121ab653-6a2c-153d-a490-b7eff824d65c
+	fromColumn: FactBudget.CategoryName
+	toColumn: DimCategory.CategoryName
+
+relationship 3b35ad30-91fe-26f3-3501-91e490d5b56c
+	fromColumn: FactBudget.SalesChannel
+	toColumn: DimChannel.SalesChannel
+

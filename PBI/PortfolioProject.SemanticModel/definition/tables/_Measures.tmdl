@@ -368,6 +368,16 @@ table _Measures
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure 'Net Sales BU' = SUM(FactBudget[NetSalesBU])
+		lineageTag: 9afe9e15-c246-4f0b-868c-82f589027088
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure UnitsBU = SUM(FactBudget[UnitsBU])
+		lineageTag: e34087c0-18ef-40b8-a109-0df18a426f9c
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Value
 		isHidden
 		formatString: 0

@@ -5,10 +5,11 @@
   "options": {
     "applyOnlyToTargetVisuals": true,
     "targetVisualNames": [
-      "a22020e08d017a0ce182",
       "0b53e1e0d200412cd440",
+      "a22020e08d017a0ce182",
       "dcc262e352324d0e0800"
     ],
+    "suppressDisplay": true,
     "preserveNewVisualVisibility": true
   },
   "explorationState": {
@@ -21,7 +22,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "a2804cf103b2ec6e8e68",
+                  "name": "a37e4168d1ec94a0cb4a",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -57,11 +58,66 @@
               ]
             }
           },
+          "0b53e1e0d200412cd440": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "05cfb76a10954bc92d43",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimCountry"
+                        }
+                      },
+                      "Property": "CountryName"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimCountry"
+                        }
+                      },
+                      "Property": "CountryName"
+                    }
+                  }
+                ]
+              }
+            }
+          },
           "16728f033be3bc19c289": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "d268ed9ab429dd80113c",
+                  "name": "cde3779ead99160a4033",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -178,6 +234,15 @@
               "objects": {}
             }
           },
+          "3fdcf86b3399a7d501c6": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {},
+              "display": {
+                "mode": "hidden"
+              }
+            }
+          },
           "3fe11f50665c2172ba1e": {
             "singleVisual": {
               "visualType": "textbox",
@@ -188,7 +253,7 @@
             "filters": {
               "byExpr": [
                 {
-                  "name": "9b51b546e409508d84d9",
+                  "name": "a8e9e767580c6850de87",
                   "type": "Advanced",
                   "expression": {
                     "Column": {
@@ -241,7 +306,7 @@
                                       [
                                         {
                                           "Literal": {
-                                            "Value": "2017L"
+                                            "Value": "2025L"
                                           }
                                         }
                                       ]
@@ -299,9 +364,88 @@
               }
             }
           },
+          "74699786c8c3816b945b": {
+            "singleVisual": {
+              "visualType": "textbox",
+              "objects": {}
+            }
+          },
+          "7e8515144dd0d1b0ed73": {
+            "singleVisual": {
+              "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "a1b679bc670d07604967": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
           "a21977e2cda9b3ccc45a": {
             "singleVisual": {
               "visualType": "shape",
+              "objects": {}
+            }
+          },
+          "a22020e08d017a0ce182": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "737940b96204b1e5e79c",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimChannel"
+                        }
+                      },
+                      "Property": "SalesChannel"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimChannel"
+                        }
+                      },
+                      "Property": "SalesChannel"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "cee13500ba79a64cb007": {
+            "singleVisual": {
+              "visualType": "actionButton",
               "objects": {}
             }
           },
@@ -311,11 +455,72 @@
               "objects": {}
             }
           },
+          "dcc262e352324d0e0800": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "6c09d31118c218e8d990",
+                  "type": "Categorical",
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimCategory"
+                        }
+                      },
+                      "Property": "CategoryName"
+                    }
+                  },
+                  "howCreated": 0
+                }
+              ]
+            },
+            "singleVisual": {
+              "visualType": "slicer",
+              "objects": {
+                "merge": {
+                  "data": [
+                    {
+                      "properties": {
+                        "mode": {
+                          "expr": {
+                            "Literal": {
+                              "Value": "'Dropdown'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "activeProjections": {
+                "Values": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "DimCategory"
+                        }
+                      },
+                      "Property": "CategoryName"
+                    }
+                  }
+                ]
+              }
+            }
+          },
+          "dd7bd940abc86a7836d0": {
+            "singleVisual": {
+              "visualType": "actionButton",
+              "objects": {}
+            }
+          },
           "f8491ce009a947e7b5c6": {
             "filters": {
               "byExpr": [
                 {
-                  "name": "f5ae2143a031e42225d9",
+                  "name": "1eaf61668018a321a797",
                   "type": "Categorical",
                   "expression": {
                     "Column": {
@@ -330,7 +535,7 @@
                   "howCreated": 0
                 },
                 {
-                  "name": "361b6ebd206c52073959",
+                  "name": "9714c5d1ed4b3b0d87c3",
                   "type": "Advanced",
                   "expression": {
                     "Measure": {
@@ -378,210 +583,6 @@
                   }
                 ]
               }
-            }
-          },
-          "3fdcf86b3399a7d501c6": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {},
-              "display": {
-                "mode": "hidden"
-              }
-            }
-          },
-          "dd7bd940abc86a7836d0": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "a1b679bc670d07604967": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "cee13500ba79a64cb007": {
-            "singleVisual": {
-              "visualType": "actionButton",
-              "objects": {}
-            }
-          },
-          "dcc262e352324d0e0800": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "b875d373040e20583c10",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DimProduct"
-                        }
-                      },
-                      "Property": "CategoryName"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "data": [
-                    {
-                      "properties": {
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Dropdown'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
-              "activeProjections": {
-                "Values": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DimProduct"
-                        }
-                      },
-                      "Property": "CategoryName"
-                    }
-                  }
-                ]
-              }
-            }
-          },
-          "a22020e08d017a0ce182": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "ce529ea07395b21221dd",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DimStore"
-                        }
-                      },
-                      "Property": "SalesChannel"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "data": [
-                    {
-                      "properties": {
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Dropdown'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
-              "activeProjections": {
-                "Values": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DimStore"
-                        }
-                      },
-                      "Property": "SalesChannel"
-                    }
-                  }
-                ]
-              }
-            }
-          },
-          "0b53e1e0d200412cd440": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "396ba4f30bcdb2a2a400",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DimCustomer"
-                        }
-                      },
-                      "Property": "CountryName"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "data": [
-                    {
-                      "properties": {
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Dropdown'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
-              "activeProjections": {
-                "Values": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DimCustomer"
-                        }
-                      },
-                      "Property": "CountryName"
-                    }
-                  }
-                ]
-              }
-            }
-          },
-          "74699786c8c3816b945b": {
-            "singleVisual": {
-              "visualType": "textbox",
-              "objects": {}
-            }
-          },
-          "7e8515144dd0d1b0ed73": {
-            "singleVisual": {
-              "visualType": "shape",
-              "objects": {}
             }
           }
         },

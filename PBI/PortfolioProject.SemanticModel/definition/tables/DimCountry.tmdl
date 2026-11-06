@@ -1,0 +1,23 @@
+table DimCountry
+	lineageTag: 03a594a0-40ea-4d7f-8bfd-1835b8df3af2
+
+	column CountryName
+		dataType: string
+		lineageTag: 53a18c4f-b3b6-4fde-920c-5593951dd279
+		summarizeBy: none
+		sourceColumn: CountryName
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DimCountry = m
+		mode: import
+		queryGroup: '4. Dimensions'
+		source =
+				let
+				  Source = Sql.Database("LEGIONWM\SQLEXPRESS", "Contoso V2 1M"),
+				  #"Navigation 1" = Source{[Schema = "pbi", Item = "DimCountry"]}[Data]
+				in
+				  #"Navigation 1"
+
+	annotation PBI_ResultType = Table
+

@@ -20,13 +20,13 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "DimCustomer"
+                      "Entity": "DimCountry"
                     }
                   },
                   "Property": "CountryName"
                 }
               },
-              "queryRef": "DimCustomer.CountryName",
+              "queryRef": "DimCountry.CountryName",
               "nativeQueryRef": "CountryName",
               "active": true
             }

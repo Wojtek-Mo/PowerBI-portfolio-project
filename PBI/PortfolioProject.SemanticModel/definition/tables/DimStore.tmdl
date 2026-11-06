@@ -17,7 +17,7 @@ table DimStore
 		dataType: int64
 		formatString: 0
 		lineageTag: b6771b84-5a74-4b63-972a-ae0bdf1afef8
-		summarizeBy: none
+		summarizeBy: count
 		sourceColumn: StoreCode
 
 		annotation SummarizationSetBy = Automatic
@@ -80,7 +80,7 @@ table DimStore
 		dataType: int64
 		formatString: 0
 		lineageTag: b4d9fe87-8f7e-4424-b9c1-c2754cdb107a
-		summarizeBy: none
+		summarizeBy: sum
 		sourceColumn: SquareMeters
 
 		annotation SummarizationSetBy = Automatic
