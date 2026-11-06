@@ -86,7 +86,7 @@
                           "Entity": "_Measures"
                         }
                       },
-                      "Property": "Net Sales Delta PY"
+                      "Property": "Net Sales Δ PY"
                     }
                   },
                   "howCreated": 0
@@ -101,7 +101,7 @@
                           "Entity": "_Measures"
                         }
                       },
-                      "Property": "Net Sales Delta PY%"
+                      "Property": "Net Sales Δ PY%"
                     }
                   },
                   "howCreated": 0

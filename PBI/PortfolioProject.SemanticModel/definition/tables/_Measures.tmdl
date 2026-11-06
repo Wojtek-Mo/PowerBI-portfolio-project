@@ -8,11 +8,10 @@ table _Measures
 			    FactSales,
 			    FactSales[NetPrice] * FactSales[Quantity]
 			)
-		formatString: \$#,0.0;(\$#,0.0);\$#,0.0
 		displayFolder: 1. Base Measures
 		lineageTag: 2b349450-b5a8-4d79-8bf4-71eff7ebdcab
 
-		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+		formatStringDefinition = "\$#,0.0;(\$#,0.0);\$#,0.0"
 
 	/// Sales at list price, before discounts (UnitPrice * Quantity)
 	measure 'Gross Sales' =
@@ -134,7 +133,7 @@ table _Measures
 
 		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
 
-	measure 'Net Sales Delta PY' = ```
+	measure 'Net Sales Δ PY' = ```
 			
 			CALCULATE(
 			    [Net Sales],
@@ -147,7 +146,7 @@ table _Measures
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
-	measure 'Net Sales Delta PY%' =
+	measure 'Net Sales Δ PY%' =
 			
 			CALCULATE(
 			    [Net Sales],
@@ -162,7 +161,7 @@ table _Measures
 			
 			IF(
 			    ISINSCOPE(DimCustomer[CountryName]),
-			    [Net Sales Delta PY]
+			    [Net Sales Δ PY]
 			)
 			    
 			```
@@ -369,12 +368,99 @@ table _Measures
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
 	measure 'Net Sales BU' = SUM(FactBudget[NetSalesBU])
+		formatString: $#,0.0,,"M";($#,0.0,,"M")
+		displayFolder: 6. Budget
 		lineageTag: 9afe9e15-c246-4f0b-868c-82f589027088
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"isCustom":true}
 
-	measure UnitsBU = SUM(FactBudget[UnitsBU])
+	/// Budgeted number of units
+	measure 'Units Sold BU' = SUM(FactBudget[UnitsBU])
+		formatString: " $#,0.0,,""M"";($#,0.0,,""M"")"
+		displayFolder: 6. Budget
 		lineageTag: e34087c0-18ef-40b8-a109-0df18a426f9c
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	measure 'Net Sales Δ BU' = ```
+			
+			IF(
+			    ISBLANK([Net Sales BU]),
+			    BLANK(),
+			    [Net Sales] - [Net Sales BU] 
+			)
+			```
+		formatString: \$#,0.0;(\$#,0.0);\$#,0.0
+		displayFolder: 6. Budget
+		lineageTag: 067a762c-eb02-46f9-8c61-55ecafa422e1
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	measure 'Net Sales Δ BU %' = DIVIDE([Net Sales Δ BU], [Net Sales BU])
+		displayFolder: 6. Budget
+		lineageTag: 2343c889-a46a-411e-a509-14f8de17e6fd
+
+		formatStringDefinition = "+0.0%;-0.0%;0.0%"
+
+	measure 'Units Sold Δ BU' = ```
+			
+			IF(
+			    ISBLANK([Units Sold BU]),
+			    BLANK(),
+			    [Units Sold] - [Units Sold BU] 
+			)
+			
+			```
+		formatString: 0.00
+		displayFolder: 6. Budget
+		lineageTag: efdf6e23-2c74-47f1-9344-300973857062
+
+	measure 'Units Sold Δ BU %' = DIVIDE( [Units Sold Δ BU], [Units Sold BU])
+		displayFolder: 6. Budget
+		lineageTag: 04c1a591-1ba0-49e8-ae9e-ab4c949f880e
+
+		formatStringDefinition = "+0.0%;-0.0%;0.0%"
+
+	measure 'Full Year BU' = ```
+			
+			VAR CurrentYear = SELECTEDVALUE( DimDate[Year] )
+			
+			RETURN
+			CALCULATE(
+			    [Net Sales BU],
+			    REMOVEFILTERS( DimDate[Date], DimDate[Year], DimDate[Month], DimDate[MonthShort] ), 
+			    DimDate[Year] = CurrentYear
+			)
+			```
+		formatString: $#,0.0;($#,0.0)
+		displayFolder: 6. Budget
+		lineageTag: b9de8433-48d9-4a79-a11c-cfe59206eb97
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	measure 'Net Sales Δ BU YTD' =
+			
+			CALCULATE(
+			    [Net Sales Δ BU],
+			    DATESYTD(DimDate[Date])
+			)
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		displayFolder: 6. Budget
+		lineageTag: cf23234e-42b9-4ff4-acdf-0d69a399aaa5
+
+	measure 'Title Variance Breakdown' =
+			
+			VAR prmState = SELECTEDVALUE('Variance Breakdown prm'[Variance Breakdown prm Order])
+			
+			RETURN
+			"Variance to budget by " &
+			SWITCH(
+			    prmState,
+			    0, "country",
+			    1, "category"
+			)
+		displayFolder: 9. Report Labels
+		lineageTag: 34eea9f5-2b08-4136-8fdb-91359a7b7311
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 

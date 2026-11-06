@@ -1,0 +1,12 @@
+createOrReplace
+
+	ref table _Measures
+
+		measure 'Net Sales Δ BU' = ```
+				[Net Sales] - [Net Sales BU] 
+				```
+			displayFolder: 6. Budget
+			lineageTag: 067a762c-eb02-46f9-8c61-55ecafa422e1
+
+			annotation PBI_FormatHint = {"isGeneralNumber":true}
+
