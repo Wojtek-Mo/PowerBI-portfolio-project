@@ -1,0 +1,535 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/semanticModel/unappliedChanges/1.0.0/schema.json",
+  "conceptualSchemaSettings": {},
+  "queries": [
+    {
+      "name": "DimCustomer",
+      "lineageTag": "f437cd52-4ab1-4898-8b7d-a7c72b1ec0b0",
+      "queryGroupId": "68b0832b-d2d8-4595-8f9f-22554b7e74cb",
+      "text": [
+        "let",
+        "  Source = Sql.Database(\"LEGIONWM\\SQLEXPRESS\", \"Contoso V2 1M\"),",
+        "  #\"Navigation 1\" = Source{[Schema = \"pbi\", Item = \"DimCustomer\"]}[Data]",
+        "in",
+        "  #\"Navigation 1\""
+      ],
+      "isDirectQuery": false,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n  Source = Sql.Database(\\\"LEGIONWM\\\\SQLEXPRESS\\\", \\\"Contoso V2 1M\\\"),\\n  #\\\"Navigation 1\\\" = Source{[Schema = \\\"pbi\\\", Item = \\\"DimCustomer\\\"]}[Data]\\nin\\n  #\\\"Navigation 1\\\"\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Table",
+      "isHidden": false
+    },
+    {
+      "name": "DimDate",
+      "lineageTag": "feb33a4f-81f5-43e1-a5c6-0ae14b059447",
+      "queryGroupId": "68b0832b-d2d8-4595-8f9f-22554b7e74cb",
+      "text": [
+        "let",
+        "  Source = Sql.Database(\"LEGIONWM\\SQLEXPRESS\", \"Contoso V2 1M\"),",
+        "  #\"Navigation 1\" = Source{[Schema = \"pbi\", Item = \"DimDate\"]}[Data]",
+        "in",
+        "  #\"Navigation 1\""
+      ],
+      "isDirectQuery": false,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n  Source = Sql.Database(\\\"LEGIONWM\\\\SQLEXPRESS\\\", \\\"Contoso V2 1M\\\"),\\n  #\\\"Navigation 1\\\" = Source{[Schema = \\\"pbi\\\", Item = \\\"DimDate\\\"]}[Data]\\nin\\n  #\\\"Navigation 1\\\"\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Table",
+      "isHidden": false
+    },
+    {
+      "name": "DimProduct",
+      "lineageTag": "e29fc0a8-a177-4ede-bab5-94cd64774715",
+      "queryGroupId": "68b0832b-d2d8-4595-8f9f-22554b7e74cb",
+      "text": [
+        "let",
+        "  Source = Sql.Database(\"LEGIONWM\\SQLEXPRESS\", \"Contoso V2 1M\"),",
+        "  #\"Navigation 1\" = Source{[Schema = \"pbi\", Item = \"DimProduct\"]}[Data]",
+        "in",
+        "  #\"Navigation 1\""
+      ],
+      "isDirectQuery": false,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n  Source = Sql.Database(\\\"LEGIONWM\\\\SQLEXPRESS\\\", \\\"Contoso V2 1M\\\"),\\n  #\\\"Navigation 1\\\" = Source{[Schema = \\\"pbi\\\", Item = \\\"DimProduct\\\"]}[Data]\\nin\\n  #\\\"Navigation 1\\\"\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Table",
+      "isHidden": false
+    },
+    {
+      "name": "DimStore",
+      "lineageTag": "5f75067d-10e6-41fd-bc31-81d3e5bb8b0e",
+      "queryGroupId": "68b0832b-d2d8-4595-8f9f-22554b7e74cb",
+      "text": [
+        "let",
+        "  Source = Sql.Database(\"LEGIONWM\\SQLEXPRESS\", \"Contoso V2 1M\"),",
+        "  #\"Navigation 1\" = Source{[Schema = \"pbi\", Item = \"dimStore\"]}[Data]",
+        "in",
+        "  #\"Navigation 1\""
+      ],
+      "isDirectQuery": false,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n  Source = Sql.Database(\\\"LEGIONWM\\\\SQLEXPRESS\\\", \\\"Contoso V2 1M\\\"),\\n  #\\\"Navigation 1\\\" = Source{[Schema = \\\"pbi\\\", Item = \\\"dimStore\\\"]}[Data]\\nin\\n  #\\\"Navigation 1\\\"\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Table",
+      "isHidden": false
+    },
+    {
+      "name": "DimCategory",
+      "lineageTag": "1707789b-80a9-486a-b101-e6ac4e3e81ee",
+      "queryGroupId": "68b0832b-d2d8-4595-8f9f-22554b7e74cb",
+      "text": [
+        "let",
+        "  Source = Sql.Database(\"LEGIONWM\\SQLEXPRESS\", \"Contoso V2 1M\"),",
+        "  #\"Navigation 1\" = Source{[Schema = \"pbi\", Item = \"DimCategory\"]}[Data]",
+        "in",
+        "  #\"Navigation 1\""
+      ],
+      "isDirectQuery": false,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n  Source = Sql.Database(\\\"LEGIONWM\\\\SQLEXPRESS\\\", \\\"Contoso V2 1M\\\"),\\n  #\\\"Navigation 1\\\" = Source{[Schema = \\\"pbi\\\", Item = \\\"DimCategory\\\"]}[Data]\\nin\\n  #\\\"Navigation 1\\\"\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Table",
+      "isHidden": false
+    },
+    {
+      "name": "DimChannel",
+      "lineageTag": "a5da5ff9-b81b-4fbe-9ee4-5b99c77eb442",
+      "queryGroupId": "68b0832b-d2d8-4595-8f9f-22554b7e74cb",
+      "text": [
+        "let",
+        "  Source = Sql.Database(\"LEGIONWM\\SQLEXPRESS\", \"Contoso V2 1M\"),",
+        "  #\"Navigation 1\" = Source{[Schema = \"pbi\", Item = \"DimChannel\"]}[Data]",
+        "in",
+        "  #\"Navigation 1\""
+      ],
+      "isDirectQuery": false,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n  Source = Sql.Database(\\\"LEGIONWM\\\\SQLEXPRESS\\\", \\\"Contoso V2 1M\\\"),\\n  #\\\"Navigation 1\\\" = Source{[Schema = \\\"pbi\\\", Item = \\\"DimChannel\\\"]}[Data]\\nin\\n  #\\\"Navigation 1\\\"\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Table",
+      "isHidden": false
+    },
+    {
+      "name": "DimCountry",
+      "lineageTag": "03a594a0-40ea-4d7f-8bfd-1835b8df3af2",
+      "queryGroupId": "68b0832b-d2d8-4595-8f9f-22554b7e74cb",
+      "text": [
+        "let",
+        "  Source = Sql.Database(\"LEGIONWM\\SQLEXPRESS\", \"Contoso V2 1M\"),",
+        "  #\"Navigation 1\" = Source{[Schema = \"pbi\", Item = \"DimCountry\"]}[Data]",
+        "in",
+        "  #\"Navigation 1\""
+      ],
+      "isDirectQuery": false,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n  Source = Sql.Database(\\\"LEGIONWM\\\\SQLEXPRESS\\\", \\\"Contoso V2 1M\\\"),\\n  #\\\"Navigation 1\\\" = Source{[Schema = \\\"pbi\\\", Item = \\\"DimCountry\\\"]}[Data]\\nin\\n  #\\\"Navigation 1\\\"\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Table",
+      "isHidden": false
+    },
+    {
+      "name": "FactSales",
+      "lineageTag": "35fb14b6-fbea-48aa-88e3-c4a632d5da96",
+      "queryGroupId": "f1057fe1-603b-493a-8b9e-6ecb89fdecc1",
+      "text": [
+        "let",
+        "  Source = Sql.Database(\"LEGIONWM\\SQLEXPRESS\", \"Contoso V2 1M\"),",
+        "  #\"Navigation 1\" = Source{[Schema = \"pbi\", Item = \"FactSales\"]}[Data]",
+        "in",
+        "  #\"Navigation 1\""
+      ],
+      "isDirectQuery": false,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n  Source = Sql.Database(\\\"LEGIONWM\\\\SQLEXPRESS\\\", \\\"Contoso V2 1M\\\"),\\n  #\\\"Navigation 1\\\" = Source{[Schema = \\\"pbi\\\", Item = \\\"FactSales\\\"]}[Data]\\nin\\n  #\\\"Navigation 1\\\"\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Table",
+      "isHidden": false
+    },
+    {
+      "name": "FactExchangeRate",
+      "lineageTag": "51565b7e-7346-4a0b-91d3-19fd2685b0c8",
+      "queryGroupId": "f1057fe1-603b-493a-8b9e-6ecb89fdecc1",
+      "text": [
+        "let",
+        "  Source = NbpCalendar",
+        "in",
+        "  Source"
+      ],
+      "isDirectQuery": false,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n  Source = NbpCalendar\\nin\\n  Source\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Table",
+      "isHidden": false
+    },
+    {
+      "name": "FactBudget",
+      "lineageTag": "254b7fa2-6785-4c61-802b-6ccc10ac95cf",
+      "queryGroupId": "f1057fe1-603b-493a-8b9e-6ecb89fdecc1",
+      "text": [
+        "let",
+        "  Source = BudgetSheets,",
+        "  #\"Choose name columns for fn parameter\" = Table.SelectColumns(Source, {\"Name\"}),",
+        "  #\"Invoked custom function\" = Table.AddColumn(#\"Choose name columns for fn parameter\", \"Invoked custom function\", each fnCleanBudgetSheet([Name])),",
+        "  #\"Expanded Invoked custom function\" = Table.ExpandTableColumn(#\"Invoked custom function\", \"Invoked custom function\", {\"Country\", \"Channel\", \"Category\", \"Month\", \"Value\"}, {\"Country\", \"Channel\", \"Category\", \"Month\", \"Value\"}),",
+        "  #\"Split table name column\" = Table.SplitColumn(#\"Expanded Invoked custom function\", \"Name\", Splitter.SplitTextByDelimiter(\" \"), {\"Name.1\", \"Name.2\"}),",
+        "  #\"Renamed measure and year\" = Table.RenameColumns(#\"Split table name column\", {{\"Name.1\", \"Measure\"}, {\"Name.2\", \"Year\"}}),",
+        "  #\"Merged short month and year\" = Table.CombineColumns(Table.TransformColumnTypes(#\"Renamed measure and year\", {{\"Month\", type text}}), {\"Month\", \"Year\"}, Combiner.CombineTextByDelimiter(\" \", QuoteStyle.None), \"Merged\"),",
+        "  #\"Getting data\" = Table.TransformColumnTypes(#\"Merged short month and year\", {{\"Merged\", type date}}, \"en-US\"),",
+        "  #\"Renamed columns 1\" = Table.RenameColumns(#\"Getting data\", {{\"Merged\", \"BudgetDate\"}}),",
+        "  #\"Changed column type\" = Table.TransformColumnTypes(#\"Renamed columns 1\", {{\"Value\", type text}}),",
+        "  #\"Replaced value\" = Table.ReplaceValue(#\"Changed column type\", \" \", \"\", Replacer.ReplaceText, {\"Value\"}),",
+        "  #\"Changed column type 1\" = Table.TransformColumnTypes(#\"Replaced value\", {{\"Value\", type number}}),",
+        "  #\"Trimmed text\" = Table.TransformColumns(#\"Changed column type 1\", {{\"Category\", each Text.Trim(Text.From(_)), type nullable text}}),",
+        "  #\"Merged queries\" = Table.NestedJoin(#\"Trimmed text\", {\"Category\"}, BudgetMapping, {\"SourceCategory\"}, \"BudgetMapping\", JoinKind.LeftOuter),",
+        "  #\"Expanded BudgetMapping\" = Table.ExpandTableColumn(#\"Merged queries\", \"BudgetMapping\", {\"CategoryName\"}, {\"CategoryName\"}),",
+        "  #\"Removed columns\" = Table.RemoveColumns(#\"Expanded BudgetMapping\", {\"Category\"}),",
+        "  #\"Reordered columns\" = Table.ReorderColumns(#\"Removed columns\", {\"Measure\", \"BudgetDate\", \"Country\", \"Channel\", \"CategoryName\", \"Value\"}),",
+        "  #\"Pivoted column\" = Table.Pivot(Table.TransformColumnTypes(#\"Reordered columns\", {{\"Measure\", type text}}), List.Distinct(Table.TransformColumnTypes(#\"Reordered columns\", {{\"Measure\", type text}})[Measure]), \"Measure\", \"Value\"),",
+        "  #\"Renamed columns 2\" = Table.RenameColumns(#\"Pivoted column\", {{\"Sales\", \"NetSalesBU\"}, {\"Units\", \"UnitsBU\"}, {\"Country\", \"CountryName\"}, {\"Channel\", \"SalesChannel\"}}),",
+        "  #\"Changed column type 2\" = Table.TransformColumnTypes(#\"Renamed columns 2\", {{\"SalesChannel\", type text}, {\"CountryName\", type text}})",
+        "in",
+        "  #\"Changed column type 2\""
+      ],
+      "isDirectQuery": false,
+      "lastLoadedAsTableFormulaText": "{\"IncludesReferencedQueries\":false,\"RootFormulaText\":\"let\\n  Source = BudgetSheets,\\n  #\\\"Choose name columns for fn parameter\\\" = Table.SelectColumns(Source, {\\\"Name\\\"}),\\n  #\\\"Invoked custom function\\\" = Table.AddColumn(#\\\"Choose name columns for fn parameter\\\", \\\"Invoked custom function\\\", each fnCleanBudgetSheet([Name])),\\n  #\\\"Expanded Invoked custom function\\\" = Table.ExpandTableColumn(#\\\"Invoked custom function\\\", \\\"Invoked custom function\\\", {\\\"Country\\\", \\\"Channel\\\", \\\"Category\\\", \\\"Month\\\", \\\"Value\\\"}, {\\\"Country\\\", \\\"Channel\\\", \\\"Category\\\", \\\"Month\\\", \\\"Value\\\"}),\\n  #\\\"Split table name column\\\" = Table.SplitColumn(#\\\"Expanded Invoked custom function\\\", \\\"Name\\\", Splitter.SplitTextByDelimiter(\\\" \\\"), {\\\"Name.1\\\", \\\"Name.2\\\"}),\\n  #\\\"Renamed measure and year\\\" = Table.RenameColumns(#\\\"Split table name column\\\", {{\\\"Name.1\\\", \\\"Measure\\\"}, {\\\"Name.2\\\", \\\"Year\\\"}}),\\n  #\\\"Merged short month and year\\\" = Table.CombineColumns(Table.TransformColumnTypes(#\\\"Renamed measure and year\\\", {{\\\"Month\\\", type text}}), {\\\"Month\\\", \\\"Year\\\"}, Combiner.CombineTextByDelimiter(\\\" \\\", QuoteStyle.None), \\\"Merged\\\"),\\n  #\\\"Getting data\\\" = Table.TransformColumnTypes(#\\\"Merged short month and year\\\", {{\\\"Merged\\\", type date}}, \\\"en-US\\\"),\\n  #\\\"Renamed columns 1\\\" = Table.RenameColumns(#\\\"Getting data\\\", {{\\\"Merged\\\", \\\"BudgetDate\\\"}}),\\n  #\\\"Changed column type\\\" = Table.TransformColumnTypes(#\\\"Renamed columns 1\\\", {{\\\"Value\\\", type text}}),\\n  #\\\"Replaced value\\\" = Table.ReplaceValue(#\\\"Changed column type\\\", \\\" \\\", \\\"\\\", Replacer.ReplaceText, {\\\"Value\\\"}),\\n  #\\\"Changed column type 1\\\" = Table.TransformColumnTypes(#\\\"Replaced value\\\", {{\\\"Value\\\", type number}}),\\n  #\\\"Trimmed text\\\" = Table.TransformColumns(#\\\"Changed column type 1\\\", {{\\\"Category\\\", each Text.Trim(Text.From(_)), type nullable text}}),\\n  #\\\"Merged queries\\\" = Table.NestedJoin(#\\\"Trimmed text\\\", {\\\"Category\\\"}, BudgetMapping, {\\\"SourceCategory\\\"}, \\\"BudgetMapping\\\", JoinKind.LeftOuter),\\n  #\\\"Expanded BudgetMapping\\\" = Table.ExpandTableColumn(#\\\"Merged queries\\\", \\\"BudgetMapping\\\", {\\\"CategoryName\\\"}, {\\\"CategoryName\\\"}),\\n  #\\\"Removed columns\\\" = Table.RemoveColumns(#\\\"Expanded BudgetMapping\\\", {\\\"Category\\\"}),\\n  #\\\"Reordered columns\\\" = Table.ReorderColumns(#\\\"Removed columns\\\", {\\\"Measure\\\", \\\"BudgetDate\\\", \\\"Country\\\", \\\"Channel\\\", \\\"CategoryName\\\", \\\"Value\\\"}),\\n  #\\\"Pivoted column\\\" = Table.Pivot(Table.TransformColumnTypes(#\\\"Reordered columns\\\", {{\\\"Measure\\\", type text}}), List.Distinct(Table.TransformColumnTypes(#\\\"Reordered columns\\\", {{\\\"Measure\\\", type text}})[Measure]), \\\"Measure\\\", \\\"Value\\\"),\\n  #\\\"Renamed columns 2\\\" = Table.RenameColumns(#\\\"Pivoted column\\\", {{\\\"Sales\\\", \\\"NetSalesBU\\\"}, {\\\"Units\\\", \\\"UnitsBU\\\"}, {\\\"Country\\\", \\\"CountryName\\\"}, {\\\"Channel\\\", \\\"SalesChannel\\\"}}),\\n  #\\\"Changed column type 2\\\" = Table.TransformColumnTypes(#\\\"Renamed columns 2\\\", {{\\\"SalesChannel\\\", type text}, {\\\"CountryName\\\", type text}})\\nin\\n  #\\\"Changed column type 2\\\"\",\"ReferencedQueriesFormulaText\":{}}",
+      "loadAsTableDisabled": false,
+      "resultType": "Table",
+      "isHidden": false
+    },
+    {
+      "name": "fnGetNBPrates",
+      "lineageTag": "2905dfd3-0256-4f9d-9b76-abe5b8517bf1",
+      "queryGroupId": "bfec40c3-ab4f-4e16-ba50-0edb46ddb95e",
+      "text": [
+        "(DateFrom as date, DateTo as date, CurrencyCode as text) =>",
+        "let",
+        "    DateFromText = Date.ToText(DateFrom, [Format = \"yyyy-MM-dd\"]),",
+        "    DateToText   = Date.ToText(DateTo,   [Format = \"yyyy-MM-dd\"]),",
+        "    Source = Json.Document(",
+        "        Web.Contents(",
+        "            \"https://api.nbp.pl/api/exchangerates/rates\",",
+        "            [",
+        "                RelativePath = \"a/\" & Text.Lower(CurrencyCode) & \"/\" & DateFromText & \"/\" & DateToText,",
+        "                Query = [format = \"json\"]",
+        "            ]",
+        "        )",
+        "    ),",
+        "    Rates = Source[rates],",
+        "    RatesTable = Table.FromList(Rates, Splitter.SplitByNothing(), {\"Rate\"}),",
+        "    Expanded = Table.ExpandRecordColumn(RatesTable, \"Rate\", {\"effectiveDate\", \"mid\"}),",
+        "    Typed = Table.TransformColumnTypes(Expanded, {{\"effectiveDate\", type date}, {\"mid\", type number}})",
+        "in",
+        "    Typed"
+      ],
+      "loadAsTableDisabled": true,
+      "resultType": "Function",
+      "isHidden": false
+    },
+    {
+      "name": "fnCleanBudgetSheet",
+      "lineageTag": "c708213a-6be3-4441-a1ed-631fbb668f1a",
+      "queryGroupId": "bfec40c3-ab4f-4e16-ba50-0edb46ddb95e",
+      "text": [
+        "(pSheetName as text) => let",
+        "  Source = BudgetSheets,",
+        "  Navigation = Source{[Item = pSheetName, Kind = \"Sheet\"]}[Data],",
+        "  #\"Removed top rows\" = Table.Skip(Navigation, each [Column1] <> \"Country\"),",
+        "  #\"Promoted headers\" = Table.PromoteHeaders(#\"Removed top rows\", [PromoteAllScalars = true]),",
+        "  #\"Filled down\" = Table.FillDown(#\"Promoted headers\", {\"Country\", \"Channel\"}),",
+        "  #\"Filtered rows\" = Table.SelectRows(#\"Filled down\", each not Text.Contains([Country], \"Total\")),",
+        "  #\"Choose columns\" = Table.SelectColumns(#\"Filtered rows\", {\"Country\", \"Channel\", \"Category\", \"Jan\", \"Feb\", \"Mar\", \"Apr\", \"May\", \"Jun\", \"Jul\", \"Aug\", \"Sep\", \"Oct\", \"Nov\", \"Dec\"}),",
+        "  #\"Unpivoted other columns\" = Table.UnpivotOtherColumns(#\"Choose columns\", {\"Country\", \"Channel\", \"Category\"}, \"Attribute\", \"Value\"),",
+        "  #\"Renamed columns\" = Table.RenameColumns(#\"Unpivoted other columns\", {{\"Attribute\", \"Month\"}})",
+        "in",
+        "  #\"Renamed columns\""
+      ],
+      "loadAsTableDisabled": true,
+      "resultType": "Function",
+      "isHidden": false
+    },
+    {
+      "name": "BudgetMapping",
+      "lineageTag": "4914cda0-046e-4ff8-88e9-8bfeeda48eab",
+      "queryGroupId": "c8472072-d98f-4d6a-abbe-f29560787e98",
+      "text": [
+        "let",
+        "    Source = #table(",
+        "        type table [SourceCategory = text, CategoryName = text],",
+        "        {",
+        "            {\"Audio\", \"Audio\"},",
+        "            {\"Computers\", \"Computers\"},",
+        "            {\"TV & Video\", \"TV and Video\"},",
+        "            {\"Mobile Phones\", \"Cell phones\"},",
+        "            {\"Cameras & Camcorders\", \"Cameras and camcorders\"},",
+        "            {\"Music, Movies & Audiobooks\", \"Music, Movies and Audio Books\"},",
+        "            {\"Games & Toys\", \"Games and Toys\"},",
+        "            {\"Home appliances\", \"Home Appliances\"}",
+        "        }",
+        "    )",
+        "in",
+        "    Source"
+      ],
+      "loadAsTableDisabled": true,
+      "resultType": "Table",
+      "isHidden": false
+    },
+    {
+      "name": "BudgetSheets",
+      "lineageTag": "91ed7d3f-81ea-4a93-84e4-407f4a27257c",
+      "queryGroupId": "c8472072-d98f-4d6a-abbe-f29560787e98",
+      "text": [
+        "let",
+        "    Source = Excel.Workbook(File.Contents(pBudgetFilePath), null, true),",
+        "    SheetsOnly = Table.SelectRows(Source, each [Kind] = \"Sheet\" and [Name] <> \"Cover\")",
+        "in",
+        "    SheetsOnly"
+      ],
+      "loadAsTableDisabled": true,
+      "resultType": "Table",
+      "isHidden": false
+    },
+    {
+      "name": "NbpPeriodsHelper",
+      "lineageTag": "120526ae-16a8-46a4-a0f5-681c81020843",
+      "queryGroupId": "c8472072-d98f-4d6a-abbe-f29560787e98",
+      "text": [
+        "let",
+        "    StartDate = #date(2016, 5, 10),",
+        "    EndDate   = #date(2025, 12, 31),",
+        "    FirstQuarterStart = Date.StartOfQuarter(StartDate),",
+        "    QuarterCount =",
+        "        (Date.Year(EndDate) - Date.Year(StartDate)) * 4",
+        "        + Date.QuarterOfYear(EndDate) - Date.QuarterOfYear(StartDate) + 1,",
+        "    QuarterNumbers = List.Numbers(0, QuarterCount),",
+        "    QuarterStarts = List.Transform(QuarterNumbers, each Date.AddQuarters(FirstQuarterStart, _)),",
+        "    PeriodsTable = Table.FromList(QuarterStarts, Splitter.SplitByNothing(), {\"DateFrom\"}),",
+        "    Typed = Table.TransformColumnTypes(PeriodsTable, {{\"DateFrom\", type date}}),",
+        "    AddDateTo = Table.AddColumn(Typed, \"DateTo\", each Date.EndOfQuarter([DateFrom]), type date)",
+        "in",
+        "    AddDateTo"
+      ],
+      "loadAsTableDisabled": true,
+      "resultType": "Table",
+      "isHidden": false
+    },
+    {
+      "name": "NbpRates",
+      "lineageTag": "3c050518-9df5-42af-bf0f-be8c227b151c",
+      "queryGroupId": "c8472072-d98f-4d6a-abbe-f29560787e98",
+      "text": [
+        "let",
+        "  Source = NbpPeriodsHelper,",
+        "  #\"Get Rates per quarter\" = Table.AddColumn(Source, \"Invoked custom function\", each fnGetNBPrates([DateFrom], [DateTo], \"usd\")),",
+        "  #\"Expand rates\" = Table.ExpandTableColumn(#\"Get Rates per quarter\", \"Invoked custom function\", {\"effectiveDate\", \"mid\"}, {\"effectiveDate\", \"mid\"}),",
+        "  #\"Set Types\" = Table.TransformColumnTypes(#\"Expand rates\", {{\"effectiveDate\", type date}, {\"mid\", type number}}),",
+        "  #\"Leave only date and rate\" = Table.SelectColumns(#\"Set Types\", {\"effectiveDate\", \"mid\"}),",
+        "  #\"Renamed columns\" = Table.RenameColumns(#\"Leave only date and rate\", {{\"mid\", \"Rate\"}, {\"effectiveDate\", \"Date\"}}),",
+        "  #\"Added date shift\" = Table.AddColumn(#\"Renamed columns\", \"DateShift\", each Date.AddDays([Date], 1))",
+        "in",
+        "  #\"Added date shift\""
+      ],
+      "loadAsTableDisabled": true,
+      "resultType": "Table",
+      "isHidden": false
+    },
+    {
+      "name": "NbpCalendar",
+      "lineageTag": "b3d0b7bd-2663-4ba7-b697-c9b5f56f93a4",
+      "queryGroupId": "c8472072-d98f-4d6a-abbe-f29560787e98",
+      "text": [
+        "let",
+        "    StartDate = #date(2016, 5, 10),",
+        "    EndDate   = #date(2025, 12, 31),",
+        "    DayCount  = Duration.Days(EndDate - StartDate) + 1,",
+        "    DateList  = List.Dates(StartDate, DayCount, #duration(1, 0, 0, 0)),",
+        "    CalendarTable = Table.FromList(DateList, Splitter.SplitByNothing(), {\"Date\"}),",
+        "    Typed = Table.TransformColumnTypes(CalendarTable, {{\"Date\", type date}}),",
+        "  #\"Merged queries\" = Table.NestedJoin(Typed, {\"Date\"}, NbpRates, {\"DateShift\"}, \"NbpRates\", JoinKind.LeftOuter),",
+        "  #\"Expanded NbpRates\" = Table.ExpandTableColumn(#\"Merged queries\", \"NbpRates\", {\"Rate\"}, {\"Rate\"}),",
+        "  #\"Sorted date ascending\" = Table.Sort(#\"Expanded NbpRates\", {{\"Date\", Order.Ascending}}),",
+        "  #\"Filled down missing days\" = Table.FillDown(#\"Sorted date ascending\", {\"Rate\"}),",
+        "  #\"Renamed columns\" = Table.RenameColumns(#\"Filled down missing days\", {{\"Rate\", \"UsdPlnRate\"}})",
+        "in",
+        "    #\"Renamed columns\""
+      ],
+      "loadAsTableDisabled": true,
+      "resultType": "Table",
+      "isHidden": false
+    },
+    {
+      "name": "PaymentsFiles",
+      "queryGroupId": "c8472072-d98f-4d6a-abbe-f29560787e98",
+      "refreshWhenRefreshingAll": true,
+      "text": [
+        "let",
+        "  Source = Folder.Files(pPaymentsFolderPath)",
+        "in",
+        "  Source"
+      ],
+      "loadAsTableDisabled": false,
+      "resultType": "Unknown",
+      "isHidden": false
+    },
+    {
+      "name": "pBudgetFilePath",
+      "lineageTag": "56edb18c-fff4-426e-92fe-7bdd8d40dca9",
+      "description": "Budget source path",
+      "queryGroupId": "b8a27ea0-ad8e-4280-9e21-2b67be4520e3",
+      "text": [
+        "\"C:\\Users\\wojte\\Desktop\\Power BI\\Portfolio\\PowerBI-portfolio-project\\Data\\Budget\\contoso_budget_2024_2025.xlsx\" meta [IsParameterQuery = true, IsParameterQueryRequired = false, Type = type any]"
+      ],
+      "loadAsTableDisabled": true,
+      "resultType": "Text",
+      "isHidden": false
+    },
+    {
+      "name": "pPaymentsFolderPath",
+      "queryGroupId": "b8a27ea0-ad8e-4280-9e21-2b67be4520e3",
+      "text": [
+        "let",
+        "    Source = \"C:\\Users\\wojte\\Desktop\\Power BI\\Portfolio\\PowerBI-portfolio-project\\Data\\Payments\" meta [IsParameterQuery = true, IsParameterQueryRequired = true, Type = type text]",
+        "in",
+        "    Source"
+      ],
+      "loadAsTableDisabled": true,
+      "resultType": "Unknown",
+      "isHidden": false
+    },
+    {
+      "name": "PaymentsOld",
+      "queryGroupId": "c8472072-d98f-4d6a-abbe-f29560787e98",
+      "text": [
+        "let",
+        "  Source = PaymentsFiles,",
+        "  #\"Filtered rows\" = Table.SelectRows(Source, each Text.StartsWith([Name], \"contoso_bank_statement\")),",
+        "  #\"Filtered hidden files\" = Table.SelectRows(#\"Filtered rows\", each [Attributes]?[Hidden]? <> true),",
+        "  #\"Added custom\" = let",
+        "    rootPath = Text.TrimEnd(Value.Metadata(Value.Type(#\"Filtered hidden files\"))[FileSystemTable.RootPath]?, \"\\\"),",
+        "    combinePaths = (path1, path2) => Text.Combine({Text.TrimEnd(path1, \"\\\"), path2}, \"\\\"),",
+        "    getRelativePath = (path, relativeTo) => Text.Middle(path, Text.Length(relativeTo) + 1)",
+        "in",
+        "    Table.AddColumn(#\"Filtered hidden files\", \"Relative Path\", each getRelativePath(combinePaths([Folder Path], [Name]), rootPath), type text),",
+        "  #\"Invoke custom function\" = Table.AddColumn(#\"Added custom\", \"Transform file\", each #\"Transform file\"([Content])),",
+        "  #\"Renamed columns\" = Table.RenameColumns(#\"Invoke custom function\", {{\"Relative Path\", \"Source.Name\"}}),",
+        "  #\"Removed other columns\" = Table.SelectColumns(#\"Renamed columns\", {\"Source.Name\", \"Transform file\"}),",
+        "  #\"Expanded table column\" = Table.ExpandTableColumn(#\"Removed other columns\", \"Transform file\", Table.ColumnNames(#\"Transform file\"(#\"Sample file\"))),",
+        "  #\"Changed column type\" = Table.TransformColumnTypes(#\"Expanded table column\", {{\"Column1\", type text}, {\"Column2\", type text}, {\"Column3\", type text}, {\"Column4\", type text}, {\"Column5\", type text}, {\"Column6\", type text}})",
+        "in",
+        "  #\"Changed column type\""
+      ],
+      "loadAsTableDisabled": false,
+      "resultType": "Unknown",
+      "isHidden": false
+    },
+    {
+      "name": "PaymentsNew",
+      "queryGroupId": "c8472072-d98f-4d6a-abbe-f29560787e98",
+      "text": [
+        "let",
+        "  Source = PaymentsFiles,",
+        "  #\"Filtered rows\" = Table.SelectRows(Source, each Text.StartsWith([Name], \"Statement_\"))",
+        "in",
+        "  #\"Filtered rows\""
+      ],
+      "loadAsTableDisabled": false,
+      "resultType": "Unknown",
+      "isHidden": false
+    },
+    {
+      "name": "Sample file",
+      "queryGroupId": "ab509505-9350-4d5c-815f-fff6d18d1896",
+      "text": [
+        "let",
+        "  Source = PaymentsFiles,",
+        "  #\"Filtered rows\" = Table.SelectRows(Source, each Text.StartsWith([Name], \"contoso_bank_statement\")),",
+        "  #\"Filtered hidden files\" = Table.SelectRows(#\"Filtered rows\", each [Attributes]?[Hidden]? <> true),",
+        "  Navigation = #\"Filtered hidden files\"{0}[Content]",
+        "in",
+        "  Navigation"
+      ],
+      "loadAsTableDisabled": true,
+      "resultType": "Unknown",
+      "isHidden": true
+    },
+    {
+      "name": "Parameter",
+      "queryGroupId": "ab509505-9350-4d5c-815f-fff6d18d1896",
+      "text": [
+        "let",
+        "  Parameter = #\"Sample file\" meta [IsParameterQuery = true, IsParameterQueryRequired = false, Type = type binary, BinaryIdentifier = #\"Sample file\"]",
+        "in",
+        "  Parameter"
+      ],
+      "loadAsTableDisabled": true,
+      "resultType": "Unknown",
+      "isHidden": true
+    },
+    {
+      "name": "Transform Sample file",
+      "queryGroupId": "246d4ec7-2fb2-4036-bec1-ba9055bbf1c0",
+      "text": [
+        "let",
+        "  Source = Csv.Document(Parameter, [Delimiter = \",\", Columns = 6, Encoding = 65001, QuoteStyle = QuoteStyle.None]),",
+        "  #\"Removed top rows\" = Table.Skip(Source, each [Column1] <> \"TransactionId\"),",
+        "  #\"Promoted headers\" = Table.PromoteHeaders(#\"Removed top rows\", [PromoteAllScalars = true])",
+        "in",
+        "  #\"Promoted headers\""
+      ],
+      "loadAsTableDisabled": true,
+      "resultType": "Unknown",
+      "isHidden": false
+    },
+    {
+      "name": "Transform file",
+      "queryGroupId": "ab509505-9350-4d5c-815f-fff6d18d1896",
+      "text": [
+        "(Parameter as binary) => let",
+        "  Source = Csv.Document(Parameter, [Delimiter = \",\", Columns = 6, Encoding = 65001, QuoteStyle = QuoteStyle.None]),",
+        "  #\"Removed top rows\" = Table.Skip(Source, each [Column1] <> \"TransactionId\"),",
+        "  #\"Promoted headers\" = Table.PromoteHeaders(#\"Removed top rows\", [PromoteAllScalars = true])",
+        "in",
+        "  #\"Promoted headers\""
+      ],
+      "loadAsTableDisabled": true,
+      "resultType": "Function",
+      "isHidden": false
+    }
+  ],
+  "queryGroups": [
+    {
+      "name": "4. Dimensions",
+      "id": "68b0832b-d2d8-4595-8f9f-22554b7e74cb",
+      "order": 4,
+      "description": ""
+    },
+    {
+      "name": "5. Facts",
+      "id": "f1057fe1-603b-493a-8b9e-6ecb89fdecc1",
+      "order": 5,
+      "description": ""
+    },
+    {
+      "name": "2. Functions",
+      "id": "bfec40c3-ab4f-4e16-ba50-0edb46ddb95e",
+      "order": 1,
+      "description": ""
+    },
+    {
+      "name": "3. Staging",
+      "id": "c8472072-d98f-4d6a-abbe-f29560787e98",
+      "order": 3,
+      "description": ""
+    },
+    {
+      "name": "1. Parameters",
+      "id": "b8a27ea0-ad8e-4280-9e21-2b67be4520e3",
+      "description": ""
+    },
+    {
+      "name": "Transform file from PaymentsOld",
+      "id": "246d4ec7-2fb2-4036-bec1-ba9055bbf1c0",
+      "description": "",
+      "parentId": "bfec40c3-ab4f-4e16-ba50-0edb46ddb95e"
+    },
+    {
+      "name": "Helper queries",
+      "id": "ab509505-9350-4d5c-815f-fff6d18d1896",
+      "description": "",
+      "parentId": "246d4ec7-2fb2-4036-bec1-ba9055bbf1c0"
+    }
+  ],
+  "culture": "en-US"
+}

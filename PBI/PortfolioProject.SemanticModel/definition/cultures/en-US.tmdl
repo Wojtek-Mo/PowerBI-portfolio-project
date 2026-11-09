@@ -10453,74 +10453,50 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "entity__measure.full_year_BU": {
+			    "entity__measure.net_sales_BU_FY": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Measures",
-			          "ConceptualProperty": "Full Year BU"
+			          "ConceptualProperty": "Net Sales BU FY"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "full year BU": {
+			          "net sales BU FY": {
 			            "State": "Generated"
 			          }
 			        },
 			        {
-			          "BU": {
+			          "FY": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "year BU": {
+			          "BU FY": {
 			            "State": "Generated",
 			            "Weight": 0.97
 			          }
 			        },
 			        {
-			          "full yr bu": {
+			          "sales BU FY": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "net sale bu fy": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.609
+			            "Weight": 0.599
 			          }
 			        },
 			        {
-			          "yr bu": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.6
-			          }
-			        },
-			        {
-			          "complete year bu": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "entire year bu": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.591
-			          }
-			        },
-			        {
-			          "whole year bu": {
+			          "sale bu fy": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -10703,11 +10679,11 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "entity__measure.entity__full_year_BU_FormatString": {
+			    "entity__measure.entity__net_sales_BU_FY_FormatString": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Measures",
-			          "ConceptualProperty": "_Full Year BU FormatString"
+			          "ConceptualProperty": "_Net Sales BU FY FormatString"
 			        }
 			      },
 			      "State": "Generated",
@@ -10716,48 +10692,8 @@ cultureInfo en-US
 			      },
 			      "Terms": [
 			        {
-			          "_full year BU FormatString": {
+			          "_net sales BU FY FormatString": {
 			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "_full yr bu formatstring": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.624
-			          }
-			        },
-			        {
-			          "_ complete year bu formatstring": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.605
-			          }
-			        },
-			        {
-			          "_ entire year bu formatstring": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.605
-			          }
-			        },
-			        {
-			          "_ whole year bu formatstring": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.605
 			          }
 			        }
 			      ]
@@ -11463,23 +11399,560 @@ cultureInfo en-US
 			        }
 			      ],
 			      "NameType": "Name"
+			    },
+			    "entity__measure.net_sales_δ_BU_YTD": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Net Sales Δ BU YTD"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "net sales δ BU YTD": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "net sale δ bu year to date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.66
+			          }
+			        },
+			        {
+			          "net sale δ bu ytd": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.title_variance_breakdown": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Title Variance Breakdown"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "title variance breakdown": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "breakdown": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "variance breakdown": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "designation variance breakdown": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.609
+			          }
+			        },
+			        {
+			          "name variance breakdown": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "award variance breakdown": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "call variance breakdown": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "heading variance breakdown": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "label variance breakdown": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.591
+			          }
+			        },
+			        {
+			          "title variance failure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "title variance cessation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "title variance interruption": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "variance failure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__net_sales_δ_BU_YTD_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Net Sales Δ BU YTD FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_net sales δ BU YTD FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__title_variance_breakdown_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Title Variance Breakdown FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_title variance breakdown FormatString": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_ designation variance breakdown formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "_ name variance breakdown formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "_ award variance breakdown formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "_ call variance breakdown formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "_ heading variance breakdown formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "_ label variance breakdown formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "variance_breakdown_prm": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Variance Breakdown prm"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "variance breakdown prm": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "variance_breakdown_prm.variance_breakdown_prm": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Variance Breakdown prm",
+			          "ConceptualProperty": "Variance Breakdown prm"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "variance breakdown prm": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "variance breakdown prm name": {
+			            "State": "Generated"
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "variance_breakdown_prm.variance_breakdown_prm_field": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Variance Breakdown prm",
+			          "ConceptualProperty": "Variance Breakdown prm Fields"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "variance breakdown prm field": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "variance breakdown prm arena": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "variance breakdown prm turf": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "variance breakdown prm ground": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "variance breakdown prm pitch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "variance breakdown prm park": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "variance breakdown prm meadow": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "variance breakdown prm grassland": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "variance breakdown prm lea": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "variance breakdown prm pasture": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        },
+			        {
+			          "variance breakdown prm countryside": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.474
+			          }
+			        }
+			      ]
+			    },
+			    "variance_breakdown_prm.variance_breakdown_prm_order": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Variance Breakdown prm",
+			          "ConceptualProperty": "Variance Breakdown prm Order"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "variance breakdown prm order": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "variance breakdown prm instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "variance breakdown prm direction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "variance breakdown prm edict": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "variance breakdown prm command": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "variance breakdown prm directive": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "variance breakdown prm demand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "variance breakdown prm mandate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "variance breakdown prm imperative": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "variance breakdown prm stability": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        },
+			        {
+			          "variance breakdown prm harmony": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.489
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
-			    "dim_customer_has_dim_country": {
+			    "variance_breakdown_prm_has_variance_breakdown_prm": {
 			      "Binding": {
-			        "ConceptualEntity": "DimCustomer"
+			        "ConceptualEntity": "Variance Breakdown prm"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "dim_customer": {
+			        "variance_breakdown_prm": {
 			          "Target": {
-			            "Entity": "dim_customer"
+			            "Entity": "variance_breakdown_prm"
 			          }
 			        },
-			        "dim_country": {
+			        "variance_breakdown_prm.variance_breakdown_prm": {
 			          "Target": {
-			            "Entity": "dim_country"
+			            "Entity": "variance_breakdown_prm.variance_breakdown_prm"
 			          }
 			        }
 			      },
@@ -11487,28 +11960,127 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "dim_customer"
+			              "Role": "variance_breakdown_prm"
 			            },
 			            "Object": {
-			              "Role": "dim_country"
+			              "Role": "variance_breakdown_prm.variance_breakdown_prm"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dim_customers_have_dim_countries"
+			          "ID": "variance_breakdown_prms_have_variance_breakdown_prms"
 			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "variance_breakdown_prm"
+			            },
+			            "Name": {
+			              "Role": "variance_breakdown_prm.variance_breakdown_prm"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "variance_breakdown_prms_are_names_IDs_of_variance_breakdown_prms"
+			        }
+			      ]
+			    },
+			    "variance_breakdown_prm_has_entity__measure_title_variance_breakdown": {
+			      "Binding": {
+			        "ConceptualEntity": "Variance Breakdown prm"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "variance_breakdown_prm": {
+			          "Target": {
+			            "Entity": "variance_breakdown_prm"
+			          }
+			        },
+			        "entity__measure.title_variance_breakdown": {
+			          "Target": {
+			            "Entity": "entity__measure.title_variance_breakdown"
+			          }
+			        }
+			      },
+			      "Phrasings": [
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "dim_country"
+			              "Role": "variance_breakdown_prm"
 			            },
 			            "Object": {
-			              "Role": "dim_customer"
+			              "Role": "entity__measure.title_variance_breakdown"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "dim_countries_have_dim_customers"
+			          "ID": "variance_breakdown_prms_have_title_variance_breakdown"
+			        }
+			      ]
+			    },
+			    "fact_sale_has_entity__measure_net_sales_δ_BU_YTD": {
+			      "Binding": {
+			        "ConceptualEntity": "FactSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_sale": {
+			          "Target": {
+			            "Entity": "fact_sale"
+			          }
+			        },
+			        "entity__measure.net_sales_δ_BU_YTD": {
+			          "Target": {
+			            "Entity": "entity__measure.net_sales_δ_BU_YTD"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_sale"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.net_sales_δ_BU_YTD"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_sales_have_net_sales_δ_BU_YTD"
+			        }
+			      ]
+			    },
+			    "fact_budget_has_entity__measure_net_sales_δ_BU_YTD": {
+			      "Binding": {
+			        "ConceptualEntity": "FactBudget"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_budget": {
+			          "Target": {
+			            "Entity": "fact_budget"
+			          }
+			        },
+			        "entity__measure.net_sales_δ_BU_YTD": {
+			          "Target": {
+			            "Entity": "entity__measure.net_sales_δ_BU_YTD"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_budget"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.net_sales_δ_BU_YTD"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_budgets_have_net_sales_δ_BU_YTD"
 			        }
 			      ]
 			    },
@@ -11637,7 +12209,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "fact_budget_has_entity__measure_full_year_BU": {
+			    "fact_budget_has_entity__measure_net_sales_BU_FY": {
 			      "Binding": {
 			        "ConceptualEntity": "FactBudget"
 			      },
@@ -11648,9 +12220,9 @@ cultureInfo en-US
 			            "Entity": "fact_budget"
 			          }
 			        },
-			        "entity__measure.full_year_BU": {
+			        "entity__measure.net_sales_BU_FY": {
 			          "Target": {
-			            "Entity": "entity__measure.full_year_BU"
+			            "Entity": "entity__measure.net_sales_BU_FY"
 			          }
 			        }
 			      },
@@ -11661,12 +12233,12 @@ cultureInfo en-US
 			              "Role": "fact_budget"
 			            },
 			            "Object": {
-			              "Role": "entity__measure.full_year_BU"
+			              "Role": "entity__measure.net_sales_BU_FY"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fact_budgets_have_full_year_BU"
+			          "ID": "fact_budgets_have_net_sales_BU_FY"
 			        }
 			      ]
 			    },
@@ -14803,6 +15375,52 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.9,
 			          "ID": "dim_stores_are_opened_on_open_dates"
+			        }
+			      ]
+			    },
+			    "dim_customer_has_dim_country": {
+			      "Binding": {
+			        "ConceptualEntity": "DimCustomer"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_customer": {
+			          "Target": {
+			            "Entity": "dim_customer"
+			          }
+			        },
+			        "dim_country": {
+			          "Target": {
+			            "Entity": "dim_country"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_customer"
+			            },
+			            "Object": {
+			              "Role": "dim_country"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_customers_have_dim_countries"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_country"
+			            },
+			            "Object": {
+			              "Role": "dim_customer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_countries_have_dim_customers"
 			        }
 			      ]
 			    },

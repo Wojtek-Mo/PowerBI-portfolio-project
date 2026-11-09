@@ -1,0 +1,31 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "ae99357521ba5e8d85b3",
+  "position": {
+    "x": 11.35483870967742,
+    "y": 236.38709677419354,
+    "z": 7000,
+    "height": 475.87096774193549,
+    "width": 615.22580645161293,
+    "tabOrder": 7003
+  },
+  "visualGroup": {
+    "displayName": "Variance chart with prm",
+    "groupMode": "ScaleMode",
+    "objects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

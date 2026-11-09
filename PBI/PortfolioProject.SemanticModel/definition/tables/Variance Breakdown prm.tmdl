@@ -1,0 +1,48 @@
+table 'Variance Breakdown prm'
+	lineageTag: ab00d4bc-98cb-4732-b5e8-c070c8b598f3
+
+	column 'Variance Breakdown prm'
+		lineageTag: c374a421-0ea8-46f9-83c4-f6c40427efe4
+		summarizeBy: none
+		sourceColumn: [Value1]
+		sortByColumn: 'Variance Breakdown prm Order'
+
+		relatedColumnDetails
+			groupByColumn: 'Variance Breakdown prm Fields'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Variance Breakdown prm Fields'
+		isHidden
+		lineageTag: 03a88ffa-1037-4a54-be5b-58c8df2e9127
+		summarizeBy: none
+		sourceColumn: [Value2]
+		sortByColumn: 'Variance Breakdown prm Order'
+
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 3,
+				  "kind": 2
+				}
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Variance Breakdown prm Order'
+		isHidden
+		formatString: 0
+		lineageTag: d9c6dda6-45e5-47c0-bba2-ff14aeab4f40
+		summarizeBy: sum
+		sourceColumn: [Value3]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Variance Breakdown prm' = calculated
+		mode: import
+		source =
+				{
+				    ("Country", NAMEOF('DimCountry'[CountryName]), 0),
+				    ("Category", NAMEOF('DimCategory'[CategoryName]), 1)
+				}
+
+	annotation PBI_Id = 12242b721d1d4a8f862453de8d7bcee1
+

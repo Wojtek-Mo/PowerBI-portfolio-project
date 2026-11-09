@@ -78,7 +78,7 @@ table FactBudget
 				  #"Expanded BudgetMapping" = Table.ExpandTableColumn(#"Merged queries", "BudgetMapping", {"CategoryName"}, {"CategoryName"}),
 				  #"Removed columns" = Table.RemoveColumns(#"Expanded BudgetMapping", {"Category"}),
 				  #"Reordered columns" = Table.ReorderColumns(#"Removed columns", {"Measure", "BudgetDate", "Country", "Channel", "CategoryName", "Value"}),
-				  #"Pivoted column" = Table.Pivot(Table.TransformColumnTypes(#"Reordered columns", {{"Measure", type text}}), List.Distinct(Table.TransformColumnTypes(#"Reordered columns", {{"Measure", type text}})[Measure]), "Measure", "Value", List.Sum),
+				  #"Pivoted column" = Table.Pivot(Table.TransformColumnTypes(#"Reordered columns", {{"Measure", type text}}), List.Distinct(Table.TransformColumnTypes(#"Reordered columns", {{"Measure", type text}})[Measure]), "Measure", "Value"),
 				  #"Renamed columns 2" = Table.RenameColumns(#"Pivoted column", {{"Sales", "NetSalesBU"}, {"Units", "UnitsBU"}, {"Country", "CountryName"}, {"Channel", "SalesChannel"}}),
 				  #"Changed column type 2" = Table.TransformColumnTypes(#"Renamed columns 2", {{"SalesChannel", type text}, {"CountryName", type text}})
 				in

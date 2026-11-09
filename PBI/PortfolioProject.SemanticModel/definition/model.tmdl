@@ -49,6 +49,7 @@ ref table FactBudget
 ref table DimCategory
 ref table DimChannel
 ref table DimCountry
+ref table 'Variance Breakdown prm'
 
 ref cultureInfo en-US
 

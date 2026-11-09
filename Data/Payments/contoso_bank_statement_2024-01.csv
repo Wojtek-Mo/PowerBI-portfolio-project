@@ -1,0 +1,2227 @@
+﻿Contoso Ltd. - account statement
+Account: USD operating account
+Period: 2024-01-01 - 2024-01-31
+TransactionId,BookingDate,Amount,Currency,PayerName,Description
+1,2024-01-21,1179.84,USD,William Torres,Payment for invoice INV-29230039
+2,2024-01-21,2075.58,USD,James Haggard,Payment for invoice INV-29230049
+3,2024-01-21,385.92,USD,Barbara Perry,Payment for invoice INV-29230061
+4,2024-01-21,144.90,USD,Akaash Weiland,Payment for invoice INV-29230076
+5,2024-01-21,77.20,USD,Javier Harrison,Payment for invoice INV-29230081
+6,2024-01-21,1935.32,USD,Thomas Fuchs,Payment for invoice INV-29230084
+7,2024-01-21,51.02,USD,Alberta Rivera,INV 29230099
+8,2024-01-21,14.98,USD,Peter Dennis,Payment for invoice INV-29230128
+9,2024-01-21,918.06,USD,Annett Sankt,Payment for invoice INV-29230148
+10,2024-01-21,642.60,USD,Antoine Carrera,Payment for invoice INV-29230162
+11,2024-01-21,1967.52,USD,Wawrzyniec Kozlowski,Payment for invoice INV-29230163
+12,2024-01-21,4030.09,USD,Brenda Whisenhunt,Payment for invoice INV-29230185
+13,2024-01-21,858.00,USD,Alexandro van Erp,Payment for invoice INV-29230193
+14,2024-01-21,229.63,USD,Ann French,Payment for invoice INV-29230194
+15,2024-01-21,278.46,USD,Adhelmar Valadez,Payment for invoice INV-29230202
+16,2024-01-21,112.00,USD,James Johnston,Payment for invoice INV-29230209
+17,2024-01-21,2321.74,USD,Miro Tomic,Payment for invoice INV-29230239
+18,2024-01-21,4410.49,USD,Cecile Freeze,Payment for invoice INV-29230267
+19,2024-01-21,24.77,USD,Curt Brock,Payment for invoice INV-29230278
+20,2024-01-21,94.88,USD,Maria Vitale,Payment for invoice INV-29230299
+21,2024-01-21,2396.00,USD,Gilbert Washington,Payment for invoice INV-29230300
+22,2024-01-21,5129.22,USD,Cameron Wallis,Payment for invoice INV-29230345
+23,2024-01-21,2520.97,USD,Madison Freeman,Payment for invoice INV-29230411
+24,2024-01-21,3058.11,USD,Jonas Schroeder,Payment for invoice INV-29230414
+25,2024-01-21,269.96,USD,Paul Britt,Invoice no. 29230431
+26,2024-01-21,6687.63,USD,George Lawson,Payment for invoice INV-29230462
+27,2024-01-21,5593.75,USD,Rena Landrum,Payment for invoice INV-29230465
+28,2024-01-21,1549.04,USD,Johnny Berry,Payment for invoice INV-29230490
+29,2024-01-21,992.77,USD,Sienna L'Estrange,Payment for invoice INV-29230494
+30,2024-01-21,2621.64,USD,Katharina Kohl,Payment for invoice INV-29230498
+31,2024-01-21,519.98,USD,Joan Showers,Payment for invoice INV-29230499
+32,2024-01-22,2720.54,USD,James Dansby,Payment for invoice INV-29230015
+33,2024-01-22,1493.62,USD,Robin Ertl,Payment for invoice INV-29230019
+34,2024-01-22,529.81,USD,Rachel Morrow,29230021
+35,2024-01-22,992.33,USD,Nicholas Walter,Payment for invoice INV-29230030
+36,2024-01-22,4278.81,USD,Gregory Haynes,Payment for invoice INV-29230070
+37,2024-01-22,19508.80,USD,Emma Allen,Payment for invoice INV-29230102
+38,2024-01-22,712.73,USD,George Gelinas,Payment for invoice INV-29230156
+39,2024-01-22,2176.85,USD,Robert Watson,INV 29230159
+40,2024-01-22,940.96,USD,Donald Vincent,Payment for invoice INV-29230170
+41,2024-01-22,2319.05,USD,Roger Kelley,Payment for invoice INV-29230171
+42,2024-01-22,2645.04,USD,Valerie Hubbard,Payment for invoice INV-29230233
+43,2024-01-22,175.37,USD,Weldon Hopes,Payment for invoice INV-29230282
+44,2024-01-22,861.30,USD,Antonio Blain,Payment for invoice INV-29230288
+45,2024-01-22,2570.17,USD,Mario Crouch,Payment for invoice INV-29230292
+46,2024-01-22,3338.43,USD,Melanie Kuster,Payment for invoice INV-29230304
+47,2024-01-22,7810.36,USD,Dennis King,Payment for invoice INV-29230318
+48,2024-01-22,769.44,USD,Norris Johnson,Payment for invoice INV-29230320
+49,2024-01-22,54.28,USD,Laetitia Beauchesne,Payment for invoice INV-29230323
+50,2024-01-22,29.67,USD,William Choi,Payment for invoice INV-29230359
+51,2024-01-22,1931.97,USD,Julie Nielsen,Payment for invoice INV-29230363
+52,2024-01-22,661.69,USD,Janis Davis,Payment for invoice INV-29230368
+53,2024-01-22,1520.54,USD,Bradley Doherty,Payment for invoice INV-29230409
+54,2024-01-22,8596.56,USD,Martin Springer,inv-29230412
+55,2024-01-22,309.00,USD,Myron Ward,Payment for invoice INV-29230436
+56,2024-01-22,1076.27,USD,Felix Huber,Payment for invoice INV-29230448
+57,2024-01-22,3122.32,USD,Mary Haskins,Payment for invoice INV-29230497
+58,2024-01-22,704.72,USD,Jamie Wettenhall,Payment for invoice INV-29240005
+59,2024-01-22,287.09,USD,Kerstin Wulf,Payment for invoice INV-29240055
+60,2024-01-22,1694.63,USD,Edgar Archer,Payment for invoice INV-29240057
+61,2024-01-22,2514.80,USD,Inez Gentry,29240074
+62,2024-01-22,7761.69,USD,Kimberly Link,Payment for invoice INV-29240171
+63,2024-01-22,500.00,USD,Renatus Aartsen,Payment for invoice INV-29240174
+64,2024-01-22,978.57,USD,Sabrina Bieber,Payment for invoice INV-29240215
+65,2024-01-22,568.10,USD,Ronald Rice,Payment for invoice INV-29240232
+66,2024-01-22,3846.56,USD,Bianca Cavenagh,Payment for invoice INV-29240254
+67,2024-01-22,693.99,USD,Amelia Morton,Payment for invoice INV-29240271
+68,2024-01-22,146.94,USD,Lisa Ryan,Payment for invoice INV-29240280
+69,2024-01-22,1372.75,USD,Arnold Luke,Payment for invoice INV-29240288
+70,2024-01-22,1400.00,USD,Robert Loyd,Payment for invoice INV-29240303
+71,2024-01-22,971.24,USD,Stephan Drechsler,Payment for invoice INV-29240329
+72,2024-01-22,2952.94,USD,Kathy Vizcarra,Invoice no. 29240333
+73,2024-01-22,1524.17,USD,Niklas Baier,INV 29240358
+74,2024-01-22,3346.84,USD,Bethany Sharp,Payment for invoice INV-29240397
+75,2024-01-22,125.35,USD,Michael Jordan,Payment for invoice INV-29240405
+76,2024-01-22,607.93,USD,Lena Freeh,Payment for invoice INV-29240408
+77,2024-01-22,1198.79,USD,Mohammad Atkins,inv-29240424
+78,2024-01-22,4760.63,USD,Flor Whitney,Payment for invoice INV-29240483
+79,2024-01-22,2738.58,USD,Daniel Burrows,Payment for invoice INV-29240500
+80,2024-01-22,1318.06,USD,Charles Danko,Payment for invoice INV-29240519
+81,2024-01-22,2718.95,USD,Larry Sowers,Payment for invoice INV-29240531
+82,2024-01-22,4761.03,USD,Jalil Lacroix,Payment for invoice INV-29240612
+83,2024-01-22,30.60,USD,Christina Faerber,Payment for invoice INV-29240625
+84,2024-01-22,3133.61,USD,Thomas Carpenter,INV 29240632
+85,2024-01-22,5368.91,USD,Chad Schroeder,Payment for invoice INV-29240671
+86,2024-01-23,4308.00,USD,Indiana Whitlam,Payment for invoice INV-29230045
+87,2024-01-23,1469.65,USD,Uwe Ostermann,29230059
+88,2024-01-23,9856.11,USD,Thorsten Meister,Payment for invoice INV-29230103
+89,2024-01-23,554.33,USD,Franziska Kunze,Payment for invoice INV-29230111
+90,2024-01-23,2184.00,USD,Joseph Emmons,Payment for invoice INV-29230114
+91,2024-01-23,3280.77,USD,Dennis Kaiser,Payment for invoice INV-29230125
+92,2024-01-23,681.04,USD,Fred Clement,Payment for invoice INV-29230136
+93,2024-01-23,15363.30,USD,James Kelliher,Payment for invoice INV-29230140
+94,2024-01-23,4230.44,USD,Donna Gonzales,Payment for invoice INV-29230161
+95,2024-01-23,147.98,USD,Joanne Eastep,Payment for invoice INV-29230253
+96,2024-01-23,5633.50,USD,Pinabel Rocher,Payment for invoice INV-29230257
+97,2024-01-23,434.76,USD,Carlos Bandy,29230266
+98,2024-01-23,1319.97,USD,Jonathan Gall,Payment for invoice INV-29230277
+99,2024-01-23,3528.18,USD,Jack Briggs,29230281
+100,2024-01-23,572.25,USD,Linda Gowan,INV 29230297
+101,2024-01-23,592.59,USD,Robin Leppäluoto,Payment for invoice INV-29230338
+102,2024-01-23,464.00,USD,Isaac O'Neil,Payment for invoice INV-29230432
+103,2024-01-23,203.60,USD,Tegan Parsons,Payment for invoice INV-29230447
+104,2024-01-23,4305.60,USD,Charles Shaffer,Payment for invoice INV-29230479
+105,2024-01-23,1152.55,USD,Freddie Chambers,Payment for invoice INV-29230487
+106,2024-01-23,180.58,USD,Elisabet Gustavsson,Payment for invoice INV-29230522
+107,2024-01-23,2220.72,USD,Ursula Schmid,Payment for invoice INV-29240001
+108,2024-01-23,3246.68,USD,Christopher Torres,Payment for invoice INV-29240007
+109,2024-01-23,952.02,USD,Carley Muller,Payment for invoice INV-29240011
+110,2024-01-23,137.26,USD,Richard Little,Invoice no. 29240067
+111,2024-01-23,256.32,USD,Silke Nussbaum,INV 29240076
+112,2024-01-23,1120.00,USD,Melvin Palermo,Payment for invoice INV-29240088
+113,2024-01-23,5598.44,USD,Patrick Reinhardt,Payment for invoice INV-29240109
+114,2024-01-23,2257.43,USD,Matthew Henderson,Payment for invoice INV-29240113
+115,2024-01-23,226.03,USD,Joan Morris,inv-29240126
+116,2024-01-23,697.93,USD,Klaziena Lancee,INV 29240130
+117,2024-01-23,4860.87,USD,Monika Klug,Payment for invoice INV-29240153
+118,2024-01-23,4062.93,USD,Connie Brotherton,Payment for invoice INV-29240162
+119,2024-01-23,2738.60,USD,Dirk Sankt,Payment for invoice INV-29240165
+120,2024-01-23,309.72,USD,Linda Smith,Payment for invoice INV-29240190
+121,2024-01-23,606.94,USD,Michael Mendez,Payment for invoice INV-29240202
+122,2024-01-23,265.02,USD,Emilie Andersen,Payment for invoice INV-29240223
+123,2024-01-23,2094.32,USD,Aaron Mees,Payment for invoice INV-29240227
+124,2024-01-23,1687.41,USD,Karen Collins,Payment for invoice INV-29240236
+125,2024-01-23,1152.04,USD,Hazel Watson,Order payment
+126,2024-01-23,5596.36,USD,Mark Jerez,Payment for invoice INV-29240255
+127,2024-01-23,3745.48,USD,Richard Knott,Payment for invoice INV-29240264
+128,2024-01-23,413.61,USD,Hayden Page,Payment for invoice INV-29240270
+129,2024-01-23,2143.07,USD,Mildred Gray,29240273
+130,2024-01-23,1449.42,USD,Heike Ziegler,Payment for invoice INV-29240274
+131,2024-01-23,303.84,USD,Mason Thornton,Payment for invoice INV-29240283
+132,2024-01-23,1399.65,USD,Joshua Rabin,Payment for invoice INV-29240343
+133,2024-01-23,633.79,USD,Edward Small,Payment for invoice INV-29240347
+134,2024-01-23,7035.82,USD,Jack Jones,Payment for invoice INV-29240361
+135,2024-01-23,1540.00,USD,Daniel Roberts,Payment for invoice INV-29240375
+136,2024-01-23,541.68,USD,Anja Rothschild,Payment for invoice INV-29240423
+137,2024-01-23,3399.80,USD,Charlotte Medley,29240428
+138,2024-01-23,4142.87,USD,Robert Sugg,Payment for invoice INV-29240448
+139,2024-01-23,515.97,USD,Claudia Bieber,Payment for invoice INV-29240456
+140,2024-01-23,199.29,USD,Julie Flores,Payment for invoice INV-29240473
+141,2024-01-23,945.00,USD,Lucy Bell,Invoice no. 29240496
+142,2024-01-23,1477.01,USD,Nathan Craig,Payment for invoice INV-29240539
+143,2024-01-23,2243.06,USD,Maria Abend,Payment for invoice INV-29240549
+144,2024-01-23,253.80,USD,Jennifer Buffum,Payment for invoice INV-29240563
+145,2024-01-23,1618.54,USD,Lindsey Sanchez,Invoice no. 29240591
+146,2024-01-23,529.76,USD,Rodney Barry,inv-29240610
+147,2024-01-23,31.08,USD,Judy Burford,Payment for invoice INV-29240613
+148,2024-01-23,6704.93,USD,Miroslaw Jablonski,Payment for invoice INV-29240642
+149,2024-01-23,256.46,USD,Gail Bellamy,Payment for invoice INV-29240645
+150,2024-01-23,1159.23,USD,Paulette Laprise,Payment for invoice INV-29240662
+151,2024-01-23,413.97,USD,Kimberly Callahan,Payment for invoice INV-29250004
+152,2024-01-23,4258.76,USD,Matthew Watts,Payment for invoice INV-29250018
+153,2024-01-23,9457.68,USD,Haley Velasquez,INV 29250028
+154,2024-01-23,2648.61,USD,Cerys Fletcher,Payment for invoice INV-29250037
+155,2024-01-23,4257.12,USD,Eva Egge,Payment for invoice INV-29250070
+156,2024-01-23,1518.16,USD,Georgia Watson,Payment for invoice INV-29250173
+157,2024-01-23,9.96,USD,Dominic Lindrum,Payment for invoice INV-29250185
+158,2024-01-23,2418.12,USD,Wendy Robinson,Payment for invoice INV-29250196
+159,2024-01-23,523.58,USD,Gerald Underwood,Payment for invoice INV-29250222
+160,2024-01-23,807.00,USD,Iwona Symanska,Payment for invoice INV-29250226
+161,2024-01-23,112.22,USD,Mary Simpson,Payment for invoice INV-29250233
+162,2024-01-23,941.35,USD,Leonie Krause,Payment for invoice INV-29250253
+163,2024-01-23,2004.65,USD,Daniel Rivers,Payment for invoice INV-29250254
+164,2024-01-23,6379.66,USD,Lindsey Sanchez,Payment for invoice INV-29250266
+165,2024-01-23,2868.81,USD,Rebecca Herrmann,Payment for invoice INV-29250278
+166,2024-01-23,486.14,USD,Juliane Fuhrmann,Payment for invoice INV-29250311
+167,2024-01-23,36.97,USD,Krista Taylor,Payment for invoice INV-29250346
+168,2024-01-23,1194.00,USD,Anna Furst,Payment for invoice INV-29250349
+169,2024-01-23,627.16,USD,Jacqueline Moore,Payment for invoice INV-29250351
+170,2024-01-23,1664.24,USD,Maya Richardson,Payment for invoice INV-29250356
+171,2024-01-23,353.78,USD,Tahlia Layh,INV 29250383
+172,2024-01-23,806.76,USD,Marina Baader,Payment for invoice INV-29250388
+173,2024-01-23,8907.64,USD,Lily Tayler,Payment for invoice INV-29250402
+174,2024-01-23,269.70,USD,Jaroslav Novák,Payment for invoice INV-29250478
+175,2024-01-23,538.00,USD,Jana Karlíková,Payment for invoice INV-29250512
+176,2024-01-23,141.35,USD,Martin Frei,Payment for invoice INV-29250525
+177,2024-01-23,2176.31,USD,Lena Theiss,Payment for invoice INV-29250531
+178,2024-01-23,855.00,USD,Evie Macnamara,Payment for invoice INV-29250535
+179,2024-01-23,165.27,USD,Mildred King,Payment for invoice INV-29250545
+180,2024-01-23,8.69,USD,Maria Möller,INV 29250564
+181,2024-01-23,5303.49,USD,Andrew Jones,Payment for invoice INV-29250577
+182,2024-01-23,2540.25,USD,Irene Strawn,Payment for invoice INV-29250597
+183,2024-01-23,15.82,USD,Marko Wurfel,Payment for invoice INV-29250603
+184,2024-01-23,1156.06,USD,Tristan Chermside,Payment for invoice INV-29250646
+185,2024-01-23,2455.90,USD,Rebecca Davies,Payment for invoice INV-29250650
+186,2024-01-23,800.00,USD,Janet Williams,Payment for invoice INV-29250654
+187,2024-01-23,4599.89,USD,Christopher Clare,Payment for invoice INV-29250658
+188,2024-01-23,1197.60,USD,Franko Kneževic,Payment for invoice INV-29250790
+189,2024-01-23,6351.78,USD,Sybil Cox,Payment for invoice INV-29250797
+190,2024-01-23,1080.00,USD,Cyril Zamora,Payment for invoice INV-29250812
+191,2024-01-24,50.96,USD,Kathleen Howes,Payment for invoice INV-29230011
+192,2024-01-24,1410.78,USD,Lara Morgan,Payment for invoice INV-29230057
+193,2024-01-24,5539.68,USD,Jack Fuller,INV 29230065
+194,2024-01-24,904.72,USD,Amanda Alves,Payment for invoice INV-29230088
+195,2024-01-24,2473.55,USD,Carolyn Dennison,Payment for invoice INV-29230120
+196,2024-01-24,955.86,USD,Robert Rexford,INV 29230139
+197,2024-01-24,498.58,USD,Reginald McLaughlin,Payment for invoice INV-29230152
+198,2024-01-24,934.72,USD,Brenda Whisenhunt,Payment for invoice INV-29230195
+199,2024-01-24,2311.30,USD,Sally Fowler,Payment for invoice INV-29230205
+200,2024-01-24,2925.32,USD,Melanie Seiler,Payment for invoice INV-29230256
+201,2024-01-24,861.04,USD,Taylor Hammond,Payment for invoice INV-29230273
+202,2024-01-24,600.28,USD,Marina Eisenhauer,Payment for invoice INV-29230330
+203,2024-01-24,1634.92,USD,India Garvey,Payment for invoice INV-29230353
+204,2024-01-24,1410.12,USD,Fred Best,Payment for invoice INV-29230357
+205,2024-01-24,33899.13,USD,Terri Perry,Payment for invoice INV-29230373
+206,2024-01-24,670.97,USD,Kayla Whelan,INV 29230394
+207,2024-01-24,2849.58,USD,Mary Gutierrez,inv-29230404
+208,2024-01-24,5606.24,USD,Lola Chandler,Payment for invoice INV-29230429
+209,2024-01-24,11.77,USD,Rene Kennedy,Payment for invoice INV-29230469
+210,2024-01-24,1938.39,USD,Jan Gloeckner,Payment for invoice INV-29230483
+211,2024-01-24,259.80,USD,Doris Flowers,inv-29230500
+212,2024-01-24,3417.21,USD,Richard Centeno,Payment for invoice INV-29230519
+213,2024-01-24,1404.57,USD,Sophia Dresner,Payment for invoice INV-29240008
+214,2024-01-24,580.00,USD,Deborah Parrott,Payment for invoice INV-29240123
+215,2024-01-24,758.00,USD,Matthew Pope,Payment for invoice INV-29240157
+216,2024-01-24,794.47,USD,Jessica Suggs,Payment for invoice INV-29240164
+217,2024-01-24,639.22,USD,Steven Clark,Payment for invoice INV-29240179
+218,2024-01-24,166.86,USD,Richard Malone,Payment for invoice INV-29240186
+219,2024-01-24,1806.97,USD,Robert Mills,Payment for invoice INV-29240230
+220,2024-01-24,1159.35,USD,Robert Harris,Payment for invoice INV-29240231
+221,2024-01-24,2162.78,USD,Curtis Gooch,Payment for invoice INV-29240245
+222,2024-01-24,9510.01,USD,Angie Doiron,Payment for invoice INV-29240250
+223,2024-01-24,1452.56,USD,Kenneth Shine,Payment for invoice INV-29240256
+224,2024-01-24,1542.90,USD,Digna Wijnants,Payment for invoice INV-29240263
+225,2024-01-24,1495.83,USD,Latricia McQueen,Payment for invoice INV-29240349
+226,2024-01-24,1876.00,USD,Harley Barker,Payment for invoice INV-29240363
+227,2024-01-24,1820.43,USD,Erik Werfel,inv-29240416
+228,2024-01-24,3649.42,USD,Jerry Grady,Payment for invoice INV-29240446
+229,2024-01-24,1905.54,USD,Mollie Morrison,Payment for invoice INV-29240466
+230,2024-01-24,3135.94,USD,Ladislav Rosenberg,Payment for invoice INV-29240509
+231,2024-01-24,1126.71,USD,Daniel Dodd,INV 29240514
+232,2024-01-24,246.72,USD,Joseph Cohen,Payment for invoice INV-29240520
+233,2024-01-24,324.72,USD,Darryl Baranowski,Payment for invoice INV-29240536
+234,2024-01-24,57.88,USD,Joe Cain,INV 29240558
+235,2024-01-24,2258.51,USD,Wan Kleij,Payment for invoice INV-29240567
+236,2024-01-24,766.38,USD,Kenneth Randall,Invoice no. 29240574
+237,2024-01-24,349.45,USD,Dirk Seiler,Payment for invoice INV-29240622
+238,2024-01-24,2059.61,USD,Larry Waddle,Payment for invoice INV-29240650
+239,2024-01-24,949.00,USD,Charli Gillison,Payment for invoice INV-29240669
+240,2024-01-24,637.20,USD,Karen Ahmad,Payment for invoice INV-29240674
+241,2024-01-24,568.00,USD,Torsten Foerster,Payment for invoice INV-29240678
+242,2024-01-24,396.00,USD,Paul Grunwald,Payment for invoice INV-29250006
+243,2024-01-24,3810.24,USD,Christina Gruenewald,Payment for invoice INV-29250030
+244,2024-01-24,52.45,USD,Yanna Wetzels,Payment for invoice INV-29250038
+245,2024-01-24,2453.41,USD,Pedro Carman,Payment for invoice INV-29250051
+246,2024-01-24,101.34,USD,Ralph Márquez,Payment for invoice INV-29250078
+247,2024-01-24,7315.92,USD,Callie Young,Payment for invoice INV-29250088
+248,2024-01-24,12796.80,USD,Jaclyn Mack,Payment for invoice INV-29250107
+249,2024-01-24,192.02,USD,Frederikke Løvstrøm,Payment for invoice INV-29250117
+250,2024-01-24,6.05,USD,Guy Ford,Payment for invoice INV-29250120
+251,2024-01-24,922.44,USD,Isak Sørheim,inv-29250129
+252,2024-01-24,1681.77,USD,Stephan Lemann,inv-29250144
+253,2024-01-24,1380.12,USD,Annie Cervantes,Payment for invoice INV-29250157
+254,2024-01-24,6184.72,USD,Caroline Hernandez,Payment for invoice INV-29250164
+255,2024-01-24,10140.84,USD,Claude Washington,Payment for invoice INV-29250182
+256,2024-01-24,9.99,USD,Jeremy Chandler,Payment for invoice INV-29250219
+257,2024-01-24,3105.64,USD,Roy Plumb,Payment for invoice INV-29250223
+258,2024-01-24,1558.12,USD,Hugo Marshall-Hall,Payment for invoice INV-29250251
+259,2024-01-24,13.89,USD,Robert Emerson,Payment for invoice INV-29250259
+260,2024-01-24,3096.57,USD,Jerry Carney,Payment for invoice INV-29250276
+261,2024-01-24,25.80,USD,Victor Bryant,Payment for invoice INV-29250297
+262,2024-01-24,289.65,USD,Laurens Sommers,Payment for invoice INV-29250300
+263,2024-01-24,1378.24,USD,Arwin van den Brekel,Payment for invoice INV-29250301
+264,2024-01-24,616.00,USD,Ruth Russell,Payment for invoice INV-29250314
+265,2024-01-24,45.10,USD,Kauê Fernandes,Payment for invoice INV-29250321
+266,2024-01-24,1342.30,USD,Elisabet Gustavsson,Payment for invoice INV-29250343
+267,2024-01-24,1138.44,USD,Bethany Espie,29250385
+268,2024-01-24,583.91,USD,David McDonald,Payment for invoice INV-29250396
+269,2024-01-24,107.94,USD,Sara Cassidy,Payment for invoice INV-29250399
+270,2024-01-24,1273.95,USD,Osvaldo Neville,Payment for invoice INV-29250429
+271,2024-01-24,475.15,USD,Lizzie Rodrigue,Payment for invoice INV-29250436
+272,2024-01-24,9.92,USD,Robert Hernandez,inv-29250439
+273,2024-01-24,56.00,USD,Chandler Gervais,Payment for invoice INV-29250442
+274,2024-01-24,55.43,USD,Robert Porter,INV 29250443
+275,2024-01-24,1692.84,USD,Florencia Alarcón,Payment for invoice INV-29250464
+276,2024-01-24,4973.65,USD,Paul Wood,INV 29250476
+277,2024-01-24,2605.65,USD,Tamimount Dommerholt,Payment for invoice INV-29250483
+278,2024-01-24,1923.79,USD,Burt Wright,Payment for invoice INV-29250499
+279,2024-01-24,1280.57,USD,Jamie Williams,Payment for invoice INV-29250521
+280,2024-01-24,1706.04,USD,William Labbe,Payment for invoice INV-29250523
+281,2024-01-24,1563.44,USD,Frances Burks,Payment for invoice INV-29250537
+282,2024-01-24,105.00,USD,Rebecca Godfrey,Payment for invoice INV-29250553
+283,2024-01-24,1000.94,USD,Randi Sutherland,INV 29250555
+284,2024-01-24,1678.95,USD,Torsten Foerster,Payment for invoice INV-29250557
+285,2024-01-24,1299.11,USD,Robert Mills,Payment for invoice INV-29250567
+286,2024-01-24,2894.90,USD,Adriana Jimenes,inv-29250571
+287,2024-01-24,1390.76,USD,Oscar Melrose,Payment for invoice INV-29250583
+288,2024-01-24,237.60,USD,Kathryn Rhodes,Payment for invoice INV-29250586
+289,2024-01-24,28.98,USD,Heather Cheek,Payment for invoice INV-29250621
+290,2024-01-24,322.09,USD,Mike Herz,Payment for invoice INV-29250642
+291,2024-01-24,1482.48,USD,Alva Lundström,Payment for invoice INV-29250662
+292,2024-01-24,1737.82,USD,Deborah Figueroa,Payment for invoice INV-29250664
+293,2024-01-24,251.37,USD,Robert Waters,29250698
+294,2024-01-24,2174.95,USD,Mathew Banks,Payment for invoice INV-29250705
+295,2024-01-24,789.36,USD,Vida Banks,Payment for invoice INV-29250717
+296,2024-01-24,105.78,USD,Marcus Rogers,Payment for invoice INV-29250719
+297,2024-01-24,288.00,USD,Nathan McCathie,Payment for invoice INV-29250721
+298,2024-01-24,5004.94,USD,Claudia Mehler,Payment for invoice INV-29250737
+299,2024-01-24,1049.58,USD,Barbara Maldonado,Invoice no. 29250756
+300,2024-01-24,502.56,USD,Edith Walter,Payment for invoice INV-29250762
+301,2024-01-24,3045.88,USD,Irene Daniels,Payment for invoice INV-29250778
+302,2024-01-24,221.88,USD,Donna Jones,Payment for invoice INV-29260025
+303,2024-01-24,2500.81,USD,Jayden Grahamslaw,Payment for invoice INV-29260048
+304,2024-01-24,1474.90,USD,Lora Youngblood,Payment for invoice INV-29260080
+305,2024-01-24,711.49,USD,Lily Erskine,Payment for invoice INV-29260108
+306,2024-01-24,1829.94,USD,Charles Moore,Payment for invoice INV-29260109
+307,2024-01-24,405.16,USD,Lewis Campbell,Payment for invoice INV-29260117
+308,2024-01-24,2582.83,USD,Erin Corson,inv-29260120
+309,2024-01-24,292.02,USD,Marshall Vaughan,29260171
+310,2024-01-24,1039.81,USD,Debra Conlon,Payment for invoice INV-29260178
+311,2024-01-24,1593.21,USD,Noah Conklin,Payment for invoice INV-29260189
+312,2024-01-24,1298.18,USD,Tracy Kopp,Payment for invoice INV-29260192
+313,2024-01-24,737.37,USD,Amy Jones,Payment for invoice INV-29260198
+314,2024-01-24,1853.84,USD,Robert Lange,Payment for invoice INV-29260208
+315,2024-01-24,2374.24,USD,Sherryl Monday,Payment for invoice INV-29260213
+316,2024-01-24,1789.73,USD,Patrick Bohm,INV 29260220
+317,2024-01-24,189.00,USD,Caroline Daley,29260222
+318,2024-01-24,181.94,USD,Betty Moses,Payment for invoice INV-29260288
+319,2024-01-24,230.83,USD,Melissa Ballard,inv-29260290
+320,2024-01-24,194.06,USD,Anna Bell,Payment for invoice INV-29260319
+321,2024-01-24,2088.30,USD,Prisc Villareal,Payment for invoice INV-29260320
+322,2024-01-24,3311.98,USD,Teresa Fernandes,Payment for invoice INV-29260322
+323,2024-01-24,6209.27,USD,Helena Savonheimo,Payment for invoice INV-29260354
+324,2024-01-24,222.49,USD,Patrick Morales,Payment for invoice INV-29260375
+325,2024-01-24,97.89,USD,Henry Le Messurier,Payment for invoice INV-29260417
+326,2024-01-24,4591.77,USD,Vivienne Fort,inv-29260435
+327,2024-01-24,224.40,USD,Maria Rager,Payment for invoice INV-29260468
+328,2024-01-24,14.99,USD,Drew Leiker,Payment for invoice INV-29260510
+329,2024-01-24,1516.23,USD,Timothy Sterns,Payment for invoice INV-29260519
+330,2024-01-24,3704.52,USD,Linda Cutler,Payment for invoice INV-29260522
+331,2024-01-24,974.62,USD,Alice Brigden,Payment for invoice INV-29260581
+332,2024-01-24,1664.12,USD,Jeffrey Boe,Payment for invoice INV-29260590
+333,2024-01-24,1714.95,USD,Hazel Griffin,Payment for invoice INV-29260629
+334,2024-01-24,1326.14,USD,Patricia Morris,Payment for invoice INV-29260655
+335,2024-01-24,1548.87,USD,Dawn Tobias,Payment for invoice INV-29260673
+336,2024-01-24,222.01,USD,Sam Chambers,Payment for invoice INV-29260684
+337,2024-01-24,701.97,USD,Franziska Mehler,Payment for invoice INV-29260697
+338,2024-01-24,169.55,USD,Barbara Dixon,inv-29260756
+339,2024-01-24,3224.77,USD,Einojuhani Råback,Payment for invoice INV-29260780
+340,2024-01-24,1061.46,USD,Theresa Yamamoto,Payment for invoice INV-29260796
+341,2024-01-24,552.42,USD,Alisha Wilkinson,INV 29260839
+342,2024-01-24,11329.19,USD,Elvin Björk,Payment for invoice INV-29260847
+343,2024-01-24,14363.17,USD,Gloria Johnston,Payment for invoice INV-29260861
+344,2024-01-24,5441.99,USD,Sandra Reyes,Payment for invoice INV-29260864
+345,2024-01-24,2931.28,USD,Felix Sørensen,Payment for invoice INV-29260874
+346,2024-01-25,20.64,USD,Robert Skinner,Payment for invoice INV-29230012
+347,2024-01-25,2055.20,USD,Zbigniew Jasinski,Payment for invoice INV-29230022
+348,2024-01-25,6842.01,USD,Nicole Beyer,Payment for invoice INV-29230025
+349,2024-01-25,2146.68,USD,Regilio Beker,Payment for invoice INV-29230029
+350,2024-01-25,37.84,USD,Larry Ewell,Payment for invoice INV-29230048
+351,2024-01-25,1585.15,USD,Yessica Bijlsma,Payment for invoice INV-29230072
+352,2024-01-25,312.00,USD,Claire Hubbard,Payment for invoice INV-29230085
+353,2024-01-25,134.96,USD,William Summers,Payment for invoice INV-29230149
+354,2024-01-25,1526.49,USD,Robert Weiss,INV 29230164
+355,2024-01-25,605.64,USD,Andrej Doležal,Payment for invoice INV-29230177
+356,2024-01-25,3074.64,USD,Jose Stlaurent,Payment for invoice INV-29230178
+357,2024-01-25,934.37,USD,Sophie Ziegler,29230183
+358,2024-01-25,3270.54,USD,Sharon Horne,Payment for invoice INV-29230200
+359,2024-01-25,5192.03,USD,Peter Junker,Payment for invoice INV-29230243
+360,2024-01-25,1808.48,USD,Leah Austerlitz,Payment for invoice INV-29230259
+361,2024-01-25,10934.46,USD,Jane Galvan,Payment for invoice INV-29230301
+362,2024-01-25,9730.73,USD,Rory Dobbie,Payment for invoice INV-29230309
+363,2024-01-25,1269.60,USD,Matthew Stutchbury,29230332
+364,2024-01-25,3878.18,USD,Matias Raita,Payment for invoice INV-29230339
+365,2024-01-25,597.87,USD,Eva Malec,INV 29230342
+366,2024-01-25,1121.34,USD,Tessa Elliott,Payment for invoice INV-29230360
+367,2024-01-25,429.52,USD,Jade Kelly,Payment for invoice INV-29230367
+368,2024-01-25,242.73,USD,Billy Walters,Payment for invoice INV-29230461
+369,2024-01-25,319.53,USD,Leonard Syed,Payment for invoice INV-29230482
+370,2024-01-25,25.58,USD,Stacey Purdy,Payment for invoice INV-29230491
+371,2024-01-25,13.76,USD,Alvin Mathilda,Payment for invoice INV-29230505
+372,2024-01-25,20.37,USD,Billy Montez,Invoice no. 29230524
+373,2024-01-25,103.92,USD,Tristan Matthaei,Payment for invoice INV-29240003
+374,2024-01-25,190.53,USD,Corrin Whitfield,Payment for invoice INV-29240034
+375,2024-01-25,145.36,USD,Wera Sawicka,Payment for invoice INV-29240039
+376,2024-01-25,2179.13,USD,Dorothy Shelor,Invoice no. 29240040
+377,2024-01-25,1483.05,USD,Chris Stevens,inv-29240045
+378,2024-01-25,2030.00,USD,John Beatty,Payment for invoice INV-29240047
+379,2024-01-25,227.96,USD,Vicky Miller,Payment for invoice INV-29240070
+380,2024-01-25,525.48,USD,Tilly Bradshaw,Payment for invoice INV-29240079
+381,2024-01-25,1093.34,USD,Alessandro Hermansson,inv-29240085
+382,2024-01-25,4457.35,USD,Thomas Eiffel,Payment for invoice INV-29240098
+383,2024-01-25,1012.79,USD,Zoe Whittaker,Payment for invoice INV-29240104
+384,2024-01-25,33.46,USD,Dianna Ortega,Payment for invoice INV-29240116
+385,2024-01-25,2038.51,USD,Aynkan Zúñiga,Payment for invoice INV-29240131
+386,2024-01-25,308.93,USD,Helen Pelletier,Payment for invoice INV-29240142
+387,2024-01-25,257.20,USD,Ben Bergman,Payment for invoice INV-29240143
+388,2024-01-25,187.54,USD,Eddie Luckey,Payment for invoice INV-29240144
+389,2024-01-25,63.64,USD,Owen Davey,Payment for invoice INV-29240170
+390,2024-01-25,2733.76,USD,Mary Barnes,Payment for invoice INV-29240200
+391,2024-01-25,179.00,USD,Sarah Thompson,Payment for invoice INV-29240205
+392,2024-01-25,1313.76,USD,Swen Keller,Payment for invoice INV-29240225
+393,2024-01-25,201.52,USD,Gene Joines,Payment for invoice INV-29240249
+394,2024-01-25,2437.09,USD,Thersa Thaxton,Payment for invoice INV-29240261
+395,2024-01-25,4162.53,USD,Lillie Fields,Payment for invoice INV-29240282
+396,2024-01-25,493.00,USD,Laura Horseman,Payment for invoice INV-29240301
+397,2024-01-25,1017.76,USD,Albert Deck,Payment for invoice INV-29240312
+398,2024-01-25,299.90,USD,Joshua Blanchard,Payment for invoice INV-29240334
+399,2024-01-25,120.00,USD,Donna Hendricks,Payment for invoice INV-29240338
+400,2024-01-25,15.83,USD,James Wadsworth,Payment for invoice INV-29240373
+401,2024-01-25,2817.40,USD,Charli Tighe,Payment for invoice INV-29240388
+402,2024-01-25,2758.64,USD,Lisa Dahl,Payment for invoice INV-29240407
+403,2024-01-25,812.16,USD,James Jones,Payment for invoice INV-29240439
+404,2024-01-25,2307.44,USD,Scott Charlton,Invoice no. 29240460
+405,2024-01-25,263.91,USD,Mike Call,Payment for invoice INV-29240477
+406,2024-01-25,26.67,USD,Guadalupe Beaudoin,Payment for invoice INV-29240481
+407,2024-01-25,644.18,USD,Patricia Brown,Payment for invoice INV-29240488
+408,2024-01-25,8.15,USD,Faith Duncan,Payment for invoice INV-29240504
+409,2024-01-25,3.02,USD,Marina Bachmeier,Payment for invoice INV-29240510
+410,2024-01-25,560.00,USD,Ema Horvat,Payment for invoice INV-29240555
+411,2024-01-25,733.09,USD,Cassey Beal,Invoice no. 29240630
+412,2024-01-25,2950.00,USD,Susan Zuniga,Payment for invoice INV-29240637
+413,2024-01-25,1079.60,USD,Ana Milic,Payment for invoice INV-29240640
+414,2024-01-25,994.38,USD,Audrey Lee,Payment for invoice INV-29240641
+415,2024-01-25,699.00,USD,Renata Landová,Payment for invoice INV-29240651
+416,2024-01-25,2392.97,USD,Melissa Eaves,Payment for invoice INV-29240656
+417,2024-01-25,3569.52,USD,Loretta Ellis,29240673
+418,2024-01-25,696.60,USD,Katie Gardner,Payment for invoice INV-29250000
+419,2024-01-25,1004.56,USD,Claude Varela,Payment for invoice INV-29250020
+420,2024-01-25,29.97,USD,Wubbo Bogerd,Payment for invoice INV-29250023
+421,2024-01-25,2646.09,USD,Cheryl Hancock,INV 29250089
+422,2024-01-25,734.85,USD,Chad Sullivan,Payment for invoice INV-29250098
+423,2024-01-25,779.97,USD,Laura Kollman,Payment for invoice INV-29250105
+424,2024-01-25,1520.17,USD,Marina Sommer,Payment for invoice INV-29250124
+425,2024-01-25,83.52,USD,Michael Bryant,Payment for invoice INV-29250130
+426,2024-01-25,329.97,USD,Susanne Reinhardt,Payment for invoice INV-29250163
+427,2024-01-25,94.88,USD,Benjamin Klein,Payment for invoice INV-29250174
+428,2024-01-25,63.82,USD,John Hampton,INV 29250176
+429,2024-01-25,422.37,USD,Nicole Hoch,INV 29250181
+430,2024-01-25,12199.20,USD,Patricia Papa,INV 29250209
+431,2024-01-25,7742.97,USD,Patricia Ruiz,Payment for invoice INV-29250231
+432,2024-01-25,461.02,USD,Julian Beach,Payment for invoice INV-29250247
+433,2024-01-25,2551.91,USD,Monica Davidson,Payment for invoice INV-29250249
+434,2024-01-25,201.27,USD,Kimberly McIntyre,Payment for invoice INV-29250256
+435,2024-01-25,2699.91,USD,Zak Holt,Payment for invoice INV-29250344
+436,2024-01-25,678.03,USD,Lea Brandt,Payment for invoice INV-29250378
+437,2024-01-25,656.55,USD,Ryan Glyde,inv-29250394
+438,2024-01-25,38.28,USD,Josh Power,Payment for invoice INV-29250395
+439,2024-01-25,5984.10,USD,Antero Paananen,Payment for invoice INV-29250398
+440,2024-01-25,2679.72,USD,Kevin Madison,Payment for invoice INV-29250432
+441,2024-01-25,737.42,USD,Pamela Luse,Payment for invoice INV-29250435
+442,2024-01-25,2950.00,USD,Janelle Lozano,Payment for invoice INV-29250469
+443,2024-01-25,2408.00,USD,Dean Cunningham,Payment for invoice INV-29250470
+444,2024-01-25,179.00,USD,Peter Carollo,Payment for invoice INV-29250471
+445,2024-01-25,4775.52,USD,Claudia Walter,Payment for invoice INV-29250475
+446,2024-01-25,705.56,USD,Eddo van Hulzen,Payment for invoice INV-29250503
+447,2024-01-25,2322.84,USD,Lyndon Crume,INV 29250507
+448,2024-01-25,106.06,USD,Michael Jarvis,Payment for invoice INV-29250515
+449,2024-01-25,910.89,USD,Maarten Nabbe,inv-29250532
+450,2024-01-25,2131.32,USD,Oliver Crawford,Payment for invoice INV-29250556
+451,2024-01-25,277.19,USD,Hamish Wollstonecraft,Payment for invoice INV-29250585
+452,2024-01-25,2917.79,USD,Woodrow Aldridge,INV 29250602
+453,2024-01-25,239.65,USD,Chelsea Dodd,Payment for invoice INV-29250622
+454,2024-01-25,5554.81,USD,Monika Braun,Payment for invoice INV-29250627
+455,2024-01-25,1210.65,USD,Kevin Achen,Payment for invoice INV-29250655
+456,2024-01-25,293.00,USD,Brian Dunn,Payment for invoice INV-29250657
+457,2024-01-25,1091.85,USD,Lucy Briggs,Payment for invoice INV-29250659
+458,2024-01-25,607.08,USD,Ralph Biermann,Payment for invoice INV-29250665
+459,2024-01-25,45.78,USD,Gabriel Miah,Payment for invoice INV-29250673
+460,2024-01-25,1040.58,USD,Hannah McCorkle,Payment for invoice INV-29250681
+461,2024-01-25,4417.14,USD,Ricky Johnson,Payment for invoice INV-29250708
+462,2024-01-25,328.99,USD,Charles Engle,Payment for invoice INV-29250710
+463,2024-01-25,564.09,USD,Benjamin Kent,Payment for invoice INV-29250716
+464,2024-01-25,14313.68,USD,Kathryn Keys,INV 29250740
+465,2024-01-25,601.11,USD,Oscar Hickey,Payment for invoice INV-29250746
+466,2024-01-25,1878.04,USD,Matthew McKenna,Payment for invoice INV-29250754
+467,2024-01-25,1635.52,USD,Juan Holland,Payment for invoice INV-29250760
+468,2024-01-25,532.00,USD,Olivia Fortney,Payment for invoice INV-29250770
+469,2024-01-25,148.20,USD,James Monger,Payment for invoice INV-29250776
+470,2024-01-25,308.00,USD,James Hill,Payment for invoice INV-29250777
+471,2024-01-25,70.33,USD,Sabine Gersten,Payment for invoice INV-29250780
+472,2024-01-25,203.67,USD,Jeremy Baden,Payment for invoice INV-29250799
+473,2024-01-25,827.16,USD,Sara Waechter,Payment for invoice INV-29250801
+474,2024-01-25,388.17,USD,James Ortego,Payment for invoice INV-29250806
+475,2024-01-25,166.32,USD,Knud Larsen,Payment for invoice INV-29250810
+476,2024-01-25,3553.76,USD,Danila Polanco,Payment for invoice INV-29250822
+477,2024-01-25,2801.44,USD,Milla Shoebridge,Invoice no. 29260017
+478,2024-01-25,2574.85,USD,Joel Hale,Payment for invoice INV-29260018
+479,2024-01-25,201.61,USD,James Bible,INV 29260039
+480,2024-01-25,483.27,USD,Lynda Mize,Payment for invoice INV-29260044
+481,2024-01-25,2147.83,USD,Naomi Welch,Payment for invoice INV-29260049
+482,2024-01-25,1359.11,USD,Monika Achen,Invoice no. 29260056
+483,2024-01-25,26.97,USD,Renee Anderson,Payment for invoice INV-29260059
+484,2024-01-25,16942.51,USD,Leonie Koenig,Payment for invoice INV-29260073
+485,2024-01-25,210.32,USD,Alonzo Ramirez,INV 29260114
+486,2024-01-25,790.72,USD,Nicholas Adams,Payment for invoice INV-29260135
+487,2024-01-25,1614.60,USD,Robin Robinson,Payment for invoice INV-29260141
+488,2024-01-25,9018.67,USD,John Moss,Payment for invoice INV-29260172
+489,2024-01-25,510.00,USD,Shirley Norton,Payment for invoice INV-29260196
+490,2024-01-25,960.84,USD,Charles Stephens,INV 29260203
+491,2024-01-25,8491.56,USD,Derrick Minaya,Payment for invoice INV-29260228
+492,2024-01-25,6852.32,USD,Michael Watson,Payment for invoice INV-29260256
+493,2024-01-25,444.54,USD,Kimberly Beaudoin,Payment for invoice INV-29260264
+494,2024-01-25,1446.90,USD,Hannu Karlsson,Payment for invoice INV-29260285
+495,2024-01-25,51.86,USD,Tomáš Hudec,Payment for invoice INV-29260296
+496,2024-01-25,1246.64,USD,Tom Grate,Payment for invoice INV-29260307
+497,2024-01-25,4868.46,USD,Bernd Ziegler,Payment for invoice INV-29260317
+498,2024-01-25,684.92,USD,Enmanuel Sedillo,Payment for invoice INV-29260332
+499,2024-01-25,2663.22,USD,Kik Oudt,inv-29260342
+500,2024-01-25,1917.28,USD,Jordan Lefroy,29260426
+501,2024-01-25,1651.02,USD,Gloria Harrah,Payment for invoice INV-29260463
+502,2024-01-25,602.09,USD,Lucinda Robinson,inv-29260465
+503,2024-01-25,1235.11,USD,Pavel Fatka,Payment for invoice INV-29260487
+504,2024-01-25,6.99,USD,Edith Vega,Payment for invoice INV-29260539
+505,2024-01-25,6717.87,USD,Stella Small,Payment for invoice INV-29260549
+506,2024-01-25,773.96,USD,Riemer Reuser,Payment for invoice INV-29260570
+507,2024-01-25,34.38,USD,Peter Seiler,INV 29260580
+508,2024-01-25,37.98,USD,Tia Manning,Payment for invoice INV-29260591
+509,2024-01-25,404.97,USD,Gwendolyn Bakken,Payment for invoice INV-29260626
+510,2024-01-25,845.39,USD,Kayla Ricketson,Payment for invoice INV-29260668
+511,2024-01-25,14.29,USD,Oscar Williams,Payment for invoice INV-29260694
+512,2024-01-25,657.58,USD,Gary Rutherford,Payment for invoice INV-29260703
+513,2024-01-25,121.00,USD,Randy Randall,INV 29260704
+514,2024-01-25,295.31,USD,Lena Theissen,Payment for invoice INV-29260707
+515,2024-01-25,263.12,USD,Luca Schmitt,Invoice no. 29260722
+516,2024-01-25,1116.54,USD,John Room,Payment for invoice INV-29260738
+517,2024-01-25,3512.11,USD,Leon Morrison,Payment for invoice INV-29260747
+518,2024-01-25,500.40,USD,Lola Bartholomew,Payment for invoice INV-29260768
+519,2024-01-25,2543.42,USD,Beau Grimmett,Payment for invoice INV-29260769
+520,2024-01-25,2618.91,USD,Grace Byrne,Payment for invoice INV-29260778
+521,2024-01-25,1563.59,USD,Noah Bolton,Invoice no. 29260820
+522,2024-01-25,770.36,USD,Phillipp Weissmuller,Payment for invoice INV-29260829
+523,2024-01-25,3808.87,USD,Inunnguaq Josefsen,Payment for invoice INV-29260831
+524,2024-01-25,692.75,USD,John Gray,Invoice no. 29260850
+525,2024-01-25,5602.69,USD,Jeff Emert,Payment for invoice INV-29260866
+526,2024-01-25,1052.74,USD,Stephen King,Payment for invoice INV-29260891
+527,2024-01-25,2795.34,USD,Vicky Johnson,Payment for invoice INV-29260913
+528,2024-01-25,294.88,USD,Harriet Morrison,Payment for invoice INV-29270005
+529,2024-01-25,79.76,USD,Annett Vogel,Payment for invoice INV-29270017
+530,2024-01-25,2402.75,USD,Imogene Brown,Payment for invoice INV-29270063
+531,2024-01-25,1552.00,USD,Linda Sellers,Payment for invoice INV-29270096
+532,2024-01-25,2111.97,USD,Donald Howe,Payment for invoice INV-29270105
+533,2024-01-25,4131.00,USD,Willard Willoughby,Invoice no. 29270136
+534,2024-01-25,452.72,USD,Max Werner,Payment for invoice INV-29270179
+535,2024-01-25,1915.43,USD,Francesca Blackburn,Payment for invoice INV-29270183
+536,2024-01-25,2484.91,USD,Sabine Beich,Payment for invoice INV-29270243
+537,2024-01-25,408.97,USD,Iris Ramos,Payment for invoice INV-29270271
+538,2024-01-25,7138.17,USD,Betty Chavez,Invoice no. 29270289
+539,2024-01-25,8430.60,USD,Jimmy Buxton,Payment for invoice INV-29270297
+540,2024-01-25,1839.77,USD,Rosie Osborne,Payment for invoice INV-29270307
+541,2024-01-25,1943.96,USD,Stephen Stone,Payment for invoice INV-29270334
+542,2024-01-25,191.97,USD,Declan Hain,Payment for invoice INV-29270343
+543,2024-01-25,128.00,USD,Grace Mohammed,Payment for invoice INV-29270350
+544,2024-01-25,62.86,USD,Phillipp Finkel,inv-29270356
+545,2024-01-25,1494.58,USD,Alexis Girardi,Payment for invoice INV-29270360
+546,2024-01-25,563.03,USD,Terry Burch,inv-29270408
+547,2024-01-25,1304.00,USD,Erica White,Payment for invoice INV-29270414
+548,2024-01-25,1265.68,USD,Hugo Carter,Invoice no. 29270421
+549,2024-01-25,251.98,USD,William Thacker,Payment for invoice INV-29270427
+550,2024-01-25,2499.00,USD,Brooke Barnett,Payment for invoice INV-29270500
+551,2024-01-25,327.29,USD,Shelba Reid,Payment for invoice INV-29270505
+552,2024-01-25,2649.44,USD,David Clark,Payment for invoice INV-29270513
+553,2024-01-25,1555.40,USD,Adriana Green,Payment for invoice INV-29270523
+554,2024-01-25,1159.15,USD,Sue Noonan,Payment for invoice INV-29270562
+555,2024-01-25,3017.29,USD,Penny Nelson,Payment for invoice INV-29270574
+556,2024-01-25,192.13,USD,Karen Tobiassen,Payment for invoice INV-29270594
+557,2024-01-26,957.44,USD,Kathy Rice,Payment for invoice INV-29230024
+558,2024-01-26,112.00,USD,Brunilda Moy,Payment for invoice INV-29230036
+559,2024-01-26,1340.00,USD,Philipp Burger,Payment for invoice INV-29230047
+560,2024-01-26,4299.90,USD,Mary Scott,Payment for invoice INV-29230063
+561,2024-01-26,18181.99,USD,Shannon Rahman,Payment for invoice INV-29230166
+562,2024-01-26,2087.65,USD,Arthur Beck,Payment for invoice INV-29230176
+563,2024-01-26,2342.83,USD,Alexander Lyons,Payment for invoice INV-29230181
+564,2024-01-26,2118.29,USD,Ferragus Champagne,Payment for invoice INV-29230201
+565,2024-01-26,1592.20,USD,Julie Ferguson,Payment for invoice INV-29230210
+566,2024-01-26,124.00,USD,Elizabeth Dunn,Payment for invoice INV-29230220
+567,2024-01-26,1441.78,USD,Sarah Nussbaum,Payment for invoice INV-29230225
+568,2024-01-26,1553.75,USD,Meagan van Adrichem,Payment for invoice INV-29230235
+569,2024-01-26,529.22,USD,Hilbertus Leeuwenburgh,INV 29230245
+570,2024-01-26,704.59,USD,Alexis Collings,Payment for invoice INV-29230248
+571,2024-01-26,1090.97,USD,Thomas Goodman,Payment for invoice INV-29230249
+572,2024-01-26,738.00,USD,Kevin Schmitt,Payment for invoice INV-29230254
+573,2024-01-26,20.87,USD,Jonas Kirsch,Payment for invoice INV-29230298
+574,2024-01-26,141.77,USD,Lloyd Miller,Payment for invoice INV-29230308
+575,2024-01-26,1090.18,USD,Tess Bronkhorst,Payment for invoice INV-29230334
+576,2024-01-26,4507.73,USD,Theodore Beaty,inv-29230370
+577,2024-01-26,928.00,USD,Craig Perez,Payment for invoice INV-29230384
+578,2024-01-26,1314.00,USD,Roy Dye,Payment for invoice INV-29230441
+579,2024-01-26,4269.46,USD,Paul Metzger,Payment for invoice INV-29230444
+580,2024-01-26,33.98,USD,Leon Naumann,Payment for invoice INV-29230449
+581,2024-01-26,1162.72,USD,Christopher Nair,Payment for invoice INV-29230475
+582,2024-01-26,972.29,USD,Ashley Mizelle,Payment for invoice INV-29230480
+583,2024-01-26,764.00,USD,Chuck Tabor,inv-29230501
+584,2024-01-26,90.14,USD,Annett Mauer,Payment for invoice INV-29230521
+585,2024-01-26,2457.67,USD,Hazel Graves,Payment for invoice INV-29240002
+586,2024-01-26,2740.90,USD,Aisa Gielens,Payment for invoice INV-29240032
+587,2024-01-26,2407.50,USD,William Lawson,Payment for invoice INV-29240052
+588,2024-01-26,77.68,USD,Lucas Roberts,Payment for invoice INV-29240059
+589,2024-01-26,188.93,USD,Carisa Trujillo,Payment for invoice INV-29240061
+590,2024-01-26,6488.59,USD,Emma Brownbill,Payment for invoice INV-29240065
+591,2024-01-26,2951.03,USD,David Smith,Payment for invoice INV-29240102
+592,2024-01-26,922.46,USD,Tia Franklin,Payment for invoice INV-29240110
+593,2024-01-26,1007.97,USD,Mary Curry,Payment for invoice INV-29240118
+594,2024-01-26,1090.14,USD,Jesmer Bergsma,Payment for invoice INV-29240119
+595,2024-01-26,1129.45,USD,Matilda Owens,Payment for invoice INV-29240147
+596,2024-01-26,229.90,USD,Mark Yeung,Payment for invoice INV-29240156
+597,2024-01-26,118.00,USD,Mike Schwarz,INV 29240206
+598,2024-01-26,876.00,USD,James Avalos,Payment for invoice INV-29240234
+599,2024-01-26,1921.10,USD,Isabel Mansom,Payment for invoice INV-29240235
+600,2024-01-26,232.20,USD,Betsy Grand,Payment for invoice INV-29240265
+601,2024-01-26,1040.62,USD,Anna Crookes,Payment for invoice INV-29240310
+602,2024-01-26,192.75,USD,Charles Odom,Payment for invoice INV-29240323
+603,2024-01-26,2119.42,USD,Hudson Champ,Payment for invoice INV-29240339
+604,2024-01-26,623.13,USD,Ben Carter,Payment for invoice INV-29240396
+605,2024-01-26,197.15,USD,Seth Walker,Payment for invoice INV-29240403
+606,2024-01-26,29.98,USD,Jessica Dixson,Payment for invoice INV-29240421
+607,2024-01-26,2068.36,USD,Aaron Christian,Payment for invoice INV-29240438
+608,2024-01-26,2347.34,USD,Jennifer Rogers,Payment for invoice INV-29240453
+609,2024-01-26,377.18,USD,Ada Harrison,Payment for invoice INV-29240455
+610,2024-01-26,386.91,USD,Ethan Storey,Payment for invoice INV-29240457
+611,2024-01-26,521.13,USD,Cynthia Piscitelli,Payment for invoice INV-29240467
+612,2024-01-26,24290.14,USD,Kristin Eberhardt,Payment for invoice INV-29240469
+613,2024-01-26,370.12,USD,Corrina Parham,Payment for invoice INV-29240475
+614,2024-01-26,120.00,USD,Lewis Bartel,Payment for invoice INV-29240497
+615,2024-01-26,64.47,USD,Louis Howarth,Payment for invoice INV-29240505
+616,2024-01-26,622.15,USD,Teresa Ofarrell,29240515
+617,2024-01-26,1202.98,USD,Clark Arellano,Payment for invoice INV-29240530
+618,2024-01-26,8119.29,USD,Dominic Purves,Payment for invoice INV-29240550
+619,2024-01-26,1099.48,USD,Rene Kennedy,Payment for invoice INV-29240562
+620,2024-01-26,4358.93,USD,Blake Toohey,Payment for invoice INV-29240580
+621,2024-01-26,324.59,USD,Kevin Werner,Payment for invoice INV-29240585
+622,2024-01-26,3300.80,USD,Jaco Urlings,Payment for invoice INV-29240595
+623,2024-01-26,566.03,USD,Torsten Nadel,Payment for invoice INV-29250053
+624,2024-01-26,1582.00,USD,Frank Warren,Payment for invoice INV-29250062
+625,2024-01-26,2289.59,USD,David Weissmuller,Invoice no. 29250076
+626,2024-01-26,3007.98,USD,Patrick Rhodes,Payment for invoice INV-29250095
+627,2024-01-26,1141.69,USD,Philip Melton,Payment for invoice INV-29250108
+628,2024-01-26,1068.00,USD,Sydney Koevoet,Payment for invoice INV-29250122
+629,2024-01-26,113.52,USD,Jean Warren,Payment for invoice INV-29250149
+630,2024-01-26,1597.05,USD,George Christopher,Payment for invoice INV-29250229
+631,2024-01-26,605.00,USD,Bernarda Vidakovic,Payment for invoice INV-29250235
+632,2024-01-26,1933.24,USD,Mollie Reeves,Payment for invoice INV-29250328
+633,2024-01-26,3907.28,USD,Chinouk Castricum,29250334
+634,2024-01-26,7765.04,USD,Peggy Chenoweth,Payment for invoice INV-29250341
+635,2024-01-26,3446.90,USD,Lorena Joy,Payment for invoice INV-29250350
+636,2024-01-26,4953.59,USD,Iiro Kettunen,Payment for invoice INV-29250352
+637,2024-01-26,438.00,USD,Olga Kimball,Payment for invoice INV-29250364
+638,2024-01-26,3396.60,USD,Meghan Duncan,Payment for invoice INV-29250384
+639,2024-01-26,543.78,USD,Wolfgang Schmitz,Payment for invoice INV-29250392
+640,2024-01-26,68.20,USD,Mario Traugott,Payment for invoice INV-29250400
+641,2024-01-26,2025.61,USD,Raymond Thompson,Payment for invoice INV-29250409
+642,2024-01-26,3234.74,USD,Greg North,Payment for invoice INV-29250415
+643,2024-01-26,347.21,USD,Katherine Stokes,Invoice no. 29250463
+644,2024-01-26,846.94,USD,Jean Gates,Payment for invoice INV-29250490
+645,2024-01-26,91.86,USD,Diogo Cardoso,Payment for invoice INV-29250505
+646,2024-01-26,1034.63,USD,Figen Smit,Payment for invoice INV-29250514
+647,2024-01-26,144.95,USD,Kate Klein,Payment for invoice INV-29250522
+648,2024-01-26,3049.76,USD,Ruth Wade,Payment for invoice INV-29250529
+649,2024-01-26,2438.79,USD,Jayden Cooke,Payment for invoice INV-29250580
+650,2024-01-26,2677.82,USD,Steven Ng,Payment for invoice INV-29250607
+651,2024-01-26,472.41,USD,Daniel Crews,Invoice no. 29250618
+652,2024-01-26,457.69,USD,Diane Edmondson,Payment for invoice INV-29250661
+653,2024-01-26,688.55,USD,Anthony Smiley,INV 29250680
+654,2024-01-26,178.84,USD,Marilena Velasco,Payment for invoice INV-29250687
+655,2024-01-26,1644.88,USD,Teresa Alvarez,Payment for invoice INV-29250715
+656,2024-01-26,594.33,USD,Leon Weisz,Payment for invoice INV-29250727
+657,2024-01-26,210.30,USD,Emma Brown,Payment for invoice INV-29250765
+658,2024-01-26,434.98,USD,Steve Nelson,Payment for invoice INV-29250809
+659,2024-01-26,14.61,USD,Renee Lacy,Payment for invoice INV-29260006
+660,2024-01-26,1060.99,USD,Mary Smith,Payment for invoice INV-29260036
+661,2024-01-26,3172.61,USD,Jens Beike,Invoice no. 29260038
+662,2024-01-26,574.15,USD,Jodi Wentz,Payment for invoice INV-29260046
+663,2024-01-26,120.43,USD,Eleanor Barton,Payment for invoice INV-29260081
+664,2024-01-26,780.52,USD,Melissa Hernandez,Payment for invoice INV-29260113
+665,2024-01-26,2601.55,USD,Lance Briard,Payment for invoice INV-29260138
+666,2024-01-26,677.00,USD,Brodie Outtrim,Payment for invoice INV-29260145
+667,2024-01-26,118.50,USD,Pedro Hale,Payment for invoice INV-29260182
+668,2024-01-26,195.61,USD,Dorothy Workman,Payment for invoice INV-29260186
+669,2024-01-26,88.23,USD,Maria Schaefer,Payment for invoice INV-29260229
+670,2024-01-26,4287.71,USD,Vlado Hrvatin,inv-29260239
+671,2024-01-26,7084.92,USD,Natasha Troy,Payment for invoice INV-29260271
+672,2024-01-26,779.88,USD,Carlene Anderson,Payment for invoice INV-29260272
+673,2024-01-26,3065.80,USD,Lena Theiss,Payment for invoice INV-29260286
+674,2024-01-26,577.98,USD,Martina Gottlieb,Payment for invoice INV-29260289
+675,2024-01-26,424.89,USD,Winston Adame,Payment for invoice INV-29260304
+676,2024-01-26,992.92,USD,Zane Sawers,Invoice no. 29260308
+677,2024-01-26,3133.20,USD,Carl Larrabee,Payment for invoice INV-29260336
+678,2024-01-26,752.40,USD,Martin Wannemaker,Payment for invoice INV-29260339
+679,2024-01-26,8311.14,USD,Cooper Haviland,Payment for invoice INV-29260363
+680,2024-01-26,1129.53,USD,Greg Camper,Payment for invoice INV-29260393
+681,2024-01-26,8.27,USD,Jake Keast,Payment for invoice INV-29260407
+682,2024-01-26,115.76,USD,Brian Ortiz,Payment for invoice INV-29260423
+683,2024-01-26,1353.96,USD,Sherry Talbert,Payment for invoice INV-29260429
+684,2024-01-26,1692.79,USD,Thomas Reed,Payment for invoice INV-29260441
+685,2024-01-26,629.30,USD,Walter Flynn,Payment for invoice INV-29260464
+686,2024-01-26,801.06,USD,Alexis Curtis,Payment for invoice INV-29260488
+687,2024-01-26,6814.71,USD,Mackenzie Hernandez,Payment for invoice INV-29260544
+688,2024-01-26,463.95,USD,Coleen Heikkinen,Payment for invoice INV-29260563
+689,2024-01-26,212.99,USD,Amani Mourits,Payment for invoice INV-29260565
+690,2024-01-26,4287.92,USD,Uta Meyer,Payment for invoice INV-29260579
+691,2024-01-26,5140.72,USD,William Floyd,INV 29260583
+692,2024-01-26,21273.39,USD,Heather Canela,Payment for invoice INV-29260588
+693,2024-01-26,1756.53,USD,Amanda Rutherford,Payment for invoice INV-29260606
+694,2024-01-26,1451.67,USD,Libby Lane,Payment for invoice INV-29260615
+695,2024-01-26,763.54,USD,Ramona Williams,Payment for invoice INV-29260635
+696,2024-01-26,651.42,USD,Erica Blais,Payment for invoice INV-29260669
+697,2024-01-26,3970.02,USD,Linda Eby,Payment for invoice INV-29260688
+698,2024-01-26,2538.88,USD,Martin Frankfurter,Payment for invoice INV-29260689
+699,2024-01-26,3558.03,USD,Phyllis Brown,Payment for invoice INV-29260854
+700,2024-01-26,204.61,USD,Sheryl Oren,Payment for invoice INV-29260884
+701,2024-01-26,932.33,USD,Anna Braun,Payment for invoice INV-29260905
+702,2024-01-26,463.04,USD,Karolin Meister,Payment for invoice INV-29270032
+703,2024-01-26,117.98,USD,Bernd Ackermann,Payment for invoice INV-29270046
+704,2024-01-26,4241.85,USD,Francesca Parry,Payment for invoice INV-29270082
+705,2024-01-26,2437.18,USD,Rosemary Joachim,Payment for invoice INV-29270088
+706,2024-01-26,817.12,USD,Lisa Drechsler,Payment for invoice INV-29270119
+707,2024-01-26,1828.71,USD,Isabel Woodson,Payment for invoice INV-29270146
+708,2024-01-26,3726.20,USD,Maria Bean,inv-29270147
+709,2024-01-26,4095.00,USD,Yassine Sanchez,Payment for invoice INV-29270156
+710,2024-01-26,2180.01,USD,Melvin Aldaco,Payment for invoice INV-29270161
+711,2024-01-26,257.52,USD,Harold Link,Payment for invoice INV-29270253
+712,2024-01-26,3458.69,USD,Richard Kissner,Payment for invoice INV-29270257
+713,2024-01-26,134.80,USD,Terry Pierson,Payment for invoice INV-29270260
+714,2024-01-26,1369.86,USD,Wilbur Bradley,Payment for invoice INV-29270298
+715,2024-01-26,3943.77,USD,Kyle Fraser,Payment for invoice INV-29270304
+716,2024-01-26,8.18,USD,Annett Schweizer,Payment for invoice INV-29270306
+717,2024-01-26,915.95,USD,Larry Murphy,INV 29270317
+718,2024-01-26,3355.35,USD,Firat Heeremans,Payment for invoice INV-29270395
+719,2024-01-26,283.19,USD,Pero Tkalcic,Payment for invoice INV-29270405
+720,2024-01-26,1846.96,USD,Tayla De Maistre,Payment for invoice INV-29270432
+721,2024-01-26,27.96,USD,Arthur Smith,Payment for invoice INV-29270484
+722,2024-01-26,3625.07,USD,Brayden Vanthoff,Payment for invoice INV-29270498
+723,2024-01-26,712.21,USD,Daniel Davidson,INV 29270586
+724,2024-01-26,999.80,USD,Ryan Wright,Payment for invoice INV-29280016
+725,2024-01-26,89.91,USD,Clarence Suarez,Payment for invoice INV-29280030
+726,2024-01-26,25.67,USD,Terri Pruitt,Payment for invoice INV-29280055
+727,2024-01-26,1820.78,USD,Frances Steele,Payment for invoice INV-29280066
+728,2024-01-26,261.68,USD,Branden Harris,Payment for invoice INV-29280103
+729,2024-01-26,270.58,USD,Swen Eisenhower,Payment for invoice INV-29280113
+730,2024-01-26,1727.67,USD,Stefan Kirsch,Payment for invoice INV-29280132
+731,2024-01-26,11594.83,USD,Alyssa Rijnberg,Payment for invoice INV-29280145
+732,2024-01-26,4089.55,USD,Lara Cecilia,Payment for invoice INV-29280182
+733,2024-01-26,2439.98,USD,Demi Lyons,Payment for invoice INV-29280186
+734,2024-01-26,2775.32,USD,Tanja Sankt,29280188
+735,2024-01-26,13.00,USD,Jeffrey Hicks,Payment for invoice INV-29280199
+736,2024-01-26,995.50,USD,Ann Carpenter,Payment for invoice INV-29280214
+737,2024-01-26,10678.73,USD,William Smith,Invoice no. 29280252
+738,2024-01-26,5534.62,USD,Vivian Oliveira,Payment for invoice INV-29280257
+739,2024-01-26,58.99,USD,Alannah Shore,Payment for invoice INV-29280287
+740,2024-01-26,1224.81,USD,Niklas Kluge,Payment for invoice INV-29280299
+741,2024-01-26,236.64,USD,Robert Schmidt,Payment for invoice INV-29280348
+742,2024-01-26,3451.26,USD,Cynthia Cook,Payment for invoice INV-29280369
+743,2024-01-26,1400.37,USD,Betsy Gifford,Payment for invoice INV-29280378
+744,2024-01-26,4258.08,USD,Hedda Voshol,Payment for invoice INV-29280430
+745,2024-01-26,3310.28,USD,Elaine Mixon,Payment for invoice INV-29280440
+746,2024-01-26,365.72,USD,Harrison Hanson,Payment for invoice INV-29280446
+747,2024-01-26,810.66,USD,Irsa Rutten,Payment for invoice INV-29280456
+748,2024-01-26,3155.17,USD,Reena Pilcher,Payment for invoice INV-29280475
+749,2024-01-26,1122.83,USD,David Caldwell,Payment for invoice INV-29280494
+750,2024-01-26,3031.48,USD,Luke Reeves,Payment for invoice INV-29280524
+751,2024-01-26,213.48,USD,Isabel Papadopoulos,Payment for invoice INV-29280531
+752,2024-01-26,149.00,USD,Jennifer Guevara,Payment for invoice INV-29280547
+753,2024-01-26,3472.56,USD,Luis Church,INV 29280574
+754,2024-01-26,35.99,USD,Manuela Konig,Payment for invoice INV-29280596
+755,2024-01-26,557.67,USD,Radoslav Maric,Payment for invoice INV-2928061
+756,2024-01-26,237.49,USD,Ella Berens,INV 29280617
+757,2024-01-26,4232.00,USD,Abigail Mahmood,Payment for invoice INV-29280624
+758,2024-01-26,969.00,USD,Doretha Stoddard,Payment for invoice INV-29280627
+759,2024-01-26,356.97,USD,Sandra Salazar,Payment for invoice INV-29280630
+760,2024-01-26,291.35,USD,Daniel Wheelwright,Payment for invoice INV-29280631
+761,2024-01-26,2675.52,USD,Gregory Grossman,Payment for invoice INV-29280660
+762,2024-01-26,9.79,USD,Rosalia Crump,Payment for invoice INV-29280664
+763,2024-01-26,479.97,USD,John Gutierrez,Payment for invoice INV-29280665
+764,2024-01-26,890.88,USD,James Dudley,Payment for invoice INV-29280686
+765,2024-01-26,4121.58,USD,Kristin Schroder,Payment for invoice INV-29280712
+766,2024-01-26,5040.27,USD,Ruben Chance,Payment for invoice INV-29280718
+767,2024-01-26,648.31,USD,Róza Kaczmarek,INV 29280739
+768,2024-01-26,577.40,USD,William Daugherty,Payment for invoice INV-29280749
+769,2024-01-26,399.90,USD,Ina Blomqvist,Payment for invoice INV-29280789
+770,2024-01-26,635.23,USD,Scott Jones,Payment for invoice INV-29280796
+771,2024-01-26,2070.05,USD,Barbara Lopez,Payment for invoice INV-29280807
+772,2024-01-26,296.57,USD,Pavel Fatka,Payment for invoice INV-29280828
+773,2024-01-26,1797.00,USD,Latoya Diehl,Payment for invoice INV-29280832
+774,2024-01-26,198.33,USD,Edward Lacayo,Payment for invoice INV-29280839
+775,2024-01-26,2788.79,USD,Kaitlyn Birkbeck,Payment for invoice INV-29280872
+776,2024-01-26,4734.50,USD,Charles Fanny,Payment for invoice INV-29280885
+777,2024-01-26,1557.50,USD,Aurore Beaulé,Payment for invoice INV-29280897
+778,2024-01-26,1592.40,USD,Elaís Maestas,Payment for invoice INV-29280900
+779,2024-01-26,8851.04,USD,Gregory Magnuson,Invoice no. 29280921
+780,2024-01-26,9283.53,USD,Virgil Holloway,Payment for invoice INV-29280932
+781,2024-01-26,3538.18,USD,Callum Grandi,Payment for invoice INV-29280942
+782,2024-01-26,899.87,USD,Terry Curtis,inv-29280963
+783,2024-01-26,686.80,USD,Josefine Christiansen,Payment for invoice INV-29280982
+784,2024-01-26,4598.74,USD,John Arana,Payment for invoice INV-29280988
+785,2024-01-26,28.16,USD,Francesca Hardy,Payment for invoice INV-29281019
+786,2024-01-27,2132.99,USD,Zane Lasseter,Payment for invoice INV-29230027
+787,2024-01-27,469.92,USD,Roger Westbrooks,Payment for invoice INV-29230038
+788,2024-01-27,473.80,USD,Alja Numan,Payment for invoice INV-29230052
+789,2024-01-27,1072.00,USD,Amelia Forbes,Payment for invoice INV-29230054
+790,2024-01-27,1309.99,USD,Charlie Hale,Payment for invoice INV-29230064
+791,2024-01-27,559.98,USD,Phillipp Huber,Payment for invoice INV-29230083
+792,2024-01-27,11880.00,USD,Hollie Tucker,Payment for invoice INV-29230091
+793,2024-01-27,387.09,USD,Elmer King,Payment for invoice INV-29230109
+794,2024-01-27,844.06,USD,Barbara Maddox,Payment for invoice INV-29230122
+795,2024-01-27,4653.91,USD,Andreja Šimic,Payment for invoice INV-29230130
+796,2024-01-27,2076.46,USD,Hattie Davis,INV 29230150
+797,2024-01-27,2159.60,USD,Maya Bevan,Payment for invoice INV-29230158
+798,2024-01-27,886.99,USD,Stephanie Frueh,Payment for invoice INV-29230168
+799,2024-01-27,810.69,USD,Luke Moss,Payment for invoice INV-29230196
+800,2024-01-27,1563.84,USD,Robert Tam,Payment for invoice INV-29230197
+801,2024-01-27,1244.24,USD,Milton Ochs,Payment for invoice INV-29230218
+802,2024-01-27,599.98,USD,Max Möller,Payment for invoice INV-29230221
+803,2024-01-27,135.59,USD,Mathew Cornell,Payment for invoice INV-29230238
+804,2024-01-27,559.30,USD,Russell York,Payment for invoice INV-29230242
+805,2024-01-27,128.79,USD,Jason Parrish,INV 29230271
+806,2024-01-27,2134.56,USD,Diane Wier,Payment for invoice INV-29230315
+807,2024-01-27,4060.80,USD,Theresa Gaona,Payment for invoice INV-29230336
+808,2024-01-27,8699.97,USD,Stefanie Fried,Payment for invoice INV-29230343
+809,2024-01-27,866.39,USD,Theresa Lee,Payment for invoice INV-29230347
+810,2024-01-27,87.56,USD,Jack Powell,Payment for invoice INV-29230356
+811,2024-01-27,117.39,USD,Christin Eugene,inv-29230376
+812,2024-01-27,3042.44,USD,Lena Schmidt,INV 29230401
+813,2024-01-27,5374.24,USD,Robert Adams,29230456
+814,2024-01-27,629.10,USD,Andelka Tomic,Payment for invoice INV-29230472
+815,2024-01-27,1872.00,USD,Nicholas Veitch,Payment for invoice INV-29230523
+816,2024-01-27,2699.42,USD,Uwe Lehrer,INV 29240014
+817,2024-01-27,2379.60,USD,Kerstin Bieber,Payment for invoice INV-29240048
+818,2024-01-27,1930.20,USD,Miriam Koval,Payment for invoice INV-29240062
+819,2024-01-27,189.98,USD,Jasper Darvall,Payment for invoice INV-29240107
+820,2024-01-27,329.97,USD,Stefan Hirsch,inv-29240166
+821,2024-01-27,2352.22,USD,Tonisha Jennings,Payment for invoice INV-29240173
+822,2024-01-27,2081.60,USD,Frank Baecker,29240177
+823,2024-01-27,106.70,USD,Lisa Brauer,Payment for invoice INV-29240192
+824,2024-01-27,1816.16,USD,Terrell Edwards,Payment for invoice INV-29240220
+825,2024-01-27,132.61,USD,Božica Bilic,Payment for invoice INV-29240260
+826,2024-01-27,290.79,USD,Leah Giles,Invoice no. 29240277
+827,2024-01-27,4534.07,USD,Alma Smith,Payment for invoice INV-29240296
+828,2024-01-27,1339.78,USD,Daniel Tuel,Invoice no. 29240306
+829,2024-01-27,462.78,USD,Yasmin Fernandes,Payment for invoice INV-29240317
+830,2024-01-27,1283.02,USD,Daniel Rodgers,Payment for invoice INV-29240344
+831,2024-01-27,403.26,USD,Aras de Ruijter,Payment for invoice INV-29240355
+832,2024-01-27,75.60,USD,Robert Garcia,Payment for invoice INV-29240364
+833,2024-01-27,408.57,USD,Mary Myrick,inv-29240383
+834,2024-01-27,1704.31,USD,Joseph Stobie,Payment for invoice INV-29240406
+835,2024-01-27,1134.75,USD,Nate Ahern,Payment for invoice INV-29240409
+836,2024-01-27,1695.07,USD,Liam Brooks,INV 29240443
+837,2024-01-27,621.72,USD,Larry Dobbins,Invoice no. 29240447
+838,2024-01-27,3131.98,USD,Karan Beck,Payment for invoice INV-29240484
+839,2024-01-27,116.10,USD,Darcy Woolley,Payment for invoice INV-29240501
+840,2024-01-27,212.00,USD,Nadežda Hrdlicková,Payment for invoice INV-29240511
+841,2024-01-27,899.97,USD,Brett Fernandez,Payment for invoice INV-29240512
+842,2024-01-27,2030.00,USD,Yvonne Himmel,Payment for invoice INV-29240561
+843,2024-01-27,1167.00,USD,Sammy-Jo Verwer,Payment for invoice INV-29240598
+844,2024-01-27,6103.87,USD,Christopher Kizer,Payment for invoice INV-29240602
+845,2024-01-27,8520.08,USD,Regina Cagle,Payment for invoice INV-29240611
+846,2024-01-27,2993.58,USD,Arnold Johnson,Payment for invoice INV-29240657
+847,2024-01-27,112.43,USD,Christian Edouard,Invoice no. 29250002
+848,2024-01-27,769.93,USD,Cameron Nixon-Smith,Payment for invoice INV-29250110
+849,2024-01-27,231.00,USD,Lysan Gumbs,INV 29250153
+850,2024-01-27,877.55,USD,Sebastian Lynch,Payment for invoice INV-29250165
+851,2024-01-27,3108.18,USD,Jimmy Fuller,Payment for invoice INV-29250180
+852,2024-01-27,1893.11,USD,Charlie Frederic,Payment for invoice INV-29250203
+853,2024-01-27,4112.20,USD,John Harbert,Payment for invoice INV-29250218
+854,2024-01-27,1578.72,USD,Robert Simmons,Payment for invoice INV-29250245
+855,2024-01-27,1108.80,USD,Donald McGehee,Payment for invoice INV-29250285
+856,2024-01-27,6873.70,USD,Joseph Scollen,Payment for invoice INV-29250291
+857,2024-01-27,269.56,USD,John Aponte,Payment for invoice INV-29250333
+858,2024-01-27,936.42,USD,Kathrin Neumann,29250342
+859,2024-01-27,850.00,USD,Theun Hulshof,Payment for invoice INV-29250359
+860,2024-01-27,5778.27,USD,Ellis Smith,Payment for invoice INV-29250375
+861,2024-01-27,2333.72,USD,Kyle Faulkner,Payment for invoice INV-29250376
+862,2024-01-27,2297.97,USD,Thomas Quinn,Payment for invoice INV-29250427
+863,2024-01-27,1280.00,USD,Renee Barefoot,Payment for invoice INV-29250467
+864,2024-01-27,2480.88,USD,Helen Edmonds,Payment for invoice INV-29250479
+865,2024-01-27,207.00,USD,John Meyer,Payment for invoice INV-29250504
+866,2024-01-27,2388.61,USD,Charles Gonzalez,Payment for invoice INV-29250510
+867,2024-01-27,2345.91,USD,Ellie Owen,Payment for invoice INV-29250524
+868,2024-01-27,1071.01,USD,Tjalle van Middendorp,Payment for invoice INV-29250526
+869,2024-01-27,6270.00,USD,Tyler McClelland,Payment for invoice INV-29250538
+870,2024-01-27,741.75,USD,Thorsten Reinhardt,Payment for invoice INV-29250593
+871,2024-01-27,2159.93,USD,Antje Scherer,Payment for invoice INV-29250690
+872,2024-01-27,879.80,USD,Alannah Murakami,Payment for invoice INV-29250742
+873,2024-01-27,1232.93,USD,Daniel Morris,Payment for invoice INV-29250743
+874,2024-01-27,2733.11,USD,Albert Helton,Payment for invoice INV-29250808
+875,2024-01-27,234.78,USD,Indiana Winneke,Payment for invoice INV-29250823
+876,2024-01-27,671.04,USD,Stefan Neustadt,Payment for invoice INV-29260028
+877,2024-01-27,542.80,USD,Randall Reynolds,Payment for invoice INV-29260097
+878,2024-01-27,364.80,USD,Scarlett Kruttschnitt,Payment for invoice INV-29260102
+879,2024-01-27,287.29,USD,Scott Youmans,Payment for invoice INV-29260140
+880,2024-01-27,490.91,USD,Leah Rothschild,Payment for invoice INV-29260155
+881,2024-01-27,6793.08,USD,Frederikke Karlsen,Payment for invoice INV-29260160
+882,2024-01-27,1658.74,USD,Shena Ward,Payment for invoice INV-29260174
+883,2024-01-27,275.18,USD,Joe Dorn,INV 29260176
+884,2024-01-27,303.63,USD,Richard Baugh,Payment for invoice INV-29260212
+885,2024-01-27,1619.20,USD,Stjepan Mikulic,Payment for invoice INV-29260221
+886,2024-01-27,147.01,USD,Mary Alden,Payment for invoice INV-29260235
+887,2024-01-27,746.05,USD,Sam McPhillamy,Payment for invoice INV-29260253
+888,2024-01-27,415.84,USD,Jake Keast,Invoice no. 29260265
+889,2024-01-27,791.60,USD,Nadine Ray,29260294
+890,2024-01-27,7142.96,USD,Petra Freeh,Payment for invoice INV-29260311
+891,2024-01-27,2667.68,USD,Kin Albert,Invoice no. 29260316
+892,2024-01-27,683.96,USD,Gijsbert Mijnen,Payment for invoice INV-29260360
+893,2024-01-27,319.57,USD,Jessica Green,Payment for invoice INV-29260371
+894,2024-01-27,1825.06,USD,Jordan McCallum,Payment for invoice INV-29260397
+895,2024-01-27,702.18,USD,Robert Faber,29260401
+896,2024-01-27,690.00,USD,Phillipp Hirsch,INV 29260433
+897,2024-01-27,2862.21,USD,Angelika Bauer,Payment for invoice INV-29260436
+898,2024-01-27,5499.95,USD,Sumeya Broekhuis,Payment for invoice INV-29260456
+899,2024-01-27,1783.60,USD,Uwe Durr,Payment for invoice INV-29260461
+900,2024-01-27,505.32,USD,Linda Rice,Payment for invoice INV-29260490
+901,2024-01-27,2581.68,USD,Evelyn Tate,Payment for invoice INV-29260516
+902,2024-01-27,219.66,USD,Karen Sepe,Payment for invoice INV-29260542
+903,2024-01-27,33.80,USD,Sharon Flock,Payment for invoice INV-29260553
+904,2024-01-27,498.36,USD,Jerzy Maciejewski,Payment for invoice INV-29260554
+905,2024-01-27,5434.29,USD,Thomas Buckley,Payment for invoice INV-29260566
+906,2024-01-27,32.00,USD,Margaret Stewart,INV 29260569
+907,2024-01-27,920.55,USD,Mary Howze,Payment for invoice INV-29260586
+908,2024-01-27,580.00,USD,Marjorie Mize,29260587
+909,2024-01-27,2549.19,USD,Muhammad Phillips,inv-29260624
+910,2024-01-27,656.47,USD,Jonas Neustadt,Payment for invoice INV-29260637
+911,2024-01-27,3776.00,USD,Ljerka Božic,Payment for invoice INV-29260662
+912,2024-01-27,12544.36,USD,Gregg Rush,inv-29260674
+913,2024-01-27,4532.99,USD,Mike Krueger,Payment for invoice INV-29260676
+914,2024-01-27,211.28,USD,Dawn Cantrell,Payment for invoice INV-29260678
+915,2024-01-27,723.60,USD,Allison Vasquez,Payment for invoice INV-29260691
+916,2024-01-27,2502.89,USD,Lisa Jeppesen,Payment for invoice INV-29260721
+917,2024-01-27,112.78,USD,James Wood,Payment for invoice INV-29260727
+918,2024-01-27,2347.15,USD,Ulrich Wirth,Payment for invoice INV-29260734
+919,2024-01-27,273.61,USD,David Schueller,Payment for invoice INV-29260742
+920,2024-01-27,584.73,USD,Frank Beyer,Payment for invoice INV-29260764
+921,2024-01-27,1324.57,USD,Charli Legge,Payment for invoice INV-29260770
+922,2024-01-27,10018.80,USD,Dale Kirkwood,Payment for invoice INV-29260783
+923,2024-01-27,1180.00,USD,Marie Pfaff,Payment for invoice INV-29260803
+924,2024-01-27,1240.40,USD,Lavinia Ferreira,Payment for invoice INV-29260810
+925,2024-01-27,1233.42,USD,Irene Strawn,Payment for invoice INV-29260812
+926,2024-01-27,4539.00,USD,Ben Lynas,Payment for invoice INV-29260819
+927,2024-01-27,643.92,USD,Melvin Rayner,Payment for invoice INV-29260828
+928,2024-01-27,1908.27,USD,Walter Landis,Payment for invoice INV-29260846
+929,2024-01-27,240.21,USD,David Elmore,Payment for invoice INV-29260849
+930,2024-01-27,226.74,USD,Karen Rolland,inv-29260863
+931,2024-01-27,49.00,USD,Claire Pennington,Payment for invoice INV-29260869
+932,2024-01-27,4214.65,USD,Milla Ash,Payment for invoice INV-29260870
+933,2024-01-27,147.00,USD,Tim Harmon,Payment for invoice INV-29260885
+934,2024-01-27,1802.53,USD,Summer Davey,Payment for invoice INV-29260887
+935,2024-01-27,1450.96,USD,Scott Taylor,INV 29260902
+936,2024-01-27,76.64,USD,Katerina Smolíková,Payment for invoice INV-29260909
+937,2024-01-27,149.00,USD,Irene Elliott,Payment for invoice INV-29270029
+938,2024-01-27,5644.20,USD,Audrey Coombe,Payment for invoice INV-29270053
+939,2024-01-27,1660.29,USD,Gerard Fleming,Payment for invoice INV-29270065
+940,2024-01-27,1431.98,USD,Annett Köhler,inv-29270079
+941,2024-01-27,39.42,USD,Ruby Howarth,Invoice no. 29270080
+942,2024-01-27,11.01,USD,Felix Bar,Invoice no. 29270108
+943,2024-01-27,712.00,USD,Bozena Sawicka,Payment for invoice INV-29270130
+944,2024-01-27,659.94,USD,Jens Amsel,INV 29270165
+945,2024-01-27,676.40,USD,Karen Calhoun,Payment for invoice INV-29270168
+946,2024-01-27,4881.52,USD,Laura Probst,Payment for invoice INV-29270201
+947,2024-01-27,4637.34,USD,Fred Winn,Payment for invoice INV-29270237
+948,2024-01-27,2664.00,USD,Nathan Loftus-Hills,Payment for invoice INV-29270268
+949,2024-01-27,1025.81,USD,Georgina Wedel,Payment for invoice INV-29270273
+950,2024-01-27,2404.49,USD,Phoebe Dobson,Payment for invoice INV-29270281
+951,2024-01-27,5.39,USD,Blake Willson,Payment for invoice INV-29270286
+952,2024-01-27,2314.85,USD,Annabelle Gsell,Payment for invoice INV-29270354
+953,2024-01-27,1874.00,USD,Deborah Gragg,Payment for invoice INV-29270359
+954,2024-01-27,6108.62,USD,John Caprio,Payment for invoice INV-29270363
+955,2024-01-27,3817.13,USD,Walter Flynn,Payment for invoice INV-29270369
+956,2024-01-27,628.76,USD,Aaron Fox,Payment for invoice INV-29270391
+957,2024-01-27,546.04,USD,Huub Verstegen,Payment for invoice INV-29270462
+958,2024-01-27,785.44,USD,Denise Thomas,Payment for invoice INV-29270475
+959,2024-01-27,15.97,USD,Jay Little,Payment for invoice INV-29270508
+960,2024-01-27,670.17,USD,Juliane Hoover,Payment for invoice INV-29270546
+961,2024-01-27,2499.00,USD,Sarah Scott,Payment for invoice INV-29270549
+962,2024-01-27,3205.77,USD,Benjamin Ellison,Payment for invoice INV-29270571
+963,2024-01-27,159.99,USD,Amber Slater,Payment for invoice INV-29270592
+964,2024-01-27,4956.79,USD,Charlene Lamas,Payment for invoice INV-29280011
+965,2024-01-27,4328.83,USD,Zurie Sorel,Payment for invoice INV-29280043
+966,2024-01-27,1654.53,USD,Harvey Hart,Payment for invoice INV-29280048
+967,2024-01-27,1976.02,USD,Kathy Wheeler,Payment for invoice INV-29280054
+968,2024-01-27,518.55,USD,Bettie Mason,Invoice no. 29280166
+969,2024-01-27,847.25,USD,Mike Austerlitz,Payment for invoice INV-29280172
+970,2024-01-27,636.99,USD,Amanda Lomax,Payment for invoice INV-29280207
+971,2024-01-27,2736.70,USD,Louise Booth,Payment for invoice INV-29280215
+972,2024-01-27,154.84,USD,Cody Gibbs,Payment for invoice INV-29280219
+973,2024-01-27,30.26,USD,Blanca Simpson,Payment for invoice INV-29280220
+974,2024-01-27,253.77,USD,Wanda Wilson,Payment for invoice INV-29280286
+975,2024-01-27,734.91,USD,Karin Faust,Payment for invoice INV-29280297
+976,2024-01-27,1904.24,USD,Archer Cowles,Payment for invoice INV-29280337
+977,2024-01-27,6657.49,USD,Lewis Jenkins,Payment for invoice INV-29280438
+978,2024-01-27,224.40,USD,Doreen Moench,Payment for invoice INV-29280439
+979,2024-01-27,187.01,USD,Ronald Bowles,29280460
+980,2024-01-27,1145.54,USD,Max Mauer,Payment for invoice INV-29280467
+981,2024-01-27,437.58,USD,Janina Vogler,Payment for invoice INV-29280476
+982,2024-01-27,3588.48,USD,Karen Sonntag,Payment for invoice INV-29280587
+983,2024-01-27,2003.28,USD,Logan Chermside,Payment for invoice INV-29280613
+984,2024-01-27,2628.08,USD,Lynn Burrows,Payment for invoice INV-29280628
+985,2024-01-27,1173.98,USD,Kathleen Porter,Invoice no. 29280651
+986,2024-01-27,256.68,USD,Clyde Gibson,Payment for invoice INV-29280666
+987,2024-01-27,30.45,USD,James Putt,Payment for invoice INV-29280672
+988,2024-01-27,1678.65,USD,Cornelia May,Payment for invoice INV-29280682
+989,2024-01-27,475.35,USD,Kimberly Moore,Payment for invoice INV-29280711
+990,2024-01-27,263.99,USD,Valery Adams,INV 29280776
+991,2024-01-27,32.00,USD,John Smith,Payment for invoice INV-29280784
+992,2024-01-27,269.70,USD,George Winterbotham,Payment for invoice INV-29280802
+993,2024-01-27,7689.19,USD,Nathan Sanders,Payment for invoice INV-29280814
+994,2024-01-27,267.00,USD,Leroy Jones,inv-29280842
+995,2024-01-27,6291.70,USD,Josie Ramos,Payment for invoice INV-29280845
+996,2024-01-27,555.63,USD,Lee Fraser,Payment for invoice INV-29280854
+997,2024-01-27,3242.75,USD,Claire Taplin,Payment for invoice INV-29280858
+998,2024-01-27,314.04,USD,Thijmen Bogaard,Payment for invoice INV-29280860
+999,2024-01-27,1059.66,USD,Eric Saenger,Payment for invoice INV-29280888
+1000,2024-01-27,429.30,USD,Carl Kent,Payment for invoice INV-29280903
+1001,2024-01-27,44.97,USD,Scott Parry,29280946
+1002,2024-01-27,392.38,USD,Burt Davis,Payment for invoice INV-29280969
+1003,2024-01-27,2274.38,USD,Lana Albarado,inv-29280971
+1004,2024-01-27,45.05,USD,Alma Bigler,Payment for invoice INV-29280984
+1005,2024-01-27,743.58,USD,Wolfgang Baader,Payment for invoice INV-29281005
+1006,2024-01-27,1164.94,USD,Lara Ahmed,Payment for invoice INV-29281021
+1007,2024-01-27,3280.87,USD,Sabine Lange,Invoice no. 29281036
+1008,2024-01-27,349.00,USD,Evelyn Lee,Invoice no. 29281043
+1009,2024-01-27,483.01,USD,Latoya Gonzales,Payment for invoice INV-29290008
+1010,2024-01-27,3714.82,USD,Jamie Stevens,Payment for invoice INV-29290047
+1011,2024-01-27,3282.36,USD,Rosalia Crump,Payment for invoice INV-29290050
+1012,2024-01-27,534.00,USD,Lorenzo Quiroga,Payment for invoice INV-29290069
+1013,2024-01-27,9083.16,USD,Robert Hernandez,29290073
+1014,2024-01-27,2328.17,USD,Phillipp Schaefer,Payment for invoice INV-29290079
+1015,2024-01-27,1506.00,USD,Lachlan Glossop,Payment for invoice INV-29290105
+1016,2024-01-28,773.52,USD,Sylvia Gray,29230013
+1017,2024-01-28,279.98,USD,Robert Garcia,Payment for invoice INV-29230055
+1018,2024-01-28,5678.29,USD,Skye Young,Payment for invoice INV-29230071
+1019,2024-01-28,567.94,USD,Karolin Rothstein,Payment for invoice INV-29230096
+1020,2024-01-28,3079.27,USD,Karen Walker,Payment for invoice INV-29230105
+1021,2024-01-28,1782.47,USD,Melinda Gallagher,Payment for invoice INV-29230112
+1022,2024-01-28,12.36,USD,Heather Williams,Payment for invoice INV-29230153
+1023,2024-01-28,1108.44,USD,Sophia Köhler,Payment for invoice INV-29230184
+1024,2024-01-28,4971.14,USD,Mathias Müller,Payment for invoice INV-29230189
+1025,2024-01-28,2066.82,USD,Karin Hertzog,Payment for invoice INV-29230190
+1026,2024-01-28,173.00,USD,Jaroslav Svoboda,Payment for invoice INV-29230228
+1027,2024-01-28,139.10,USD,Sophie Schmitz,Payment for invoice INV-29230260
+1028,2024-01-28,2291.15,USD,Marjorie Thomas,29230264
+1029,2024-01-28,5250.50,USD,Martha Reynolds,29230283
+1030,2024-01-28,513.42,USD,Kate Foxton,Payment for invoice INV-29230284
+1031,2024-01-28,824.64,USD,Evan Davis,Payment for invoice INV-29230286
+1032,2024-01-28,90.09,USD,Bryan Garza,Payment for invoice INV-29230319
+1033,2024-01-28,231.44,USD,Ronald Bell,INV 29230321
+1034,2024-01-28,3260.00,USD,René Waechter,Payment for invoice INV-29230365
+1035,2024-01-28,2967.68,USD,Kristian Schäfer,Payment for invoice INV-29230419
+1036,2024-01-28,498.81,USD,Jason Villegas,Payment for invoice INV-29230450
+1037,2024-01-28,308.00,USD,Faye Dumont,Payment for invoice INV-29230478
+1038,2024-01-28,2403.26,USD,Nicholas Burnside,Payment for invoice INV-29230514
+1039,2024-01-28,2287.59,USD,Robert Garcia,Payment for invoice INV-29240015
+1040,2024-01-28,1066.39,USD,Tobias Melbye,Payment for invoice INV-29240050
+1041,2024-01-28,2863.13,USD,Eva Poynton,Payment for invoice INV-29240077
+1042,2024-01-28,2033.32,USD,John Davis,Payment for invoice INV-29240091
+1043,2024-01-28,343.97,USD,Elliott Mattsson,Payment for invoice INV-29240093
+1044,2024-01-28,77.98,USD,Alicia Jones,Payment for invoice INV-29240103
+1045,2024-01-28,564.00,USD,Andrea Schreiner,Payment for invoice INV-29240106
+1046,2024-01-28,9622.16,USD,Bennie Vigil,Payment for invoice INV-29240122
+1047,2024-01-28,248.00,USD,Roy Mills,Payment for invoice INV-29240139
+1048,2024-01-28,427.73,USD,Angel Terry,Payment for invoice INV-29240140
+1049,2024-01-28,1841.96,USD,Jai Oxley,Payment for invoice INV-29240145
+1050,2024-01-28,959.94,USD,Laverne Kidd,Payment for invoice INV-29240183
+1051,2024-01-28,720.87,USD,Florian Seiler,inv-29240188
+1052,2024-01-28,1145.20,USD,Signe Thorsen,Payment for invoice INV-29240194
+1053,2024-01-28,1453.74,USD,Josh Hughes,Payment for invoice INV-29240201
+1054,2024-01-28,3306.54,USD,Millicent Paiement,Payment for invoice INV-29240209
+1055,2024-01-28,2311.95,USD,Gilano Wolter,Payment for invoice INV-29240222
+1056,2024-01-28,958.24,USD,Lawrence Thompson,29240269
+1057,2024-01-28,119.98,USD,Ricardo Johnson,Payment for invoice INV-29240279
+1058,2024-01-28,2293.75,USD,Marko Wurfel,Payment for invoice INV-29240367
+1059,2024-01-28,241.79,USD,Eleanor Walker,Payment for invoice INV-29240385
+1060,2024-01-28,3176.31,USD,Samantha Humes,Payment for invoice INV-29240389
+1061,2024-01-28,102.64,USD,Susan Downing,Payment for invoice INV-29240390
+1062,2024-01-28,2696.71,USD,Marco Klug,INV 29240400
+1063,2024-01-28,718.31,USD,Donald Wynne,Payment for invoice INV-29240513
+1064,2024-01-28,4064.35,USD,Georgia Howie,Payment for invoice INV-29240518
+1065,2024-01-28,2833.88,USD,Clinton Vogel,Payment for invoice INV-29240532
+1066,2024-01-28,2926.48,USD,Stephan Hirsch,Payment for invoice INV-29240540
+1067,2024-01-28,43.81,USD,Ayesha Foekens,Payment for invoice INV-29240543
+1068,2024-01-28,2406.28,USD,William Pimental,Payment for invoice INV-29240544
+1069,2024-01-28,906.18,USD,Henry Valdez,Payment for invoice INV-29240547
+1070,2024-01-28,1143.96,USD,Craig Fisher,Payment for invoice INV-29240548
+1071,2024-01-28,7058.04,USD,Shirley Oxford,Payment for invoice INV-29240587
+1072,2024-01-28,2976.58,USD,Pavel Cáp,Payment for invoice INV-29240588
+1073,2024-01-28,233.98,USD,Pietertje Hofstra,Payment for invoice INV-29240589
+1074,2024-01-28,5.01,USD,Carrie Johnson,Payment for invoice INV-29240600
+1075,2024-01-28,727.61,USD,Isobel Ingram,Payment for invoice INV-29240619
+1076,2024-01-28,201.48,USD,Elvira McDonald,Payment for invoice INV-29240621
+1077,2024-01-28,2319.92,USD,Patrick Reiniger,INV 29240629
+1078,2024-01-28,1349.20,USD,Blanche Hooker,Payment for invoice INV-29240672
+1079,2024-01-28,6333.55,USD,Louise Tignor,INV 29250029
+1080,2024-01-28,219.00,USD,Ognjen Rukavina,Payment for invoice INV-29250039
+1081,2024-01-28,3865.56,USD,Janina Holzman,INV 29250050
+1082,2024-01-28,709.75,USD,Armando McDowell,Payment for invoice INV-29250055
+1083,2024-01-28,7077.57,USD,Adam Clark,Payment for invoice INV-29250059
+1084,2024-01-28,592.93,USD,Oscar Hansen,Payment for invoice INV-29250068
+1085,2024-01-28,1329.74,USD,Shirley Alongi,Payment for invoice INV-29250069
+1086,2024-01-28,416.10,USD,Alexander Carillo,Payment for invoice INV-29250094
+1087,2024-01-28,20.67,USD,Makayla Oster,Payment for invoice INV-29250131
+1088,2024-01-28,3455.00,USD,Dean Bryant,Payment for invoice INV-29250142
+1089,2024-01-28,1322.85,USD,Aydin Anderson,Invoice no. 29250156
+1090,2024-01-28,614.26,USD,Tia Stephens,Payment for invoice INV-29250179
+1091,2024-01-28,202.11,USD,Anthony McMahon,Payment for invoice INV-29250195
+1092,2024-01-28,3628.00,USD,Orville Unger,Payment for invoice INV-29250230
+1093,2024-01-28,1950.51,USD,Daniela Krause,Payment for invoice INV-29250239
+1094,2024-01-28,57.88,USD,Embrik Haugom,Payment for invoice INV-29250260
+1095,2024-01-28,2351.77,USD,Jessica Mauer,Payment for invoice INV-29250267
+1096,2024-01-28,1166.18,USD,Elliot Lynch,Payment for invoice INV-29250274
+1097,2024-01-28,701.10,USD,Mandy Eisenhower,Payment for invoice INV-29250288
+1098,2024-01-28,787.34,USD,Wayne Moore,Payment for invoice INV-29250292
+1099,2024-01-28,1810.00,USD,Terence Baugh,Invoice no. 29250310
+1100,2024-01-28,1577.32,USD,Diya Westhuis,Payment for invoice INV-29250325
+1101,2024-01-28,723.57,USD,Madeleine Booth,Payment for invoice INV-29250329
+1102,2024-01-28,8649.17,USD,Jake Anderson,Payment for invoice INV-29250335
+1103,2024-01-28,2999.00,USD,Juanita Priestley,INV 29250354
+1104,2024-01-28,2696.58,USD,Sam Parry,Invoice no. 29250422
+1105,2024-01-28,659.70,USD,Victoria Tweddle,Payment for invoice INV-29250440
+1106,2024-01-28,795.00,USD,Jade Henslowe,inv-29250451
+1107,2024-01-28,6800.99,USD,Phillip Thomas,Payment for invoice INV-29250452
+1108,2024-01-28,3150.28,USD,Mitchell Dekker,Payment for invoice INV-29250453
+1109,2024-01-28,1378.96,USD,Loren Lane,Payment for invoice INV-29250459
+1110,2024-01-28,3123.74,USD,Bradley Barnett,Payment for invoice INV-29250501
+1111,2024-01-28,46.99,USD,Eddie Celentano,Payment for invoice INV-29250511
+1112,2024-01-28,7678.77,USD,Karen McGraw,Payment for invoice INV-29250542
+1113,2024-01-28,1562.46,USD,Beau Gibbs,Payment for invoice INV-29250579
+1114,2024-01-28,2313.62,USD,Tilly Cyr,Payment for invoice INV-29250590
+1115,2024-01-28,2834.00,USD,Aiden Sodeman,Payment for invoice INV-29250604
+1116,2024-01-28,978.00,USD,Michael Dingler,Payment for invoice INV-29250628
+1117,2024-01-28,392.25,USD,Kevin Higgins,Payment for invoice INV-29250643
+1118,2024-01-28,161.19,USD,Jeff Lane,Payment for invoice INV-29250679
+1119,2024-01-28,242.27,USD,Alan Ruhl,Payment for invoice INV-29250752
+1120,2024-01-28,689.70,USD,Jose Howard,Payment for invoice INV-29250759
+1121,2024-01-28,2907.03,USD,Amy Thiede,Payment for invoice INV-29250782
+1122,2024-01-28,1088.35,USD,Tammy Rojas,Payment for invoice INV-29250783
+1123,2024-01-28,2370.75,USD,Eric Loftin,Payment for invoice INV-29250795
+1124,2024-01-28,1307.66,USD,Pamela Waller,Payment for invoice INV-29250802
+1125,2024-01-28,2296.00,USD,Nicholas Ness,Payment for invoice INV-29250804
+1126,2024-01-28,8168.46,USD,Kieran Stone,Payment for invoice INV-29250813
+1127,2024-01-28,5954.90,USD,Birgit Neudorf,Payment for invoice INV-29260021
+1128,2024-01-28,901.57,USD,Ronald Rice,Payment for invoice INV-29260026
+1129,2024-01-28,949.90,USD,Hunter Gardiner,Payment for invoice INV-29260031
+1130,2024-01-28,761.19,USD,Bobby Beran,Payment for invoice INV-29260032
+1131,2024-01-28,1646.30,USD,Julian Eliassen,Payment for invoice INV-29260034
+1132,2024-01-28,2265.44,USD,Rebecca Collins,inv-29260115
+1133,2024-01-28,2565.65,USD,Mason Hunter,Payment for invoice INV-29260116
+1134,2024-01-28,703.39,USD,Mary Shell,Payment for invoice INV-29260123
+1135,2024-01-28,617.87,USD,Elizabeth Johnston,Payment for invoice INV-29260131
+1136,2024-01-28,68.80,USD,Traci Keeble,Payment for invoice INV-29260136
+1137,2024-01-28,1199.11,USD,Johanna Schreiner,Payment for invoice INV-29260151
+1138,2024-01-28,897.13,USD,Nino Posavec,Payment for invoice INV-29260170
+1139,2024-01-28,9.79,USD,Robert Carter,29260177
+1140,2024-01-28,6683.69,USD,Taylor Collins,Payment for invoice INV-29260180
+1141,2024-01-28,4654.51,USD,Angelo Brewer,Payment for invoice INV-29260194
+1142,2024-01-28,916.00,USD,Beatrice Nau,Payment for invoice INV-29260214
+1143,2024-01-28,643.78,USD,Kevin Ballard,Payment for invoice INV-29260282
+1144,2024-01-28,110.82,USD,Tanya Beckley,Payment for invoice INV-29260335
+1145,2024-01-28,600.00,USD,Jürgen Sommer,Payment for invoice INV-29260348
+1146,2024-01-28,1396.56,USD,Thomas Rayburn,Payment for invoice INV-29260365
+1147,2024-01-28,8.88,USD,Joseph Delgado,Invoice no. 29260369
+1148,2024-01-28,418.22,USD,Chester Clark,Payment for invoice INV-29260416
+1149,2024-01-28,1104.76,USD,Ana Irwin,INV 29260432
+1150,2024-01-28,3935.08,USD,Lucas Kaufmann,Payment for invoice INV-29260442
+1151,2024-01-28,10527.21,USD,Frank Ngo,Payment for invoice INV-29260471
+1152,2024-01-28,3963.92,USD,Lisa Traugott,Payment for invoice INV-29260480
+1153,2024-01-28,2222.95,USD,Olivia Starr,Payment for invoice INV-29260517
+1154,2024-01-28,109.87,USD,Christine Fruehauf,Payment for invoice INV-29260525
+1155,2024-01-28,2497.63,USD,Edmund Edmonds,Payment for invoice INV-29260529
+1156,2024-01-28,8328.29,USD,Branimir Juric,Payment for invoice INV-29260584
+1157,2024-01-28,1151.29,USD,Idse Wagemakers,Payment for invoice INV-29260619
+1158,2024-01-28,9.99,USD,Frank Penner,Payment for invoice INV-29260641
+1159,2024-01-28,235.52,USD,Dewey Metcalfe,Payment for invoice INV-29260706
+1160,2024-01-28,1983.89,USD,Stojan Miletic,Payment for invoice INV-29260729
+1161,2024-01-28,92.07,USD,Christopher Hinkle,Payment for invoice INV-29260753
+1162,2024-01-28,533.11,USD,Donna Hayes,Payment for invoice INV-29260757
+1163,2024-01-28,200.10,USD,Yusra Ramdas,Payment for invoice INV-29260797
+1164,2024-01-28,1502.97,USD,Carla Alger,Payment for invoice INV-29260832
+1165,2024-01-28,1340.00,USD,Wolfgang Pfeiffer,Payment for invoice INV-29260840
+1166,2024-01-28,2994.20,USD,Phillipp Zimmerman,Payment for invoice INV-29260843
+1167,2024-01-28,1470.24,USD,Timothy Sanders,29260844
+1168,2024-01-28,1466.36,USD,Jacqueline Martinez,Payment for invoice INV-29260852
+1169,2024-01-28,1308.04,USD,Becky Martinez,Payment for invoice INV-29260894
+1170,2024-01-28,1232.31,USD,Donald Hurley,Invoice no. 29260910
+1171,2024-01-28,808.32,USD,Darren Charles,Payment for invoice INV-29270022
+1172,2024-01-28,290.99,USD,Valquiria Vega,Payment for invoice INV-29270023
+1173,2024-01-28,1067.95,USD,Tammy Janson,Payment for invoice INV-29270030
+1174,2024-01-28,1795.48,USD,Anton Carignan,Payment for invoice INV-29270055
+1175,2024-01-28,7572.53,USD,Julian Vasey,Payment for invoice INV-29270086
+1176,2024-01-28,1094.08,USD,Andrew Legg,Payment for invoice INV-29270107
+1177,2024-01-28,86.98,USD,Nancy Reiff,Payment for invoice INV-29270126
+1178,2024-01-28,10771.13,USD,Michael Moffett,Payment for invoice INV-29270131
+1179,2024-01-28,1254.30,USD,Pamela Carr,Payment for invoice INV-29270132
+1180,2024-01-28,6138.32,USD,Ashley David,Payment for invoice INV-29270162
+1181,2024-01-28,806.37,USD,Estevan Carvalho,Payment for invoice INV-29270244
+1182,2024-01-28,946.41,USD,Steve Camargo,Payment for invoice INV-29270284
+1183,2024-01-28,2485.61,USD,Christin Schwarz,Payment for invoice INV-29270287
+1184,2024-01-28,519.95,USD,Donna Smith,Payment for invoice INV-29270329
+1185,2024-01-28,5431.00,USD,Mary Piper,Payment for invoice INV-29270339
+1186,2024-01-28,4257.78,USD,Ivan Sweeney,Payment for invoice INV-29270401
+1187,2024-01-28,1475.00,USD,James Couture,Payment for invoice INV-29270419
+1188,2024-01-28,891.48,USD,Ava Houghton,Payment for invoice INV-29270426
+1189,2024-01-28,595.56,USD,Petr Sláma,Payment for invoice INV-29270428
+1190,2024-01-28,876.00,USD,Wolfgang Schäfer,Payment for invoice INV-29270431
+1191,2024-01-28,561.04,USD,Helen Martin,Payment for invoice INV-29270445
+1192,2024-01-28,3114.32,USD,Piper Tenison-Woods,Payment for invoice INV-29270452
+1193,2024-01-28,1064.57,USD,Luke Galea,Payment for invoice INV-29270456
+1194,2024-01-28,210.39,USD,James Bowman,Invoice no. 29270480
+1195,2024-01-28,3444.47,USD,Hilda Wilson,Payment for invoice INV-29270488
+1196,2024-01-28,120.12,USD,Angel Smiley,Invoice no. 29270511
+1197,2024-01-28,1018.24,USD,Rosie Mitchell,Payment for invoice INV-29270520
+1198,2024-01-28,1957.60,USD,Jan Nagel,Payment for invoice INV-29270522
+1199,2024-01-28,816.03,USD,Sean Bunce,Payment for invoice INV-29270525
+1200,2024-01-28,1293.10,USD,Tone Ivarsson,Payment for invoice INV-29270534
+1201,2024-01-28,900.17,USD,Christin Kalb,Payment for invoice INV-29270545
+1202,2024-01-28,4343.28,USD,Ronald Bryan,Payment for invoice INV-29270567
+1203,2024-01-28,35.28,USD,Robyn Terry,Payment for invoice INV-29270582
+1204,2024-01-28,799.95,USD,Rebecca Kruse,Payment for invoice INV-29280024
+1205,2024-01-28,257.50,USD,James Collins,INV 29280034
+1206,2024-01-28,1439.71,USD,Karolin Abend,Payment for invoice INV-29280035
+1207,2024-01-28,721.29,USD,Beverly Bourne,Payment for invoice INV-29280036
+1208,2024-01-28,317.34,USD,Sophia Kortig,Payment for invoice INV-29280045
+1209,2024-01-28,33.47,USD,Lila Garcia,Payment for invoice INV-29280061
+1210,2024-01-28,475.02,USD,Ron Hayden,Payment for invoice INV-29280126
+1211,2024-01-28,5511.89,USD,Reamon Wevers,Payment for invoice INV-29280157
+1212,2024-01-28,281.11,USD,Ryan Gavin,Payment for invoice INV-29280169
+1213,2024-01-28,2026.84,USD,Marco Luft,Payment for invoice INV-29280230
+1214,2024-01-28,1729.80,USD,Torsten Dresner,Payment for invoice INV-29280241
+1215,2024-01-28,1390.30,USD,Christopher Wellborn,Invoice no. 29280246
+1216,2024-01-28,714.47,USD,Peter Solomon,Payment for invoice INV-29280256
+1217,2024-01-28,2255.54,USD,Mieczyslawa Nowicka,Payment for invoice INV-29280301
+1218,2024-01-28,528.00,USD,Judy Jimenez,Payment for invoice INV-29280302
+1219,2024-01-28,1701.54,USD,Amanda Goode,Payment for invoice INV-29280330
+1220,2024-01-28,5499.70,USD,Joe Herd,Payment for invoice INV-29280373
+1221,2024-01-28,340.32,USD,Johnnie Hope,Payment for invoice INV-29280376
+1222,2024-01-28,768.22,USD,Rudolf Jerkovic,Payment for invoice INV-29280386
+1223,2024-01-28,6718.89,USD,Sophie Iqbal,Payment for invoice INV-29280422
+1224,2024-01-28,1372.34,USD,Griffin Spoelstra,Invoice no. 29280428
+1225,2024-01-28,1220.79,USD,Gary Clift,Payment for invoice INV-29280433
+1226,2024-01-28,8980.01,USD,Emerentiana Hoeke,Payment for invoice INV-29280463
+1227,2024-01-28,978.69,USD,Helen Kain,Payment for invoice INV-29280489
+1228,2024-01-28,205.00,USD,William Henry,Payment for invoice INV-29280500
+1229,2024-01-28,39.87,USD,Alex Clevenger,Payment for invoice INV-29280532
+1230,2024-01-28,3795.88,USD,Debra Saldana,INV 29280551
+1231,2024-01-28,4058.48,USD,Ruby Headlam,Payment for invoice INV-29280554
+1232,2024-01-28,29.98,USD,Marlijn Rutjes,29280633
+1233,2024-01-28,5931.33,USD,Donna Strauss,Payment for invoice INV-29280640
+1234,2024-01-28,5375.59,USD,Jordey Hos,29280659
+1235,2024-01-28,2618.76,USD,Maryann Jennings,Payment for invoice INV-29280684
+1236,2024-01-28,23.72,USD,Candice Phipps,Payment for invoice INV-29280691
+1237,2024-01-28,575.71,USD,Sophie Duerr,Payment for invoice INV-29280708
+1238,2024-01-28,2181.22,USD,Chelsea Allan,Payment for invoice INV-29280715
+1239,2024-01-28,2070.60,USD,Morris Campuzano,Payment for invoice INV-29280743
+1240,2024-01-28,1855.21,USD,Archie Jenkins,Payment for invoice INV-29280755
+1241,2024-01-28,2193.03,USD,Torsten Schaefer,Payment for invoice INV-29280763
+1242,2024-01-28,2567.63,USD,Sarah Castro,Payment for invoice INV-29280767
+1243,2024-01-28,547.50,USD,Charles Stirling,Payment for invoice INV-29280788
+1244,2024-01-28,280.12,USD,Ricky Nordquist,Payment for invoice INV-29280794
+1245,2024-01-28,294.97,USD,Ralf Möller,Payment for invoice INV-29280800
+1246,2024-01-28,3554.91,USD,Erik Davis,Payment for invoice INV-29280810
+1247,2024-01-28,271.78,USD,Mary York,Payment for invoice INV-29280821
+1248,2024-01-28,830.76,USD,Faye Keaton,29280838
+1249,2024-01-28,1330.37,USD,Joe Cawthon,Payment for invoice INV-29280878
+1250,2024-01-28,950.15,USD,David Santos,Payment for invoice INV-29280891
+1251,2024-01-28,2062.27,USD,Archer Roemer,Payment for invoice INV-29280916
+1252,2024-01-28,2723.93,USD,Herman Sinclair,Payment for invoice INV-29280955
+1253,2024-01-28,322.18,USD,Sandra Perez,Invoice no. 29281014
+1254,2024-01-28,341.59,USD,Libuše Karpíšková,Payment for invoice INV-29290052
+1255,2024-01-28,50.22,USD,Jeremy Briones,Payment for invoice INV-29290061
+1256,2024-01-28,5878.05,USD,Calvin Cohen,inv-29290082
+1257,2024-01-28,1051.22,USD,Charles Presley,Payment for invoice INV-29290085
+1258,2024-01-28,1437.27,USD,Tammy Parsons,Payment for invoice INV-29300031
+1259,2024-01-28,2723.10,USD,Elisabet Gaitán,Payment for invoice INV-29300040
+1260,2024-01-28,1137.29,USD,Angela Breunig,Payment for invoice INV-29300090
+1261,2024-01-28,2168.14,USD,Francisca Wu,Invoice no. 29300095
+1262,2024-01-28,7177.72,USD,Carl Cervantes,Payment for invoice INV-29300102
+1263,2024-01-28,5920.56,USD,Dieter Schultheiss,Payment for invoice INV-29300106
+1264,2024-01-28,459.30,USD,Chrystal Figueroa,Payment for invoice INV-29300110
+1265,2024-01-28,4621.49,USD,John Rodriguez,29300115
+1266,2024-01-28,1965.96,USD,Jennifer Köhler,Payment for invoice INV-29300116
+1267,2024-01-28,687.00,USD,Yrjö Vasala,Payment for invoice INV-29300117
+1268,2024-01-28,2766.25,USD,Tanja Brauer,Payment for invoice INV-29300119
+1269,2024-01-28,321.10,USD,Cathy Anderson,Payment for invoice INV-29300140
+1270,2024-01-28,1377.72,USD,Kyle Parkin,29300172
+1271,2024-01-28,30.24,USD,Charles Katz,Payment for invoice INV-29300198
+1272,2024-01-28,3178.03,USD,Dirk Schulz,Payment for invoice INV-29300199
+1273,2024-01-28,6041.34,USD,Sergio Massey,Payment for invoice INV-29300221
+1274,2024-01-28,334.40,USD,Rachel Robinson,inv-29300278
+1275,2024-01-28,1235.32,USD,Mia Rechner,Payment for invoice INV-29300280
+1276,2024-01-28,19.00,USD,Robert Boehm,Payment for invoice INV-29300288
+1277,2024-01-28,886.94,USD,Bradley Brown,Payment for invoice INV-29300294
+1278,2024-01-28,539.82,USD,Jenny Lott,Payment for invoice INV-29300333
+1279,2024-01-28,2001.57,USD,Pat Myers,Payment for invoice INV-29300354
+1280,2024-01-28,1384.22,USD,Ines Waechter,Payment for invoice INV-29300362
+1281,2024-01-28,924.00,USD,Carol Leblanc,Payment for invoice INV-29300364
+1282,2024-01-28,684.64,USD,Jouni Raila,Payment for invoice INV-29300378
+1283,2024-01-28,1116.19,USD,Marina Beckenbauer,Payment for invoice INV-29300390
+1284,2024-01-28,837.00,USD,Luís Pinto,Payment for invoice INV-29300396
+1285,2024-01-28,1829.97,USD,Dean Birtles,INV 29300413
+1286,2024-01-28,299.99,USD,Maximilian Lange,Invoice no. 29300424
+1287,2024-01-28,56.88,USD,Cynthia Hos,Payment for invoice INV-29300425
+1288,2024-01-28,803.98,USD,Peter Randall,Payment for invoice INV-29300441
+1289,2024-01-28,493.63,USD,Rhys Jarvis,Payment for invoice INV-29300443
+1290,2024-01-29,82.56,USD,Antonio Yarbrough,Payment for invoice INV-29230001
+1291,2024-01-29,1455.02,USD,Melvin Naylor,inv-29230017
+1292,2024-01-29,3868.22,USD,Jorja Ernest,Payment for invoice INV-29230033
+1293,2024-01-29,374.43,USD,Marmion Saurel,Payment for invoice INV-29230058
+1294,2024-01-29,534.77,USD,Leigh Lee,Payment for invoice INV-29230129
+1295,2024-01-29,35.98,USD,Charles Minnick,Payment for invoice INV-29230133
+1296,2024-01-29,562.12,USD,Anita White,Payment for invoice INV-29230204
+1297,2024-01-29,1415.68,USD,Kate Dooley,Payment for invoice INV-29230237
+1298,2024-01-29,132.59,USD,Bertha McLean,Payment for invoice INV-29230307
+1299,2024-01-29,23.67,USD,Isa Jonasson,Payment for invoice INV-29230316
+1300,2024-01-29,1006.20,USD,Castimir Vuckovic,Payment for invoice INV-29230348
+1301,2024-01-29,564.48,USD,Nicholas Keck,Payment for invoice INV-29230349
+1302,2024-01-29,1396.08,USD,Cassandra Coleman,Payment for invoice INV-29230366
+1303,2024-01-29,1751.59,USD,Virginia Maynard,Invoice no. 29230378
+1304,2024-01-29,2419.81,USD,Deanna Byrd,29230389
+1305,2024-01-29,1531.80,USD,Jan Sonnemans,inv-29230433
+1306,2024-01-29,1680.64,USD,Robin Lewis,Payment for invoice INV-29230440
+1307,2024-01-29,711.90,USD,Katja Eisenhauer,Payment for invoice INV-29230442
+1308,2024-01-29,1635.47,USD,Hilary Marlowe,Payment for invoice INV-29230446
+1309,2024-01-29,2794.46,USD,Charli Harris,Payment for invoice INV-29230460
+1310,2024-01-29,7.15,USD,Sarah Marsden,Payment for invoice INV-29230477
+1311,2024-01-29,3068.49,USD,Johan Nielsen,Invoice no. 29230506
+1312,2024-01-29,1124.00,USD,Shannon Elliot,Payment for invoice INV-29230516
+1313,2024-01-29,806.87,USD,Edgar Walsh,Payment for invoice INV-29230518
+1314,2024-01-29,444.54,USD,Zara Rahman,Payment for invoice INV-29240017
+1315,2024-01-29,17.99,USD,Patrick Strauss,29240033
+1316,2024-01-29,30.19,USD,Joshua Petrick,Payment for invoice INV-29240095
+1317,2024-01-29,1835.58,USD,Nancy Souder,Payment for invoice INV-29240096
+1318,2024-01-29,273.24,USD,Kevin Kohl,Payment for invoice INV-29240097
+1319,2024-01-29,322.60,USD,Audrey Mackie,Payment for invoice INV-29240108
+1320,2024-01-29,1108.76,USD,Estella Summerville,Payment for invoice INV-29240136
+1321,2024-01-29,311.46,USD,René Daecher,Payment for invoice INV-29240159
+1322,2024-01-29,312.00,USD,Dieter Aachen,Payment for invoice INV-29240185
+1323,2024-01-29,952.88,USD,Roy Moody,Payment for invoice INV-29240187
+1324,2024-01-29,1044.94,USD,Jan Krause,INV 29240197
+1325,2024-01-29,3016.26,USD,Mari Middelkamp,Payment for invoice INV-29240216
+1326,2024-01-29,5414.79,USD,James Ingram,Payment for invoice INV-29240228
+1327,2024-01-29,75.30,USD,William Renner,Payment for invoice INV-29240240
+1328,2024-01-29,2229.24,USD,Joseph Reichert,Payment for invoice INV-29240252
+1329,2024-01-29,5144.98,USD,Ewan Holden,Payment for invoice INV-29240268
+1330,2024-01-29,2295.00,USD,Mohammed Hicks,Payment for invoice INV-29240272
+1331,2024-01-29,2575.94,USD,Paul Brauer,inv-29240285
+1332,2024-01-29,6184.15,USD,Hannah Burt,Payment for invoice INV-29240302
+1333,2024-01-29,1451.58,USD,Janice Caron,Payment for invoice INV-29240315
+1334,2024-01-29,1772.72,USD,Abdelkader Kamerling,Payment for invoice INV-29240320
+1335,2024-01-29,1408.68,USD,Karen Duckett,Payment for invoice INV-29240331
+1336,2024-01-29,1902.21,USD,Lucy Hartog,Invoice no. 29240357
+1337,2024-01-29,1395.91,USD,David Torkelson,Payment for invoice INV-29240393
+1338,2024-01-29,5027.84,USD,Marie Pfaff,Payment for invoice INV-29240394
+1339,2024-01-29,393.80,USD,Jennifer Wall,Payment for invoice INV-29240429
+1340,2024-01-29,799.98,USD,Timothy Obando,Payment for invoice INV-29240458
+1341,2024-01-29,818.40,USD,Garry White,Payment for invoice INV-29240463
+1342,2024-01-29,915.51,USD,Katie Garratt,Invoice no. 29240472
+1343,2024-01-29,1075.42,USD,Jakob Lundblad,Payment for invoice INV-29240495
+1344,2024-01-29,3556.17,USD,Sue Noonan,inv-29240521
+1345,2024-01-29,21.79,USD,Tegan Gallagher,Payment for invoice INV-29240522
+1346,2024-01-29,3164.00,USD,Andrew Castro,Payment for invoice INV-29240542
+1347,2024-01-29,856.22,USD,Kathrin Hoover,Payment for invoice INV-29240551
+1348,2024-01-29,898.62,USD,Alexander Schwarz,Payment for invoice INV-29240575
+1349,2024-01-29,1065.30,USD,Christine Traugott,Payment for invoice INV-29240579
+1350,2024-01-29,3289.58,USD,Vaden L'Hiver,Payment for invoice INV-29240581
+1351,2024-01-29,145.72,USD,Seth Orchard,Payment for invoice INV-29240639
+1352,2024-01-29,46.95,USD,Isabelle Swift,Payment for invoice INV-29240644
+1353,2024-01-29,2421.11,USD,David Fisher,Payment for invoice INV-29240677
+1354,2024-01-29,9411.25,USD,Robyn Osborn,Payment for invoice INV-29250073
+1355,2024-01-29,363.12,USD,Tyler Barbour,Payment for invoice INV-29250086
+1356,2024-01-29,12585.48,USD,Julian Stelzer,INV 29250146
+1357,2024-01-29,2298.00,USD,Maddison Neil,Payment for invoice INV-29250151
+1358,2024-01-29,302.51,USD,Sabine Grunewald,Payment for invoice INV-29250184
+1359,2024-01-29,7469.00,USD,Candace Stewart,Payment for invoice INV-29250217
+1360,2024-01-29,821.28,USD,Pamela Moore,inv-29250220
+1361,2024-01-29,214.07,USD,James Shaw,Payment for invoice INV-29250221
+1362,2024-01-29,777.00,USD,Katrin Drechsler,Payment for invoice INV-29250265
+1363,2024-01-29,266.90,USD,Linda Cox,Payment for invoice INV-29250277
+1364,2024-01-29,5346.00,USD,Rory See,Payment for invoice INV-29250317
+1365,2024-01-29,2070.96,USD,Andre Morse,Payment for invoice INV-29250348
+1366,2024-01-29,4859.41,USD,Elijah Hare,Payment for invoice INV-29250357
+1367,2024-01-29,1213.24,USD,Barbara Wagner,Payment for invoice INV-29250358
+1368,2024-01-29,896.58,USD,Larry Harbour,Payment for invoice INV-29250372
+1369,2024-01-29,29.44,USD,Richard Randle,Payment for invoice INV-29250408
+1370,2024-01-29,40.01,USD,James Buncle,inv-29250445
+1371,2024-01-29,30673.92,USD,Beatrice Shaw,Payment for invoice INV-29250460
+1372,2024-01-29,124.90,USD,Koby Colebe,INV 29250472
+1373,2024-01-29,158.51,USD,Kate Robinson,inv-29250474
+1374,2024-01-29,2034.12,USD,Madeleine Parsons,Payment for invoice INV-29250491
+1375,2024-01-29,115.00,USD,Diana Johnson,Payment for invoice INV-29250496
+1376,2024-01-29,1587.00,USD,Lewis Rodriguez,Payment for invoice INV-29250500
+1377,2024-01-29,2261.76,USD,Nicole Sankt,Payment for invoice INV-29250528
+1378,2024-01-29,40.59,USD,Jessica Abt,Payment for invoice INV-29250566
+1379,2024-01-29,14616.74,USD,Seth English,Payment for invoice INV-29250574
+1380,2024-01-29,774.08,USD,Kristina Weaver,Payment for invoice INV-29250595
+1381,2024-01-29,4103.52,USD,Kevin Logan,Payment for invoice INV-29250605
+1382,2024-01-29,1269.85,USD,Sijtse Loonen,Payment for invoice INV-29250613
+1383,2024-01-29,2316.40,USD,Geeke Weidema,Payment for invoice INV-29250640
+1384,2024-01-29,2527.31,USD,Dorcas Robertson,Payment for invoice INV-29250651
+1385,2024-01-29,4383.57,USD,Sonia Gerber,Payment for invoice INV-29250706
+1386,2024-01-29,3079.38,USD,Jesse Luke,inv-29250709
+1387,2024-01-29,570.36,USD,Ethan Hoffnung,Payment for invoice INV-29250761
+1388,2024-01-29,720.26,USD,Christina Friedman,Payment for invoice INV-29250784
+1389,2024-01-29,1070.90,USD,Andreas Neudorf,Payment for invoice INV-29250789
+1390,2024-01-29,588.00,USD,Ursula Abendroth,Payment for invoice INV-29250792
+1391,2024-01-29,2295.00,USD,Amy Dunlap,Payment for invoice INV-29250798
+1392,2024-01-29,3423.33,USD,Michelle Maur,inv-29250820
+1393,2024-01-29,2471.53,USD,James Harris,Payment for invoice INV-29260045
+1394,2024-01-29,2064.35,USD,Thomas Seery,Payment for invoice INV-29260060
+1395,2024-01-29,18.98,USD,Spencer Jarvis,Payment for invoice INV-29260069
+1396,2024-01-29,861.30,USD,Lisa Kruger,Invoice no. 29260078
+1397,2024-01-29,296.91,USD,Ann Moore,Payment for invoice INV-29260084
+1398,2024-01-29,3281.14,USD,Kim Burke,Payment for invoice INV-29260089
+1399,2024-01-29,111.05,USD,Barbara Walter,Payment for invoice INV-29260092
+1400,2024-01-29,456.47,USD,Priscilla Mercer,Payment for invoice INV-29260133
+1401,2024-01-29,1962.14,USD,John Beegle,Payment for invoice INV-29260153
+1402,2024-01-29,378.00,USD,Sven Grubišic,Payment for invoice INV-29260157
+1403,2024-01-29,1005.76,USD,Joy Tripp,Payment for invoice INV-29260190
+1404,2024-01-29,24.36,USD,Toby Moorhouse,Payment for invoice INV-29260193
+1405,2024-01-29,4425.00,USD,Katrin Bohm,Payment for invoice INV-29260200
+1406,2024-01-29,2974.01,USD,Klaudia Osterhagen,Payment for invoice INV-29260209
+1407,2024-01-29,2627.73,USD,Mason Anderson,Payment for invoice INV-29260217
+1408,2024-01-29,160.23,USD,Mohamed Thomsen,Payment for invoice INV-29260226
+1409,2024-01-29,1263.90,USD,Major Juarez,Payment for invoice INV-29260236
+1410,2024-01-29,2828.42,USD,Walter Wood,Payment for invoice INV-29260273
+1411,2024-01-29,2456.09,USD,Roberto Vergara,Payment for invoice INV-29260279
+1412,2024-01-29,227.95,USD,Lawrence O'Donnell,Payment for invoice INV-29260345
+1413,2024-01-29,324.68,USD,Chelsey Underwood,Payment for invoice INV-29260390
+1414,2024-01-29,5733.00,USD,Gene Chambers,Payment for invoice INV-29260392
+1415,2024-01-29,173.64,USD,Lukas Naumann,Payment for invoice INV-29260403
+1416,2024-01-29,2932.80,USD,Sienna Stokes,Payment for invoice INV-29260409
+1417,2024-01-29,6582.17,USD,Deborah Lawson,Payment for invoice INV-29260412
+1418,2024-01-29,431.34,USD,Leslie Jones,Payment for invoice INV-29260413
+1419,2024-01-29,109.90,USD,Martin Crews,Payment for invoice INV-29260421
+1420,2024-01-29,2358.84,USD,Kristian Barth,Invoice no. 29260431
+1421,2024-01-29,1645.12,USD,Michael Fritsch,Payment for invoice INV-29260447
+1422,2024-01-29,2183.39,USD,Arlyne Hawkins,Payment for invoice INV-29260448
+1423,2024-01-29,85.40,USD,David Alvarez,Payment for invoice INV-29260495
+1424,2024-01-29,1592.20,USD,Edith Cooper,Payment for invoice INV-29260512
+1425,2024-01-29,6.22,USD,Phyllis Gardner,INV 29260518
+1426,2024-01-29,99.18,USD,James Santos,Payment for invoice INV-29260546
+1427,2024-01-29,2043.16,USD,Ronald Smith,Payment for invoice INV-29260548
+1428,2024-01-29,2662.22,USD,Tyron Bruce,Payment for invoice INV-29260595
+1429,2024-01-29,3128.52,USD,Kristine Christensen,Payment for invoice INV-29260643
+1430,2024-01-29,772.20,USD,Gerald Smith,Payment for invoice INV-29260646
+1431,2024-01-29,1162.12,USD,Kenneth Pitts,Payment for invoice INV-29260648
+1432,2024-01-29,6230.75,USD,Katie Hollis,Payment for invoice INV-29260650
+1433,2024-01-29,20.64,USD,Daniel Farran-Ridge,Payment for invoice INV-29260670
+1434,2024-01-29,745.06,USD,Ali Goodenough,Payment for invoice INV-29260754
+1435,2024-01-29,1877.84,USD,Joseph Griffiths,Payment for invoice INV-29260763
+1436,2024-01-29,1827.00,USD,Mille Gustafsson,Payment for invoice INV-29260791
+1437,2024-01-29,2596.78,USD,Ann Lord,Payment for invoice INV-29260817
+1438,2024-01-29,3291.75,USD,Kai Jorgenson,Payment for invoice INV-29260825
+1439,2024-01-29,1268.64,USD,Michael Reyes,Payment for invoice INV-29260826
+1440,2024-01-29,3236.23,USD,Raffi Olvera,Payment for invoice INV-29260838
+1441,2024-01-29,373.01,USD,Sofia Woodward,Payment for invoice INV-29260868
+1442,2024-01-29,3352.04,USD,Mildred Harrell,Payment for invoice INV-29260873
+1443,2024-01-29,11842.20,USD,Stephan Holtzmann,29260895
+1444,2024-01-29,593.02,USD,Dana Merkley,Payment for invoice INV-29260912
+1445,2024-01-29,1126.62,USD,Joachim Thomsen,Payment for invoice INV-29270010
+1446,2024-01-29,772.21,USD,Vanessa Wagner,Payment for invoice INV-29270012
+1447,2024-01-29,3378.43,USD,Vincent Smith,Payment for invoice INV-29270042
+1448,2024-01-29,25.77,USD,Bernice Bailey,Invoice no. 29270051
+1449,2024-01-29,1491.01,USD,Finley Ross,Payment for invoice INV-29270070
+1450,2024-01-29,1539.19,USD,Claudia Schultheiss,Payment for invoice INV-29270085
+1451,2024-01-29,5460.15,USD,Jack Sherlock,Payment for invoice INV-29270114
+1452,2024-01-29,2.91,USD,Birgit Osterhagen,INV 29270153
+1453,2024-01-29,598.00,USD,Zoe Palmer,Payment for invoice INV-29270182
+1454,2024-01-29,249.99,USD,Max Elliot,Payment for invoice INV-29270190
+1455,2024-01-29,85.39,USD,Mia Ávila,Payment for invoice INV-29270211
+1456,2024-01-29,1701.00,USD,Matthew Schade,Payment for invoice INV-29270221
+1457,2024-01-29,2398.27,USD,Steve Davidson,Payment for invoice INV-29270223
+1458,2024-01-29,56.00,USD,Joesph Giese,Payment for invoice INV-29270262
+1459,2024-01-29,620.06,USD,Kimberly Dike,Payment for invoice INV-29270300
+1460,2024-01-29,113.85,USD,Christopher Davey,Payment for invoice INV-29270311
+1461,2024-01-29,1596.18,USD,Denise Sackett,INV 29270312
+1462,2024-01-29,2436.83,USD,Andrea Cosic,Payment for invoice INV-29270319
+1463,2024-01-29,388.04,USD,Petra Schroder,Payment for invoice INV-29270346
+1464,2024-01-29,1266.84,USD,Lilly Sharpe,Payment for invoice INV-29270373
+1465,2024-01-29,1298.00,USD,Juanita Pena,Payment for invoice INV-29270434
+1466,2024-01-29,3347.12,USD,Andre Dickerson,Payment for invoice INV-29270441
+1467,2024-01-29,821.71,USD,Zarina van der Velden,Payment for invoice INV-29270451
+1468,2024-01-29,5594.46,USD,Zachary Horton,Payment for invoice INV-29270453
+1469,2024-01-29,2148.00,USD,Antje Gerste,Invoice no. 29270457
+1470,2024-01-29,1141.96,USD,John Newman,Payment for invoice INV-29270476
+1471,2024-01-29,751.68,USD,Phoebe Phillips,Payment for invoice INV-29270478
+1472,2024-01-29,4244.76,USD,Mia Bligh,Payment for invoice INV-29270482
+1473,2024-01-29,349.00,USD,Refugio Livingston,Payment for invoice INV-29270524
+1474,2024-01-29,1054.06,USD,Alica Boyle,Payment for invoice INV-29270533
+1475,2024-01-29,549.95,USD,Carla Stapleton,Payment for invoice INV-29270552
+1476,2024-01-29,5004.75,USD,Hugo Ievers,Payment for invoice INV-29270575
+1477,2024-01-29,7094.64,USD,Gina Evangelista,Payment for invoice INV-29270584
+1478,2024-01-29,837.00,USD,Daniel Silverman,Payment for invoice INV-29280000
+1479,2024-01-29,3511.99,USD,Sophie Dixon,29280007
+1480,2024-01-29,3214.15,USD,Ethel Case,Payment for invoice INV-29280021
+1481,2024-01-29,6993.00,USD,Marko Frueh,Payment for invoice INV-29280023
+1482,2024-01-29,3669.47,USD,Todd Hernandez,Payment for invoice INV-29280039
+1483,2024-01-29,520.72,USD,Edward Corrigan,Payment for invoice INV-29280068
+1484,2024-01-29,1161.00,USD,Fannie Perez,Payment for invoice INV-29280081
+1485,2024-01-29,3924.67,USD,Libby Jennings,Payment for invoice INV-29280120
+1486,2024-01-29,8177.94,USD,Amanda Whitacre,Payment for invoice INV-29280135
+1487,2024-01-29,628.34,USD,Emily Petty,Payment for invoice INV-29280150
+1488,2024-01-29,600.46,USD,Callum Aunger,Payment for invoice INV-29280165
+1489,2024-01-29,1121.34,USD,John Mead,Payment for invoice INV-29280180
+1490,2024-01-29,2677.02,USD,Max Bauer,Payment for invoice INV-29280190
+1491,2024-01-29,4585.34,USD,Jürgen Sankt,inv-29280202
+1492,2024-01-29,1064.68,USD,Jonas Kirsch,Payment for invoice INV-29280266
+1493,2024-01-29,2227.34,USD,Rebecca Hill,Payment for invoice INV-29280298
+1494,2024-01-29,190.24,USD,Stewart Fleming,Payment for invoice INV-29280322
+1495,2024-01-29,4348.56,USD,Stefanie Weisz,Payment for invoice INV-29280354
+1496,2024-01-29,290.63,USD,Alton Shipman,Payment for invoice INV-29280362
+1497,2024-01-29,476.00,USD,Peter Cole,Payment for invoice INV-29280364
+1498,2024-01-29,3476.00,USD,Randolph Hurtado,Payment for invoice INV-29280365
+1499,2024-01-29,3701.70,USD,Madeleine Townsend,Payment for invoice INV-29280383
+1500,2024-01-29,667.92,USD,Michael Hopes,Payment for invoice INV-29280396
+1501,2024-01-29,1439.01,USD,Uwe Schweizer,Payment for invoice INV-29280398
+1502,2024-01-29,27.52,USD,Marlyn Fulgham,Payment for invoice INV-29280399
+1503,2024-01-29,37.92,USD,Valeri Scott,Payment for invoice INV-29280421
+1504,2024-01-29,3616.17,USD,Flora Logsdon,Payment for invoice INV-29280434
+1505,2024-01-29,283.61,USD,Christopher Gregory,Payment for invoice INV-29280436
+1506,2024-01-29,4139.95,USD,Brodie Oldham,Payment for invoice INV-29280442
+1507,2024-01-29,3682.59,USD,Ema Horvat,Payment for invoice INV-29280457
+1508,2024-01-29,19.98,USD,Ralph Papst,Payment for invoice INV-29280520
+1509,2024-01-29,2425.54,USD,Karen Davis,Payment for invoice INV-29280529
+1510,2024-01-29,6.15,USD,Anthony Thompson,Invoice no. 29280535
+1511,2024-01-29,459.05,USD,Sven Fruehauf,Payment for invoice INV-29280542
+1512,2024-01-29,1380.85,USD,Taylah Judkins,Payment for invoice INV-29280563
+1513,2024-01-29,960.72,USD,Charles Brown,Payment for invoice INV-29280586
+1514,2024-01-29,462.79,USD,Mia Rechner,Payment for invoice INV-29280592
+1515,2024-01-29,382.48,USD,Roman Rice,Payment for invoice INV-29280625
+1516,2024-01-29,3859.42,USD,Yvonne Traugott,Payment for invoice INV-29280654
+1517,2024-01-29,343.98,USD,John Boyle,Payment for invoice INV-29280674
+1518,2024-01-29,67.83,USD,Connor Parker,Payment for invoice INV-29280689
+1519,2024-01-29,4145.86,USD,Kenneth Goodman,Payment for invoice INV-29280701
+1520,2024-01-29,1732.70,USD,Catalina Wilson,Payment for invoice INV-29280710
+1521,2024-01-29,759.09,USD,Andrea Achen,Invoice no. 29280742
+1522,2024-01-29,1497.94,USD,Sandra Sousa,Payment for invoice INV-29280817
+1523,2024-01-29,745.29,USD,Harrison Whitehead,Payment for invoice INV-29280846
+1524,2024-01-29,4159.05,USD,Pamela Bates,Payment for invoice INV-29280873
+1525,2024-01-29,1657.17,USD,Norris Breton,inv-29280876
+1526,2024-01-29,229.00,USD,Samantha Parsons,Payment for invoice INV-29280882
+1527,2024-01-29,589.90,USD,Bodien Fredriks,Payment for invoice INV-29280895
+1528,2024-01-29,2340.80,USD,Rosemary Courtney,Payment for invoice INV-29280901
+1529,2024-01-29,847.85,USD,Ronald Trombetta,Payment for invoice INV-29280952
+1530,2024-01-29,798.33,USD,Albert Chavez,Payment for invoice INV-29280975
+1531,2024-01-29,269.90,USD,Gabriella Heymann,Payment for invoice INV-29280993
+1532,2024-01-29,903.83,USD,Stephan Frey,29280997
+1533,2024-01-29,397.68,USD,Jorja Ernest,Payment for invoice INV-29281001
+1534,2024-01-29,1745.58,USD,Allison Verdoes,Payment for invoice INV-29281018
+1535,2024-01-29,173.64,USD,Kellie Sproul,Payment for invoice INV-29281026
+1536,2024-01-29,1974.12,USD,Lakisha Hill,Payment for invoice INV-29290039
+1537,2024-01-29,1618.99,USD,Bethany Nelson,Payment for invoice INV-29290098
+1538,2024-01-29,2871.50,USD,David Busick,29290101
+1539,2024-01-29,1251.94,USD,Luis Jackson,Payment for invoice INV-29290111
+1540,2024-01-29,981.98,USD,Dagmar Šmídová,Invoice no. 29300004
+1541,2024-01-29,281.24,USD,Vivian Winkler,29300017
+1542,2024-01-29,8908.85,USD,Diane Brock,Payment for invoice INV-29300038
+1543,2024-01-29,1380.44,USD,Bryant Leeper,Payment for invoice INV-29300068
+1544,2024-01-29,329.16,USD,Thomas Myers,Payment for invoice INV-29300091
+1545,2024-01-29,4194.00,USD,Ken Delorme,Payment for invoice INV-29300118
+1546,2024-01-29,356.00,USD,Leon Anderson,Payment for invoice INV-29300183
+1547,2024-01-29,391.60,USD,Virginia Primus,Payment for invoice INV-29300205
+1548,2024-01-29,940.73,USD,Harley Gordon,Payment for invoice INV-29300206
+1549,2024-01-29,211.05,USD,Christian Finch-Hatton,Payment for invoice INV-29300243
+1550,2024-01-29,23.18,USD,Ulrich Herz,Payment for invoice INV-29300271
+1551,2024-01-29,790.32,USD,Euan Braat,Payment for invoice INV-29300275
+1552,2024-01-29,15259.82,USD,Albert Stengel,Payment for invoice INV-29300306
+1553,2024-01-29,11667.16,USD,Lori Watters,29300312
+1554,2024-01-29,888.00,USD,Ernesta Muñoz,Payment for invoice INV-29300315
+1555,2024-01-29,24.83,USD,Erin Foreman,Payment for invoice INV-29300317
+1556,2024-01-29,280.90,USD,Isobel Tucker,Payment for invoice INV-29300336
+1557,2024-01-29,10069.85,USD,Elmer King,Payment for invoice INV-29300347
+1558,2024-01-29,7647.20,USD,Jason Walker,Payment for invoice INV-29300357
+1559,2024-01-29,44.49,USD,René Osterhagen,Payment for invoice INV-29300370
+1560,2024-01-29,7095.10,USD,Michael Eddings,29300372
+1561,2024-01-29,552.44,USD,Marsilius Leclair,Payment for invoice INV-29300375
+1562,2024-01-29,79.92,USD,Tina Peterson,INV 29300389
+1563,2024-01-29,245.52,USD,Clara Perez,Payment for invoice INV-29300395
+1564,2024-01-29,269.70,USD,Melissa Bachman,Payment for invoice INV-29300416
+1565,2024-01-29,1156.99,USD,Mamie Bishop,Payment for invoice INV-29300422
+1566,2024-01-29,809.55,USD,Jonas Maier,Payment for invoice INV-29300433
+1567,2024-01-29,599.00,USD,Irene Duckworth,Payment for invoice INV-29300437
+1568,2024-01-29,869.42,USD,Johnny Dowell,Payment for invoice INV-29300444
+1569,2024-01-29,4534.25,USD,Garry White,Payment for invoice INV-29300447
+1570,2024-01-29,1328.32,USD,Thi Glaser,Payment for invoice INV-29300452
+1571,2024-01-29,4623.03,USD,Nicholas Harford,Payment for invoice INV-29310021
+1572,2024-01-29,1018.32,USD,Michael Egan,Payment for invoice INV-29310029
+1573,2024-01-29,377.49,USD,Robert Thompson,Payment for invoice INV-29310040
+1574,2024-01-29,358.06,USD,Castimir Vuckovic,Payment for invoice INV-29310069
+1575,2024-01-29,3668.85,USD,Steve Wooten,Payment for invoice INV-29310071
+1576,2024-01-29,8.89,USD,Hanna Czerwinska,Payment for invoice INV-29310086
+1577,2024-01-29,421.63,USD,Nancy Lavender,Payment for invoice INV-29310091
+1578,2024-01-29,284.03,USD,Sam O'Sullivan,Payment for invoice INV-29310096
+1579,2024-01-29,1275.23,USD,Harry Vosper,Payment for invoice INV-29310120
+1580,2024-01-29,1667.98,USD,Linda Obregon,Payment for invoice INV-29310126
+1581,2024-01-29,383.65,USD,Millie Gordon,Payment for invoice INV-29310162
+1582,2024-01-29,1844.81,USD,Mathias Rothstein,INV 29310198
+1583,2024-01-29,819.00,USD,Jai Grose,Payment for invoice INV-29310226
+1584,2024-01-29,3948.93,USD,Elizabeth Brooks,Payment for invoice INV-29310237
+1585,2024-01-29,66.57,USD,Clinton Lopez,Payment for invoice INV-29310355
+1586,2024-01-29,35.98,USD,Anne Lange,Payment for invoice INV-29310371
+1587,2024-01-29,1490.12,USD,Louise Alexander,inv-29310381
+1588,2024-01-29,1288.62,USD,Jessica Brennan,Payment for invoice INV-29310397
+1589,2024-01-29,2571.35,USD,Leah Pfeifer,Invoice no. 29310438
+1590,2024-01-29,789.09,USD,Janice Fournier,Payment for invoice INV-29310453
+1591,2024-01-29,19.77,USD,Greg Herndon,Payment for invoice INV-29310501
+1592,2024-01-29,544.12,USD,Sherry Sperry,Payment for invoice INV-29310528
+1593,2024-01-30,4238.01,USD,Alexander Carillo,Payment for invoice INV-29230003
+1594,2024-01-30,1408.71,USD,Mary Mahaffey,Invoice no. 29230031
+1595,2024-01-30,2052.02,USD,Jürgen Urner,Payment for invoice INV-29230034
+1596,2024-01-30,716.37,USD,Lashanda Carter,Payment for invoice INV-29230056
+1597,2024-01-30,6847.18,USD,David Putilin,Payment for invoice INV-29230060
+1598,2024-01-30,173.64,USD,Craig Howell,Payment for invoice INV-29230108
+1599,2024-01-30,604.44,USD,Rita Smith,Payment for invoice INV-29230110
+1600,2024-01-30,1771.10,USD,Garland Rocheleau,Payment for invoice INV-29230127
+1601,2024-01-30,736.18,USD,Monika Klug,Payment for invoice INV-29230135
+1602,2024-01-30,1268.21,USD,Laura Kent,Payment for invoice INV-29230143
+1603,2024-01-30,1272.97,USD,Jacquelien Özer,Payment for invoice INV-29230145
+1604,2024-01-30,477.10,USD,Tayla Close,inv-29230160
+1605,2024-01-30,1448.86,USD,Tyler Toomey,Payment for invoice INV-29230188
+1606,2024-01-30,1519.93,USD,Marina Vogt,inv-29230224
+1607,2024-01-30,1344.26,USD,Klimek Adamczyk,Payment for invoice INV-29230229
+1608,2024-01-30,2421.09,USD,Danila Polanco,INV 29230240
+1609,2024-01-30,539.88,USD,Kevin Eggers,Payment for invoice INV-29230303
+1610,2024-01-30,267.00,USD,Michael Gaertner,Invoice no. 29230364
+1611,2024-01-30,2224.86,USD,Joshua Owensby,Payment for invoice INV-29230386
+1612,2024-01-30,2382.50,USD,Kevin Powell,Payment for invoice INV-29230399
+1613,2024-01-30,257.32,USD,Peter Klug,Payment for invoice INV-29230410
+1614,2024-01-30,217.40,USD,Mary Hudson,Payment for invoice INV-29230416
+1615,2024-01-30,1196.53,USD,Margaret Garcia,Payment for invoice INV-29230445
+1616,2024-01-30,1128.38,USD,Benjamin Schreiner,Payment for invoice INV-29230474
+1617,2024-01-30,648.42,USD,John Layman,INV 29230512
+1618,2024-01-30,647.95,USD,Joseph Miller,Payment for invoice INV-29240025
+1619,2024-01-30,98.73,USD,Mohammad Caldwell,Payment for invoice INV-29240044
+1620,2024-01-30,2271.60,USD,Jerry Benton,Payment for invoice INV-29240068
+1621,2024-01-30,430.20,USD,Matthias Wagner,Payment for invoice INV-29240083
+1622,2024-01-30,3942.95,USD,Bella Hicks,Payment for invoice INV-29240086
+1623,2024-01-30,761.21,USD,Barbara Bovee,Payment for invoice INV-29240090
+1624,2024-01-30,3812.10,USD,Lasse Bøe,Payment for invoice INV-29240100
+1625,2024-01-30,6119.51,USD,Brenda Sanders,Payment for invoice INV-29240111
+1626,2024-01-30,1410.27,USD,Muhammad Mahmood,Payment for invoice INV-29240176
+1627,2024-01-30,235.96,USD,Danielle Eldridge,Payment for invoice INV-29240178
+1628,2024-01-30,9.99,USD,Thomas Kluge,Payment for invoice INV-29240191
+1629,2024-01-30,1299.51,USD,Jayden Aitken,Payment for invoice INV-29240199
+1630,2024-01-30,4857.79,USD,Alexander Alngindabu,Payment for invoice INV-29240233
+1631,2024-01-30,234.81,USD,Sheila Spencer,INV 29240239
+1632,2024-01-30,2180.27,USD,Charleen Harris,Payment for invoice INV-29240243
+1633,2024-01-30,599.98,USD,Charles Smith,29240246
+1634,2024-01-30,917.52,USD,Robert Peacock,Payment for invoice INV-29240294
+1635,2024-01-30,35.77,USD,Jerry Phillips,Payment for invoice INV-29240298
+1636,2024-01-30,599.80,USD,Rose Kennedy,Payment for invoice INV-29240311
+1637,2024-01-30,17.11,USD,Cooper Kershaw,Payment for invoice INV-29240372
+1638,2024-01-30,473.80,USD,Brian Newton,Payment for invoice INV-29240392
+1639,2024-01-30,595.02,USD,Charles Blankinship,Payment for invoice INV-29240410
+1640,2024-01-30,156.00,USD,Lynda van Burik,Payment for invoice INV-29240465
+1641,2024-01-30,1512.74,USD,Abraham Dailey,Payment for invoice INV-29240470
+1642,2024-01-30,1437.02,USD,Bo Linnasalo,Payment for invoice INV-29240485
+1643,2024-01-30,10255.20,USD,Richelle Proctor,Payment for invoice INV-29240499
+1644,2024-01-30,1350.33,USD,Angelo Oneil,Invoice no. 29240502
+1645,2024-01-30,696.02,USD,Liana Uçar,INV 29240524
+1646,2024-01-30,356.02,USD,Rochel Gill,Payment for invoice INV-29240527
+1647,2024-01-30,2546.40,USD,Shaun Pena,Invoice no. 29240529
+1648,2024-01-30,1164.26,USD,Manna Nieman,inv-29240545
+1649,2024-01-30,71.02,USD,Grace Campbell,Payment for invoice INV-29240556
+1650,2024-01-30,2252.43,USD,Lenny Warren,inv-29240565
+1651,2024-01-30,4221.67,USD,Jaro Daenen,Payment for invoice INV-29240586
+1652,2024-01-30,184.00,USD,Anthony McAnally,Payment for invoice INV-29240592
+1653,2024-01-30,1664.61,USD,Pedro McKinney,Payment for invoice INV-29240597
+1654,2024-01-30,149.94,USD,Logan Thornton,29240605
+1655,2024-01-30,776.00,USD,John Waller,Payment for invoice INV-29240606
+1656,2024-01-30,198.54,USD,Benjamin Bradshaw,INV 29240608
+1657,2024-01-30,839.97,USD,James Mack,Payment for invoice INV-29240628
+1658,2024-01-30,3864.25,USD,Tina Innocent,Payment for invoice INV-29240635
+1659,2024-01-30,68.36,USD,Charles Seagle,Payment for invoice INV-29240653
+1660,2024-01-30,1548.80,USD,Ognjen Peric,Payment for invoice INV-29240667
+1661,2024-01-30,6472.94,USD,Martin Kohler,Payment for invoice INV-29250012
+1662,2024-01-30,117.12,USD,Alexis Playford,Payment for invoice INV-29250042
+1663,2024-01-30,1653.46,USD,Daniela Finkel,Payment for invoice INV-29250079
+1664,2024-01-30,3435.20,USD,Steve Crowell,Payment for invoice INV-29250113
+1665,2024-01-30,2800.52,USD,John Santos,Payment for invoice INV-29250114
+1666,2024-01-30,866.47,USD,John Coleman,Payment for invoice INV-29250116
+1667,2024-01-30,11814.75,USD,Jason Gillum,Payment for invoice INV-29250224
+1668,2024-01-30,1554.66,USD,Jennifer Pabst,Payment for invoice INV-29250225
+1669,2024-01-30,58.46,USD,Adassa Cavazos,Payment for invoice INV-29250244
+1670,2024-01-30,4257.25,USD,Keith Good,Payment for invoice INV-29250252
+1671,2024-01-30,6904.02,USD,Chelsea Bidencope,Payment for invoice INV-29250257
+1672,2024-01-30,2264.93,USD,Matthew Roden,Payment for invoice INV-29250273
+1673,2024-01-30,72.54,USD,Denise Despins,Payment for invoice INV-29250295
+1674,2024-01-30,3345.40,USD,Jodi Neel,Payment for invoice INV-29250319
+1675,2024-01-30,87.50,USD,Ramona Rodriguez,Payment for invoice INV-29250324
+1676,2024-01-30,294.25,USD,Gerald Utt,Payment for invoice INV-29250366
+1677,2024-01-30,177.06,USD,Hunter Blaxland,Payment for invoice INV-29250371
+1678,2024-01-30,2100.06,USD,Edward Sifford,Payment for invoice INV-29250380
+1679,2024-01-30,55.69,USD,Diane Wilson,Payment for invoice INV-29250381
+1680,2024-01-30,27.56,USD,Robert Kaur,Payment for invoice INV-29250406
+1681,2024-01-30,1409.96,USD,Jordan Berry,Payment for invoice INV-29250416
+1682,2024-01-30,1770.69,USD,Georgina Armstrong,Payment for invoice INV-29250458
+1683,2024-01-30,1039.96,USD,Daniel York,Payment for invoice INV-29250508
+1684,2024-01-30,1473.46,USD,Tori van Diggelen,Payment for invoice INV-29250527
+1685,2024-01-30,107.92,USD,Emma Simon,Payment for invoice INV-29250546
+1686,2024-01-30,1907.97,USD,Philippine Michaud,Payment for invoice INV-29250588
+1687,2024-01-30,51.96,USD,Elvin Buckle,Payment for invoice INV-29250623
+1688,2024-01-30,478.14,USD,Chloe Howarth,Payment for invoice INV-29250636
+1689,2024-01-30,4272.03,USD,Eduarda Pinto,29250649
+1690,2024-01-30,1517.87,USD,James Taylor,Payment for invoice INV-29250692
+1691,2024-01-30,2871.03,USD,Debra Byrd,Payment for invoice INV-29250729
+1692,2024-01-30,848.10,USD,Shirley Harding,Payment for invoice INV-29250735
+1693,2024-01-30,1176.97,USD,James Hyatt,Payment for invoice INV-29250751
+1694,2024-01-30,1781.38,USD,Brenda Briggs,Payment for invoice INV-29260002
+1695,2024-01-30,1114.14,USD,Dan ?Dvorák,Payment for invoice INV-29260010
+1696,2024-01-30,1328.89,USD,Annett Unger,Payment for invoice INV-29260013
+1697,2024-01-30,2423.72,USD,Marilyn Moore,Payment for invoice INV-29260016
+1698,2024-01-30,618.69,USD,France Antonelli,Payment for invoice INV-29260019
+1699,2024-01-30,5449.72,USD,Ricky Tauber,Payment for invoice INV-29260054
+1700,2024-01-30,490.15,USD,Arturo Coon,Payment for invoice INV-29260068
+1701,2024-01-30,2949.00,USD,Liam Brennan,INV 29260099
+1702,2024-01-30,2572.46,USD,Megan Bull,Payment for invoice INV-29260154
+1703,2024-01-30,1969.08,USD,Philomena Aalberts,inv-29260205
+1704,2024-01-30,2830.49,USD,Isaac Williams,Payment for invoice INV-29260231
+1705,2024-01-30,1125.44,USD,Michael Gill,Payment for invoice INV-29260234
+1706,2024-01-30,33.83,USD,Aaldert van Zandvoort,Payment for invoice INV-29260287
+1707,2024-01-30,2550.02,USD,Toby Selby,Payment for invoice INV-29260291
+1708,2024-01-30,521.97,USD,Sebastian Köhler,Payment for invoice INV-29260321
+1709,2024-01-30,639.57,USD,Marshall Saalmink,Payment for invoice INV-29260331
+1710,2024-01-30,5111.56,USD,Laura Wannemaker,Payment for invoice INV-29260366
+1711,2024-01-30,29.99,USD,Berta Barker,Payment for invoice INV-29260379
+1712,2024-01-30,1718.25,USD,Samuel Stone,Payment for invoice INV-29260451
+1713,2024-01-30,290.00,USD,Margaret Herrmann,Payment for invoice INV-29260455
+1714,2024-01-30,260.13,USD,Krystyna Grabowska,Payment for invoice INV-29260473
+1715,2024-01-30,6135.59,USD,Craig Burks,Payment for invoice INV-29260482
+1716,2024-01-30,449.37,USD,Michelle Reyes,Payment for invoice INV-29260534
+1717,2024-01-30,1188.42,USD,Minerva Wills,Payment for invoice INV-29260559
+1718,2024-01-30,2869.56,USD,Jessika Gersten,Payment for invoice INV-29260562
+1719,2024-01-30,475.03,USD,Sophia Sanger,INV 29260609
+1720,2024-01-30,599.84,USD,Janina Schulz,INV 29260651
+1721,2024-01-30,3849.35,USD,Eric Krueger,Payment for invoice INV-29260660
+1722,2024-01-30,114.54,USD,Bessie Barner,Payment for invoice INV-29260692
+1723,2024-01-30,680.67,USD,John Culbreath,Payment for invoice INV-29260702
+1724,2024-01-30,5114.56,USD,Leto Rincón,Payment for invoice INV-29260709
+1725,2024-01-30,888.76,USD,Anja Grunwald,29260730
+1726,2024-01-30,2069.62,USD,Brandon Talbot,Payment for invoice INV-29260735
+1727,2024-01-30,22.89,USD,Harry Michaels,Payment for invoice INV-29260746
+1728,2024-01-30,5653.15,USD,Nadine Jacobs,Payment for invoice INV-29260750
+1729,2024-01-30,1593.72,USD,Bartlomiej Sobczak,Payment for invoice INV-29260773
+1730,2024-01-30,5418.00,USD,Luca Cameron,Payment for invoice INV-29260806
+1731,2024-01-30,289.99,USD,Toby Philip,Payment for invoice INV-29260875
+1732,2024-01-30,2743.99,USD,Henry Koski,Payment for invoice INV-29260901
+1733,2024-01-30,2406.56,USD,Eve Villegas,Payment for invoice INV-29260911
+1734,2024-01-30,169.26,USD,Christian Hahn,Payment for invoice INV-29270033
+1735,2024-01-30,1027.05,USD,Ben Gutierrez,Payment for invoice INV-29270058
+1736,2024-01-30,46.80,USD,Mary Louis,Payment for invoice INV-29270095
+1737,2024-01-30,355.98,USD,Rebecca Romilly,Payment for invoice INV-29270135
+1738,2024-01-30,2540.00,USD,Skye Ford,Payment for invoice INV-29270137
+1739,2024-01-30,219.95,USD,Vid Cerkez,Payment for invoice INV-29270174
+1740,2024-01-30,1873.52,USD,John Read,Payment for invoice INV-29270219
+1741,2024-01-30,46.46,USD,Virginia Dickson,Payment for invoice INV-29270235
+1742,2024-01-30,22.66,USD,Theodore Tate,Payment for invoice INV-29270276
+1743,2024-01-30,777.74,USD,Georgia Watts,Payment for invoice INV-29270318
+1744,2024-01-30,657.00,USD,Zara Barry,Payment for invoice INV-29270336
+1745,2024-01-30,5947.74,USD,James Childress,Payment for invoice INV-29270344
+1746,2024-01-30,1569.80,USD,Luis Rogers,Payment for invoice INV-29270351
+1747,2024-01-30,1380.69,USD,Christina Guerrero,Payment for invoice INV-29270418
+1748,2024-01-30,202.26,USD,Silke Kristiansen,Payment for invoice INV-29270436
+1749,2024-01-30,1417.99,USD,David Price,Payment for invoice INV-29270450
+1750,2024-01-30,667.91,USD,Deborah Keller,Payment for invoice INV-29270493
+1751,2024-01-30,461.79,USD,James Kane,29270506
+1752,2024-01-30,4134.00,USD,Peter Owen,Payment for invoice INV-29270570
+1753,2024-01-30,903.19,USD,Doreen Maurer,Payment for invoice INV-29270578
+1754,2024-01-30,856.96,USD,Karen Vargas,Invoice no. 29270585
+1755,2024-01-30,207.00,USD,Sarah Hannon,Payment for invoice INV-29280070
+1756,2024-01-30,1662.75,USD,Maureen Tubbs,Payment for invoice INV-29280072
+1757,2024-01-30,118.68,USD,Jennifer Griffith,Payment for invoice INV-29280076
+1758,2024-01-30,1397.96,USD,René Luft,Payment for invoice INV-29280114
+1759,2024-01-30,1839.56,USD,Dafne Bañuelos,INV 29280128
+1760,2024-01-30,3523.05,USD,Molly John,Payment for invoice INV-29280133
+1761,2024-01-30,1584.99,USD,Petra Lang,Payment for invoice INV-29280152
+1762,2024-01-30,109.99,USD,Jürgen Gerste,Payment for invoice INV-29280158
+1763,2024-01-30,9863.48,USD,Robert Johnson,Payment for invoice INV-29280175
+1764,2024-01-30,2473.13,USD,Logan McClure,Invoice no. 29280181
+1765,2024-01-30,2778.21,USD,Jeffrey Watson,Payment for invoice INV-29280238
+1766,2024-01-30,3314.99,USD,Karen Medlock,Payment for invoice INV-29280247
+1767,2024-01-30,76.54,USD,Jessica Brauer,Invoice no. 29280254
+1768,2024-01-30,908.78,USD,Frank Krüger,29280274
+1769,2024-01-30,1361.12,USD,Mary Mendoza,Payment for invoice INV-29280312
+1770,2024-01-30,228.03,USD,Josh Barker,Payment for invoice INV-29280316
+1771,2024-01-30,1197.05,USD,Mary Turnbull,Payment for invoice INV-29280332
+1772,2024-01-30,2986.11,USD,Christopher Hunt,Payment for invoice INV-29280347
+1773,2024-01-30,204.98,USD,Jacob Buntine,Payment for invoice INV-29280408
+1774,2024-01-30,3634.31,USD,Gregory Bray,Payment for invoice INV-29280429
+1775,2024-01-30,2269.48,USD,Barbara Luna,inv-29280473
+1776,2024-01-30,556.17,USD,Joanne Merriman,Payment for invoice INV-29280496
+1777,2024-01-30,1626.16,USD,Lucille Mays,Payment for invoice INV-29280538
+1778,2024-01-30,39.96,USD,Kay Rowan,Payment for invoice INV-29280545
+1779,2024-01-30,1767.72,USD,Edvard Møller,Payment for invoice INV-29280560
+1780,2024-01-30,4200.95,USD,John Parker,INV 29280582
+1781,2024-01-30,1357.10,USD,Ian Harkness,Payment for invoice INV-29280598
+1782,2024-01-30,3164.73,USD,Jimmy Cook,Payment for invoice INV-29280615
+1783,2024-01-30,47.95,USD,Ellie Arnott,Payment for invoice INV-29280641
+1784,2024-01-30,1543.36,USD,Katrina Livingston,Payment for invoice INV-29280673
+1785,2024-01-30,321.01,USD,James Hunter,Payment for invoice INV-29280678
+1786,2024-01-30,2127.94,USD,Scott Lamb,Invoice no. 29280761
+1787,2024-01-30,256.46,USD,Arthur Smith,Payment for invoice INV-29280765
+1788,2024-01-30,8593.02,USD,Poppy Laby,inv-29280785
+1789,2024-01-30,1330.10,USD,Richard Cohen,Payment for invoice INV-29280826
+1790,2024-01-30,1497.00,USD,Zuzana Pokorná,Payment for invoice INV-29280829
+1791,2024-01-30,308.44,USD,Lilly McLachlan,Payment for invoice INV-29280887
+1792,2024-01-30,1428.27,USD,William Mendez,Payment for invoice INV-29280911
+1793,2024-01-30,300.78,USD,Sarah King,Payment for invoice INV-29280978
+1794,2024-01-30,1136.05,USD,Matilda Greig,Payment for invoice INV-29280987
+1795,2024-01-30,5581.08,USD,Kyle Cox,Payment for invoice INV-29280996
+1796,2024-01-30,1012.64,USD,Mildred Gray,Payment for invoice INV-29281009
+1797,2024-01-30,400.03,USD,Louise Rahman,Payment for invoice INV-29290002
+1798,2024-01-30,1177.93,USD,Joyce Tucker,Payment for invoice INV-29290009
+1799,2024-01-30,2401.12,USD,Angela Henson,Payment for invoice INV-29290025
+1800,2024-01-30,2392.00,USD,Cheryl Dubois,inv-29290058
+1801,2024-01-30,518.72,USD,Roslyn Henrichon,Payment for invoice INV-29290059
+1802,2024-01-30,1232.00,USD,Courtland Martineau,Payment for invoice INV-29290072
+1803,2024-01-30,37.33,USD,Boyd Fink,Payment for invoice INV-29290075
+1804,2024-01-30,178.19,USD,Jamie Porter,Payment for invoice INV-29290077
+1805,2024-01-30,2774.56,USD,Dorothy Brady,Payment for invoice INV-29290084
+1806,2024-01-30,246.56,USD,Torsten Dietrich,Payment for invoice INV-29290089
+1807,2024-01-30,4750.90,USD,Lucas Wexler,Payment for invoice INV-29300045
+1808,2024-01-30,1797.82,USD,John Parker,Invoice no. 29300096
+1809,2024-01-30,3287.97,USD,Paul Saenger,29300123
+1810,2024-01-30,1460.25,USD,Tamar Pijls,Payment for invoice INV-29300135
+1811,2024-01-30,693.00,USD,Ján Zámecník,Payment for invoice INV-29300146
+1812,2024-01-30,2435.19,USD,Mathias Andersen,INV 29300231
+1813,2024-01-30,104.26,USD,Elisabet Gustavsson,Payment for invoice INV-29300238
+1814,2024-01-30,1010.81,USD,Michelle Lange,Payment for invoice INV-29300254
+1815,2024-01-30,129.00,USD,Mya Graham,Payment for invoice INV-29300314
+1816,2024-01-30,229.62,USD,Sean Nicholls,Payment for invoice INV-29300316
+1817,2024-01-30,6196.38,USD,Demelsa de Oude,Payment for invoice INV-29300331
+1818,2024-01-30,529.06,USD,Virginia Deluca,Payment for invoice INV-29300374
+1819,2024-01-30,10383.86,USD,Bessie Patenaude,Payment for invoice INV-29300408
+1820,2024-01-30,2199.12,USD,Luca Lyons,Payment for invoice INV-29300415
+1821,2024-01-30,3365.49,USD,Jamie Barber,Payment for invoice INV-29300423
+1822,2024-01-30,19.99,USD,Carolyn Faust,Payment for invoice INV-29310028
+1823,2024-01-30,6227.67,USD,Jodie Lambert,INV 29310046
+1824,2024-01-30,2571.02,USD,Laura Colton,Payment for invoice INV-29310048
+1825,2024-01-30,800.23,USD,James Paulk,inv-29310098
+1826,2024-01-30,300.27,USD,Václav Slavík,Payment for invoice INV-29310099
+1827,2024-01-30,2211.04,USD,Joelle Kennedy,Payment for invoice INV-29310105
+1828,2024-01-30,999.50,USD,Thomas Murray,inv-29310107
+1829,2024-01-30,2184.56,USD,Antonija Jelic,Payment for invoice INV-29310118
+1830,2024-01-30,814.34,USD,Betty Cornell,Payment for invoice INV-29310146
+1831,2024-01-30,851.91,USD,Bethany Berry,Payment for invoice INV-29310147
+1832,2024-01-30,627.90,USD,Lucy Sullivan,Payment for invoice INV-29310155
+1833,2024-01-30,24.56,USD,Robert Walker,Payment for invoice INV-29310158
+1834,2024-01-30,3859.71,USD,Ellie Owen,INV 29310201
+1835,2024-01-30,21.55,USD,John Kuhn,Payment for invoice INV-29310214
+1836,2024-01-30,786.53,USD,Aaron Page,Payment for invoice INV-29310290
+1837,2024-01-30,33.80,USD,Regine Nillesen,Payment for invoice INV-29310313
+1838,2024-01-30,2161.06,USD,Jacqueline Armer,Payment for invoice INV-29310356
+1839,2024-01-30,1845.88,USD,Enzo Souza,inv-29310401
+1840,2024-01-30,914.78,USD,Robert Loo,Payment for invoice INV-29310412
+1841,2024-01-30,76.72,USD,Jirí Stoklásek,Payment for invoice INV-29310476
+1842,2024-01-30,263.70,USD,Richard Sykes,Payment for invoice INV-29310486
+1843,2024-01-30,7981.60,USD,Clair Bunch,Payment for invoice INV-29310496
+1844,2024-01-30,954.38,USD,Carrie Hume,INV 29310515
+1845,2024-01-30,1536.05,USD,Zak Heath,Payment for invoice INV-29310523
+1846,2024-01-30,1216.98,USD,Alexander Wright,Payment for invoice INV-29320010
+1847,2024-01-30,3140.17,USD,Matilda Wild,Payment for invoice INV-29320015
+1848,2024-01-30,344.43,USD,Jörgen Leffers,Payment for invoice INV-29320038
+1849,2024-01-30,3004.69,USD,Albina Hoogma,Payment for invoice INV-29320044
+1850,2024-01-30,471.68,USD,Aamu Lajunen,Payment for invoice INV-29320125
+1851,2024-01-30,3054.63,USD,Charles Baxter,Payment for invoice INV-29320130
+1852,2024-01-30,62.49,USD,Sean Ford,Payment for invoice INV-29320133
+1853,2024-01-30,2411.23,USD,Angelika Krause,Payment for invoice INV-29320145
+1854,2024-01-30,53.39,USD,Irene Peters,Payment for invoice INV-29320234
+1855,2024-01-30,1113.49,USD,Thorsten Weiss,Payment for invoice INV-29320240
+1856,2024-01-30,2702.79,USD,Melinda Winkler,Payment for invoice INV-29320245
+1857,2024-01-30,269.00,USD,Marilyn Davis,Payment for invoice INV-29320248
+1858,2024-01-30,3628.87,USD,Stephanie Unger,Payment for invoice INV-29320250
+1859,2024-01-30,850.32,USD,Betty Nauman,Payment for invoice INV-29320280
+1860,2024-01-30,3238.86,USD,Sven Mehler,Payment for invoice INV-29320285
+1861,2024-01-30,1141.19,USD,Julian Larsen,Payment for invoice INV-29320314
+1862,2024-01-30,1659.90,USD,Dinorah Williams,Payment for invoice INV-29320327
+1863,2024-01-30,1040.77,USD,Alicia Baker,Payment for invoice INV-29320344
+1864,2024-01-30,26.39,USD,Calan McIntosh,Payment for invoice INV-29320364
+1865,2024-01-30,2159.16,USD,Ellie Arnott,29320373
+1866,2024-01-30,879.00,USD,Jens Fischer,Payment for invoice INV-29320385
+1867,2024-01-30,453.98,USD,Eric Carroll,inv-29320434
+1868,2024-01-30,9.39,USD,Anna Baumgaertner,Payment for invoice INV-29320493
+1869,2024-01-30,2927.96,USD,Leon Harper,Payment for invoice INV-29320502
+1870,2024-01-30,1650.00,USD,Cecilia Harbin,Payment for invoice INV-29320521
+1871,2024-01-30,770.92,USD,Jordan Berry,Payment for invoice INV-29320524
+1872,2024-01-30,2412.34,USD,Eldon Laing,Payment for invoice INV-29320531
+1873,2024-01-30,484.12,USD,Badia van Roemburg,Payment for invoice INV-29320539
+1874,2024-01-30,2065.00,USD,Bernita Seward,Payment for invoice INV-29320581
+1875,2024-01-30,1110.16,USD,James Duvall,Payment for invoice INV-29320593
+1876,2024-01-30,222.05,USD,David Howle,Payment for invoice INV-29320659
+1877,2024-01-30,2781.68,USD,Brett Fernandez,Payment for invoice INV-29320663
+1878,2024-01-31,1375.67,USD,Philomena Aalberts,Payment for invoice INV-29230020
+1879,2024-01-31,1383.70,USD,Lynn Valverde,Payment for invoice INV-29230035
+1880,2024-01-31,716.10,USD,Kate Soutter,Payment for invoice INV-29230040
+1881,2024-01-31,526.24,USD,Jack Clayton,Payment for invoice INV-29230113
+1882,2024-01-31,4.41,USD,Virginia Cook,inv-29230116
+1883,2024-01-31,104.93,USD,Yaël Rehorst,INV 29230247
+1884,2024-01-31,55.60,USD,Aidan Noble,Payment for invoice INV-29230255
+1885,2024-01-31,1492.10,USD,Gabrielle De Chair,Payment for invoice INV-29230272
+1886,2024-01-31,447.57,USD,Lachlan Patten,Payment for invoice INV-29230275
+1887,2024-01-31,12.66,USD,Michelle Trommler,Invoice no. 29230285
+1888,2024-01-31,5598.50,USD,Miki Petrussen,Payment for invoice INV-29230289
+1889,2024-01-31,475.02,USD,Toby Ratcliff,Payment for invoice INV-29230313
+1890,2024-01-31,609.54,USD,Stanley Smelser,Invoice no. 29230326
+1891,2024-01-31,2652.00,USD,Linda Greene,Payment for invoice INV-29230340
+1892,2024-01-31,2650.26,USD,Marcus Morrell,Payment for invoice INV-29230372
+1893,2024-01-31,6503.55,USD,Tobias Fisher,29230385
+1894,2024-01-31,89.00,USD,Claudia Maurer,Payment for invoice INV-29230420
+1895,2024-01-31,3266.60,USD,Hillary Vick,Payment for invoice INV-29230443
+1896,2024-01-31,1559.94,USD,Ruby Velasquez,inv-29230455
+1897,2024-01-31,2898.86,USD,Kenneth Perez,Payment for invoice INV-29230457
+1898,2024-01-31,1000.88,USD,Mario Voegele,Payment for invoice INV-29230493
+1899,2024-01-31,116.00,USD,Sonia Price,Payment for invoice INV-29230520
+1900,2024-01-31,17919.44,USD,Martha Smith,Payment for invoice INV-29240066
+1901,2024-01-31,148.63,USD,Kyle Adams,Payment for invoice INV-29240112
+1902,2024-01-31,9597.08,USD,Laura Jenkins,Payment for invoice INV-29240124
+1903,2024-01-31,5346.59,USD,Aaron Wentcher,Payment for invoice INV-29240137
+1904,2024-01-31,764.45,USD,Mario Meister,Payment for invoice INV-29240146
+1905,2024-01-31,96.00,USD,Chad Erickson,Payment for invoice INV-29240152
+1906,2024-01-31,1708.53,USD,Dylan Davis,Payment for invoice INV-29240182
+1907,2024-01-31,2301.15,USD,Randy Orme,inv-29240195
+1908,2024-01-31,3405.69,USD,Melanie Eisenberg,Payment for invoice INV-29240218
+1909,2024-01-31,7046.38,USD,Eric Williams,Payment for invoice INV-29240251
+1910,2024-01-31,10182.53,USD,Blair Martinez,inv-29240262
+1911,2024-01-31,1049.46,USD,Stefanie Kruger,Payment for invoice INV-29240325
+1912,2024-01-31,57.88,USD,Timmy Eden,Payment for invoice INV-29240330
+1913,2024-01-31,3790.87,USD,Henrietta Hoover,Payment for invoice INV-29240340
+1914,2024-01-31,3120.06,USD,Daniela Brauer,INV 29240350
+1915,2024-01-31,5200.23,USD,Cecilia Dehaven,Payment for invoice INV-29240351
+1916,2024-01-31,3688.72,USD,Dominik Eisenhower,Payment for invoice INV-29240362
+1917,2024-01-31,836.97,USD,Jermaine Duenas,Payment for invoice INV-29240382
+1918,2024-01-31,2848.46,USD,Madeleine Mackenzie,Payment for invoice INV-29240384
+1919,2024-01-31,1243.02,USD,Hortense Rodriguez,INV 29240395
+1920,2024-01-31,1097.30,USD,Michael Young,Payment for invoice INV-29240414
+1921,2024-01-31,26.99,USD,Shannon Harrison,Payment for invoice INV-29240459
+1922,2024-01-31,4971.50,USD,Alexis Messenger,Payment for invoice INV-29240476
+1923,2024-01-31,179.99,USD,Alejo Amaya,Payment for invoice INV-29240491
+1924,2024-01-31,1759.73,USD,Dan Jaramillo,Payment for invoice INV-29240498
+1925,2024-01-31,1069.19,USD,Matheo Moe,Payment for invoice INV-29240507
+1926,2024-01-31,424.05,USD,Henrietta Goodson,Payment for invoice INV-29240523
+1927,2024-01-31,15.04,USD,Colinda Verheij,Payment for invoice INV-29240525
+1928,2024-01-31,1299.95,USD,Christopher Schiffer,Payment for invoice INV-29240526
+1929,2024-01-31,3116.72,USD,April Osborne,Payment for invoice INV-29240617
+1930,2024-01-31,2942.39,USD,Angela Byrd,Payment for invoice INV-29240631
+1931,2024-01-31,909.00,USD,Lisa Marston,Payment for invoice INV-29240646
+1932,2024-01-31,225.90,USD,Amber Hale,Payment for invoice INV-29240659
+1933,2024-01-31,9899.39,USD,Garland Grignon,Payment for invoice INV-29240666
+1934,2024-01-31,3426.03,USD,Diane Donis,Payment for invoice INV-29250008
+1935,2024-01-31,1581.36,USD,Claude Griffin,Payment for invoice INV-29250010
+1936,2024-01-31,4595.00,USD,Ana Hagendoorn,Payment for invoice INV-29250024
+1937,2024-01-31,844.31,USD,Margaret Stanton,INV 29250081
+1938,2024-01-31,5026.36,USD,Bernd Foerster,29250091
+1939,2024-01-31,4562.00,USD,Diana Ostermann,Payment for invoice INV-29250111
+1940,2024-01-31,722.92,USD,Ute Vogler,Payment for invoice INV-29250138
+1941,2024-01-31,930.00,USD,Janice Davidson,Payment for invoice INV-29250159
+1942,2024-01-31,6811.62,USD,Lindsey Stephens,Payment for invoice INV-29250193
+1943,2024-01-31,47.44,USD,Leah Flynn,Payment for invoice INV-29250237
+1944,2024-01-31,2304.00,USD,Gregory Nally,Payment for invoice INV-29250250
+1945,2024-01-31,939.94,USD,Horacio Halsey,Invoice no. 29250255
+1946,2024-01-31,852.09,USD,Mark Garcia,Payment for invoice INV-29250275
+1947,2024-01-31,61.92,USD,Franziska Dreher,INV 29250289
+1948,2024-01-31,1600.00,USD,Pavel Kasík,Payment for invoice INV-29250299
+1949,2024-01-31,5088.16,USD,Crystal Smith,inv-29250327
+1950,2024-01-31,9.19,USD,Arthur Krull,Payment for invoice INV-29250332
+1951,2024-01-31,55.56,USD,Tia Nixon,Payment for invoice INV-29250336
+1952,2024-01-31,1965.60,USD,Debbie Pearce,Invoice no. 29250353
+1953,2024-01-31,2523.38,USD,Loretta Lambert,INV 29250360
+1954,2024-01-31,1076.40,USD,Jonathan Mott,Payment for invoice INV-29250367
+1955,2024-01-31,760.34,USD,Lindsey Green,INV 29250401
+1956,2024-01-31,3184.00,USD,Albert Hayes,Payment for invoice INV-29250424
+1957,2024-01-31,13.64,USD,Sharon Phillips,29250426
+1958,2024-01-31,1623.43,USD,Vivian Wheeler,Payment for invoice INV-29250449
+1959,2024-01-31,1359.57,USD,Susan Earhart,Payment for invoice INV-29250468
+1960,2024-01-31,1930.98,USD,Stephanie Bordner,29250487
+1961,2024-01-31,6885.00,USD,Angelina Tovell,Payment for invoice INV-29250498
+1962,2024-01-31,539.40,USD,Martin Vlácil,Payment for invoice INV-29250550
+1963,2024-01-31,3382.43,USD,Jacob Jordan,29250601
+1964,2024-01-31,328.93,USD,Phillip Raymond,Payment for invoice INV-29250610
+1965,2024-01-31,3.49,USD,Henry Gough,Payment for invoice INV-29250611
+1966,2024-01-31,710.26,USD,Justin Philp,Payment for invoice INV-29250644
+1967,2024-01-31,248.31,USD,Barry Hanover,Payment for invoice INV-29250677
+1968,2024-01-31,2635.48,USD,Vincenzo Digiacomo,Payment for invoice INV-29250720
+1969,2024-01-31,1627.00,USD,Terri Perry,Payment for invoice INV-29250768
+1970,2024-01-31,57.88,USD,Eva Pound,Payment for invoice INV-29250796
+1971,2024-01-31,2874.32,USD,Jack Norris,Payment for invoice INV-29250805
+1972,2024-01-31,329.33,USD,Lawrence Lloyd,INV 29260015
+1973,2024-01-31,716.10,USD,Monica Lucia,Payment for invoice INV-29260033
+1974,2024-01-31,1850.39,USD,John Room,Payment for invoice INV-29260040
+1975,2024-01-31,55.16,USD,Taylor Jarvis,Payment for invoice INV-29260091
+1976,2024-01-31,599.70,USD,Mark Johnson,Payment for invoice INV-29260124
+1977,2024-01-31,107.77,USD,Phyllis Petersen,inv-29260143
+1978,2024-01-31,809.70,USD,Jesse Pulver,INV 29260147
+1979,2024-01-31,1953.76,USD,Aaron Manchee,Payment for invoice INV-29260164
+1980,2024-01-31,2406.60,USD,Lucas Luft,Payment for invoice INV-29260181
+1981,2024-01-31,249.20,USD,Ruby Gossett,Payment for invoice INV-29260183
+1982,2024-01-31,1105.78,USD,Elyse Walker,Payment for invoice INV-29260225
+1983,2024-01-31,380.00,USD,Donald Mason,Payment for invoice INV-29260241
+1984,2024-01-31,253.73,USD,Brandon Germany,INV 29260301
+1985,2024-01-31,2628.00,USD,Matthias Gruenewald,Payment for invoice INV-29260314
+1986,2024-01-31,116.00,USD,Mildred Robinson,Payment for invoice INV-29260326
+1987,2024-01-31,51.21,USD,Riley Forde,Payment for invoice INV-29260377
+1988,2024-01-31,22.00,USD,Lara Thornton,Payment for invoice INV-29260391
+1989,2024-01-31,3015.07,USD,Dinah Saavedra,Payment for invoice INV-29260400
+1990,2024-01-31,5432.76,USD,Elizabeth Taft,Payment for invoice INV-29260410
+1991,2024-01-31,239.96,USD,Wara Adame,Payment for invoice INV-29260411
+1992,2024-01-31,268.00,USD,Richard Shaffer,29260440
+1993,2024-01-31,195.78,USD,Bradley Huber,Payment for invoice INV-29260466
+1994,2024-01-31,413.21,USD,Scott Quezada,inv-29260503
+1995,2024-01-31,579.68,USD,Christian Wirth,Payment for invoice INV-29260536
+1996,2024-01-31,1878.28,USD,Fikriye Verschure,Payment for invoice INV-29260545
+1997,2024-01-31,1120.00,USD,Aygül Berendse,Payment for invoice INV-29260572
+1998,2024-01-31,43.96,USD,Mette Eriksen,Payment for invoice INV-29260596
+1999,2024-01-31,414.36,USD,Sherry Watkins,Payment for invoice INV-29260630
+2000,2024-01-31,265.32,USD,Thorsten Kuster,INV 29260665
+2001,2024-01-31,5105.86,USD,Chloe Barber,29260667
+2002,2024-01-31,562.50,USD,Elliot Parkinson,Payment for invoice INV-29260683
+2003,2024-01-31,548.70,USD,Max Brandt,Payment for invoice INV-29260696
+2004,2024-01-31,1017.65,USD,Lucas O'Neill,Payment for invoice INV-29260710
+2005,2024-01-31,1378.65,USD,Billy Howell,Payment for invoice INV-29260720
+2006,2024-01-31,1199.96,USD,Phillipp Schweitzer,Payment for invoice INV-29260732
+2007,2024-01-31,2149.51,USD,Madison Holden,Payment for invoice INV-29260761
+2008,2024-01-31,986.98,USD,Fabrice Dufresne,Payment for invoice INV-29260834
+2009,2024-01-31,1320.04,USD,Maya Hardy,Payment for invoice INV-29260858
+2010,2024-01-31,1679.01,USD,Dennis Whitlock,Payment for invoice INV-29260877
+2011,2024-01-31,50.93,USD,Corey Farmer,Payment for invoice INV-29260893
+2012,2024-01-31,2667.32,USD,Diana Reed,Payment for invoice INV-29260903
+2013,2024-01-31,974.00,USD,Noel Armstrong,Payment for invoice INV-29270015
+2014,2024-01-31,2499.53,USD,Randall Becker,Payment for invoice INV-29270035
+2015,2024-01-31,129.95,USD,Ida Badgley,Payment for invoice INV-29270045
+2016,2024-01-31,347.07,USD,Dennis Barrow,Payment for invoice INV-29270089
+2017,2024-01-31,173.13,USD,Llanca Romero,Payment for invoice INV-29270090
+2018,2024-01-31,72.99,USD,Rachael Cole,Payment for invoice INV-29270138
+2019,2024-01-31,719.96,USD,Alfonso Peters,Payment for invoice INV-29270157
+2020,2024-01-31,670.17,USD,Antje Zimmerman,Payment for invoice INV-29270181
+2021,2024-01-31,27.57,USD,Leah McGraw,Payment for invoice INV-29270202
+2022,2024-01-31,2814.00,USD,Phyllis Helms,Payment for invoice INV-29270203
+2023,2024-01-31,508.00,USD,Linda Alexander,INV 29270228
+2024,2024-01-31,1432.02,USD,Patrick Kempf,Payment for invoice INV-29270229
+2025,2024-01-31,8398.29,USD,Richard Edwards,Payment for invoice INV-29270240
+2026,2024-01-31,10.05,USD,Ted Esposito,Payment for invoice INV-29270251
+2027,2024-01-31,1281.01,USD,Allen Rowe,Payment for invoice INV-29270261
+2028,2024-01-31,474.04,USD,Torsten Peters,Payment for invoice INV-29270280
+2029,2024-01-31,9142.65,USD,Melvin Burns,Payment for invoice INV-29270337
+2030,2024-01-31,86.53,USD,Tim Weedman,Payment for invoice INV-29270338
+2031,2024-01-31,1078.34,USD,Kimberly Epps,Payment for invoice INV-29270386
+2032,2024-01-31,258.00,USD,Mary Imes,Payment for invoice INV-29270394
+2033,2024-01-31,1463.47,USD,Imogen Townsend,Payment for invoice INV-29270423
+2034,2024-01-31,3199.33,USD,Morgan Newton,Payment for invoice INV-29270460
+2035,2024-01-31,1236.21,USD,Sabina Klobucar,Payment for invoice INV-29270481
+2036,2024-01-31,2706.78,USD,Matthew Angus,Payment for invoice INV-29270496
+2037,2024-01-31,4841.55,USD,Jennie Shipp,Payment for invoice INV-29270501
+2038,2024-01-31,2933.67,USD,Torsten Moeller,Payment for invoice INV-29270504
+2039,2024-01-31,88.23,USD,Judith Weaver,Payment for invoice INV-29270566
+2040,2024-01-31,920.50,USD,Berislava Marinovic,Payment for invoice INV-29270601
+2041,2024-01-31,168.90,USD,Joseph Mulhern,Payment for invoice INV-29280027
+2042,2024-01-31,1699.71,USD,Frances Thompson,Payment for invoice INV-29280062
+2043,2024-01-31,1365.02,USD,Sophia Krause,Payment for invoice INV-29280090
+2044,2024-01-31,3456.05,USD,Viola Tomaszewski,Payment for invoice INV-29280091
+2045,2024-01-31,2856.85,USD,Jason Ellis,Payment for invoice INV-29280104
+2046,2024-01-31,2091.12,USD,Freddy Beazley,Payment for invoice INV-29280111
+2047,2024-01-31,804.00,USD,Ronnie Rubalcaba,Payment for invoice INV-29280116
+2048,2024-01-31,1135.17,USD,Wiktoria Duda,inv-29280117
+2049,2024-01-31,641.59,USD,Lisa Vogt,Payment for invoice INV-29280118
+2050,2024-01-31,4846.80,USD,James Hartwig,inv-29280137
+2051,2024-01-31,4043.96,USD,Charles Silver,Payment for invoice INV-29280161
+2052,2024-01-31,7462.78,USD,Niamh Tucker,Payment for invoice INV-29280170
+2053,2024-01-31,844.75,USD,Katja Theissen,Payment for invoice INV-29280174
+2054,2024-01-31,3219.47,USD,Sharon Moniz,Payment for invoice INV-29280177
+2055,2024-01-31,544.32,USD,Borna Božic,Payment for invoice INV-29280183
+2056,2024-01-31,80.79,USD,Donna Bryner,inv-29280203
+2057,2024-01-31,1281.53,USD,Darius Leistra,Payment for invoice INV-29280204
+2058,2024-01-31,6435.40,USD,Anna Baumgaertner,Payment for invoice INV-29280218
+2059,2024-01-31,2080.96,USD,Charles Calvert,Payment for invoice INV-29280222
+2060,2024-01-31,1374.91,USD,Senja Hyssälä,Payment for invoice INV-29280242
+2061,2024-01-31,409.05,USD,Jake Summers,Payment for invoice INV-29280245
+2062,2024-01-31,2632.50,USD,Mathias Eisenhauer,Payment for invoice INV-29280255
+2063,2024-01-31,12.02,USD,Jenice Lefever,Payment for invoice INV-29280258
+2064,2024-01-31,969.00,USD,Niklas Roth,Payment for invoice INV-29280273
+2065,2024-01-31,232.29,USD,Christina Fugate,Payment for invoice INV-29280313
+2066,2024-01-31,57.88,USD,Anthony Cortese,Payment for invoice INV-29280344
+2067,2024-01-31,1588.10,USD,Reece Sharpe,INV 29280371
+2068,2024-01-31,1763.58,USD,Isaac Gibson,Payment for invoice INV-29280395
+2069,2024-01-31,744.07,USD,Edward Rogers,Payment for invoice INV-29280400
+2070,2024-01-31,26.51,USD,Jessica Hart,Payment for invoice INV-29280412
+2071,2024-01-31,592.22,USD,Brodie Bracewell,Payment for invoice INV-29280466
+2072,2024-01-31,849.43,USD,Florence Overton,Payment for invoice INV-29280470
+2073,2024-01-31,459.94,USD,Alana Royal,Payment for invoice INV-29280484
+2074,2024-01-31,2815.96,USD,Skye Dorsch,Payment for invoice INV-29280486
+2075,2024-01-31,332.50,USD,Lewis Dickinson,Payment for invoice INV-29280487
+2076,2024-01-31,3521.66,USD,Nicholas Holland,INV 29280509
+2077,2024-01-31,1556.13,USD,Liduina Veerbeek,Payment for invoice INV-29280514
+2078,2024-01-31,699.48,USD,James Romo,Payment for invoice INV-29280540
+2079,2024-01-31,1576.80,USD,Kathleen Moore,Payment for invoice INV-29280600
+2080,2024-01-31,2410.02,USD,Ronnie Devaney,Payment for invoice INV-29280602
+2081,2024-01-31,2386.25,USD,Pedro Floyd,Payment for invoice INV-29280619
+2082,2024-01-31,22.28,USD,William Mullins,Payment for invoice INV-29280645
+2083,2024-01-31,2591.01,USD,Sarah Gill,Payment for invoice INV-29280646
+2084,2024-01-31,972.75,USD,Doreen Winkel,Payment for invoice INV-29280649
+2085,2024-01-31,215.94,USD,Paulette Laprise,Payment for invoice INV-29280663
+2086,2024-01-31,743.25,USD,Alice Newton,Payment for invoice INV-29280668
+2087,2024-01-31,33.80,USD,Christine Huff,Payment for invoice INV-29280781
+2088,2024-01-31,197.01,USD,Bryan Bowman,Invoice no. 29280804
+2089,2024-01-31,16.99,USD,Savannah Sodersten,Payment for invoice INV-29280823
+2090,2024-01-31,460.00,USD,Sandra Jackson,Payment for invoice INV-29280859
+2091,2024-01-31,2246.62,USD,Beau Carr,Payment for invoice INV-29280877
+2092,2024-01-31,1435.14,USD,Archie Camidge,Payment for invoice INV-29280890
+2093,2024-01-31,314.20,USD,James McCready,Payment for invoice INV-29280896
+2094,2024-01-31,4343.30,USD,Ronald Williams,Payment for invoice INV-29280907
+2095,2024-01-31,3395.00,USD,Wolfgang Koenig,Payment for invoice INV-29280917
+2096,2024-01-31,2253.90,USD,Michael Anderson,Payment for invoice INV-29280950
+2097,2024-01-31,383.80,USD,Leah Khull,Payment for invoice INV-29280989
+2098,2024-01-31,1123.31,USD,Carol Dancer,Payment for invoice INV-29281032
+2099,2024-01-31,459.80,USD,Huberdina Bloemhof,Payment for invoice INV-29290010
+2100,2024-01-31,907.34,USD,Mary Young,INV 29290045
+2101,2024-01-31,1769.12,USD,Ramon Randolph,29290048
+2102,2024-01-31,2972.44,USD,Joel Hagler,Invoice no. 29290099
+2103,2024-01-31,428.95,USD,Reece Flynn,Payment for invoice INV-29290108
+2104,2024-01-31,893.25,USD,Donald McCarthy,Payment for invoice INV-29300018
+2105,2024-01-31,1198.00,USD,Carla Langford,Payment for invoice INV-29300034
+2106,2024-01-31,6711.17,USD,Helen Turner,Payment for invoice INV-29300050
+2107,2024-01-31,783.46,USD,Lilly Brookes,Payment for invoice INV-29300063
+2108,2024-01-31,4027.00,USD,Nancy Williams,Payment for invoice INV-29300086
+2109,2024-01-31,2497.71,USD,Allen Vazquez,Payment for invoice INV-29300101
+2110,2024-01-31,130.46,USD,Matilda Pratt,Payment for invoice INV-29300113
+2111,2024-01-31,5016.82,USD,Vanya Temming,Payment for invoice INV-29300122
+2112,2024-01-31,14.22,USD,John Garcia,Payment for invoice INV-29300129
+2113,2024-01-31,2607.39,USD,Sabrina Junker,Payment for invoice INV-29300161
+2114,2024-01-31,1340.03,USD,Zoe Trouette,Payment for invoice INV-29300170
+2115,2024-01-31,49.01,USD,Sandra Salazar,Payment for invoice INV-29300193
+2116,2024-01-31,4853.62,USD,Lucy Haun,Payment for invoice INV-29300209
+2117,2024-01-31,302.98,USD,Jocelin Padrón,inv-29300269
+2118,2024-01-31,269.68,USD,Johanna Mayer,inv-29300282
+2119,2024-01-31,5427.91,USD,Dave Cullens,Payment for invoice INV-29300292
+2120,2024-01-31,13.32,USD,Bianca Inglis,Payment for invoice INV-29300305
+2121,2024-01-31,869.90,USD,Madeline Darrell,Payment for invoice INV-29300324
+2122,2024-01-31,8729.05,USD,Joshua Griswold,Payment for invoice INV-29300369
+2123,2024-01-31,801.00,USD,Gary Pendergrass,Payment for invoice INV-29300371
+2124,2024-01-31,5949.79,USD,Gloria Davis,Payment for invoice INV-29300379
+2125,2024-01-31,156.57,USD,Phyllis Wolcott,Payment for invoice INV-29300385
+2126,2024-01-31,3112.00,USD,Lena Ebersbach,Payment for invoice INV-29300391
+2127,2024-01-31,41.88,USD,Robert Blaylock,Payment for invoice INV-29310012
+2128,2024-01-31,175.70,USD,Jonathan Williams,Payment for invoice INV-29310020
+2129,2024-01-31,1139.04,USD,Gerald Shock,Payment for invoice INV-29310031
+2130,2024-01-31,1867.46,USD,Joseph Griffiths,inv-29310041
+2131,2024-01-31,240.80,USD,Joseph Arnone,Payment for invoice INV-29310075
+2132,2024-01-31,4046.49,USD,Dawn Ramirez,inv-29310080
+2133,2024-01-31,848.39,USD,Steffen Foerster,Payment for invoice INV-29310111
+2134,2024-01-31,1954.76,USD,Tammy Janson,Payment for invoice INV-29310168
+2135,2024-01-31,696.01,USD,Skye Kent,Payment for invoice INV-29310215
+2136,2024-01-31,687.88,USD,Lucas Kaiser,Payment for invoice INV-29310227
+2137,2024-01-31,1472.76,USD,Marko Schneider,Payment for invoice INV-29310230
+2138,2024-01-31,446.99,USD,Mounir Boswinkel,Payment for invoice INV-29310263
+2139,2024-01-31,2497.78,USD,Lisa Banks,Payment for invoice INV-29310267
+2140,2024-01-31,2257.80,USD,Amelie Whitehead,Invoice no. 29310281
+2141,2024-01-31,4876.52,USD,Charles Rister,Payment for invoice INV-29310283
+2142,2024-01-31,2133.77,USD,Miroslav Soukup,Payment for invoice INV-29310287
+2143,2024-01-31,1203.50,USD,Sandra Dietrich,Payment for invoice INV-29310302
+2144,2024-01-31,8850.16,USD,Wesley Golden,Payment for invoice INV-29310312
+2145,2024-01-31,188.02,USD,Dave Woods,Payment for invoice INV-29310317
+2146,2024-01-31,1648.86,USD,James Peters,Payment for invoice INV-29310319
+2147,2024-01-31,6332.85,USD,Joel Grosse,29310330
+2148,2024-01-31,1154.26,USD,Elvis Pippin,Payment for invoice INV-29310335
+2149,2024-01-31,418.27,USD,Rina Stefanski,Payment for invoice INV-29310351
+2150,2024-01-31,1186.65,USD,Kristian Virtanen,Payment for invoice INV-29310367
+2151,2024-01-31,2147.50,USD,Abril Carvajal,Payment for invoice INV-29310393
+2152,2024-01-31,1199.60,USD,Jerry Houston,Payment for invoice INV-29310394
+2153,2024-01-31,389.85,USD,Chloe Tollefsen,Payment for invoice INV-29310427
+2154,2024-01-31,5416.94,USD,Justin Threlkeld,Payment for invoice INV-29310436
+2155,2024-01-31,105.60,USD,Max Rowley,Payment for invoice INV-29310452
+2156,2024-01-31,807.30,USD,Matilda Climpson,Payment for invoice INV-29310455
+2157,2024-01-31,1875.72,USD,Juliette Rodrigue,Payment for invoice INV-29310464
+2158,2024-01-31,1049.85,USD,Jill Smith,Payment for invoice INV-29310466
+2159,2024-01-31,2289.51,USD,Patricia Riley,29310483
+2160,2024-01-31,949.80,USD,Alice Whitehair,29310489
+2161,2024-01-31,2300.33,USD,James Benford,INV 29310503
+2162,2024-01-31,643.97,USD,Thea Skov,inv-29310531
+2163,2024-01-31,1095.34,USD,Francine Newsome,Payment for invoice INV-29320050
+2164,2024-01-31,2239.24,USD,Allison Grajeda,inv-29320055
+2165,2024-01-31,2366.22,USD,Spencer Burrows,Payment for invoice INV-29320066
+2166,2024-01-31,600.30,USD,Petra Malá,Payment for invoice INV-29320068
+2167,2024-01-31,6909.10,USD,Lucinda Hamilton,Payment for invoice INV-29320071
+2168,2024-01-31,521.13,USD,Alex Arrington,inv-29320111
+2169,2024-01-31,3281.73,USD,Uta Schwab,Payment for invoice INV-29320142
+2170,2024-01-31,938.00,USD,Isabel Hayes,Payment for invoice INV-29320186
+2171,2024-01-31,442.13,USD,Catherine Aquino,Payment for invoice INV-29320212
+2172,2024-01-31,2782.65,USD,Marion Kim,Payment for invoice INV-29320243
+2173,2024-01-31,425.78,USD,John Ullman,Payment for invoice INV-29320268
+2174,2024-01-31,1054.24,USD,Tama Lawson,INV 29320270
+2175,2024-01-31,823.68,USD,Paul Pfeiffer,Payment for invoice INV-29320281
+2176,2024-01-31,9066.24,USD,Michael Fuerst,Payment for invoice INV-29320284
+2177,2024-01-31,228.62,USD,Mike Litchfield,Payment for invoice INV-29320310
+2178,2024-01-31,3092.04,USD,Harry Bray,Payment for invoice INV-29320340
+2179,2024-01-31,794.49,USD,Demarcus West,Payment for invoice INV-29320358
+2180,2024-01-31,1198.00,USD,Thomas Abt,inv-29320390
+2181,2024-01-31,1361.64,USD,Tjeu Uijtdewilligen,Payment for invoice INV-29320401
+2182,2024-01-31,382.71,USD,Sophia Hebblethwaite,Payment for invoice INV-29320419
+2183,2024-01-31,1202.48,USD,Solaine Grandbois,Payment for invoice INV-29320436
+2184,2024-01-31,1024.20,USD,Desimir Kuprešak,Payment for invoice INV-29320443
+2185,2024-01-31,555.96,USD,Arlyne Hawkins,Payment for invoice INV-29320482
+2186,2024-01-31,1836.13,USD,Fortunata Fierro,Payment for invoice INV-29320497
+2187,2024-01-31,8617.18,USD,Kenya Sayre,Payment for invoice INV-29320508
+2188,2024-01-31,238.15,USD,Mateo Tomic,Payment for invoice INV-29320529
+2189,2024-01-31,492.75,USD,Vanessa Wannemaker,Payment for invoice INV-29320544
+2190,2024-01-31,659.85,USD,Claire Taplin,Payment for invoice INV-29320574
+2191,2024-01-31,718.63,USD,Janet Lavoie,Payment for invoice INV-29320575
+2192,2024-01-31,832.95,USD,Gabriela Hynková,Payment for invoice INV-29320579
+2193,2024-01-31,3486.85,USD,Patricia Caudell,Payment for invoice INV-29320641
+2194,2024-01-31,1454.91,USD,John Hollinger,Payment for invoice INV-29320665
+2195,2024-01-31,2584.03,USD,Michael George,Payment for invoice INV-29320666
+2196,2024-01-31,405.85,USD,Sarah Oster,Payment for invoice INV-29320685
+2197,2024-01-31,778.05,USD,Janet Lavoie,Payment for invoice INV-29320688
+2198,2024-01-31,230.40,USD,Josia van Mill,Payment for invoice INV-29330009
+2199,2024-01-31,4959.99,USD,Stella Bergman,Payment for invoice INV-29330011
+2200,2024-01-31,1068.49,USD,William Stevenson,Invoice no. 29330031
+2201,2024-01-31,3823.80,USD,Ella Jennings,Payment for invoice INV-29330071
+2202,2024-01-31,2373.00,USD,Benjamin Fisher,Payment for invoice INV-29330097
+2203,2024-01-31,269.95,USD,Sean Stultz,Payment for invoice INV-29330170
+2204,2024-01-31,1506.45,USD,Michelle Ochoa,Payment for invoice INV-29330217
+2205,2024-01-31,6629.00,USD,Kiera Fitzgerald,Payment for invoice INV-29330222
+2206,2024-01-31,2389.67,USD,Jerry Bradley,Payment for invoice INV-29330227
+2207,2024-01-31,86.00,USD,Cala Crespo,Payment for invoice INV-29330283
+2208,2024-01-31,1171.44,USD,Charles Fiedler,Payment for invoice INV-29330301
+2209,2024-01-31,27.87,USD,Brittany Barker,Payment for invoice INV-29330337
+2210,2024-01-31,867.16,USD,Erin Lambert,Payment for invoice INV-29330377
+2211,2024-01-31,1559.94,USD,Georgina Baker,Payment for invoice INV-29330402
+2212,2024-01-31,246.34,USD,Louis Jackson,Payment for invoice INV-29330405
+2213,2024-01-31,49.99,USD,Carlton Matthews,Payment for invoice INV-29330423
+2214,2024-01-31,297.00,USD,Manuela Grgic,Payment for invoice INV-29330465
+2215,2024-01-31,90.82,USD,Mandy Hertzog,Payment for invoice INV-29330503
+2216,2024-01-31,1163.09,USD,Emily Roe,Payment for invoice INV-29330515
+2217,2024-01-31,105.60,USD,Michelle Achen,Payment for invoice INV-29330521
+2218,2024-01-31,2941.24,USD,Alex Walton,Payment for invoice INV-29330538
+2219,2024-01-31,2984.94,USD,Säde Pusa,Payment for invoice INV-29330546
+2220,2024-01-31,561.12,USD,Mandy Amsel,Payment for invoice INV-29330643
+2221,2024-01-31,14.24,USD,Michael Schmid,Payment for invoice INV-29330673
+2222,2024-01-31,1931.66,USD,Ruby McCary,Invoice no. 29330678
+Total credits,,4230620.49,USD,,2222 transactions

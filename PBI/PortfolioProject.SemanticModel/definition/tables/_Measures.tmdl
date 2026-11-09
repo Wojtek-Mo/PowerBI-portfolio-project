@@ -421,7 +421,7 @@ table _Measures
 
 		formatStringDefinition = "+0.0%;-0.0%;0.0%"
 
-	measure 'Full Year BU' = ```
+	measure 'Net Sales BU FY' = ```
 			
 			VAR CurrentYear = SELECTEDVALUE( DimDate[Year] )
 			
