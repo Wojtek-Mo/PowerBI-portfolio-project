@@ -72,6 +72,7 @@ ref table DimCountry
 ref table 'Variance Breakdown prm'
 ref table FactPayments
 ref table FactInvoices
+ref table 'Aging Buckets'
 
 ref cultureInfo en-US
 

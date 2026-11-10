@@ -464,6 +464,163 @@ table _Measures
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	measure 'Invoiced Amount' = SUM(FactInvoices[InvoiceAmount])
+		formatString: " $#,0.0;($#,0.0)"
+		displayFolder: 7. Receivables
+		lineageTag: 326d73f3-9f58-4f51-ab75-c4763170c076
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	measure 'Cash Collected' =
+			
+			CALCULATE(
+			    SUM(FactPayments[Amount]),
+			    USERELATIONSHIP(
+			        DimDate[Date],
+			        FactPayments[BookingDate]
+			    )
+			)
+		formatString: " $#,0.0;($#,0.0)"
+		displayFolder: 7. Receivables
+		lineageTag: cdc526ac-50a3-4ead-a111-5dca0b34a6b9
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	measure 'Unapplied Cash' = ```
+			
+			CALCULATE(
+			    [Cash Collected],
+			    ISBLANK(FactPayments[OrderKey])
+			)
+			
+			```
+		formatString: " $#,0.0;($#,0.0)"
+		displayFolder: 7. Receivables
+		lineageTag: c3cebf29-36ea-4218-8f54-cb68c688e4ed
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	measure 'Open AR' = ```
+			
+			VAR LastDayofMonth = MAX( DimDate[Date] )
+			
+			VAR Invoiced = 
+			CALCULATE(
+			    [Invoiced Amount],
+			    REMOVEFILTERS( DimDate ),
+			    DimDate[Date] <= LastDayofMonth
+			)
+			
+			VAR Collected =
+			CALCULATE(
+			    [Cash Collected],
+			    REMOVEFILTERS( DimDate ),
+			    DimDate[Date] <= LastDayofMonth,
+			    NOT ISBLANK(FactPayments[OrderKey])
+			)
+			
+			RETURN
+			Invoiced - Collected
+			```
+		formatString: "  $#,0.0;($#,0.0)"
+		displayFolder: 7. Receivables
+		lineageTag: 8f172adc-0d24-4ad7-80f2-0d41b61db2e1
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	measure 'Overdue AR' =
+			
+			VAR LastDayofMonth = MAX( DimDate[Date] )
+			RETURN
+			CALCULATE(
+			    [Open AR],
+			    FactInvoices[DueDate] < LastDayofMonth
+			)
+		formatString: "  $#,0.0;($#,0.0)"
+		displayFolder: 7. Receivables
+		lineageTag: a2930cf2-d9a2-484f-af27-c75d1dde5650
+
+		annotation PBI_FormatHint = {"isCustom":true}
+
+	measure 'Open AR Aging' = ```
+			
+			VAR LastDayofMonth = MAX( DimDate[Date] )
+			VAR LowerBound = SELECTEDVALUE( 'Aging Buckets'[MinDays] )
+			VAR UpperBound = SELECTEDVALUE( 'Aging Buckets'[MaxDays] )
+			VAR DueFrom = LastDayofMonth - UpperBound
+			VAR DueTo = LastDayofMonth - LowerBound
+			RETURN
+			IF(
+			    HASONEVALUE( 'Aging Buckets'[AgingBucket] ),
+			    CALCULATE(
+			        [Open AR],
+			        FactInvoices[DueDate] >= DueFrom,
+			        FactInvoices[DueDate] <= DueTo
+			    ),
+			    [Open AR]
+			)
+			
+			
+			
+			
+			
+			
+			
+			
+			```
+		displayFolder: 7. Receivables
+		lineageTag: 601481ab-82a8-4db6-854c-57d5190c9d32
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure DSO =
+			
+			VAR Last3Months =
+			    DATESINPERIOD(
+			        DimDate[Date],
+			        MAX( DimDate[Date] ),
+			        -3,
+			        MONTH
+			    )
+			
+			VAR PeriodStart =
+			    MINX( Last3Months, DimDate[Date] )
+			
+			VAR FirstInvoiceDate =
+			    CALCULATE(
+			        MIN( FactInvoices[InvoiceDate] ),
+			        REMOVEFILTERS( DimDate )
+			    )
+			
+			VAR Last3MonthsInvoiced =
+			    CALCULATE(
+			        [Invoiced Amount],
+			        Last3Months
+			    )
+			
+			VAR AvgReceivables3m =
+			    AVERAGEX(
+			        CALCULATETABLE(
+			            VALUES( DimDate[YearMonthNumber] ),
+			            Last3Months
+			        ),
+			        [Open AR]
+			    )
+			
+			VAR DaysInPeriod =
+			    COUNTROWS( Last3Months )
+			
+			RETURN
+			    IF(
+			        PeriodStart < FirstInvoiceDate,
+			        BLANK(),
+			        DIVIDE( AvgReceivables3m, Last3MonthsInvoiced ) * DaysInPeriod
+			    )
+		displayFolder: 7. Receivables
+		lineageTag: ac817d3b-213d-4927-97dc-554d20cc43b5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
 	column Value
 		isHidden
 		formatString: 0

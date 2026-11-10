@@ -20,16 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "DimCountry"
+                      "Entity": "DimCategory"
                     }
                   },
-                  "Property": "CountryName"
+                  "Property": "CategoryName"
                 }
               },
-              "queryRef": "DimCountry.CountryName",
-              "nativeQueryRef": "Country",
+              "queryRef": "DimCategory.CategoryName",
+              "nativeQueryRef": "Category",
               "active": true,
-              "displayName": "Country"
+              "displayName": "Category"
             }
           ],
           "fieldParameters": [

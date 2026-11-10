@@ -58,9 +58,10 @@ table FactInvoices
 		source =
 				let
 				  Source = Sql.Database("LegionWM\SQLEXPRESS", "Contoso V2 1M"),
-				  #"Navigation 1" = Source{[Schema = "pbi", Item = "FactInvoices"]}[Data]
+				  #"Navigation 1" = Source{[Schema = "pbi", Item = "FactInvoices"]}[Data],
+				  #"Changed column type" = Table.TransformColumnTypes(#"Navigation 1", {{"InvoiceAmount", Currency.Type}})
 				in
-				  #"Navigation 1"
+				  #"Changed column type"
 
 	annotation PBI_ResultType = Table
 

@@ -214,7 +214,7 @@ OrderTotals AS (
 		OrderKey,
 		CustomerKey,
 		OrderDate InvoiceDate,
-		SUM(NetPrice * Quantity) InvoiceAmount
+		CAST(ROUND(SUM(NetPrice * Quantity),2) AS DECIMAL(19, 2)) InvoiceAmount
 	FROM pbi.FactSales
 	WHERE
 		OrderDate BETWEEN '2024-01-01' AND '2025-12-31'

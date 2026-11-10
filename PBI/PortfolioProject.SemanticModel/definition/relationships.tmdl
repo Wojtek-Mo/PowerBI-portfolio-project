@@ -64,7 +64,7 @@ relationship c1e651cb-c37b-a6ee-7037-cf4eb86b8b36
 	fromColumn: FactInvoices.CustomerKey
 	toColumn: DimCustomer.CustomerKey
 
-relationship 1c97a759-34f3-fe56-18af-f3346da1d46b
+relationship ae6d506d-ec56-3e7e-0be1-14fd061b439f
 	fromColumn: FactPayments.OrderKey
 	toColumn: FactInvoices.OrderKey
 

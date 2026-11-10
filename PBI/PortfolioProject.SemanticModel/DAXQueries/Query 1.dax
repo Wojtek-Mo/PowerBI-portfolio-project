@@ -1,5 +1,40 @@
 // Welcome to DAX query view! Learn more about DAX queries at https://aka.ms/dax-queries.
 // Right-click on tables, columns, or measures in the data pane to access quick queries, or ask Copilot for help writing DAX.
+// DSO by month: 3-month average AR / 3-month invoiced x days in period
+// expected: Jan and Feb 2024 = blank (incomplete period)
+//           Mar 2024 onwards = unchanged from previous run (Mar 2024 = 34.53, Dec 2025 = 60.28)
 EVALUATE
-    ROW("Rows", COUNTROWS(FactPayments),
-    "Sum", SUM(FactPayments[Amount]))
+CALCULATETABLE(
+    SUMMARIZECOLUMNS(
+        DimDate[Year],
+        DimDate[MonthNumber],
+        "DSO", [DSO]
+    ),
+    DimDate[Year] IN { 2024, 2025 }
+)
+ORDER BY DimDate[Year], DimDate[MonthNumber]
+
+// DSO components for Dec 2025 (manual check: Avg AR / Invoiced x Days = DSO)
+// expected: Avg AR 3M = 50,989,530.50 | Days = 92 | DSO = 60.28
+EVALUATE
+CALCULATETABLE(
+    ROW(
+        "Avg AR 3M",
+            AVERAGEX(
+                CALCULATETABLE(
+                    VALUES( DimDate[YearMonthNumber] ),
+                    DATESINPERIOD( DimDate[Date], MAX( DimDate[Date] ), -3, MONTH )
+                ),
+                [Open AR]
+            ),
+        "Invoiced 3M",
+            CALCULATE(
+                [Invoiced Amount],
+                DATESINPERIOD( DimDate[Date], MAX( DimDate[Date] ), -3, MONTH )
+            ),
+        "Days", COUNTROWS( DATESINPERIOD( DimDate[Date], MAX( DimDate[Date] ), -3, MONTH ) ),
+        "DSO", [DSO]
+    ),
+    DimDate[Year] = 2025,
+    DimDate[MonthNumber] = 12
+)
