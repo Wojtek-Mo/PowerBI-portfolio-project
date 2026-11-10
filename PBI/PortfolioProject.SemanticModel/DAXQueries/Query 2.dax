@@ -1,9 +1,0 @@
-Variance to budget by = 
-VAR prmState = SELECTEDVALUE('Variance Breakdown prm'[Variance Breakdown prm Order])
-
-RETURN
-SWITCH(
-    prmState,
-    1, "country",
-    2, "category"
-)

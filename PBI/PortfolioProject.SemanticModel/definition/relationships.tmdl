@@ -46,3 +46,25 @@ relationship 3b35ad30-91fe-26f3-3501-91e490d5b56c
 	fromColumn: FactBudget.SalesChannel
 	toColumn: DimChannel.SalesChannel
 
+relationship 87d3bf97-8eb8-c06b-bdd5-b86c83134e59
+	isActive: false
+	fromColumn: FactInvoices.DueDate
+	toColumn: DimDate.Date
+
+relationship 5a8836d1-70ce-0b45-5cbb-5aa3d0a7befd
+	fromColumn: FactInvoices.InvoiceDate
+	toColumn: DimDate.Date
+
+relationship 2e2fd200-a378-926f-4057-a23fd4d43919
+	isActive: false
+	fromColumn: FactPayments.BookingDate
+	toColumn: DimDate.Date
+
+relationship c1e651cb-c37b-a6ee-7037-cf4eb86b8b36
+	fromColumn: FactInvoices.CustomerKey
+	toColumn: DimCustomer.CustomerKey
+
+relationship 1c97a759-34f3-fe56-18af-f3346da1d46b
+	fromColumn: FactPayments.OrderKey
+	toColumn: FactInvoices.OrderKey
+

@@ -1,0 +1,62 @@
+table FactPayments
+	lineageTag: cb597774-89fe-44ee-9d40-42ee409e1be8
+
+	column TransactionId
+		dataType: int64
+		formatString: 0
+		lineageTag: bca942dc-a415-4072-980c-44c1c079add0
+		summarizeBy: count
+		sourceColumn: TransactionId
+
+		annotation SummarizationSetBy = Automatic
+
+	column OrderKey
+		dataType: int64
+		formatString: 0
+		lineageTag: 3dccfee9-0563-42ef-9d0e-2d6632dfc6a0
+		summarizeBy: none
+		sourceColumn: OrderKey
+
+		annotation SummarizationSetBy = Automatic
+
+	column BookingDate
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: d8023b4f-8e54-4c49-92ee-10c7f5642cc4
+		summarizeBy: none
+		sourceColumn: BookingDate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Amount
+		dataType: double
+		lineageTag: d7790e1a-3527-4520-8228-73d359fa8753
+		summarizeBy: sum
+		sourceColumn: Amount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition FactPayments = m
+		mode: import
+		queryGroup: '5. Facts'
+		source =
+				let
+				  Source = Table.Combine({PaymentOld, PaymentNew}),
+				  #"Removed overlapping duplicates" = Table.Distinct(Source, {"TransactionId", "BookingDate", "Amount", "Currency", "PayerName", "Description"}),
+				  #"Extract InvoiceRef (OrderKey)" = Table.TransformColumnTypes(Table.AddColumn(#"Removed overlapping duplicates", "OrderKey", each Text.Select([Description], {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"})), {{"OrderKey", Int64.Type}}),
+				  #"Checking InvoiceRef len" = Table.AddColumn(#"Extract InvoiceRef (OrderKey)", "Length", each Text.Length(Text.From([OrderKey])), type nullable number),
+				  #"OrderKey len condition" = Table.AddColumn(#"Checking InvoiceRef len", "InvoiceRef", each if [Length] = 8 then [OrderKey] else null),
+				  #"Renamed columns" = Table.RenameColumns(#"OrderKey len condition", {{"OrderKey", "InvoiceRef"}, {"InvoiceRef", "OrderKey"}}),
+				  #"Removed helper columns" = Table.RemoveColumns(#"Renamed columns", {"InvoiceRef", "Length"}),
+				  #"Changed OrderKey type" = Table.TransformColumnTypes(#"Removed helper columns", {{"OrderKey", Int64.Type}}),
+				  #"Choose columns" = Table.SelectColumns(#"Changed OrderKey type", {"TransactionId", "BookingDate", "Amount", "OrderKey"}),
+				  #"Reordered columns" = Table.ReorderColumns(#"Choose columns", {"TransactionId", "OrderKey", "BookingDate", "Amount"})
+				in
+				  #"Reordered columns"
+
+	annotation PBI_ResultType = Table
+

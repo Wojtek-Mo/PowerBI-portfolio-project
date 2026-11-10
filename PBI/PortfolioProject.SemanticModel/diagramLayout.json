@@ -5,13 +5,13 @@
       "ordinal": 0,
       "scrollPosition": {
         "x": 0,
-        "y": 0
+        "y": 1.7715609999999997
       },
       "nodes": [
         {
           "location": {
-            "x": 101.81868019008283,
-            "y": 561.49083655525055
+            "x": 61.734679546477651,
+            "y": 753.0032840746976
           },
           "nodeIndex": "DimCustomer",
           "nodeLineageTag": "f437cd52-4ab1-4898-8b7d-a7c72b1ec0b0",
@@ -23,8 +23,8 @@
         },
         {
           "location": {
-            "x": 1077.6036994334308,
-            "y": 589.46675425394437
+            "x": 1142.183478248128,
+            "y": 970.26476036819361
           },
           "nodeIndex": "DimDate",
           "nodeLineageTag": "feb33a4f-81f5-43e1-a5c6-0ae14b059447",
@@ -36,8 +36,8 @@
         },
         {
           "location": {
-            "x": 290.19841577767522,
-            "y": 0
+            "x": 254.56819298335949,
+            "y": 153.65533580048654
           },
           "nodeIndex": "DimProduct",
           "nodeLineageTag": "e29fc0a8-a177-4ede-bab5-94cd64774715",
@@ -49,8 +49,8 @@
         },
         {
           "location": {
-            "x": 1015.4126966013675,
-            "y": 3.771062229262327
+            "x": 1095.580697888578,
+            "y": 124.02306416007789
           },
           "nodeIndex": "DimStore",
           "nodeLineageTag": "5f75067d-10e6-41fd-bc31-81d3e5bb8b0e",
@@ -75,8 +75,8 @@
         },
         {
           "location": {
-            "x": 1577.2142808236922,
-            "y": 146.10223008169461
+            "x": 1961.6430178236922,
+            "y": 0
           },
           "nodeIndex": "_Measures",
           "nodeLineageTag": "db649de3-e987-4e45-a058-f8e353648a4b",
@@ -88,8 +88,8 @@
         },
         {
           "location": {
-            "x": 1580.8986934764207,
-            "y": 821.18329438213084
+            "x": 1968.8705524764207,
+            "y": 688.316219382131
           },
           "nodeIndex": "Period View",
           "nodeLineageTag": "091cc5bf-8900-4040-9d2c-4b99f07b4fa3",
@@ -101,8 +101,8 @@
         },
         {
           "location": {
-            "x": 1578.3846136290176,
-            "y": 478.01663151925919
+            "x": 1964.5849116290176,
+            "y": 334.52019051925924
           },
           "nodeIndex": "Comparison",
           "nodeLineageTag": "fe4a69d4-9c2c-4968-ac01-b777eb07e4e1",
@@ -114,8 +114,8 @@
         },
         {
           "location": {
-            "x": 1579.5549464343428,
-            "y": 614.22847332223876
+            "x": 1965.7552444343426,
+            "y": 477.81827632223883
           },
           "nodeIndex": "PVM Steps",
           "nodeLineageTag": "3a1704f2-3660-4b31-b516-d9de0731096e",
@@ -154,7 +154,7 @@
         {
           "location": {
             "x": 0,
-            "y": 5.1237933422590913
+            "y": 156.55224021810088
           },
           "nodeIndex": "DimCategory",
           "nodeLineageTag": "1707789b-80a9-486a-b101-e6ac4e3e81ee",
@@ -167,7 +167,7 @@
         {
           "location": {
             "x": 1341.971941719605,
-            "y": 0
+            "y": 126.93266870474972
           },
           "nodeIndex": "DimChannel",
           "nodeLineageTag": "a5da5ff9-b81b-4fbe-9ee4-5b99c77eb442",
@@ -179,8 +179,8 @@
         },
         {
           "location": {
-            "x": 102.70657465588687,
-            "y": 872.32728139589142
+            "x": 42.5805736904791,
+            "y": 1150.6883969764831
           },
           "nodeIndex": "DimCountry",
           "nodeLineageTag": "03a594a0-40ea-4d7f-8bfd-1835b8df3af2",
@@ -192,8 +192,8 @@
         },
         {
           "location": {
-            "x": 1585.220790182698,
-            "y": 962.820953200765
+            "x": 1971.421088182698,
+            "y": 826.41075620076492
           },
           "nodeIndex": "Variance Breakdown prm",
           "nodeLineageTag": "ab00d4bc-98cb-4732-b5e8-c070c8b598f3",
@@ -202,10 +202,35 @@
             "width": 234
           },
           "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 622.04184618269812,
+            "y": 1255.9835606003821
+          },
+          "nodeIndex": "FactPayments",
+          "nodeLineageTag": "cb597774-89fe-44ee-9d40-42ee409e1be8",
+          "size": {
+            "height": 176,
+            "width": 234
+          },
+          "zIndex": 0
+        },
+        {
+          "location": {
+            "x": 620.82052518269836,
+            "y": 994.1934596003822
+          },
+          "nodeIndex": "FactInvoices",
+          "size": {
+            "height": 200,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",
-      "zoomValue": 63.287087723234059,
+      "zoomValue": 56.447393005377755,
       "pinKeyFieldsToTop": false,
       "showExtraHeaderInfo": false,
       "hideKeyFieldsWhenCollapsed": false,

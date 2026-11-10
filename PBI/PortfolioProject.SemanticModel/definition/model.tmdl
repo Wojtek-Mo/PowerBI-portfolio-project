@@ -11,11 +11,11 @@ model Model
 
 queryGroup '4. Dimensions'
 
-	annotation PBI_QueryGroupOrder = 3
+	annotation PBI_QueryGroupOrder = 4
 
 queryGroup '5. Facts'
 
-	annotation PBI_QueryGroupOrder = 4
+	annotation PBI_QueryGroupOrder = 5
 
 queryGroup '2. Functions'
 
@@ -23,17 +23,37 @@ queryGroup '2. Functions'
 
 queryGroup '3. Staging'
 
-	annotation PBI_QueryGroupOrder = 2
+	annotation PBI_QueryGroupOrder = 3
 
 queryGroup '1. Parameters'
 
 	annotation PBI_QueryGroupOrder = 0
 
+queryGroup '2. Functions\Payments Queries\Transform file from PaymentOld'
+
+	annotation PBI_QueryGroupOrder = 1
+
+queryGroup '2. Functions\Payments Queries\Transform file from PaymentOld\Helper queries'
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup '2. Functions\Payments Queries\Transform file from PaymentNew'
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup '2. Functions\Payments Queries\Transform file from PaymentNew\Helper queries (2)'
+
+	annotation PBI_QueryGroupOrder = 0
+
+queryGroup '2. Functions\Payments Queries'
+
+	annotation PBI_QueryGroupOrder = 2
+
 annotation __PBI_TimeIntelligenceEnabled = 0
 
 annotation PBI_ProTooling = ["DevMode","TMDLView_Desktop","DaxQueryView_Desktop","CalcGroup"]
 
-annotation PBI_QueryOrder = ["DimCustomer","DimDate","DimProduct","DimStore","DimCategory","DimChannel","DimCountry","FactSales","FactExchangeRate","FactBudget","fnGetNBPrates","fnCleanBudgetSheet","BudgetMapping","BudgetSheets","NbpPeriodsHelper","NbpRates","NbpCalendar","pBudgetFilePath"]
+annotation PBI_QueryOrder = ["DimCustomer","DimDate","DimProduct","DimStore","DimCategory","DimChannel","DimCountry","FactSales","FactExchangeRate","FactBudget","FactPayments","FactInvoices","fnGetNBPrates","fnCleanBudgetSheet","BudgetMapping","BudgetSheets","NbpPeriodsHelper","NbpRates","NbpCalendar","PaymentFiles","pBudgetFilePath","pPaymentsFolderPath","PaymentOld","PaymentNew","Sample file","Parameter","Transform Sample file","Transform file","Sample file (2)","Parameter (2)","Transform Sample file (2)","Transform file (2)"]
 
 ref table DimCustomer
 ref table DimDate
@@ -50,6 +70,8 @@ ref table DimCategory
 ref table DimChannel
 ref table DimCountry
 ref table 'Variance Breakdown prm'
+ref table FactPayments
+ref table FactInvoices
 
 ref cultureInfo en-US
 

@@ -137,3 +137,169 @@ expression BudgetSheets =
 
 	annotation PBI_ResultType = Table
 
+expression pPaymentsFolderPath =
+		let
+		    Source = "C:\Users\wojte\Desktop\Power BI\Portfolio\PowerBI-portfolio-project\Data\Payments" meta [IsParameterQuery = true, IsParameterQueryRequired = true, Type = type text]
+		in
+		    Source
+	lineageTag: 5bc36b46-a2a2-420c-bd0a-f5188d553ea4
+	queryGroup: '1. Parameters'
+
+	annotation PBI_ResultType = Text
+
+expression Parameter =
+		let
+		  Parameter = #"Sample file" meta [IsParameterQuery = true, IsParameterQueryRequired = false, Type = type binary, BinaryIdentifier = #"Sample file"]
+		in
+		  Parameter
+	lineageTag: 9ff0c310-d8e1-48d3-ac4c-c3cd804d62a5
+	queryGroup: '2. Functions\Payments Queries\Transform file from PaymentOld\Helper queries'
+
+	annotation PBI_ResultType = Binary
+
+expression 'Parameter (2)' =
+		let
+		  #"Parameter (2)" = #"Sample file (2)" meta [IsParameterQuery = true, IsParameterQueryRequired = false, Type = type binary, BinaryIdentifier = #"Sample file (2)"]
+		in
+		  #"Parameter (2)"
+	lineageTag: fec34ccb-43d0-481e-975d-4006809a89fe
+	queryGroup: '2. Functions\Payments Queries\Transform file from PaymentNew\Helper queries (2)'
+
+	annotation PBI_ResultType = Binary
+
+expression PaymentFiles =
+		let
+		  Source = Folder.Files(pPaymentsFolderPath)
+		in
+		  Source
+	lineageTag: bdad76e7-e05f-48c8-8f3c-1af9305dd52d
+	queryGroup: '3. Staging'
+
+	annotation PBI_ResultType = Table
+
+expression PaymentOld =
+		let
+		  Source = PaymentFiles,
+		  #"Filtered rows" = Table.SelectRows(Source, each Text.StartsWith([Name], "contoso_bank_statement")),
+		  #"Filtered hidden files" = Table.SelectRows(#"Filtered rows", each [Attributes]?[Hidden]? <> true),
+		  #"Added custom" = let
+		    rootPath = Text.TrimEnd(Value.Metadata(Value.Type(#"Filtered hidden files"))[FileSystemTable.RootPath]?, "\"),
+		    combinePaths = (path1, path2) => Text.Combine({Text.TrimEnd(path1, "\"), path2}, "\"),
+		    getRelativePath = (path, relativeTo) => Text.Middle(path, Text.Length(relativeTo) + 1)
+		in
+		    Table.AddColumn(#"Filtered hidden files", "Relative Path", each getRelativePath(combinePaths([Folder Path], [Name]), rootPath), type text),
+		  #"Invoke custom function" = Table.AddColumn(#"Added custom", "Transform file", each #"Transform file"([Content])),
+		  #"Renamed columns" = Table.RenameColumns(#"Invoke custom function", {{"Relative Path", "Source.Name"}}),
+		  #"Removed other columns" = Table.SelectColumns(#"Renamed columns", {"Source.Name", "Transform file"}),
+		  #"Expanded table column" = Table.ExpandTableColumn(#"Removed other columns", "Transform file", Table.ColumnNames(#"Transform file"(#"Sample file"))),
+		  #"Choose columns" = Table.SelectColumns(#"Expanded table column", {"Source.Name", "TransactionId", "BookingDate", "Amount", "Currency", "PayerName", "Description"}),
+		  #"Changed column type" = Table.TransformColumnTypes(#"Choose columns", {{"TransactionId", Int64.Type}, {"Amount", type number}, {"Currency", type text}, {"PayerName", type text}, {"Description", type text}}),
+		  #"Changed column type with locale" = Table.TransformColumnTypes(#"Changed column type", {{"BookingDate", type date}}, "en-150")
+		in
+		  #"Changed column type with locale"
+	lineageTag: e1c009d6-1d4f-4ce6-95a1-07b93dc7648e
+	queryGroup: '3. Staging'
+
+	annotation PBI_ResultType = Table
+
+expression PaymentNew =
+		let
+		  Source = PaymentFiles,
+		  #"Filtered rows" = Table.SelectRows(Source, each Text.StartsWith([Name], "Statement_")),
+		  #"Filtered hidden files" = Table.SelectRows(#"Filtered rows", each [Attributes]?[Hidden]? <> true),
+		  #"Added custom" = let
+		    rootPath = Text.TrimEnd(Value.Metadata(Value.Type(#"Filtered hidden files"))[FileSystemTable.RootPath]?, "\"),
+		    combinePaths = (path1, path2) => Text.Combine({Text.TrimEnd(path1, "\"), path2}, "\"),
+		    getRelativePath = (path, relativeTo) => Text.Middle(path, Text.Length(relativeTo) + 1)
+		in
+		    Table.AddColumn(#"Filtered hidden files", "Relative Path", each getRelativePath(combinePaths([Folder Path], [Name]), rootPath), type text),
+		  #"Invoke custom function" = Table.AddColumn(#"Added custom", "Transform file (2)", each #"Transform file (2)"([Content])),
+		  #"Renamed columns" = Table.RenameColumns(#"Invoke custom function", {{"Relative Path", "Source.Name"}}),
+		  #"Removed other columns" = Table.SelectColumns(#"Renamed columns", {"Source.Name", "Transform file (2)"}),
+		  #"Expanded table column" = Table.ExpandTableColumn(#"Removed other columns", "Transform file (2)", Table.ColumnNames(#"Transform file (2)"(#"Sample file (2)"))),
+		  #"Choose columns" = Table.SelectColumns(#"Expanded table column", {"Source.Name", "Booking date", "Transaction ID", "Counterparty", "Payment details", "Amount", "Currency"}),
+		  #"Renamed columns 1" = Table.RenameColumns(#"Choose columns", {{"Booking date", "BookingDate"}, {"Transaction ID", "TransactionId"}, {"Payment details", "Description"}, {"Counterparty", "PayerName"}}),
+		  #"Reordered columns" = Table.ReorderColumns(#"Renamed columns 1", {"TransactionId", "BookingDate", "Amount", "Currency", "PayerName", "Description"}),
+		  #"Changed column type" = Table.TransformColumnTypes(#"Reordered columns", {{"TransactionId", Int64.Type}, {"BookingDate", type text}, {"Amount", type text}, {"Currency", type text}, {"PayerName", type text}, {"Description", type text}}),
+		  #"Changed column type with locale" = Table.TransformColumnTypes(#"Changed column type", {{"BookingDate", type date}, {"Amount", type number}}, "pl-PL")
+		in
+		  #"Changed column type with locale"
+	lineageTag: 27e8a073-172b-4da3-b259-4836eb28ea3d
+	queryGroup: '3. Staging'
+
+	annotation PBI_ResultType = Table
+
+expression 'Sample file' =
+		let
+		  Source = PaymentFiles,
+		  #"Filtered rows" = Table.SelectRows(Source, each Text.StartsWith([Name], "contoso_bank_statement")),
+		  #"Filtered hidden files" = Table.SelectRows(#"Filtered rows", each [Attributes]?[Hidden]? <> true),
+		  Navigation = #"Filtered hidden files"{0}[Content]
+		in
+		  Navigation
+	lineageTag: 4f0cfde3-f111-46e9-977c-a186de61f494
+	queryGroup: '2. Functions\Payments Queries\Transform file from PaymentOld\Helper queries'
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transform Sample file' =
+		let
+		  Source = Csv.Document(Parameter, [Delimiter = ",", Columns = 6, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+		  #"Removed top rows" = Table.Skip(Source, each [Column1] <> "TransactionId"),
+		  #"Promoted headers" = Table.PromoteHeaders(#"Removed top rows", [PromoteAllScalars = true]),
+		  #"Filtered rows" = Table.SelectRows(#"Promoted headers", each not Text.StartsWith([TransactionId], "Total"))
+		in
+		  #"Filtered rows"
+	lineageTag: f218226e-a60c-46fd-b964-ede44712332b
+	queryGroup: '2. Functions\Payments Queries\Transform file from PaymentOld'
+
+	annotation PBI_ResultType = Table
+
+expression 'Transform file' =
+		(Parameter as binary) => let
+		  Source = Csv.Document(Parameter, [Delimiter = ",", Columns = 6, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+		  #"Removed top rows" = Table.Skip(Source, each [Column1] <> "TransactionId"),
+		  #"Promoted headers" = Table.PromoteHeaders(#"Removed top rows", [PromoteAllScalars = true]),
+		  #"Filtered rows" = Table.SelectRows(#"Promoted headers", each not Text.StartsWith([TransactionId], "Total"))
+		in
+		  #"Filtered rows"
+	lineageTag: 59cdb79e-130a-4d4b-a921-81de2d020402
+	queryGroup: '2. Functions\Payments Queries\Transform file from PaymentOld\Helper queries'
+
+	annotation PBI_ResultType = Function
+
+expression 'Sample file (2)' =
+		let
+		  Source = PaymentFiles,
+		  #"Filtered rows" = Table.SelectRows(Source, each Text.StartsWith([Name], "Statement_")),
+		  #"Filtered hidden files" = Table.SelectRows(#"Filtered rows", each [Attributes]?[Hidden]? <> true),
+		  Navigation = #"Filtered hidden files"{0}[Content]
+		in
+		  Navigation
+	lineageTag: 57b47ffb-157c-47c2-9045-bc78dc3ad57f
+	queryGroup: '2. Functions\Payments Queries\Transform file from PaymentNew\Helper queries (2)'
+
+	annotation PBI_ResultType = Binary
+
+expression 'Transform Sample file (2)' =
+		let
+		  Source = Csv.Document(#"Parameter (2)", [Delimiter = ";", Columns = 7, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+		  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true])
+		in
+		  #"Promoted headers"
+	lineageTag: bb6a5437-b993-4406-ad4c-198ecb8b9020
+	queryGroup: '2. Functions\Payments Queries\Transform file from PaymentNew'
+
+	annotation PBI_ResultType = Table
+
+expression 'Transform file (2)' =
+		(#"Parameter (2)" as binary) => let
+		  Source = Csv.Document(#"Parameter (2)", [Delimiter = ";", Columns = 7, Encoding = 65001, QuoteStyle = QuoteStyle.None]),
+		  #"Promoted headers" = Table.PromoteHeaders(Source, [PromoteAllScalars = true])
+		in
+		  #"Promoted headers"
+	lineageTag: 221d54d9-76ff-40e2-b10e-58e791ef29bd
+	queryGroup: '2. Functions\Payments Queries\Transform file from PaymentNew\Helper queries (2)'
+
+	annotation PBI_ResultType = Function
+
