@@ -141,10 +141,11 @@ table _Measures
 			)
 			
 			```
+		formatString: \$#,0.0;(\$#,0.0);\$#,0.0
 		displayFolder: 3. Executive Overview
 		lineageTag: ef188147-1a37-486b-9abd-597c4765bafe
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
 
 	measure 'Net Sales Δ PY%' =
 			
@@ -192,11 +193,11 @@ table _Measures
 			    Comparison[Comparison] = "PY"
 			)
 		formatString: 0.0
-		displayFolder: 7. PVM (wip)
+		displayFolder: 7. PVM
 		lineageTag: 8b32ec35-252a-4361-b392-8c08c7c5ec2d
 
 	measure 'Avg Price' = DIVIDE(CONVERT([Net Sales], DOUBLE), [Units Sold])
-		displayFolder: 7. PVM (wip)
+		displayFolder: 7. PVM
 		lineageTag: 0917ed10-e1c0-402f-90b2-567bb145acc7
 
 		formatStringDefinition = "$#,0.00"
@@ -209,7 +210,7 @@ table _Measures
 			)
 			
 			```
-		displayFolder: 7. PVM (wip)
+		displayFolder: 7. PVM
 		lineageTag: ac91a3c5-594c-4c88-9841-a90b6b34f274
 
 		formatStringDefinition = "$#,0.00"
@@ -224,10 +225,10 @@ table _Measures
 			        [Units Sold] * ([Avg Price] - [Avg Price PY])
 			    )
 			)
-		displayFolder: 7. PVM (wip)
+		displayFolder: 7. PVM
 		lineageTag: 5824d121-be2f-4e43-ae53-968fe6e32714
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		formatStringDefinition = "$#,0.0;($#,0.0)"
 
 	measure 'Volume Effect' = ```
 			
@@ -256,10 +257,10 @@ table _Measures
 			        
 			    
 			```
-		displayFolder: 7. PVM (wip)
+		displayFolder: 7. PVM
 		lineageTag: 4d774d41-d6ea-49b2-8c2e-929a1fe59a46
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		formatStringDefinition = "$#,0.0;($#,0.0)"
 
 	measure 'Mix Effect' = ```
 			
@@ -292,10 +293,10 @@ table _Measures
 			SalesAC_at_PYprice - (UnitsAC * GroupAvgPricePY)
 			
 			```
-		displayFolder: 7. PVM (wip)
+		displayFolder: 7. PVM
 		lineageTag: 86fe7683-f4ef-475d-bf97-1b1b712cdebf
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		formatStringDefinition = "$#,0.0;($#,0.0)"
 
 	measure 'New/Discontinued Effect' = ```
 			
@@ -336,7 +337,7 @@ table _Measures
 			
 			
 			```
-		displayFolder: 7. PVM (wip)
+		displayFolder: 7. PVM
 		lineageTag: 9714a6ae-a5ab-4c50-bb67-03eb426c3e51
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
@@ -356,10 +357,10 @@ table _Measures
 			
 			
 			```
-		displayFolder: 7. PVM (wip)
+		displayFolder: 7. PVM
 		lineageTag: 42347404-c687-42c6-bf84-0cad26177237
 
-		annotation PBI_FormatHint = {"isGeneralNumber":true}
+		formatStringDefinition = "$#,0.0;($#,0.0)"
 
 	measure 'USD/PLN Rate' = SELECTEDVALUE(FactExchangeRate[UsdPlnRate])
 		displayFolder: 8. Visual Helpers
@@ -441,7 +442,7 @@ table _Measures
 
 	measure 'Title Variance Breakdown' =
 			
-			VAR prmState = SELECTEDVALUE('Variance Breakdown prm'[Variance Breakdown prm Order])
+			VAR prmState = SELECTEDVALUE('prmVarianceBreakdown'[Variance Breakdown prm Order])
 			
 			RETURN
 			"Variance to budget by " &
@@ -477,11 +478,15 @@ table _Measures
 
 		annotation PBI_FormatHint = {"isCustom":true}
 
-	measure 'Unapplied Cash' = ```
+	measure 'Unapplied Cash to date' = ```
 			
+			VAR LastDayofMonth = MAX(DimDate[Date])
+			RETURN
 			CALCULATE(
 			    [Cash Collected],
-			    ISBLANK(FactPayments[OrderKey])
+			    ISBLANK(FactPayments[OrderKey]),
+			    REMOVEFILTERS(DimDate[Date]),
+			    DimDate[Date] <= LastDayofMonth
 			)
 			
 			```
@@ -727,22 +732,25 @@ table _Measures
 	measure 'Days past due (oldest)' = ```
 			
 			VAR AsOfDate = MAX( DimDate[Date] )                          
-			VAR OverdueOpenInvoices =
+			VAR PaidOrderKeys =                                          
+			    CALCULATETABLE(
+			        VALUES( FactPayments[OrderKey] ),
+			        REMOVEFILTERS( DimDate ),                            
+			        FactPayments[BookingDate] <= AsOfDate,
+			        NOT ISBLANK( FactPayments[OrderKey] )               
+			    )
+			VAR OverdueUnpaid =
 			    FILTER(
 			        CALCULATETABLE(
 			            FactInvoices,
 			            REMOVEFILTERS( DimDate ),                        
 			            FactInvoices[DueDate] < AsOfDate                 
 			        ),
-			        [Open AR] > 0                                        
+			        NOT ( FactInvoices[OrderKey] IN PaidOrderKeys )      
 			    )
-			VAR OldestDueDate =
-			    MINX( OverdueOpenInvoices, FactInvoices[DueDate] )
+			VAR OldestDueDate = MINX( OverdueUnpaid, FactInvoices[DueDate] )
 			RETURN
-			    IF(
-			        NOT ISBLANK( OldestDueDate ),                        
-			        INT( AsOfDate - OldestDueDate )
-			    )
+			    IF( NOT ISBLANK( OldestDueDate ), INT( AsOfDate - OldestDueDate ) )
 			```
 		displayFolder: 5. Receivables
 		lineageTag: 81e4200c-0d53-4f58-a4c8-2c6f8ca9131b

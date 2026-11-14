@@ -21,7 +21,7 @@ table FactPayments
 
 	column BookingDate
 		dataType: dateTime
-		formatString: Long Date
+		formatString: Short Date
 		lineageTag: d8023b4f-8e54-4c49-92ee-10c7f5642cc4
 		summarizeBy: none
 		sourceColumn: BookingDate

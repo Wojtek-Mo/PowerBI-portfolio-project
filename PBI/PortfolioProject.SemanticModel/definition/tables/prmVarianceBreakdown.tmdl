@@ -1,4 +1,4 @@
-table 'Variance Breakdown prm'
+table prmVarianceBreakdown
 	lineageTag: ab00d4bc-98cb-4732-b5e8-c070c8b598f3
 
 	column 'Variance Breakdown prm'
@@ -36,7 +36,7 @@ table 'Variance Breakdown prm'
 
 		annotation SummarizationSetBy = Automatic
 
-	partition 'Variance Breakdown prm' = calculated
+	partition prmVarianceBreakdown = calculated
 		mode: import
 		source =
 				{

@@ -128,5 +128,23 @@
     },
     "drillFilterOtherVisuals": true
   },
-  "parentGroupName": "cd03a6218a0c31cb9795"
+  "parentGroupName": "cd03a6218a0c31cb9795",
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "8d65b4808d5ad0937cdb",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "DimCountry"
+              }
+            },
+            "Property": "CountryName"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
+  }
 }

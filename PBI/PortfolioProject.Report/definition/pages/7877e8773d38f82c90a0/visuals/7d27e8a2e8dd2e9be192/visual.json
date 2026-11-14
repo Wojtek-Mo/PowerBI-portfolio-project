@@ -219,7 +219,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'AC vs BU vs PY'"
+                  "Value": "'Net sales by month: AC vs BU vs PY'"
                 }
               }
             }

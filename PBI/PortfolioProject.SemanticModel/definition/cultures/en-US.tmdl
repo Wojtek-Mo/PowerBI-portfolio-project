@@ -6443,7 +6443,7 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "Δ PY%": {
+			          "Δ PY %": {
 			            "State": "Suggested",
 			            "Source": {
 			              "Type": "External",
@@ -11634,10 +11634,133 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "variance_breakdown_prm": {
+			    "prm_variance_breakdown": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Variance Breakdown prm"
+			          "ConceptualEntity": "prmVarianceBreakdown"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "prm variance breakdown": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "prmVarianceBreakdown": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "prm variance failure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "prm variance cessation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "prm variance interruption": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "prm variance collapse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "prm variance halt": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "prm variance break": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "prm variance analysis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "prm variance itemization": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "prm variance classification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        },
+			        {
+			          "prm variance dissection": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.482
+			          }
+			        }
+			      ]
+			    },
+			    "prm_variance_breakdown.variance_breakdown_prm": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "prmVarianceBreakdown",
+			          "ConceptualProperty": "Variance Breakdown prm"
 			        }
 			      },
 			      "State": "Generated",
@@ -11649,32 +11772,10 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "variance_breakdown_prm.variance_breakdown_prm": {
+			    "prm_variance_breakdown.variance_breakdown_prm_field": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Variance Breakdown prm",
-			          "ConceptualProperty": "Variance Breakdown prm"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "variance breakdown prm": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "variance breakdown prm name": {
-			            "State": "Generated"
-			          }
-			        }
-			      ],
-			      "NameType": "Name"
-			    },
-			    "variance_breakdown_prm.variance_breakdown_prm_field": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "Variance Breakdown prm",
+			          "ConceptualEntity": "prmVarianceBreakdown",
 			          "ConceptualProperty": "Variance Breakdown prm Fields"
 			        }
 			      },
@@ -11790,10 +11891,10 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "variance_breakdown_prm.variance_breakdown_prm_order": {
+			    "prm_variance_breakdown.variance_breakdown_prm_order": {
 			      "Definition": {
 			        "Binding": {
-			          "ConceptualEntity": "Variance Breakdown prm",
+			          "ConceptualEntity": "prmVarianceBreakdown",
 			          "ConceptualProperty": "Variance Breakdown prm Order"
 			        }
 			      },
@@ -12061,17 +12162,17 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "entity__measure.unapplied_cash": {
+			    "entity__measure.unapplied_cash_to_date": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Measures",
-			          "ConceptualProperty": "Unapplied Cash"
+			          "ConceptualProperty": "Unapplied Cash to date"
 			        }
 			      },
 			      "State": "Generated",
 			      "Terms": [
 			        {
-			          "unapplied cash": {
+			          "unapplied cash to date": {
 			            "State": "Generated"
 			          }
 			        },
@@ -12082,33 +12183,73 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "unapplied money": {
+			          "unapplied cash to moment": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.5
+			            "Weight": 0.617
 			          }
 			        },
 			        {
-			          "unapplied currency": {
+			          "unapplied cash to period": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.5
+			            "Weight": 0.599
 			          }
 			        },
 			        {
-			          "unapplied dough": {
+			          "unapplied money to date": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
 			              "Agent": "Thesaurus"
 			            },
-			            "Weight": 0.5
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "unapplied currency to date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "unapplied dough to date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "unapplied coin to date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
+			          }
+			        },
+			        {
+			          "unapplied note to date": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.499
 			          }
 			        },
 			        {
@@ -12142,43 +12283,13 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "unapplied coin": {
-			            "Type": "Noun",
+			          "Amount": {
 			            "State": "Suggested",
 			            "Source": {
-			              "Agent": "Thesaurus"
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
 			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "unapplied note": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.485
-			          }
-			        },
-			        {
-			          "coin": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
-			          }
-			        },
-			        {
-			          "note": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.476
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -12212,6 +12323,16 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.9
 			          }
+			        },
+			        {
+			          "Balance": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
 			      ]
 			    },
@@ -12233,6 +12354,16 @@ cultureInfo en-US
 			          "AR": {
 			            "State": "Generated",
 			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "Overdue": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
 			          }
 			        }
 			      ]
@@ -12339,11 +12470,11 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "entity__measure.entity__unapplied_cash_FormatString": {
+			    "entity__measure.entity__unapplied_cash_to_date_FormatString": {
 			      "Definition": {
 			        "Binding": {
 			          "ConceptualEntity": "_Measures",
-			          "ConceptualProperty": "_Unapplied Cash FormatString"
+			          "ConceptualProperty": "_Unapplied Cash to date FormatString"
 			        }
 			      },
 			      "State": "Generated",
@@ -12352,7 +12483,7 @@ cultureInfo en-US
 			      },
 			      "Terms": [
 			        {
-			          "_unapplied cash FormatString": {
+			          "_unapplied cash to date FormatString": {
 			            "State": "Generated"
 			          }
 			        }
@@ -15657,39 +15788,6 @@ cultureInfo en-US
 			    }
 			  },
 			  "Relationships": {
-			    "fact_sale_has_entity__measure_units_sold_δ_PY_": {
-			      "Binding": {
-			        "ConceptualEntity": "FactSales"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fact_sale": {
-			          "Target": {
-			            "Entity": "fact_sale"
-			          }
-			        },
-			        "entity__measure.units_sold_δ_PY_": {
-			          "Target": {
-			            "Entity": "entity__measure.units_sold_δ_PY_"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fact_sale"
-			            },
-			            "Object": {
-			              "Role": "entity__measure.units_sold_δ_PY_"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fact_sales_have_units_sold_δ_PY_"
-			        }
-			      ]
-			    },
 			    "fact_budget_has_entity__measure_units_sold_BU": {
 			      "Binding": {
 			        "ConceptualEntity": "FactBudget"
@@ -17107,6 +17205,26 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "fact_payments_have_overdue_AR"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "fact_payment"
+			            },
+			            "Adjectives": [
+			              {
+			                "Overdue": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "entity__measure.overdue_AR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "overdue_AR_indicates_how_Overdue_fact_payments_are"
 			        }
 			      ]
 			    },
@@ -17140,6 +17258,26 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "fact_invoices_have_overdue_AR"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "fact_invoice"
+			            },
+			            "Adjectives": [
+			              {
+			                "Overdue": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "entity__measure.overdue_AR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "overdue_AR_indicates_how_Overdue_fact_invoices_are"
 			        }
 			      ]
 			    },
@@ -17209,7 +17347,7 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "fact_payment_has_entity__measure_unapplied_cash": {
+			    "fact_payment_has_entity__measure_unapplied_cash_to_date": {
 			      "Binding": {
 			        "ConceptualEntity": "FactPayments"
 			      },
@@ -17220,9 +17358,9 @@ cultureInfo en-US
 			            "Entity": "fact_payment"
 			          }
 			        },
-			        "entity__measure.unapplied_cash": {
+			        "entity__measure.unapplied_cash_to_date": {
 			          "Target": {
-			            "Entity": "entity__measure.unapplied_cash"
+			            "Entity": "entity__measure.unapplied_cash_to_date"
 			          }
 			        }
 			      },
@@ -17233,12 +17371,12 @@ cultureInfo en-US
 			              "Role": "fact_payment"
 			            },
 			            "Object": {
-			              "Role": "entity__measure.unapplied_cash"
+			              "Role": "entity__measure.unapplied_cash_to_date"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "fact_payments_have_unapplied_cash"
+			          "ID": "fact_payments_have_unapplied_cash_to_date"
 			        }
 			      ]
 			    },
@@ -17308,20 +17446,20 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
-			    "variance_breakdown_prm_has_variance_breakdown_prm": {
+			    "prm_variance_breakdown_has_variance_breakdown_prm": {
 			      "Binding": {
-			        "ConceptualEntity": "Variance Breakdown prm"
+			        "ConceptualEntity": "prmVarianceBreakdown"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "variance_breakdown_prm": {
+			        "prm_variance_breakdown": {
 			          "Target": {
-			            "Entity": "variance_breakdown_prm"
+			            "Entity": "prm_variance_breakdown"
 			          }
 			        },
-			        "variance_breakdown_prm.variance_breakdown_prm": {
+			        "prm_variance_breakdown.variance_breakdown_prm": {
 			          "Target": {
-			            "Entity": "variance_breakdown_prm.variance_breakdown_prm"
+			            "Entity": "prm_variance_breakdown.variance_breakdown_prm"
 			          }
 			        }
 			      },
@@ -17329,40 +17467,27 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "variance_breakdown_prm"
+			              "Role": "prm_variance_breakdown"
 			            },
 			            "Object": {
-			              "Role": "variance_breakdown_prm.variance_breakdown_prm"
+			              "Role": "prm_variance_breakdown.variance_breakdown_prm"
 			            }
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "variance_breakdown_prms_have_variance_breakdown_prms"
-			        },
-			        {
-			          "Name": {
-			            "Subject": {
-			              "Role": "variance_breakdown_prm"
-			            },
-			            "Name": {
-			              "Role": "variance_breakdown_prm.variance_breakdown_prm"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "variance_breakdown_prms_are_names_IDs_of_variance_breakdown_prms"
+			          "ID": "prm_variance_breakdowns_have_variance_breakdown_prms"
 			        }
 			      ]
 			    },
-			    "variance_breakdown_prm_has_entity__measure_title_variance_breakdown": {
+			    "prm_variance_breakdown_has_entity__measure_title_variance_breakdown": {
 			      "Binding": {
-			        "ConceptualEntity": "Variance Breakdown prm"
+			        "ConceptualEntity": "prmVarianceBreakdown"
 			      },
 			      "State": "Generated",
 			      "Roles": {
-			        "variance_breakdown_prm": {
+			        "prm_variance_breakdown": {
 			          "Target": {
-			            "Entity": "variance_breakdown_prm"
+			            "Entity": "prm_variance_breakdown"
 			          }
 			        },
 			        "entity__measure.title_variance_breakdown": {
@@ -17375,7 +17500,7 @@ cultureInfo en-US
 			        {
 			          "Attribute": {
 			            "Subject": {
-			              "Role": "variance_breakdown_prm"
+			              "Role": "prm_variance_breakdown"
 			            },
 			            "Object": {
 			              "Role": "entity__measure.title_variance_breakdown"
@@ -17383,7 +17508,7 @@ cultureInfo en-US
 			          },
 			          "State": "Generated",
 			          "Weight": 0.99,
-			          "ID": "variance_breakdown_prms_have_title_variance_breakdown"
+			          "ID": "prm_variance_breakdowns_have_title_variance_breakdown"
 			        }
 			      ]
 			    },
@@ -20907,6 +21032,39 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "fact_payments_have_payer_names"
+			        }
+			      ]
+			    },
+			    "fact_sale_has_entity__measure_units_sold_δ_PY_": {
+			      "Binding": {
+			        "ConceptualEntity": "FactSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_sale": {
+			          "Target": {
+			            "Entity": "fact_sale"
+			          }
+			        },
+			        "entity__measure.units_sold_δ_PY_": {
+			          "Target": {
+			            "Entity": "entity__measure.units_sold_δ_PY_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_sale"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.units_sold_δ_PY_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_sales_have_units_sold_δ_PY_"
 			        }
 			      ]
 			    },

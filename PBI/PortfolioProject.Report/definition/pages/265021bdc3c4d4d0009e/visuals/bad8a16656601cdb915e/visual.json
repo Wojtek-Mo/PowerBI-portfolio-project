@@ -20,7 +20,7 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Variance Breakdown prm"
+                      "Entity": "prmVarianceBreakdown"
                     }
                   },
                   "Property": "Variance Breakdown prm"
@@ -47,8 +47,8 @@
                 "Version": 2,
                 "From": [
                   {
-                    "Name": "v",
-                    "Entity": "Variance Breakdown prm",
+                    "Name": "p",
+                    "Entity": "prmVarianceBreakdown",
                     "Type": 0
                   }
                 ],
@@ -61,7 +61,7 @@
                             "Column": {
                               "Expression": {
                                 "SourceRef": {
-                                  "Source": "v"
+                                  "Source": "p"
                                 }
                               },
                               "Property": "Variance Breakdown prm Fields"
@@ -72,7 +72,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'''DimCountry''[CountryName]'"
+                                "Value": "'''DimCategory''[CategoryName]'"
                               }
                             }
                           ]
@@ -86,7 +86,7 @@
                             "Column": {
                               "Expression": {
                                 "SourceRef": {
-                                  "Entity": "Variance Breakdown prm"
+                                  "Entity": "prmVarianceBreakdown"
                                 }
                               },
                               "Property": "Variance Breakdown prm"
@@ -100,7 +100,7 @@
                                 "0": [
                                   {
                                     "Literal": {
-                                      "Value": "'''DimCountry''[CountryName]'"
+                                      "Value": "'''DimCategory''[CategoryName]'"
                                     }
                                   }
                                 ]
@@ -113,7 +113,7 @@
                                 "Column": {
                                   "Expression": {
                                     "SourceRef": {
-                                      "Entity": "Variance Breakdown prm"
+                                      "Entity": "prmVarianceBreakdown"
                                     }
                                   },
                                   "Property": "Variance Breakdown prm Fields"
@@ -124,7 +124,7 @@
                         },
                         "valueMap": [
                           {
-                            "0": "Country"
+                            "0": "Category"
                           }
                         ]
                       }

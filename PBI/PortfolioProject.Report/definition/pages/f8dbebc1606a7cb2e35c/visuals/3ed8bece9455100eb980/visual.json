@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "3ed8bece9455100eb980",
   "position": {
-    "x": 788.76254180602007,
-    "y": 506.2207357859532,
+    "x": 789.16535433070862,
+    "y": 505.95275590551182,
     "z": 8000,
-    "height": 205,
-    "width": 479.46488294314383,
+    "height": 204.5984251968504,
+    "width": 478.74015748031496,
     "tabOrder": 8000
   },
   "visual": {
@@ -45,17 +45,33 @@
             },
             {
               "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "FactPayments"
+                    }
+                  },
+                  "Property": "BookingDate"
+                }
+              },
+              "queryRef": "FactPayments.BookingDate",
+              "nativeQueryRef": "Booking Date",
+              "displayName": "Booking Date"
+            },
+            {
+              "field": {
                 "Measure": {
                   "Expression": {
                     "SourceRef": {
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "Unapplied Cash"
+                  "Property": "Unapplied Cash to date"
                 }
               },
               "queryRef": "_Measures.Unapplied Cash",
-              "nativeQueryRef": "Unapplied Cash"
+              "nativeQueryRef": "Amount",
+              "displayName": "Amount"
             }
           ]
         }
@@ -70,7 +86,7 @@
                     "Entity": "_Measures"
                   }
                 },
-                "Property": "Unapplied Cash"
+                "Property": "Unapplied Cash to date"
               }
             },
             "direction": "Descending"
@@ -98,7 +114,7 @@
             "value": {
               "expr": {
                 "Literal": {
-                  "Value": "244.20758016815603D"
+                  "Value": "205.4719474816199D"
                 }
               }
             }
@@ -111,6 +127,42 @@
       "columnHeaders": [
         {
           "properties": {}
+        }
+      ],
+      "columnFormatting": [
+        {
+          "properties": {
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "0L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Unapplied Cash"
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "rowPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            },
+            "gridHorizontal": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
         }
       ]
     },
@@ -134,7 +186,7 @@
             "spaceAbovePlotArea": {
               "expr": {
                 "Literal": {
-                  "Value": "0D"
+                  "Value": "9D"
                 }
               }
             }
@@ -147,7 +199,7 @@
             "name": {
               "expr": {
                 "Literal": {
-                  "Value": "''"
+                  "Value": "'None'"
                 }
               }
             }
@@ -156,15 +208,7 @@
       ],
       "background": [
         {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
+          "properties": {}
         }
       ],
       "title": [
@@ -173,7 +217,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Unapplied cash by invoice'"
+                  "Value": "'Unapplied cash to date'"
                 }
               }
             }
@@ -182,5 +226,65 @@
       ]
     },
     "drillFilterOtherVisuals": true
+  },
+  "filterConfig": {
+    "filters": [
+      {
+        "name": "dfb26c94821570241a5e",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FactPayments"
+              }
+            },
+            "Property": "TransactionId"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "0d9a457c07c0dc46b196",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FactPayments"
+              }
+            },
+            "Property": "Description"
+          }
+        },
+        "type": "Categorical"
+      },
+      {
+        "name": "32b6343be6480a2c3570",
+        "field": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "_Measures"
+              }
+            },
+            "Property": "Unapplied Cash to date"
+          }
+        },
+        "type": "Advanced"
+      },
+      {
+        "name": "b8a8647e21e742a39648",
+        "field": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "FactPayments"
+              }
+            },
+            "Property": "BookingDate"
+          }
+        },
+        "type": "Categorical"
+      }
+    ]
   }
 }

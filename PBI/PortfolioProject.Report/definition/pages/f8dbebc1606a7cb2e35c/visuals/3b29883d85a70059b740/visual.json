@@ -72,7 +72,8 @@
                 }
               },
               "queryRef": "_Measures.Open AR",
-              "nativeQueryRef": "Open AR"
+              "nativeQueryRef": "Balance",
+              "displayName": "Balance"
             },
             {
               "field": {
@@ -86,7 +87,8 @@
                 }
               },
               "queryRef": "_Measures.Overdue AR",
-              "nativeQueryRef": "Overdue AR"
+              "nativeQueryRef": "Overdue",
+              "displayName": "Overdue"
             },
             {
               "field": {

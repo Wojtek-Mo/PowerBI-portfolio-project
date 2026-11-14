@@ -192,19 +192,6 @@
         },
         {
           "location": {
-            "x": 1971.421088182698,
-            "y": 826.41075620076492
-          },
-          "nodeIndex": "Variance Breakdown prm",
-          "nodeLineageTag": "ab00d4bc-98cb-4732-b5e8-c070c8b598f3",
-          "size": {
-            "height": 152,
-            "width": 234
-          },
-          "zIndex": 1
-        },
-        {
-          "location": {
             "x": 620.2702851826981,
             "y": 1252.4404386003823
           },
@@ -239,6 +226,18 @@
             "width": 234
           },
           "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 1971.421088182698,
+            "y": 826.41075620076492
+          },
+          "nodeIndex": "prmVarianceBreakdown",
+          "size": {
+            "height": 152,
+            "width": 234
+          },
+          "zIndex": 0
         }
       ],
       "name": "All tables",

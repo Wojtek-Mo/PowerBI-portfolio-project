@@ -4,7 +4,7 @@
   "position": {
     "x": 10.856658184902459,
     "y": 445.12298558100082,
-    "z": 2000,
+    "z": 8500,
     "height": 267.07379134860048,
     "width": 1258.2866836301951,
     "tabOrder": 1000
@@ -107,8 +107,8 @@
                 }
               },
               "queryRef": "_Measures.Net Sales Delta PY%",
-              "nativeQueryRef": " Δ PY%",
-              "displayName": " Δ PY%"
+              "nativeQueryRef": " Δ PY %",
+              "displayName": " Δ PY %"
             },
             {
               "field": {
@@ -122,7 +122,8 @@
                 }
               },
               "queryRef": "_Measures.Share in Sales",
-              "nativeQueryRef": "Share in Sales"
+              "nativeQueryRef": "Share in sales",
+              "displayName": "Share in sales"
             },
             {
               "field": {
@@ -705,6 +706,13 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "1L"
                 }
               }
             }

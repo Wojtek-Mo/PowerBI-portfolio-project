@@ -230,6 +230,20 @@
                   "Value": "0D"
                 }
               }
+            },
+            "secShowAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "secTitleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Days'"
+                }
+              }
             }
           }
         }
