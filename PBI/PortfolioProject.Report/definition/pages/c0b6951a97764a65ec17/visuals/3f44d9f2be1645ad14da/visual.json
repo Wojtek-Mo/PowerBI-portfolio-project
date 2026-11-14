@@ -1,0 +1,74 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "3f44d9f2be1645ad14da",
+  "position": {
+    "x": 497.65704584040748,
+    "y": 141.25636672325976,
+    "z": 6000,
+    "height": 300,
+    "width": 300,
+    "tabOrder": 7001
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Overdue Share PY"
+                }
+              },
+              "queryRef": "_Measures.Ovderdue Share PY",
+              "nativeQueryRef": "Ovderdue Share PY"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "_Measures"
+                  }
+                },
+                "Property": "Overdue Share PY"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "objects": {
+      "value": [
+        {
+          "properties": {
+            "labelPrecision": {
+              "expr": {
+                "Literal": {
+                  "Value": "4L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Ovderdue Share PY"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

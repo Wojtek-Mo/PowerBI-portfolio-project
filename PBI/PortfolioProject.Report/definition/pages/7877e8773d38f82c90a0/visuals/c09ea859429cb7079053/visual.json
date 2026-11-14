@@ -2,10 +2,10 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "c09ea859429cb7079053",
   "position": {
-    "x": 230.21522309711287,
-    "y": 73.817439486730834,
+    "x": 229.79527559055117,
+    "y": 74.582677165354326,
     "z": 7000,
-    "height": 28,
+    "height": 28.220472440944881,
     "width": 228.78740157480314,
     "tabOrder": 5000
   },
@@ -72,7 +72,7 @@
                           [
                             {
                               "Literal": {
-                                "Value": "'Full Year'"
+                                "Value": "'Month'"
                               }
                             }
                           ]

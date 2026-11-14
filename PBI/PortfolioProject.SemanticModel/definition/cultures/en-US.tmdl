@@ -141,9 +141,6 @@ cultureInfo en-US
 			        }
 			      },
 			      "State": "Generated",
-			      "Visibility": {
-			        "Value": "Hidden"
-			      },
 			      "Terms": [
 			        {
 			          "customer key": {
@@ -262,8 +259,19 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.476
 			          }
+			        },
+			        {
+			          "Customer ID": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
 			        }
-			      ]
+			      ],
+			      "NameType": "Identifier"
 			    },
 			    "dim_customer.customer_name": {
 			      "Definition": {
@@ -3831,16 +3839,6 @@ cultureInfo en-US
 			          }
 			        },
 			        {
-			          "transaction": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.466
-			          }
-			        },
-			        {
 			          "fact deal": {
 			            "Type": "Noun",
 			            "State": "Suggested",
@@ -3892,6 +3890,16 @@ cultureInfo en-US
 			        },
 			        {
 			          "deal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "trade": {
 			            "Type": "Noun",
 			            "State": "Suggested",
 			            "Source": {
@@ -7082,32 +7090,6 @@ cultureInfo en-US
 			              "Agent": "Thesaurus"
 			            },
 			            "Weight": 0.605
-			          }
-			        }
-			      ]
-			    },
-			    "entity__measure.units_sold_BU": {
-			      "Definition": {
-			        "Binding": {
-			          "ConceptualEntity": "_Measures",
-			          "ConceptualProperty": "Units Sold BU"
-			        }
-			      },
-			      "State": "Generated",
-			      "Terms": [
-			        {
-			          "units sold BU": {
-			            "State": "Generated"
-			          }
-			        },
-			        {
-			          "unit sold bu": {
-			            "Type": "Noun",
-			            "State": "Suggested",
-			            "Source": {
-			              "Agent": "Thesaurus"
-			            },
-			            "Weight": 0.677
 			          }
 			        }
 			      ]
@@ -10394,16 +10376,6 @@ cultureInfo en-US
 			            },
 			            "Weight": 0.686
 			          }
-			        },
-			        {
-			          "Variance to budget (units sold)": {
-			            "State": "Suggested",
-			            "Source": {
-			              "Type": "External",
-			              "Agent": "PowerBI.VisualColumnRename"
-			            },
-			            "Weight": 0.9
-			          }
 			        }
 			      ]
 			    },
@@ -11936,9 +11908,5406 @@ cultureInfo en-US
 			          }
 			        }
 			      ]
+			    },
+			    "entity__measure.invoiced_amount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Invoiced Amount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "invoiced amount": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "invoiced quantity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "invoiced volume": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "invoiced expanse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "invoiced extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "invoiced sum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "invoiced total": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "invoiced aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.cash_collected": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Cash Collected"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "cash collected": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "money collected": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "currency collected": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "dough collected": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "coin collected": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "note collected": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.unapplied_cash": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Unapplied Cash"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "unapplied cash": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "cash": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "unapplied money": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "unapplied currency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "unapplied dough": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "money": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "currency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "dough": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "unapplied coin": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "unapplied note": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "coin": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "note": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.open_AR": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Open AR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "open AR": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AR": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "Receivables balance": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.overdue_AR": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Overdue AR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "overdue AR": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AR": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.open_AR_aging": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Open AR Aging"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "open AR aging": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aging": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "AR aging": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "elderly": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "senior": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.dso": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "DSO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dso": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__invoiced_amount_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Invoiced Amount FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_invoiced amount FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__cash_collected_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Cash Collected FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_cash collected FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__unapplied_cash_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Unapplied Cash FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_unapplied cash FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__open_AR_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Open AR FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_open AR FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__overdue_AR_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Overdue AR FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_overdue AR FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__open_AR_aging_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Open AR Aging FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_open AR aging FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__DSO_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_DSO FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_DSO FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fact_payment": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactPayments"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fact payment": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "FactPayments": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "payment": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "fact imbursement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "fact compensation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "fact disbursement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "imbursement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "compensation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "disbursement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "fact sum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "fact expense": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "fact recompense": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "fact fee": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "fact_payment.transaction_id": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactPayments",
+			          "ConceptualProperty": "TransactionId"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "transaction id": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "TransactionId": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "transaction": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "transaction identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "transaction identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "transaction identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "transaction credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "operation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "deal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "business": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "contract": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "matter": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "fact_payment.order_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactPayments",
+			          "ConceptualProperty": "OrderKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "order key": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "OrderKey": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "main": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "basic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fundamental": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "central": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "major": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "keynote": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "essential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "order solution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "order explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "order basis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "fact_payment.booking_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactPayments",
+			          "ConceptualProperty": "BookingDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "booking date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "BookingDate": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "booking moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "booking period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "fact_payment.amount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactPayments",
+			          "ConceptualProperty": "Amount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "amount": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "volume": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "expanse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "fact_invoice": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInvoices"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "fact invoice": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "FactInvoices": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "invoice": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "fact statement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "statement": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "fact demand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "fact account": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "fact bill": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "demand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "account": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "bill": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "fact_invoice.order_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInvoices",
+			          "ConceptualProperty": "OrderKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "order key": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "OrderKey": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "main": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "basic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fundamental": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "central": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "major": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "keynote": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "essential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "order solution": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "order explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        },
+			        {
+			          "order basis": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.475
+			          }
+			        }
+			      ]
+			    },
+			    "fact_invoice.customer_key": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInvoices",
+			          "ConceptualProperty": "CustomerKey"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "customer key": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "CustomerKey": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "key": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "client key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "consumer key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "user key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "buyer key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "patron key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "purchaser key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "shopper key": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "main": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "basic": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "fundamental": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "fact_invoice.invoice_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInvoices",
+			          "ConceptualProperty": "InvoiceDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "invoice date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "InvoiceDate": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "invoice moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "invoice period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "fact_invoice.due_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInvoices",
+			          "ConceptualProperty": "DueDate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "due date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "DueDate": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "date": {
+			            "State": "Generated",
+			            "Weight": 0.7
+			          }
+			        },
+			        {
+			          "due moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "due period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ],
+			      "SemanticType": "Time"
+			    },
+			    "fact_invoice.invoice_amount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactInvoices",
+			          "ConceptualProperty": "InvoiceAmount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "invoice amount": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "InvoiceAmount": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "invoice quantity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "invoice volume": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "invoice expanse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "invoice extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "invoice sum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "invoice total": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "invoice aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "aging_bucket": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aging Buckets"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "aging bucket": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "bucket": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aging pail": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "aging container": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "aging vessel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "pail": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "container": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "vessel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ]
+			    },
+			    "aging_bucket.aging_bucket": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aging Buckets",
+			          "ConceptualProperty": "AgingBucket"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "aging bucket": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "aging bucket name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AgingBucket": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "bucket": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "aging pail": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "aging container": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "aging vessel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "pail": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "container": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "vessel": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "aging_bucket.min_day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aging Buckets",
+			          "ConceptualProperty": "MinDays"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "min day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MinDays": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "minimum day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "aging_bucket.max_day": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aging Buckets",
+			          "ConceptualProperty": "MaxDays"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "max day": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "MaxDays": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "maximum day": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.582
+			          }
+			        }
+			      ]
+			    },
+			    "aging_bucket.order": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aging Buckets",
+			          "ConceptualProperty": "Order"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "order": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "instruction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "direction": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "edict": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "command": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "directive": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "demand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "mandate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "imperative": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "stability": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "harmony": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.overdue_AR_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Overdue AR %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "overdue AR %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "overdue ar percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "overdue ar pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "Overdue share": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__overdue_AR__FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Overdue AR % FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_overdue AR % FormatString": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_overdue ar percentage formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "_overdue ar pct formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.open_AR_chart_column_colors": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Open AR chart column colors"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "open AR chart column colors": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "colors": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "column colors": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "chart column colors": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "AR chart column colors": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "open ar chart column insignia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "open ar chart column ensign": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.52
+			          }
+			        },
+			        {
+			          "ar chart column insignia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "ar chart column ensign": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.514
+			          }
+			        },
+			        {
+			          "chart column insignia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "chart column ensign": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.508
+			          }
+			        },
+			        {
+			          "open ar chart column insigne": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "open ar chart column flag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "open ar chart column standard": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.504
+			          }
+			        },
+			        {
+			          "column insignia": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.min_DSO_label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Min DSO label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "min DSO label": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "label": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "DSO label": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "min dso sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "dso sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "min dso tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "min dso decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "dso tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dso decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "min dso name tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.604
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.max_DSO_label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Max DSO label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "max DSO label": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "label": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "DSO label": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "max dso sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.762
+			          }
+			        },
+			        {
+			          "dso sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "max dso tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "max dso decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.739
+			          }
+			        },
+			        {
+			          "sticker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "dso tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "dso decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "decal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "max dso name tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.604
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.best_possible_DSO": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Best Possible DSO"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "best possible DSO": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.average_days_delinquent": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Average Days Delinquent"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "average days delinquent": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "delinquent": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "days delinquent": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "criminal": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "offending": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "wrong": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "average day felon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        },
+			        {
+			          "average day lawbreaker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        },
+			        {
+			          "average day wrongdoer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.458
+			          }
+			        },
+			        {
+			          "failing": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "day felon": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        },
+			        {
+			          "day lawbreaker": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        },
+			        {
+			          "day wrongdoer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.451
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.not_due_AR": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Not Due AR"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "not due AR": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "AR": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "due AR": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__open_AR_chart_column_colors_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Open AR chart column colors FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_open AR chart column colors FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__min_DSO_label_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Min DSO label FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_min DSO label FormatString": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_min dso sticker formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "_ minimum dso label formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "_min dso tag formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "_min dso decal formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "_min dso name tag formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.503
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__max_DSO_label_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Max DSO label FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_max DSO label FormatString": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "_max dso sticker formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.624
+			          }
+			        },
+			        {
+			          "_ maximum dso label formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "_max dso tag formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "_max dso decal formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.605
+			          }
+			        },
+			        {
+			          "_max dso name tag formatstring": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.503
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__best_possible_DSO_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Best Possible DSO FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_best possible DSO FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__average_days_delinquent_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Average Days Delinquent FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_average days delinquent FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__not_due_AR_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Not Due AR FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_not due AR FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "aging_bucket.color": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Aging Buckets",
+			          "ConceptualProperty": "Color"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "color": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "hue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "tint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "shade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "dye": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "paint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "pigment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.days_past_due_oldest": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Days past due (oldest)"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "days past due (oldest)": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "days past due": {
+			            "State": "Generated",
+			            "Weight": 0.75
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__days_past_due_oldest_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Days past due (oldest) FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_days past due (oldest) FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.open_AR_PY_δ": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Open AR PY Δ%"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "open AR PY δ%": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "open ar py δ percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "open ar py δ pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.overdue_AR_PY_δ": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Overdue AR PY Δ%"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "overdue AR PY δ%": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "overdue ar py δ percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "overdue ar py δ pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.dso_py": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "DSO PY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "dso py": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.average_days_delinquent_PY": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Average Days Delinquent PY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "average days delinquent PY": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PY": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "delinquent PY": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "days delinquent PY": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.overdue_share_PY": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Overdue Share PY"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "overdue share PY": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PY": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "share PY": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.average_selling_price": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Average Selling Price"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "average selling price": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "price": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "selling price": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "average selling value": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "average selling worth": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "average selling fee": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "average selling charge": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "average selling amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "average selling bill": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "average selling rate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "average selling expense": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "average selling cost": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        },
+			        {
+			          "average selling outlay": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.492
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.average_selling_price_BU": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Average Selling Price BU"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "average selling price BU": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "BU": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "price BU": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "selling price BU": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.average_selling_price_diff_to_BU": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Average Selling Price diff to BU"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "average selling price diff to BU": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "diff": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "price diff": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "selling price diff": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "average selling price diff": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.LFL_wip": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "LFL wip"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "LFL wip": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.variance_to_budget_YTD_max_label": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Variance to budget YTD Max label"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "variance to budget YTD max label": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.units_sold_BU": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Units Sold BU"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "units sold BU": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "unit sold bu": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.677
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.units_sold_δ_PY_": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "Units Sold Δ PY %"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "units sold δ PY %": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "unit sold δ py percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.78
+			          }
+			        },
+			        {
+			          "unit sold δ py pct": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.757
+			          }
+			        },
+			        {
+			          "unit sold δ py %": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.693
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__open_AR_PY_δ_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Open AR PY Δ% FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_open AR PY δ% FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__overdue_AR_PY_δ_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Overdue AR PY Δ% FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_overdue AR PY δ% FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__DSO_PY_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_DSO PY FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_DSO PY FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__average_days_delinquent_PY_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Average Days Delinquent PY FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_average days delinquent PY FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__overdue_share_PY_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Overdue Share PY FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_overdue share PY FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__average_selling_price_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Average Selling Price FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_average selling price FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__average_selling_price_BU_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Average Selling Price BU FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_average selling price BU FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__average_selling_price_diff_to_BU_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Average Selling Price diff to BU FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_average selling price diff to BU FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__LFL_wip_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_LFL wip FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_LFL wip FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__variance_to_budget_YTD_max_label_FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Variance to budget YTD Max label FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_variance to budget YTD max label FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "entity__measure.entity__units_sold_δ_PY__FormatString": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "_Measures",
+			          "ConceptualProperty": "_Units Sold Δ PY % FormatString"
+			        }
+			      },
+			      "State": "Generated",
+			      "Visibility": {
+			        "Value": "Hidden"
+			      },
+			      "Terms": [
+			        {
+			          "_units sold δ PY % FormatString": {
+			            "State": "Generated"
+			          }
+			        }
+			      ]
+			    },
+			    "fact_payment.payer_name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactPayments",
+			          "ConceptualProperty": "PayerName"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "payer name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "PayerName": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "payer": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "payer nickname": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "payer title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "payer label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "payer tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "fact_payment.description": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "FactPayments",
+			          "ConceptualProperty": "Description"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "description": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "appearance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "descriptor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "explanation": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "specification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "account": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "overview": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "report": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
 			    }
 			  },
 			  "Relationships": {
+			    "fact_sale_has_entity__measure_units_sold_δ_PY_": {
+			      "Binding": {
+			        "ConceptualEntity": "FactSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_sale": {
+			          "Target": {
+			            "Entity": "fact_sale"
+			          }
+			        },
+			        "entity__measure.units_sold_δ_PY_": {
+			          "Target": {
+			            "Entity": "entity__measure.units_sold_δ_PY_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_sale"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.units_sold_δ_PY_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_sales_have_units_sold_δ_PY_"
+			        }
+			      ]
+			    },
+			    "fact_budget_has_entity__measure_units_sold_BU": {
+			      "Binding": {
+			        "ConceptualEntity": "FactBudget"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_budget": {
+			          "Target": {
+			            "Entity": "fact_budget"
+			          }
+			        },
+			        "entity__measure.units_sold_BU": {
+			          "Target": {
+			            "Entity": "entity__measure.units_sold_BU"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_budget"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.units_sold_BU"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_budgets_have_units_sold_BU"
+			        }
+			      ]
+			    },
+			    "fact_sale_has_entity__measure_variance_to_budget_YTD_max_label": {
+			      "Binding": {
+			        "ConceptualEntity": "FactSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_sale": {
+			          "Target": {
+			            "Entity": "fact_sale"
+			          }
+			        },
+			        "entity__measure.variance_to_budget_YTD_max_label": {
+			          "Target": {
+			            "Entity": "entity__measure.variance_to_budget_YTD_max_label"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_sale"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.variance_to_budget_YTD_max_label"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_sales_have_variance_to_budget_YTD_max_label"
+			        }
+			      ]
+			    },
+			    "fact_budget_has_entity__measure_variance_to_budget_YTD_max_label": {
+			      "Binding": {
+			        "ConceptualEntity": "FactBudget"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_budget": {
+			          "Target": {
+			            "Entity": "fact_budget"
+			          }
+			        },
+			        "entity__measure.variance_to_budget_YTD_max_label": {
+			          "Target": {
+			            "Entity": "entity__measure.variance_to_budget_YTD_max_label"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_budget"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.variance_to_budget_YTD_max_label"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_budgets_have_variance_to_budget_YTD_max_label"
+			        }
+			      ]
+			    },
+			    "dim_date_has_entity__measure_variance_to_budget_YTD_max_label": {
+			      "Binding": {
+			        "ConceptualEntity": "DimDate"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          }
+			        },
+			        "entity__measure.variance_to_budget_YTD_max_label": {
+			          "Target": {
+			            "Entity": "entity__measure.variance_to_budget_YTD_max_label"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.variance_to_budget_YTD_max_label"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_variance_to_budget_YTD_max_label"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_LFL_wip": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.LFL_wip": {
+			          "Target": {
+			            "Entity": "entity__measure.LFL_wip"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.LFL_wip"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_LFL_wip"
+			        }
+			      ]
+			    },
+			    "fact_sale_has_entity__measure_average_selling_price_diff_to_BU": {
+			      "Binding": {
+			        "ConceptualEntity": "FactSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_sale": {
+			          "Target": {
+			            "Entity": "fact_sale"
+			          }
+			        },
+			        "entity__measure.average_selling_price_diff_to_BU": {
+			          "Target": {
+			            "Entity": "entity__measure.average_selling_price_diff_to_BU"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_sale"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.average_selling_price_diff_to_BU"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_sales_have_average_selling_price_diff_to_BU"
+			        }
+			      ]
+			    },
+			    "fact_budget_has_entity__measure_average_selling_price_diff_to_BU": {
+			      "Binding": {
+			        "ConceptualEntity": "FactBudget"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_budget": {
+			          "Target": {
+			            "Entity": "fact_budget"
+			          }
+			        },
+			        "entity__measure.average_selling_price_diff_to_BU": {
+			          "Target": {
+			            "Entity": "entity__measure.average_selling_price_diff_to_BU"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_budget"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.average_selling_price_diff_to_BU"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_budgets_have_average_selling_price_diff_to_BU"
+			        }
+			      ]
+			    },
+			    "fact_budget_has_entity__measure_average_selling_price_BU": {
+			      "Binding": {
+			        "ConceptualEntity": "FactBudget"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_budget": {
+			          "Target": {
+			            "Entity": "fact_budget"
+			          }
+			        },
+			        "entity__measure.average_selling_price_BU": {
+			          "Target": {
+			            "Entity": "entity__measure.average_selling_price_BU"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_budget"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.average_selling_price_BU"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_budgets_have_average_selling_price_BU"
+			        }
+			      ]
+			    },
+			    "fact_sale_has_entity__measure_average_selling_price": {
+			      "Binding": {
+			        "ConceptualEntity": "FactSales"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_sale": {
+			          "Target": {
+			            "Entity": "fact_sale"
+			          }
+			        },
+			        "entity__measure.average_selling_price": {
+			          "Target": {
+			            "Entity": "entity__measure.average_selling_price"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_sale"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.average_selling_price"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_sales_have_average_selling_price"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "fact_sale"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "entity__measure.average_selling_price"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "average_selling_price_indicates_how_expensive_fact_sales_are"
+			        }
+			      ]
+			    },
+			    "fact_payment_has_entity__measure_overdue_share_PY": {
+			      "Binding": {
+			        "ConceptualEntity": "FactPayments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_payment": {
+			          "Target": {
+			            "Entity": "fact_payment"
+			          }
+			        },
+			        "entity__measure.overdue_share_PY": {
+			          "Target": {
+			            "Entity": "entity__measure.overdue_share_PY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_payment"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.overdue_share_PY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_payments_have_overdue_share_PY"
+			        }
+			      ]
+			    },
+			    "fact_invoice_has_entity__measure_overdue_share_PY": {
+			      "Binding": {
+			        "ConceptualEntity": "FactInvoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_invoice": {
+			          "Target": {
+			            "Entity": "fact_invoice"
+			          }
+			        },
+			        "entity__measure.overdue_share_PY": {
+			          "Target": {
+			            "Entity": "entity__measure.overdue_share_PY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.overdue_share_PY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_invoices_have_overdue_share_PY"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_average_days_delinquent_PY": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.average_days_delinquent_PY": {
+			          "Target": {
+			            "Entity": "entity__measure.average_days_delinquent_PY"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.average_days_delinquent_PY"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_average_days_delinquent_PY"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_dso_py": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.dso_py": {
+			          "Target": {
+			            "Entity": "entity__measure.dso_py"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.dso_py"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_dso_py"
+			        }
+			      ]
+			    },
+			    "fact_payment_has_entity__measure_overdue_AR_PY_δ": {
+			      "Binding": {
+			        "ConceptualEntity": "FactPayments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_payment": {
+			          "Target": {
+			            "Entity": "fact_payment"
+			          }
+			        },
+			        "entity__measure.overdue_AR_PY_δ": {
+			          "Target": {
+			            "Entity": "entity__measure.overdue_AR_PY_δ"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_payment"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.overdue_AR_PY_δ"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_payments_have_overdue_AR_PY_δ"
+			        }
+			      ]
+			    },
+			    "fact_invoice_has_entity__measure_overdue_AR_PY_δ": {
+			      "Binding": {
+			        "ConceptualEntity": "FactInvoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_invoice": {
+			          "Target": {
+			            "Entity": "fact_invoice"
+			          }
+			        },
+			        "entity__measure.overdue_AR_PY_δ": {
+			          "Target": {
+			            "Entity": "entity__measure.overdue_AR_PY_δ"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.overdue_AR_PY_δ"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_invoices_have_overdue_AR_PY_δ"
+			        }
+			      ]
+			    },
+			    "fact_payment_has_entity__measure_open_AR_PY_δ": {
+			      "Binding": {
+			        "ConceptualEntity": "FactPayments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_payment": {
+			          "Target": {
+			            "Entity": "fact_payment"
+			          }
+			        },
+			        "entity__measure.open_AR_PY_δ": {
+			          "Target": {
+			            "Entity": "entity__measure.open_AR_PY_δ"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_payment"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.open_AR_PY_δ"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_payments_have_open_AR_PY_δ"
+			        }
+			      ]
+			    },
+			    "fact_invoice_has_entity__measure_open_AR_PY_δ": {
+			      "Binding": {
+			        "ConceptualEntity": "FactInvoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_invoice": {
+			          "Target": {
+			            "Entity": "fact_invoice"
+			          }
+			        },
+			        "entity__measure.open_AR_PY_δ": {
+			          "Target": {
+			            "Entity": "entity__measure.open_AR_PY_δ"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.open_AR_PY_δ"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_invoices_have_open_AR_PY_δ"
+			        }
+			      ]
+			    },
+			    "fact_invoice_has_entity__measure_days_past_due_oldest": {
+			      "Binding": {
+			        "ConceptualEntity": "FactInvoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_invoice": {
+			          "Target": {
+			            "Entity": "fact_invoice"
+			          }
+			        },
+			        "entity__measure.days_past_due_oldest": {
+			          "Target": {
+			            "Entity": "entity__measure.days_past_due_oldest"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.days_past_due_oldest"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_invoices_have_days_past_due_oldest"
+			        }
+			      ]
+			    },
+			    "dim_date_has_entity__measure_days_past_due_oldest": {
+			      "Binding": {
+			        "ConceptualEntity": "DimDate"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          }
+			        },
+			        "entity__measure.days_past_due_oldest": {
+			          "Target": {
+			            "Entity": "entity__measure.days_past_due_oldest"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.days_past_due_oldest"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_days_past_due_oldest"
+			        }
+			      ]
+			    },
+			    "fact_payment_has_entity__measure_not_due_AR": {
+			      "Binding": {
+			        "ConceptualEntity": "FactPayments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_payment": {
+			          "Target": {
+			            "Entity": "fact_payment"
+			          }
+			        },
+			        "entity__measure.not_due_AR": {
+			          "Target": {
+			            "Entity": "entity__measure.not_due_AR"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_payment"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.not_due_AR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_payments_have_not_due_AR"
+			        }
+			      ]
+			    },
+			    "fact_invoice_has_entity__measure_not_due_AR": {
+			      "Binding": {
+			        "ConceptualEntity": "FactInvoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_invoice": {
+			          "Target": {
+			            "Entity": "fact_invoice"
+			          }
+			        },
+			        "entity__measure.not_due_AR": {
+			          "Target": {
+			            "Entity": "entity__measure.not_due_AR"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.not_due_AR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_invoices_have_not_due_AR"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_average_days_delinquent": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.average_days_delinquent": {
+			          "Target": {
+			            "Entity": "entity__measure.average_days_delinquent"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.average_days_delinquent"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_average_days_delinquent"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_best_possible_DSO": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.best_possible_DSO": {
+			          "Target": {
+			            "Entity": "entity__measure.best_possible_DSO"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.best_possible_DSO"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_best_possible_DSO"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_max_DSO_label": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.max_DSO_label": {
+			          "Target": {
+			            "Entity": "entity__measure.max_DSO_label"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.max_DSO_label"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_max_DSO_label"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_min_DSO_label": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.min_DSO_label": {
+			          "Target": {
+			            "Entity": "entity__measure.min_DSO_label"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.min_DSO_label"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_min_DSO_label"
+			        }
+			      ]
+			    },
+			    "aging_bucket_has_entity__measure_open_AR_chart_column_colors": {
+			      "Binding": {
+			        "ConceptualEntity": "Aging Buckets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aging_bucket": {
+			          "Target": {
+			            "Entity": "aging_bucket"
+			          }
+			        },
+			        "entity__measure.open_AR_chart_column_colors": {
+			          "Target": {
+			            "Entity": "entity__measure.open_AR_chart_column_colors"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aging_bucket"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.open_AR_chart_column_colors"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aging_buckets_have_open_AR_chart_column_colors"
+			        }
+			      ]
+			    },
+			    "fact_payment_has_entity__measure_overdue_AR_": {
+			      "Binding": {
+			        "ConceptualEntity": "FactPayments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_payment": {
+			          "Target": {
+			            "Entity": "fact_payment"
+			          }
+			        },
+			        "entity__measure.overdue_AR_": {
+			          "Target": {
+			            "Entity": "entity__measure.overdue_AR_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_payment"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.overdue_AR_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_payments_have_overdue_AR_"
+			        }
+			      ]
+			    },
+			    "fact_invoice_has_entity__measure_overdue_AR_": {
+			      "Binding": {
+			        "ConceptualEntity": "FactInvoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_invoice": {
+			          "Target": {
+			            "Entity": "fact_invoice"
+			          }
+			        },
+			        "entity__measure.overdue_AR_": {
+			          "Target": {
+			            "Entity": "entity__measure.overdue_AR_"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.overdue_AR_"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_invoices_have_overdue_AR_"
+			        }
+			      ]
+			    },
+			    "aging_bucket_has_aging_bucket": {
+			      "Binding": {
+			        "ConceptualEntity": "Aging Buckets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aging_bucket": {
+			          "Target": {
+			            "Entity": "aging_bucket"
+			          }
+			        },
+			        "aging_bucket.aging_bucket": {
+			          "Target": {
+			            "Entity": "aging_bucket.aging_bucket"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aging_bucket"
+			            },
+			            "Object": {
+			              "Role": "aging_bucket.aging_bucket"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aging_buckets_have_aging_buckets"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "aging_bucket"
+			            },
+			            "Name": {
+			              "Role": "aging_bucket.aging_bucket"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aging_buckets_are_names_IDs_of_aging_buckets"
+			        }
+			      ]
+			    },
+			    "fact_invoice_has_invoice_amount": {
+			      "Binding": {
+			        "ConceptualEntity": "FactInvoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_invoice": {
+			          "Target": {
+			            "Entity": "fact_invoice"
+			          }
+			        },
+			        "fact_invoice.invoice_amount": {
+			          "Target": {
+			            "Entity": "fact_invoice.invoice_amount"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_invoice"
+			            },
+			            "Object": {
+			              "Role": "fact_invoice.invoice_amount"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_invoices_have_invoice_amounts"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "fact_invoice"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "fact_invoice.invoice_amount"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "invoice_amount_indicates_how_expensive_fact_invoices_are"
+			        }
+			      ]
+			    },
+			    "fact_invoice_has_due_date": {
+			      "Binding": {
+			        "ConceptualEntity": "FactInvoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_invoice": {
+			          "Target": {
+			            "Entity": "fact_invoice"
+			          }
+			        },
+			        "fact_invoice.due_date": {
+			          "Target": {
+			            "Entity": "fact_invoice.due_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_invoice"
+			            },
+			            "Object": {
+			              "Role": "fact_invoice.due_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_invoices_have_due_date"
+			        }
+			      ]
+			    },
+			    "fact_invoice_has_invoice_date": {
+			      "Binding": {
+			        "ConceptualEntity": "FactInvoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_invoice": {
+			          "Target": {
+			            "Entity": "fact_invoice"
+			          }
+			        },
+			        "fact_invoice.invoice_date": {
+			          "Target": {
+			            "Entity": "fact_invoice.invoice_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_invoice"
+			            },
+			            "Object": {
+			              "Role": "fact_invoice.invoice_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_invoices_have_invoice_dates"
+			        }
+			      ]
+			    },
+			    "fact_invoice_has_order_key": {
+			      "Binding": {
+			        "ConceptualEntity": "FactInvoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_invoice": {
+			          "Target": {
+			            "Entity": "fact_invoice"
+			          }
+			        },
+			        "fact_invoice.order_key": {
+			          "Target": {
+			            "Entity": "fact_invoice.order_key"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_invoice"
+			            },
+			            "Object": {
+			              "Role": "fact_invoice.order_key"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_invoices_have_order_keys"
+			        }
+			      ]
+			    },
+			    "fact_payment_has_amount": {
+			      "Binding": {
+			        "ConceptualEntity": "FactPayments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_payment": {
+			          "Target": {
+			            "Entity": "fact_payment"
+			          }
+			        },
+			        "fact_payment.amount": {
+			          "Target": {
+			            "Entity": "fact_payment.amount"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_payment"
+			            },
+			            "Object": {
+			              "Role": "fact_payment.amount"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_payments_have_amounts"
+			        }
+			      ]
+			    },
+			    "fact_payment_has_booking_date": {
+			      "Binding": {
+			        "ConceptualEntity": "FactPayments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_payment": {
+			          "Target": {
+			            "Entity": "fact_payment"
+			          }
+			        },
+			        "fact_payment.booking_date": {
+			          "Target": {
+			            "Entity": "fact_payment.booking_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_payment"
+			            },
+			            "Object": {
+			              "Role": "fact_payment.booking_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_payments_have_booking_dates"
+			        }
+			      ]
+			    },
+			    "fact_payment_has_transaction_id": {
+			      "Binding": {
+			        "ConceptualEntity": "FactPayments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_payment": {
+			          "Target": {
+			            "Entity": "fact_payment"
+			          }
+			        },
+			        "fact_payment.transaction_id": {
+			          "Target": {
+			            "Entity": "fact_payment.transaction_id"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_payment"
+			            },
+			            "Object": {
+			              "Role": "fact_payment.transaction_id"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_payments_have_transaction_ids"
+			        }
+			      ]
+			    },
+			    "entity__measure_has_dso": {
+			      "Binding": {
+			        "ConceptualEntity": "_Measures"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "entity__measure": {
+			          "Target": {
+			            "Entity": "entity__measure"
+			          }
+			        },
+			        "entity__measure.dso": {
+			          "Target": {
+			            "Entity": "entity__measure.dso"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "entity__measure"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.dso"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "Phrasing_measures_have_dso"
+			        }
+			      ]
+			    },
+			    "fact_payment_has_entity__measure_open_AR_aging": {
+			      "Binding": {
+			        "ConceptualEntity": "FactPayments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_payment": {
+			          "Target": {
+			            "Entity": "fact_payment"
+			          }
+			        },
+			        "entity__measure.open_AR_aging": {
+			          "Target": {
+			            "Entity": "entity__measure.open_AR_aging"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_payment"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.open_AR_aging"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_payments_have_open_AR_aging"
+			        }
+			      ]
+			    },
+			    "fact_invoice_has_entity__measure_open_AR_aging": {
+			      "Binding": {
+			        "ConceptualEntity": "FactInvoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_invoice": {
+			          "Target": {
+			            "Entity": "fact_invoice"
+			          }
+			        },
+			        "entity__measure.open_AR_aging": {
+			          "Target": {
+			            "Entity": "entity__measure.open_AR_aging"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.open_AR_aging"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_invoices_have_open_AR_aging"
+			        }
+			      ]
+			    },
+			    "aging_bucket_has_entity__measure_open_AR_aging": {
+			      "Binding": {
+			        "ConceptualEntity": "Aging Buckets"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "aging_bucket": {
+			          "Target": {
+			            "Entity": "aging_bucket"
+			          }
+			        },
+			        "entity__measure.open_AR_aging": {
+			          "Target": {
+			            "Entity": "entity__measure.open_AR_aging"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "aging_bucket"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.open_AR_aging"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "aging_buckets_have_open_AR_aging"
+			        }
+			      ]
+			    },
+			    "fact_payment_has_entity__measure_overdue_AR": {
+			      "Binding": {
+			        "ConceptualEntity": "FactPayments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_payment": {
+			          "Target": {
+			            "Entity": "fact_payment"
+			          }
+			        },
+			        "entity__measure.overdue_AR": {
+			          "Target": {
+			            "Entity": "entity__measure.overdue_AR"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_payment"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.overdue_AR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_payments_have_overdue_AR"
+			        }
+			      ]
+			    },
+			    "fact_invoice_has_entity__measure_overdue_AR": {
+			      "Binding": {
+			        "ConceptualEntity": "FactInvoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_invoice": {
+			          "Target": {
+			            "Entity": "fact_invoice"
+			          }
+			        },
+			        "entity__measure.overdue_AR": {
+			          "Target": {
+			            "Entity": "entity__measure.overdue_AR"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.overdue_AR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_invoices_have_overdue_AR"
+			        }
+			      ]
+			    },
+			    "fact_payment_has_entity__measure_open_AR": {
+			      "Binding": {
+			        "ConceptualEntity": "FactPayments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_payment": {
+			          "Target": {
+			            "Entity": "fact_payment"
+			          }
+			        },
+			        "entity__measure.open_AR": {
+			          "Target": {
+			            "Entity": "entity__measure.open_AR"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_payment"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.open_AR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_payments_have_open_AR"
+			        }
+			      ]
+			    },
+			    "fact_invoice_has_entity__measure_open_AR": {
+			      "Binding": {
+			        "ConceptualEntity": "FactInvoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_invoice": {
+			          "Target": {
+			            "Entity": "fact_invoice"
+			          }
+			        },
+			        "entity__measure.open_AR": {
+			          "Target": {
+			            "Entity": "entity__measure.open_AR"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.open_AR"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_invoices_have_open_AR"
+			        }
+			      ]
+			    },
+			    "fact_payment_has_entity__measure_unapplied_cash": {
+			      "Binding": {
+			        "ConceptualEntity": "FactPayments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_payment": {
+			          "Target": {
+			            "Entity": "fact_payment"
+			          }
+			        },
+			        "entity__measure.unapplied_cash": {
+			          "Target": {
+			            "Entity": "entity__measure.unapplied_cash"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_payment"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.unapplied_cash"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_payments_have_unapplied_cash"
+			        }
+			      ]
+			    },
+			    "fact_payment_has_entity__measure_cash_collected": {
+			      "Binding": {
+			        "ConceptualEntity": "FactPayments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_payment": {
+			          "Target": {
+			            "Entity": "fact_payment"
+			          }
+			        },
+			        "entity__measure.cash_collected": {
+			          "Target": {
+			            "Entity": "entity__measure.cash_collected"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_payment"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.cash_collected"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_payments_have_cash_collected"
+			        }
+			      ]
+			    },
+			    "fact_invoice_has_entity__measure_invoiced_amount": {
+			      "Binding": {
+			        "ConceptualEntity": "FactInvoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_invoice": {
+			          "Target": {
+			            "Entity": "fact_invoice"
+			          }
+			        },
+			        "entity__measure.invoiced_amount": {
+			          "Target": {
+			            "Entity": "entity__measure.invoiced_amount"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_invoice"
+			            },
+			            "Object": {
+			              "Role": "entity__measure.invoiced_amount"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_invoices_have_invoiced_amount"
+			        }
+			      ]
+			    },
 			    "variance_breakdown_prm_has_variance_breakdown_prm": {
 			      "Binding": {
 			        "ConceptualEntity": "Variance Breakdown prm"
@@ -13247,39 +18616,6 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "fact_budgets_have_net_sales_BU1"
-			        }
-			      ]
-			    },
-			    "fact_budget_has_entity__measure_units_sold_BU": {
-			      "Binding": {
-			        "ConceptualEntity": "FactBudget"
-			      },
-			      "State": "Generated",
-			      "Roles": {
-			        "fact_budget": {
-			          "Target": {
-			            "Entity": "fact_budget"
-			          }
-			        },
-			        "entity__measure.units_sold_BU": {
-			          "Target": {
-			            "Entity": "entity__measure.units_sold_BU"
-			          }
-			        }
-			      },
-			      "Phrasings": [
-			        {
-			          "Attribute": {
-			            "Subject": {
-			              "Role": "fact_budget"
-			            },
-			            "Object": {
-			              "Role": "entity__measure.units_sold_BU"
-			            }
-			          },
-			          "State": "Generated",
-			          "Weight": 0.99,
-			          "ID": "fact_budgets_have_units_sold_BU"
 			        }
 			      ]
 			    },
@@ -14847,6 +20183,52 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "dim_customer_has_customer_key": {
+			      "Binding": {
+			        "ConceptualEntity": "DimCustomer"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "dim_customer": {
+			          "Target": {
+			            "Entity": "dim_customer"
+			          }
+			        },
+			        "dim_customer.customer_key": {
+			          "Target": {
+			            "Entity": "dim_customer.customer_key"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_customer"
+			            },
+			            "Object": {
+			              "Role": "dim_customer.customer_key"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_customers_have_customer_keys"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "dim_customer"
+			            },
+			            "Name": {
+			              "Role": "dim_customer.customer_key"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_keys_are_names_IDs_of_dim_customers"
+			        }
+			      ]
+			    },
 			    "fact_budget_in_dim_country": {
 			      "Binding": {
 			        "ConceptualEntity": "FactBudget"
@@ -15252,6 +20634,90 @@ cultureInfo en-US
 			        }
 			      ]
 			    },
+			    "fact_invoice_is_invoiced_on_invoice_date": {
+			      "Binding": {
+			        "ConceptualEntity": "FactInvoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_invoice": {
+			          "Target": {
+			            "Entity": "fact_invoice"
+			          }
+			        },
+			        "fact_invoice.invoice_date": {
+			          "Target": {
+			            "Entity": "fact_invoice.invoice_date"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "When": {
+			          "Role": "fact_invoice.invoice_date"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Verbs": [
+			              {
+			                "invoice": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fact_invoice"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.9,
+			          "ID": "fact_invoices_are_invoiced_on_invoice_dates"
+			        }
+			      ]
+			    },
+			    "fact_payment_is_booked_on_booking_date": {
+			      "Binding": {
+			        "ConceptualEntity": "FactPayments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_payment": {
+			          "Target": {
+			            "Entity": "fact_payment"
+			          }
+			        },
+			        "fact_payment.booking_date": {
+			          "Target": {
+			            "Entity": "fact_payment.booking_date"
+			          }
+			        }
+			      },
+			      "SemanticSlots": {
+			        "When": {
+			          "Role": "fact_payment.booking_date"
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Verbs": [
+			              {
+			                "book": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fact_payment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.9,
+			          "ID": "fact_payments_are_booked_on_booking_dates"
+			        }
+			      ]
+			    },
 			    "fact_budget_is_budgeted_on_budget_date": {
 			      "Binding": {
 			        "ConceptualEntity": "FactBudget"
@@ -15375,6 +20841,105 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.9,
 			          "ID": "dim_stores_are_opened_on_open_dates"
+			        }
+			      ]
+			    },
+			    "fact_payment_payer_name_pay_fact_payment": {
+			      "Binding": {
+			        "ConceptualEntity": "FactPayments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_payment.payer_name": {
+			          "Target": {
+			            "Entity": "fact_payment.payer_name"
+			          }
+			        },
+			        "fact_payment": {
+			          "Target": {
+			            "Entity": "fact_payment"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Verb": {
+			            "Subject": {
+			              "Role": "fact_payment.payer_name"
+			            },
+			            "Verbs": [
+			              {
+			                "pay": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Object": {
+			              "Role": "fact_payment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.75,
+			          "ID": "payer_names_pay_fact_payments"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_payment.payer_name"
+			            },
+			            "Object": {
+			              "Role": "fact_payment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "payer_names_have_fact_payments"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_payment"
+			            },
+			            "Object": {
+			              "Role": "fact_payment.payer_name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_payments_have_payer_names"
+			        }
+			      ]
+			    },
+			    "fact_payment_has_description": {
+			      "Binding": {
+			        "ConceptualEntity": "FactPayments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_payment": {
+			          "Target": {
+			            "Entity": "fact_payment"
+			          }
+			        },
+			        "fact_payment.description": {
+			          "Target": {
+			            "Entity": "fact_payment.description"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_payment"
+			            },
+			            "Object": {
+			              "Role": "fact_payment.description"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_payments_have_descriptions"
 			        }
 			      ]
 			    },
@@ -15899,6 +21464,144 @@ cultureInfo en-US
 			          "State": "Generated",
 			          "Weight": 0.99,
 			          "ID": "dim_channels_have_fact_budgets"
+			        }
+			      ]
+			    },
+			    "fact_payment_has_fact_invoice": {
+			      "Binding": {
+			        "ConceptualEntity": "FactPayments"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_payment": {
+			          "Target": {
+			            "Entity": "fact_payment"
+			          }
+			        },
+			        "fact_invoice": {
+			          "Target": {
+			            "Entity": "fact_invoice"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_payment"
+			            },
+			            "Object": {
+			              "Role": "fact_invoice"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_payments_have_fact_invoices"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_invoice"
+			            },
+			            "Object": {
+			              "Role": "fact_payment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_invoices_have_fact_payments"
+			        }
+			      ]
+			    },
+			    "fact_invoice_has_dim_date": {
+			      "Binding": {
+			        "ConceptualEntity": "FactInvoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_invoice": {
+			          "Target": {
+			            "Entity": "fact_invoice"
+			          }
+			        },
+			        "dim_date": {
+			          "Target": {
+			            "Entity": "dim_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_invoice"
+			            },
+			            "Object": {
+			              "Role": "dim_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_invoices_have_dim_dates"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_date"
+			            },
+			            "Object": {
+			              "Role": "fact_invoice"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_dates_have_fact_invoices"
+			        }
+			      ]
+			    },
+			    "fact_invoice_has_dim_customer": {
+			      "Binding": {
+			        "ConceptualEntity": "FactInvoices"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "fact_invoice": {
+			          "Target": {
+			            "Entity": "fact_invoice"
+			          }
+			        },
+			        "dim_customer": {
+			          "Target": {
+			            "Entity": "dim_customer"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "fact_invoice"
+			            },
+			            "Object": {
+			              "Role": "dim_customer"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "fact_invoices_have_dim_customers"
+			        },
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "dim_customer"
+			            },
+			            "Object": {
+			              "Role": "fact_invoice"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "dim_customers_have_fact_invoices"
 			        }
 			      ]
 			    }

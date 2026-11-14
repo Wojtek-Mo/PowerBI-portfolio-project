@@ -8,35 +8,55 @@ table Comparison
 
 		calculationItem PY = ```
 				
-				CALCULATE(
-				    SELECTEDMEASURE(),
-				    SAMEPERIODLASTYEAR(DimDate[Date])
+				VAR CurrentValue = SELECTEDMEASURE()
+				VAR PreviousValue =
+				    CALCULATE(
+				        SELECTEDMEASURE(),
+				        SAMEPERIODLASTYEAR(DimDate[Date])
+				    )
+				RETURN
+				IF(
+				    ISBLANK( PreviousValue ) || ISBLANK( CurrentValue ),
+				    BLANK(),
+				    PreviousValue
 				)
-				
 				
 				
 				```
 
 		calculationItem 'Δ PY' = ```
 				
-				VAR PY = CALCULATE(
-				    SELECTEDMEASURE(),
-				    SAMEPERIODLASTYEAR(DimDate[Date])
-				)
+				VAR CurrentValue = SELECTEDMEASURE()
+				VAR PreviousValue =
+				    CALCULATE(
+				        SELECTEDMEASURE(),
+				        SAMEPERIODLASTYEAR( DimDate[Date] )
+				    )
 				RETURN
-				SELECTEDMEASURE() - PY
+				IF(
+				    ISBLANK( PreviousValue ) || ISBLANK( CurrentValue ),
+				    BLANK(),
+				    CurrentValue - PreviousValue
+				)
 				
 				```
 
 		calculationItem 'Δ PY %' = ```
 				
-				VAR PY = CALCULATE(
-				    SELECTEDMEASURE(),
-				    SAMEPERIODLASTYEAR(DimDate[Date])
-				)
-				VAR DeltaPY = SELECTEDMEASURE() - PY
+				VAR CurrentValue = SELECTEDMEASURE()
+				VAR PreviousValue =
+				    CALCULATE(
+				        SELECTEDMEASURE(),
+				        SAMEPERIODLASTYEAR( DimDate[Date] )
+				    )
+				VAR DeltaPY = CurrentValue - PreviousValue
 				RETURN
-				DIVIDE( DeltaPY, PY ) 
+				IF(
+				    ISBLANK( PreviousValue ) || ISBLANK( CurrentValue ),
+				    BLANK(),
+				    DIVIDE( DeltaPY, PreviousValue )
+				)
+				
 				```
 
 			formatStringDefinition = "0.0%"

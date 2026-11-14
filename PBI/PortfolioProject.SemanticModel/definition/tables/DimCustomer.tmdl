@@ -3,7 +3,6 @@ table DimCustomer
 
 	column CustomerKey
 		dataType: int64
-		isHidden
 		formatString: 0
 		lineageTag: ee73fca0-50dc-4ef0-a31b-cad85f13594c
 		summarizeBy: none

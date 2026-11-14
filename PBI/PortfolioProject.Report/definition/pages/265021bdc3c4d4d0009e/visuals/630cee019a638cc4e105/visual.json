@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "630cee019a638cc4e105",
   "position": {
-    "x": 640.45038705137233,
-    "y": 501.73117522871217,
+    "x": 644.28093645484955,
+    "y": 499.799331103679,
     "z": 6000,
-    "height": 210.7811400422238,
-    "width": 628.74032371569319,
-    "tabOrder": 7001
+    "height": 212.97658862876256,
+    "width": 625.01672240802679,
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "areaChart",
@@ -47,6 +47,20 @@
               },
               "queryRef": "_Measures.Net Sales Δ BU YTD",
               "nativeQueryRef": "Net Sales Δ BU YTD"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Variance to budget YTD Max label"
+                }
+              },
+              "queryRef": "_Measures.Measure",
+              "nativeQueryRef": "Variance to budget YTD Max label"
             }
           ]
         }
@@ -59,7 +73,7 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
                 }
               }
             },
@@ -104,6 +118,20 @@
               }
             }
           }
+        },
+        {
+          "properties": {
+            "showSeries": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Net Sales Δ BU YTD"
+          }
         }
       ],
       "valueAxis": [
@@ -113,6 +141,27 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "invertAxis": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "roundRange": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "switchAxisPosition": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -153,6 +202,32 @@
           },
           "selector": {
             "id": "1"
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "75D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
           }
         }
       ]

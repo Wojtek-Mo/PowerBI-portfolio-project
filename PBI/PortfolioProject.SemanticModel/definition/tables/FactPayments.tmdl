@@ -40,6 +40,22 @@ table FactPayments
 
 		annotation PBI_FormatHint = {"isGeneralNumber":true}
 
+	column PayerName
+		dataType: string
+		lineageTag: 7882cc73-7c1c-4427-9ab5-7a3316af09ff
+		summarizeBy: none
+		sourceColumn: PayerName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Description
+		dataType: string
+		lineageTag: 11b1c084-b732-46e9-9927-81a20eacdc0b
+		summarizeBy: none
+		sourceColumn: Description
+
+		annotation SummarizationSetBy = Automatic
+
 	partition FactPayments = m
 		mode: import
 		queryGroup: '5. Facts'
@@ -53,7 +69,7 @@ table FactPayments
 				  #"Renamed columns" = Table.RenameColumns(#"OrderKey len condition", {{"OrderKey", "InvoiceRef"}, {"InvoiceRef", "OrderKey"}}),
 				  #"Removed helper columns" = Table.RemoveColumns(#"Renamed columns", {"InvoiceRef", "Length"}),
 				  #"Changed OrderKey type" = Table.TransformColumnTypes(#"Removed helper columns", {{"OrderKey", Int64.Type}}),
-				  #"Choose columns" = Table.SelectColumns(#"Changed OrderKey type", {"TransactionId", "BookingDate", "Amount", "OrderKey"}),
+				  #"Choose columns" = Table.SelectColumns(#"Changed OrderKey type", {"TransactionId", "BookingDate", "Amount", "PayerName", "Description", "OrderKey"}),
 				  #"Reordered columns" = Table.ReorderColumns(#"Choose columns", {"TransactionId", "OrderKey", "BookingDate", "Amount"}),
 				  #"Changed column type" = Table.TransformColumnTypes(#"Reordered columns", {{"Amount", Currency.Type}})
 				in

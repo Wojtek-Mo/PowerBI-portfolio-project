@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "329c971e60cda58c0411",
   "position": {
-    "x": 639.3956562795089,
-    "y": 236.90273843248346,
+    "x": 644.28093645484955,
+    "y": 236.52173913043478,
     "z": 5000,
     "height": 256.24173748819641,
-    "width": 628.51746931067044,
-    "tabOrder": 7000
+    "width": 625,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "clusteredColumnChart",
@@ -293,7 +293,21 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "false"
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "9D"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Full year, monthly'"
                 }
               }
             }

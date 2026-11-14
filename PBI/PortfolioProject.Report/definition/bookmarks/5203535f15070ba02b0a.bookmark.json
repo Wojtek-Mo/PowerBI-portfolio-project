@@ -388,61 +388,6 @@
               "objects": {}
             }
           },
-          "a22020e08d017a0ce182": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "737940b96204b1e5e79c",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DimChannel"
-                        }
-                      },
-                      "Property": "SalesChannel"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "data": [
-                    {
-                      "properties": {
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Dropdown'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
-              "activeProjections": {
-                "Values": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DimChannel"
-                        }
-                      },
-                      "Property": "SalesChannel"
-                    }
-                  }
-                ]
-              }
-            }
-          },
           "cee13500ba79a64cb007": {
             "singleVisual": {
               "visualType": "actionButton",
@@ -453,61 +398,6 @@
             "singleVisual": {
               "visualType": "textbox",
               "objects": {}
-            }
-          },
-          "dcc262e352324d0e0800": {
-            "filters": {
-              "byExpr": [
-                {
-                  "name": "6c09d31118c218e8d990",
-                  "type": "Categorical",
-                  "expression": {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DimCategory"
-                        }
-                      },
-                      "Property": "CategoryName"
-                    }
-                  },
-                  "howCreated": 0
-                }
-              ]
-            },
-            "singleVisual": {
-              "visualType": "slicer",
-              "objects": {
-                "merge": {
-                  "data": [
-                    {
-                      "properties": {
-                        "mode": {
-                          "expr": {
-                            "Literal": {
-                              "Value": "'Dropdown'"
-                            }
-                          }
-                        }
-                      }
-                    }
-                  ]
-                }
-              },
-              "activeProjections": {
-                "Values": [
-                  {
-                    "Column": {
-                      "Expression": {
-                        "SourceRef": {
-                          "Entity": "DimCategory"
-                        }
-                      },
-                      "Property": "CategoryName"
-                    }
-                  }
-                ]
-              }
             }
           },
           "dd7bd940abc86a7836d0": {

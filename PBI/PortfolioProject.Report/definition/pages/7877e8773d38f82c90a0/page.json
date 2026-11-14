@@ -40,5 +40,17 @@
         }
       }
     ]
-  }
+  },
+  "visualInteractions": [
+    {
+      "source": "6a9c000ab525513d9767",
+      "target": "7d27e8a2e8dd2e9be192",
+      "type": "NoFilter"
+    },
+    {
+      "source": "c09ea859429cb7079053",
+      "target": "7d27e8a2e8dd2e9be192",
+      "type": "NoFilter"
+    }
+  ]
 }

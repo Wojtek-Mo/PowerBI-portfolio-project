@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
-  "name": "f6cdde58b40ea415000b",
+  "name": "708f850f08cb469c17b3",
   "position": {
-    "x": 131.07231920199501,
-    "y": 171.47132169576059,
-    "z": 3001,
-    "height": 435.26730937773885,
-    "width": 820.05258545135848,
-    "tabOrder": 7001
+    "x": 10.921501706484641,
+    "y": 236.99658703071671,
+    "z": 7000,
+    "height": 200.95563139931741,
+    "width": 625,
+    "tabOrder": 7000
   },
   "visual": {
     "visualType": "waterfallChart",
@@ -97,6 +97,53 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "totalsEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1000000D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "categoryAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "maxMarginFactor": {
+              "expr": {
+                "Literal": {
+                  "Value": "19L"
                 }
               }
             }

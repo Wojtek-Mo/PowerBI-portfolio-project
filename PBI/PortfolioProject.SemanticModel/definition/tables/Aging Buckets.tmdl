@@ -31,6 +31,7 @@ table 'Aging Buckets'
 		annotation SummarizationSetBy = Automatic
 
 	column Order
+		isHidden
 		formatString: 0
 		lineageTag: 03dcd732-37b0-4a87-b846-8d6e681ceff6
 		summarizeBy: sum
@@ -39,23 +40,30 @@ table 'Aging Buckets'
 
 		annotation SummarizationSetBy = Automatic
 
+	column Color
+		isHidden
+		lineageTag: df44b99e-4c6a-4aef-af74-ecb0a9b0fd9c
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Color]
+
+		annotation SummarizationSetBy = Automatic
+
 	partition 'Aging Buckets' = calculated
 		mode: import
-		source =
+		source = ```
 				
 				DATATABLE(
-				    "AgingBucket", STRING,
-				    "MinDays",     INTEGER,
-				    "MaxDays",     INTEGER,
-				    "Order",       INTEGER,
+				    "AgingBucket", STRING, "MinDays", INTEGER, "MaxDays", INTEGER, "Order", INTEGER, "Color", STRING,
 				    {
-				        { "Current",    -9999,     0, 0 },
-				        { "1-30",            1,    30, 1 },
-				        { "31-60",          31,    60, 2 },
-				        { "61-90",          61,    90, 3 },
-				        { ">90",            91, 9999, 4 }
+				        { "Not due", -9999,    0, 0, "#444441" }, 
+				        { "1-30",        1,   30, 1, "#888780" }, 
+				        { "31-60",      31,   60, 2, "#B4B2A9" }, 
+				        { "61-90",      61,   90, 3, "#D85A30" }, 
+				        { ">90",        91, 9999, 4, "#993C1D" }  
 				    }
 				)
+				```
 
 	annotation PBI_Id = 0f4b6c8f27f1498a916e8ed4278d4a6d
 

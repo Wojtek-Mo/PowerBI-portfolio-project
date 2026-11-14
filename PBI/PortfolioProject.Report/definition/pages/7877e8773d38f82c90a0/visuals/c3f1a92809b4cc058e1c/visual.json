@@ -220,6 +220,34 @@
             "id": "field-b6e31649-14a6-4279-149d-5e5a5d7538fb",
             "order": 0
           }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Units Sold Δ PY %"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "_Measures.Units Sold",
+            "id": "field-6c554514-47a9-aa1d-d402-50d4e8525534",
+            "order": 0
+          }
         }
       ],
       "referenceLabelTitle": [
@@ -358,6 +386,28 @@
           "selector": {
             "metadata": "_Measures.Orders",
             "id": "field-b6e31649-14a6-4279-149d-5e5a5d7538fb"
+          }
+        },
+        {
+          "properties": {
+            "titleContentType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'custom'"
+                }
+              }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'vs PY'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Units Sold",
+            "id": "field-6c554514-47a9-aa1d-d402-50d4e8525534"
           }
         }
       ],

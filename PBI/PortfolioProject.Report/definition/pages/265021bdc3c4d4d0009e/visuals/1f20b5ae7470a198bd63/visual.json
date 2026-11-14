@@ -5,9 +5,9 @@
     "x": 0,
     "y": 0,
     "z": 1500,
-    "height": 475.87096774193549,
-    "width": 615.22580645161293,
-    "tabOrder": 5000
+    "height": 476.25418060200667,
+    "width": 625,
+    "tabOrder": 0
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -20,16 +20,16 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "DimCategory"
+                      "Entity": "DimCountry"
                     }
                   },
-                  "Property": "CategoryName"
+                  "Property": "CountryName"
                 }
               },
-              "queryRef": "DimCategory.CategoryName",
-              "nativeQueryRef": "Category",
+              "queryRef": "DimCountry.CountryName",
+              "nativeQueryRef": "Country",
               "active": true,
-              "displayName": "Category"
+              "displayName": "Country"
             }
           ],
           "fieldParameters": [

@@ -4,7 +4,7 @@
   "position": {
     "x": 11.35483870967742,
     "y": 120.7741935483871,
-    "z": 0,
+    "z": 7500,
     "height": 107.61519805982215,
     "width": 1257.2352465642684,
     "tabOrder": 4000
@@ -82,12 +82,11 @@
                       "Entity": "_Measures"
                     }
                   },
-                  "Property": "Units Sold Δ BU"
+                  "Property": "Average Selling Price"
                 }
               },
-              "queryRef": "_Measures.Units Sold Δ BU",
-              "nativeQueryRef": "Variance to budget (units sold)",
-              "displayName": "Variance to budget (units sold)"
+              "queryRef": "_Measures.Average Selling Price",
+              "nativeQueryRef": "Average Selling Price"
             }
           ]
         }
@@ -439,20 +438,7 @@
           }
         },
         {
-          "properties": {
-            "value": {
-              "expr": {
-                "Measure": {
-                  "Expression": {
-                    "SourceRef": {
-                      "Entity": "_Measures"
-                    }
-                  },
-                  "Property": "Units Sold BU"
-                }
-              }
-            }
-          },
+          "properties": {},
           "selector": {
             "data": [
               {
@@ -479,6 +465,77 @@
             "metadata": "_Measures.Units Sold",
             "id": "field-d395efab-b5b8-f784-5c3a-50c3c5292300",
             "order": 1
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "_Measures.Average Selling Price",
+            "id": "field-7043cf39-f2a6-63fc-f52c-934def076e95",
+            "order": 0
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Average Selling Price diff to BU"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "_Measures.Average Selling Price",
+            "id": "field-0352c9cb-f125-cecf-9638-85c1d92eaa19",
+            "order": 0
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Units Sold Δ BU %"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "_Measures.Units Sold",
+            "id": "field-0bd767b8-7618-224d-477d-5cd4b771b64b",
+            "order": 0
           }
         }
       ],
@@ -597,7 +654,7 @@
             "titleText": {
               "expr": {
                 "Literal": {
-                  "Value": "'Units Sold Budget'"
+                  "Value": "'Units Sold BU'"
                 }
               }
             }
@@ -605,6 +662,78 @@
           "selector": {
             "metadata": "_Measures.Units Sold",
             "id": "field-1be57ff1-b35c-1d10-829c-acfe6d843e9e"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Average Selling Price"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "titleContentType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'custom'"
+                }
+              }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'vs budget'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Average Selling Price",
+            "id": "field-0352c9cb-f125-cecf-9638-85c1d92eaa19"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "titleContentType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'custom'"
+                }
+              }
+            },
+            "titleText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'vs budget'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "_Measures.Units Sold",
+            "id": "field-0bd767b8-7618-224d-477d-5cd4b771b64b"
           }
         }
       ],

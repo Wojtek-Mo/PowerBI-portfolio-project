@@ -23,5 +23,22 @@
         }
       }
     ]
-  }
+  },
+  "visualInteractions": [
+    {
+      "source": "16728f033be3bc19c289",
+      "target": "3079bfda5ae3d6200e36",
+      "type": "NoFilter"
+    },
+    {
+      "source": "3b29883d85a70059b740",
+      "target": "3079bfda5ae3d6200e36",
+      "type": "NoFilter"
+    },
+    {
+      "source": "16728f033be3bc19c289",
+      "target": "3ed8bece9455100eb980",
+      "type": "DataFilter"
+    }
+  ]
 }
