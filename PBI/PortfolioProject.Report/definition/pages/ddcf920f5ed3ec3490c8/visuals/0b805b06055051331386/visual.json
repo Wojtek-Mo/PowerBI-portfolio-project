@@ -1,0 +1,140 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "0b805b06055051331386",
+  "position": {
+    "x": 10.526315789473685,
+    "y": 407.36842105263162,
+    "z": 2000,
+    "height": 251.57894736842107,
+    "width": 625.26315789473688,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Data sources",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Sales - Contoso Data Generator V2 by SQLBI (SQL Server, 1M orders, 2016–2025), exposed through SQL views."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Budget 2024-2025 – generated in SQL from prior-year actuals and growth assumptions, delivered as an Excel file with typical formatting issues. "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Invoices - one invoice per order, payment terms by customer country. "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Payments - generated in SQL, delivered as 24 monthly bank statement CSV files in two formats. "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• USD/PLN rates – National Bank of Poland (NBP) web API (work in progress)."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "All data is fictional. Budget, invoices and payments were generated for this project, so some indicators are more regular than in a real company. "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Assumptions:",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " every sale is invoiced; payment terms 30 days (France and Italy 60); one payment per invoice, no partial payments; payments without a recognisable invoice number stay unapplied and do not reduce receivables. Data as of 31 Dec 2025."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

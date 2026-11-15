@@ -1,0 +1,217 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "7dba2c40b5c606deb600",
+  "position": {
+    "x": 643.14238952536823,
+    "y": 86.939443535188218,
+    "z": 4000,
+    "height": 396.9885433715221,
+    "width": 625.33551554828148,
+    "tabOrder": 4000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Definitions",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Sales and budget ",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Net sales - sales after discounts (net price * quantity)."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Gross margin / Gross margin % - net sales minus cost of goods sold; as a share of net sales. "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Orders - number of distinct customer orders."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Units sold - number of units sold. "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Average selling price - net sales / units sold."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Share in sales - country's share of total net sales in the selected period. "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Budget (BU) - net sales budget for the selected period; Full-year BU - budget for the whole year."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Variance to budget - actual minus budget; negative = below budget. "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Cumulative variance to budget - variance to budget added up month by month from January (YTD). "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• PVM (price, volume, mix) - split of the net sales change vs prior year for products sold in both periods; new/discontinued effect - sales of products sold in only one of the periods. "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Receivables ",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Receivables balance - invoices issued minus payments applied, at the balance date. "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Overdue AR / Overdue share - part of the balance past its due date, and its share of the total. "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Aging buckets - overdue balance by days past due (1–30, 31–60, 61–90, >90); \"Not due\" = not yet payable. "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• DSO - average receivables at the last three month-ends / invoices issued in those months * days in the period. Blank when fewer than three months of data are available. "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Average Days Delinquent - DSO minus Best Possible DSO (DSO counted only on receivables not yet due): how many days, on average, customers pay late."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Days past due - days from the due date of the customer's oldest unpaid overdue invoice to the balance date. "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "• Unapplied cash - payments received that could not be matched to an invoice."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

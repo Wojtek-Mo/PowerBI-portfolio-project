@@ -1,0 +1,150 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "e169c1b038a6c13a329a",
+  "position": {
+    "x": 10.474631751227495,
+    "y": 86.939443535188218,
+    "z": 1000,
+    "height": 168.64157119476269,
+    "width": 625.33551554828148,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "About this report",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Contoso Finance Report is a portfolio project: a finance and controlling report for Contoso, a fictional consumer electronics retailer selling through physical stores and an online shop in 8 countries."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Audience:",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " CFO, financial controllers and country managers."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Executive overview",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " - net sales and gross margin vs prior year, sales bridge (price, volume, mix), monthly trend vs budget, results by country."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Budget vs actual",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " - variance to budget by country, category and month; units and average selling price vs budget."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Receivables",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " - receivables balance, overdue share, aging, DSO, largest overdue customers and unapplied payments."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Stores & LFL",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " – like-for-like store analysis (work in progress)."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
