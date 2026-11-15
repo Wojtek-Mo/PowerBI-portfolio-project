@@ -1,7 +1,7 @@
 --==================
 --Data quality check
 --==================
-
+USE [Contoso V2 1M]
 
 --=======================
 --1. Missing values check

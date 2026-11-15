@@ -1,6 +1,6 @@
---=====================
---Creating a pbi schema
---=====================
+--========================
+--1. Creating a pbi schema
+--========================
 USE [Contoso V2 1M]
 
 GO
@@ -14,6 +14,10 @@ FROM sys.schemas
 WHERE name = 'pbi';
 
 GO
+
+--============================
+--2. Creating PBI views layer
+--============================
 
 --dimProduct view
 
@@ -144,9 +148,9 @@ SELECT *
 FROM pbi.DimDate;
 
 
---===============================================
---Creating additional views for helper dimensions
---===============================================
+--==================================================
+--3. Creating additional views for helper dimensions
+--==================================================
 
 GO
 
@@ -184,9 +188,9 @@ SELECT *
 FROM pbi.DimCountry;
 
 GO
---==================================================
---Creating FactPayments view for payments generation
---==================================================
+--=====================================================
+--4. Creating FactInvoices view for payments generation
+--=====================================================
 
 --Setting up payment terms for each country and creating invoices table wit due dates
 

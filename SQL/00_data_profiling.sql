@@ -2,6 +2,7 @@
 --Initial data profiling
 --======================
 
+USE [Contoso V2 1M]
 
 --==================================
 --1.Colum names and data types check
