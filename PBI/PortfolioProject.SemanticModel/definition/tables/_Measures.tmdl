@@ -67,13 +67,13 @@ table _Measures
 		lineageTag: 3878a387-1b5a-47c4-91cc-605ff98c0ff1
 
 	/// Number of units sold (sum of Quantity)
-	measure 'Units Sold' = SUM(FactSales[Quantity])
+	measure 'Units Sold' = SUM( FactSales[Quantity] )
 		formatString: 0.0
 		displayFolder: 1. Base Measures
 		lineageTag: 2617b1ca-d7b5-4702-9fd8-8a67ddce2a89
 
 	/// Number of distinct orders (distinct OrderKey)
-	measure Orders = DISTINCTCOUNT(FactSales[OrderKey])
+	measure Orders = DISTINCTCOUNT( FactSales[OrderKey] )
 		formatString: 0.0
 		displayFolder: 1. Base Measures
 		lineageTag: d89cd2e0-c337-4782-b9df-1b3e6faa46b3
@@ -99,7 +99,7 @@ table _Measures
 
 		formatStringDefinition = "+0.0%;-0.0%;0.0%"
 
-	measure 'Gross Margin Δ PY %' = CALCULATE([Gross Margin], Comparison[Comparison] = "Δ PY %")
+	measure 'Gross Margin Δ PY %' = CALCULATE( [Gross Margin], Comparison[Comparison] = "Δ PY %" )
 		displayFolder: 2. KPI Reference Lables\2.1 Executive Overview
 		lineageTag: a7701898-9581-42a8-93f0-b3f90eee301e
 
@@ -176,11 +176,11 @@ table _Measures
 			VAR TotalSalesContext =
 			CALCULATE( 
 			    [Net Sales],
-			    REMOVEFILTERS(DimCustomer[CountryName]),
-			    REMOVEFILTERS(DimStore[SalesChannel])
+			    REMOVEFILTERS(DimCustomer[CountryName] ),
+			    REMOVEFILTERS(DimStore[SalesChannel] )
 			)
 			RETURN 
-			DIVIDE([Net Sales], TotalSalesContext)
+			DIVIDE( [Net Sales], TotalSalesContext )
 			```
 		formatString: 0.0%;-0.0%;0.0%
 		displayFolder: 1. Base Measures
@@ -816,7 +816,7 @@ table _Measures
 
 		formatStringDefinition = "+0.0 \p\p;-0.0 \p\p;0.0 \p\p"
 
-	measure 'Average Selling Price' = DIVIDE( [Net Sales], [Units Sold])
+	measure 'Average Selling Price' = DIVIDE( [Net Sales], [Units Sold] )
 		formatString: \$#,0.0;(\$#,0.0);\$#,0.0
 		displayFolder: 1. Base Measures
 		lineageTag: 113bd34c-9aea-4aa7-b079-0a31186e710a

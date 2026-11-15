@@ -1,0 +1,123 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "4edc22405bb528aeb1d1",
+  "position": {
+    "x": 642.1052631578948,
+    "y": 491.5789473684211,
+    "z": 5000,
+    "height": 167.36842105263159,
+    "width": 625.26315789473688,
+    "tabOrder": 5000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Data preparation",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Budget file cleaned in Power Query (header rows, months in columns, blank grouping cells, subtotals, category names, numbers stored as text). Bank statements combined from two file formats, 2,759 duplicate payments removed, invoice numbers extracted from 5 description formats, 328 payments left unapplied."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Stack: SQL Server · Power Query · star schema · DAX (calculation groups, field parameters) · Power BI Project (PBIP) + Git."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "v1.0 · November 2026 · Wojciech Możdżeń "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "GitHub",
+                    "textStyle": {},
+                    "url": "https://github.com/Wojtek-Mo/PowerBI-portfolio-project"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "LinkedIn",
+                    "textStyle": {}
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "padding": [
+        {
+          "properties": {
+            "left": {
+              "expr": {
+                "Literal": {
+                  "Value": "6D"
+                }
+              }
+            },
+            "right": {
+              "expr": {
+                "Literal": {
+                  "Value": "2D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
