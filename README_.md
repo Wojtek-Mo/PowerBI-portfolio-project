@@ -2,7 +2,7 @@
 
 A finance and controlling report for **Contoso**, a fictional consumer electronics retailer selling through physical stores and an online shop in 8 countries. Built end to end – from SQL views and messy source files to a star-schema model, DAX and a three-page report – as a portfolio project for a move from finance into data analytics / BI.
 
-**▶ [Open the live report](LINK_TO_PUBLISH_TO_WEB)** (Publish to web, no sign-in needed)
+**https://app.powerbi.com/view?r=eyJrIjoiNmI3MGE1NDAtODczNC00MGViLWEyZmYtNDYwN2E1MjU3NmVhIiwidCI6Ijc1YzJlNGQ0LWQwNGMtNGNlOS1hMGVhLWM5NzViZGM0MTdlYiIsImMiOjF9** (Publish to web, no sign-in needed)
 
 ![Executive overview](Docs/img/executive-overview.png)
 
@@ -66,7 +66,7 @@ NBP exchange rate API ─┘
 
 | Source | What it is |
 |---|---|
-| Sales | [Contoso Data Generator V2](LINK_TO_SQLBI) by SQLBI – SQL Server database, 1M orders, 2016–2025 |
+| Sales | [Contoso Data Generator V2](https://www.sqlbi.com/tools/contoso-data-generator/) by SQLBI – SQL Server database, 1M orders, 2016–2025 |
 | Budget 2024–2025 | generated in SQL from prior-year actuals and growth assumptions, delivered as an Excel file with formatting issues |
 | Invoices | one invoice per order (2024–2025), payment terms 30 days (France and Italy 60) |
 | Payments | generated in SQL (60% on time … 2% never paid), delivered as 24 monthly bank statement CSV files |
@@ -109,4 +109,4 @@ I used Claude (Anthropic) to draft the documentation, keep track of data limitat
 
 ---
 
-**Author:** Wojciech Możdżeń · [LinkedIn](LINK_TO_LINKEDIN)
+**Author:** Wojciech Możdżeń · www.linkedin.com/in/wojciech-możdżeń-5920111bb

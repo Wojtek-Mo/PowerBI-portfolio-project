@@ -57,24 +57,18 @@
               {
                 "textRuns": [
                   {
+                    "value": "LinkedIn",
+                    "textStyle": {},
+                    "url": "https://www.linkedin.com/in/wojciech-możdżeń-5920111bb/"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
                     "value": "GitHub",
                     "textStyle": {},
                     "url": "https://github.com/Wojtek-Mo/PowerBI-portfolio-project"
-                  }
-                ]
-              },
-              {
-                "textRuns": [
-                  {
-                    "value": "LinkedIn",
-                    "textStyle": {}
-                  }
-                ]
-              },
-              {
-                "textRuns": [
-                  {
-                    "value": ""
                   }
                 ]
               }
