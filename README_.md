@@ -4,11 +4,11 @@ A finance and controlling report for **Contoso**, a fictional consumer electroni
 
 **https://app.powerbi.com/view?r=eyJrIjoiNmI3MGE1NDAtODczNC00MGViLWEyZmYtNDYwN2E1MjU3NmVhIiwidCI6Ijc1YzJlNGQ0LWQwNGMtNGNlOS1hMGVhLWM5NzViZGM0MTdlYiIsImMiOjF9** (Publish to web, no sign-in needed)
 
-![Executive overview](Docs/img/executive-overview.png)
+![Executive overview](Docs/executive-overview.png)
 
 | Budget vs actual | Receivables |
 |---|---|
-| ![Budget vs actual](Docs/img/budget-vs-actual.png) | ![Receivables](Docs/img/receivables.png) |
+| ![Budget vs actual](Docs/budget-vs-actual.png) | ![Receivables](Docs/receivables.png) |
 
 ---
 
