@@ -32,11 +32,10 @@ The report is written for a CFO, financial controllers and country managers. It 
 ## Architecture
 
 ```
-SQL Server (Contoso V2, 1M orders)
-   └─ SQL views (schema pbi): dimensions, sales, invoices
-Excel budget file  ─┐
-24 bank statement CSVs ─┼─► Power Query ─► star-schema model ─► DAX ─► report (PBIP + Git)
-NBP exchange rate API ─┘
+SQL Server views (schema pbi) ──┐
+Excel budget file ──────────────┤
+24 bank statement CSVs ─────────┼─► Power Query ─► star-schema model ─► DAX ─► report (PBIP + Git)
+NBP exchange rate API ──────────┘
 ```
 
 - **SQL** – profiling and data quality checks, a `pbi` view layer, budget generation and payment generation.
